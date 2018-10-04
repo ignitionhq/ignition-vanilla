@@ -5,21 +5,21 @@
 $margin-right-values: (
   auto: auto,
   all: (
-    regular: $spacing-regular
+    regular: $space-regular
   )
 );
 $margin-bottom-values: (
-  regular: $spacing-regular,
-  large-1: $spacing-large-1,
-  large-2: $spacing-large-2,
-  large-3: $spacing-large-3,
-  large-4: $spacing-large-4,
-  large-5: $spacing-large-5,
-  small-1: $spacing-small-1,
-  small-2: $spacing-small-2,
-  small-3: $spacing-small-3,
-  small-4: $spacing-small-4,
-  small-5: $spacing-small-5,
+  regular: $space-regular,
+  large-1: $space-large-1,
+  large-2: $space-large-2,
+  large-3: $space-large-3,
+  large-4: $space-large-4,
+  large-5: $space-large-5,
+  small-1: $space-small-1,
+  small-2: $space-small-2,
+  small-3: $space-small-3,
+  small-4: $space-small-4,
+  small-5: $space-small-5,
   all: (
     none: 0
   )

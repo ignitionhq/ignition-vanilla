@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .c-notice {
-  padding: $spacing-regular $spacing-large-4;
+  padding: $space-regular $space-large-4;
   border-radius: $border-radius-regular;
   color: $color-neutral-dark-1;
   background-color: $color-neutral-light-1;
@@ -13,14 +13,14 @@
 
 .c-notice--dismissable {
   position: relative;
-  padding-right: $spacing-large-2;
+  padding-right: $space-large-2;
 }
 
   .c-notice__dismiss {
     position: absolute;
     top: 0;
     right: 0;
-    padding: $spacing-small-4;
+    padding: $space-small-4;
     border: 0;
     border-top-right-radius: $border-radius-regular;
     border-bottom-left-radius: $border-radius-regular;

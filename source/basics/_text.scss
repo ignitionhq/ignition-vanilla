@@ -14,31 +14,31 @@ h6 {
 }
 
 h1 {
-  margin-bottom: $spacing-large-3;
+  margin-bottom: $space-large-3;
   font-size: $font-size-large-1;
   line-height: $line-height-small-3;
 }
 
 h2 {
-  margin-bottom: $spacing-regular;
+  margin-bottom: $space-regular;
   font-size: $font-size-large-2;
   line-height: $line-height-small-2;
 }
 
 h3 {
-  margin-bottom: $spacing-small-3;
+  margin-bottom: $space-small-3;
   font-size: $font-size-large-3;
   line-height: $line-height-small-1;
 }
 
 h4 {
-  margin-bottom: $spacing-small-5;
+  margin-bottom: $space-small-5;
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 }
 
 h5 {
-  margin-bottom: $spacing-small-5;
+  margin-bottom: $space-small-5;
   font-size: $font-size-large-5;
   line-height: $line-height-small-1;
 }
@@ -53,21 +53,21 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: $spacing-regular;
+  margin-bottom: $space-regular;
 }
 
 // Blockquote
 
 blockquote {
-  padding-left: $spacing-large-5;
+  padding-left: $space-large-5;
   border-left: $border-width-thick solid $color-neutral-light-1;
-  margin: 0 0 $spacing-large-4;
+  margin: 0 0 $space-large-4;
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 }
 
   blockquote p {
-    margin-bottom: $spacing-small-3;
+    margin-bottom: $space-small-3;
   }
 
   blockquote footer {
@@ -80,14 +80,14 @@ blockquote {
 pre {
   overflow: auto;
   margin-top: 0;
-  margin-bottom: $spacing-regular;
+  margin-bottom: $space-regular;
   font-family: $font-family-mono;
 }
 
 // Address
 
 address {
-  margin-bottom: $spacing-regular;
+  margin-bottom: $space-regular;
   font-style: normal;
 }
 

@@ -12,7 +12,7 @@
 
   .c-nav__link {
     display: inline-block;
-    padding: $spacing-small-2 $spacing-regular;
+    padding: $space-small-2 $space-regular;
     color: $color-neutral-regular;
 
     &:hover {
@@ -33,5 +33,5 @@
 }
 
   .c-nav--vertical .c-nav__link {
-    padding: $spacing-small-4 0;
+    padding: $space-small-4 0;
   }
