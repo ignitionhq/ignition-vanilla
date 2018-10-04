@@ -1,0 +1,13 @@
+// SEGMENT
+// Separate content units.
+// -----------------------------------------------------------------------------
+
+.o-segment {
+  padding-top: $spacing-large-2;
+  padding-bottom: $spacing-large-2;
+
+  @include media(m) {
+    padding-top: $spacing-large-1;
+    padding-bottom: $spacing-large-1;
+  }
+}

@@ -1,0 +1,95 @@
+// GROUPING
+// Set default styles for grouping elements.
+// -----------------------------------------------------------------------------
+
+// Unordered, ordered, and definition list
+
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: $spacing-regular;
+}
+
+ul,
+ol {
+  padding-left: $spacing-large-4;
+}
+
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin-bottom: 0;
+  }
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+// Table
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $spacing-large-4;
+}
+
+  th,
+  td {
+    padding: $spacing-small-1 $spacing-regular;
+    border-bottom: $border-width-regular solid $color-neutral-light-1;
+    vertical-align: top;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  thead th {
+    border-color: $color-neutral-light-2;
+    vertical-align: bottom;
+  }
+
+  caption {
+    caption-side: bottom;
+    padding-top: $spacing-small-1;
+    padding-bottom: $spacing-small-1;
+    text-align: left;
+  }
+
+// Figure
+
+figure {
+  margin: 0 0 $spacing-regular;
+}
+
+// Details
+
+details {
+  // Set the correct display style in Edge.
+  display: block;
+}
+
+  summary {
+    // Set the correct display style in Chrome, Safari, and Edge.
+    display: list-item;
+    cursor: pointer;
+  }
+
+// Thematic break
+
+hr {
+  // Normalize the overflow in Chrome and Edge.
+  overflow: visible;
+  // Mimic a horizontal rule while allowing other decorations to be used.
+  height: $border-width-thick;
+  border: 0;
+  margin-top: $spacing-large-2;
+  margin-bottom: $spacing-large-2;
+  background-color: $color-neutral-light-2;
+}

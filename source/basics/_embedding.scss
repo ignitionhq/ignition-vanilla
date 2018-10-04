@@ -1,0 +1,28 @@
+// EMBEDDING
+// Set default styles for embedding elements.
+// -----------------------------------------------------------------------------
+
+// Image, scalable vector graphics, video, audio, canvas, and iframe
+
+img,
+svg,
+video,
+audio,
+canvas,
+iframe {
+  // Remove the space below the baseline.
+  vertical-align: middle;
+}
+
+img,
+video,
+audio {
+  // Prevent the width from exceeding that of the parent element.
+  max-width: 100%;
+}
+
+img,
+video {
+  // Prevent stretching when using the height attribute.
+  height: auto;
+}

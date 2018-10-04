@@ -1,0 +1,11 @@
+// PLATFORM
+// Identify device types and viewport features that mark a change in the way
+// content is presented.
+// -----------------------------------------------------------------------------
+
+// Queries
+
+$queries: (
+  m: "screen and (min-width: 720px)",
+  l: "screen and (min-width: 1080px)"
+);

@@ -1,0 +1,23 @@
+// MEDIA
+// Generate media queries.
+// -----------------------------------------------------------------------------
+
+// Use as argument a media query name established via platform settings.
+// Example:
+// @include media(m) {
+// ...
+// }
+// will output:
+// @media screen and (min-width: 720px) {
+// ...
+// }
+@mixin media($query-name) {
+  @if map-has-key($queries, $query-name) {
+    $query: map-get($queries, $query-name);
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error "Can't find any query named `#{$query-name}`. Check spelling or review platform settings.";
+  }
+}

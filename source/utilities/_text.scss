@@ -1,0 +1,7 @@
+// TEXT
+// Establish text-related traits.
+// -----------------------------------------------------------------------------
+
+$text-align-values: center, right;
+
+@include utility(text-align, $text-align-values);

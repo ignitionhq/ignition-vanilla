@@ -1,0 +1,313 @@
+// BUTTON
+// Style button components.
+// -----------------------------------------------------------------------------
+
+.c-button {
+  display: inline-block;
+  // Employ the `calc()` function to ensure precise alignment with items that
+  // use the same spacing values but lack a border.
+  padding: calc(#{$spacing-small-2} - #{$border-width-regular}) calc(#{$spacing-regular} - #{$border-width-regular});
+  // Use a transparent border so a visible one can be defined more easily.
+  border: $border-width-regular solid transparent;
+  border-radius: $border-radius-regular;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+  color: $color-neutral-regular;
+  text-align: center;
+  // Prevent text wrapping, usually in a flex context.
+  white-space: nowrap;
+  background-color: $color-neutral-light-1;
+
+  &:hover {
+    // Override text decoration from anchor elements.
+    text-decoration: none;
+    background-color: $color-neutral-light-2;
+  }
+
+  &:focus {
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
+    box-shadow: $box-shadow-regular $color-neutral-light-3;
+  }
+
+  &:active {
+    background-color: $color-neutral-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    opacity: $opacity-low;
+    background-color: $color-neutral-light-1;
+    box-shadow: none;
+    cursor: default;
+  }
+}
+
+// Primary buttons
+
+.c-button--primary {
+  color: $color-neutral-white;
+  background-color: $color-primary-regular;
+
+  &:hover {
+    background-color: $color-primary-dark-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-primary-light-2;
+  }
+
+  &:active {
+    background-color: $color-primary-dark-2;
+  }
+}
+
+.c-button--primary-outlined {
+  border-color: $color-primary-regular;
+  color: $color-primary-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-primary-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-primary-light-2;
+  }
+
+  &:active {
+    background-color: $color-primary-light-2;
+  }
+}
+
+.c-button--primary-plain {
+  color: $color-primary-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-primary-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-primary-light-2;
+  }
+
+  &:active {
+    background-color: $color-primary-light-2;
+  }
+}
+
+// Positive buttons
+
+.c-button--positive {
+  color: $color-neutral-white;
+  background-color: $color-positive-regular;
+
+  &:hover {
+    background-color: $color-positive-dark-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-positive-light-2;
+  }
+
+  &:active {
+    background-color: $color-positive-dark-2;
+  }
+}
+
+.c-button--positive-outlined {
+  border-color: $color-positive-regular;
+  color: $color-positive-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-positive-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-positive-light-2;
+  }
+
+  &:active {
+    background-color: $color-positive-light-2;
+  }
+}
+
+.c-button--positive-plain {
+  color: $color-positive-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-positive-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-positive-light-2;
+  }
+
+  &:active {
+    background-color: $color-positive-light-2;
+  }
+}
+
+// Negative buttons
+
+.c-button--negative {
+  color: $color-neutral-white;
+  background-color: $color-negative-regular;
+
+  &:hover {
+    background-color: $color-negative-dark-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-negative-light-2;
+  }
+
+  &:active {
+    background-color: $color-negative-dark-2;
+  }
+}
+
+.c-button--negative-outlined {
+  border-color: $color-negative-regular;
+  color: $color-negative-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-negative-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-negative-light-2;
+  }
+
+  &:active {
+    background-color: $color-negative-light-2;
+  }
+}
+
+.c-button--negative-plain {
+  color: $color-negative-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-negative-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-negative-light-2;
+  }
+
+  &:active {
+    background-color: $color-negative-light-2;
+  }
+}
+
+// Neutral buttons
+
+.c-button--neutral {
+  color: $color-neutral-white;
+  background-color: $color-neutral-regular;
+
+  &:hover {
+    background-color: $color-neutral-dark-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-neutral-light-2;
+  }
+
+  &:active {
+    background-color: $color-neutral-dark-2;
+  }
+}
+
+.c-button--neutral-outlined {
+  border-color: $color-neutral-regular;
+  color: $color-neutral-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-neutral-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-neutral-light-2;
+  }
+
+  &:active {
+    background-color: $color-neutral-light-2;
+  }
+}
+
+.c-button--neutral-plain {
+  color: $color-neutral-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-neutral-light-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-neutral-light-2;
+  }
+
+  &:active {
+    background-color: $color-neutral-light-2;
+  }
+}
+
+// Disabled buttons
+// List variant-specific disabled styles after variant definitions to avoid
+// repetition.
+
+.c-button--primary,
+.c-button--positive,
+.c-button--negative,
+.c-button--neutral {
+  &:disabled,
+  &.is-disabled {
+    background-color: $color-neutral-regular;
+    box-shadow: none;
+  }
+}
+
+.c-button--primary-outlined,
+.c-button--positive-outlined,
+.c-button--negative-outlined,
+.c-button--neutral-outlined {
+  &:disabled,
+  &.is-disabled {
+    border-color: $color-neutral-regular;
+    color: $color-neutral-regular;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.c-button--primary-plain,
+.c-button--positive-plain,
+.c-button--negative-plain,
+.c-button--neutral-plain {
+  &:disabled,
+  &.is-disabled {
+    color: $color-neutral-regular;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+// Button sizes
+
+.c-button--small {
+  padding: calc(#{$spacing-small-4} - #{$border-width-regular}) calc(#{$spacing-small-1} - #{$border-width-regular});
+}
+
+.c-button--large {
+  padding: calc(#{$spacing-small-1} - #{$border-width-regular}) calc(#{$spacing-large-5} - #{$border-width-regular});
+  font-size: $font-size-large-4;
+  line-height: $line-height-small-1;
+}

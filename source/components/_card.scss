@@ -1,0 +1,17 @@
+// CARD
+// Style card components.
+// -----------------------------------------------------------------------------
+
+.c-card {
+  // Ensure content is aligned with that of items with the same spacing but no
+  // border by subtracting border width from padding.
+  padding: calc(#{$spacing-large-4} - #{$border-width-regular});
+  border: $border-width-regular solid $color-neutral-light-1;
+  border-radius: $border-radius-regular;
+}
+
+  .c-card__heading {
+    margin-bottom: $spacing-regular;
+    font-size: $font-size-large-3;
+    line-height: $line-height-small-1;
+  }

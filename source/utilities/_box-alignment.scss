@@ -1,0 +1,11 @@
+// BOX ALIGNMENT
+// Establish flex and grid alignment traits.
+// -----------------------------------------------------------------------------
+
+$align-items-values: flex-start, center;
+$align-self-values: flex-start, center;
+$justify-content-values: space-between, center;
+
+@include utility(align-items, $align-items-values);
+@include utility(align-self, $align-self-values);
+@include utility(justify-content, $justify-content-values);

@@ -1,0 +1,8 @@
+# Test files
+test
+
+# Package manager
+node_modules
+
+# macOS
+.DS_Store

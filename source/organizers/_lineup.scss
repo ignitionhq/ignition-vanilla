@@ -1,0 +1,33 @@
+// LINEUP
+// Arrange and size items in a flexible manner. Use this pattern alongside
+// suitable utility classes to structure content.
+// -----------------------------------------------------------------------------
+
+.o-lineup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .o-lineup__item {
+    width: 100%;
+
+    @include media(m) {
+      // Make the item flexible and cause it to take up the specified proportion
+      // of available space. It will be equal in size to other items on the same
+      // line that are styled this way.
+      flex: 1;
+    }
+  }
+
+// Spaced lineup
+
+.o-lineup--spaced {
+  // Negate the padding on the leftmost and rightmost lineup items.
+  margin-right: -$spacing-large-5;
+  margin-left: -$spacing-large-5;
+}
+
+  .o-lineup--spaced > .o-lineup__item {
+    padding-right: $spacing-large-5;
+    padding-left: $spacing-large-5;
+  }

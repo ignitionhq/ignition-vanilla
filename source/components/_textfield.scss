@@ -1,0 +1,56 @@
+// TEXTFIELD
+// Style textfield components.
+// -----------------------------------------------------------------------------
+
+.c-textfield {
+  width: 100%;
+  // Employ the `calc()` function to ensure precise alignment with items that
+  // use the same spacing values but lack a border.
+  padding: calc(#{$spacing-small-2} - #{$border-width-regular}) calc(#{$spacing-regular} - #{$border-width-regular});
+  border: $border-width-regular solid $color-neutral-light-2;
+  border-radius: $border-radius-regular;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+  color: $color-neutral-regular;
+  background-color: $color-neutral-white;
+
+  &:focus {
+    border-color: $color-primary-dark-1;
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
+    box-shadow: $box-shadow-regular $color-primary-light-2;
+  }
+
+  &.is-valid {
+    border-color: $color-positive-regular;
+
+    &:focus {
+      box-shadow: $box-shadow-regular $color-positive-light-2;
+    }
+  }
+
+  &.is-invalid {
+    border-color: $color-negative-regular;
+
+    &:focus {
+      box-shadow: $box-shadow-regular $color-negative-light-2;
+    }
+  }
+}
+
+// Select textfield
+
+.c-textfield--select {
+  // Match the height of `select` elements without `size` or `multiple`
+  // attributes to that of other textfields.
+  &:not([size]):not([multiple]) {
+    height: 2.75rem;
+  }
+
+  // Normalize the selected option text from focused `select` elements in Edge.
+  &:focus::-ms-value {
+    color: $color-neutral-regular;
+    background-color: $color-neutral-white;
+  }
+}

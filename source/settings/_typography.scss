@@ -1,0 +1,53 @@
+// TYPOGRAPHY
+// Define basic type attributes.
+// -----------------------------------------------------------------------------
+
+// Font family
+
+// Provide a standard font stack.
+$font-family-regular:
+// Use the default system font on iOS and macOS.
+-apple-system, BlinkMacSystemFont,
+// Use the default system font on Windows.
+"Segoe UI",
+// Use the default system font on Android and Chrome OS.
+Roboto,
+// Use a prevalent system font if none of the previous are available.
+"Helvetica Neue", Arial, sans-serif,
+// Use a special font for emojis and other symbols.
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// Provide a monospace font stack.
+$font-family-mono:
+// Use the default system monospace font on iOS and macOS.
+SFMono-Regular, Menlo,
+// Use the default system monospace font on Windows.
+Consolas,
+// Use a prevalent system monospace font if none of the previous are available.
+"Liberation Mono", monospace;
+
+// Font size
+
+// Set the root font size as a percentage of the browser default, which is
+// usually 16px, so that users can specify some other default font size without
+// it being overridden.
+$root-font-size: 100%;
+// Provide a standard font size.
+$font-size-regular: 1rem;
+// Provide larger than standard font sizes.
+$font-size-large-1: 3rem;
+$font-size-large-2: 2rem;
+$font-size-large-3: 1.5rem;
+$font-size-large-4: 1.3125rem;
+$font-size-large-5: 1.125rem;
+// Provide smaller than standard font sizes.
+$font-size-small-1: 0.875rem;
+$font-size-small-2: 0.75rem;
+
+// Line height
+
+// Provide a standard line height.
+$line-height-regular: 1.5;
+// Provide smaller than standard line heights.
+$line-height-small-1: 1.33333333;
+$line-height-small-2: 1.25;
+$line-height-small-3: 1.16666666;

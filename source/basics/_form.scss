@@ -1,0 +1,111 @@
+// FORM
+// Set default styles for form elements.
+// -----------------------------------------------------------------------------
+
+// Fieldset
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin-right: 0;
+  margin-bottom: $spacing-regular;
+  margin-left: 0;
+}
+
+  legend {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: $spacing-regular;
+    font-weight: bold;
+  }
+
+// Label
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+// Button, input, textarea, and select
+
+button,
+input,
+textarea,
+select {
+  // Remove the margins from the selected elements in Safari, from `checkbox`
+  // and `radio` inputs in all browsers, and from `textarea` elements in
+  // Firefox.
+  margin: 0;
+  // Normalize the font family, font size, and line height.
+  font-family: inherit;
+  font-size: inherit;
+  // Mind that the line height cannot be changed on `select` elements.
+  line-height: inherit;
+
+  &:disabled {
+    opacity: $opacity-low;
+    cursor: default;
+  }
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  // Allow complete styling on iOS.
+  -webkit-appearance: button;
+
+  // Remove the inner focus outline in Firefox.
+  &::-moz-focus-inner {
+    border-style: none;
+  }
+}
+
+button,
+select {
+  // Remove text transform inheritance from `button` elements in Firefox and
+  // Edge, and from `select` elements in Firefox.
+  text-transform: none;
+}
+
+::-webkit-file-upload-button {
+  // Normalize the font family, font size, and line height.
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  // Allow complete styling on iOS.
+  -webkit-appearance: button;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+}
+
+[type="search"] {
+  // Correct the outline offset in Safari.
+  outline-offset: -2px;
+  // Allow complete styling on iOS.
+  -webkit-appearance: none;
+
+  // Remove the cancel button in Chrome and Safari and the extra inner space in
+  // Safari.
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+}
+
+// Progress
+
+progress {
+  // Normalize the vertical alignment in Chrome and Firefox.
+  vertical-align: baseline;
+}

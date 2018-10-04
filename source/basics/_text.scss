@@ -1,0 +1,167 @@
+// TEXT
+// Set default styles for text elements.
+// -----------------------------------------------------------------------------
+
+// Heading
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: $spacing-large-3;
+  font-size: $font-size-large-1;
+  line-height: $line-height-small-3;
+}
+
+h2 {
+  margin-bottom: $spacing-regular;
+  font-size: $font-size-large-2;
+  line-height: $line-height-small-2;
+}
+
+h3 {
+  margin-bottom: $spacing-small-3;
+  font-size: $font-size-large-3;
+  line-height: $line-height-small-1;
+}
+
+h4 {
+  margin-bottom: $spacing-small-5;
+  font-size: $font-size-large-4;
+  line-height: $line-height-small-1;
+}
+
+h5 {
+  margin-bottom: $spacing-small-5;
+  font-size: $font-size-large-5;
+  line-height: $line-height-small-1;
+}
+
+h6 {
+  margin-bottom: 0;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+}
+
+// Paragraph
+
+p {
+  margin-top: 0;
+  margin-bottom: $spacing-regular;
+}
+
+// Blockquote
+
+blockquote {
+  padding-left: $spacing-large-5;
+  border-left: $border-width-thick solid $color-neutral-light-1;
+  margin: 0 0 $spacing-large-4;
+  font-size: $font-size-large-4;
+  line-height: $line-height-small-1;
+}
+
+  blockquote p {
+    margin-bottom: $spacing-small-3;
+  }
+
+  blockquote footer {
+    font-size: $font-size-regular;
+    line-height: $line-height-regular;
+  }
+
+// Preformatted text
+
+pre {
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: $spacing-regular;
+  font-family: $font-family-mono;
+}
+
+// Address
+
+address {
+  margin-bottom: $spacing-regular;
+  font-style: normal;
+}
+
+// Abbreviation
+
+abbr[title] {
+  cursor: help;
+}
+
+// Bold and strong
+
+b,
+strong {
+  // Normalize the font weight in Chrome, Safari, and Edge.
+  font-weight: bolder;
+}
+
+// Code, user input, and sample output
+
+code,
+kbd,
+samp {
+  font-family: $font-family-mono;
+}
+
+code,
+kbd {
+  padding: 0.125em 0.25em;
+  border-radius: $border-radius-regular;
+  font-size: 0.875em;
+}
+
+code {
+  background-color: $color-neutral-light-1;
+}
+
+kbd {
+  color: $color-neutral-white;
+  background-color: $color-neutral-regular;
+
+  kbd {
+    // Remove unwanted custom styles from nested user input elements.
+    padding: 0;
+    font-size: 100%;
+  }
+}
+
+// Mark
+
+mark {
+  padding: 0.125em 0.25em;
+  border-radius: $border-radius-regular;
+  color: $color-neutral-regular;
+}
+
+// Small
+
+small {
+  font-size: 0.875em;
+}
+
+// Subscript and superscript
+
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}

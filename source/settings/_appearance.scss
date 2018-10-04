@@ -1,0 +1,27 @@
+// APPEARANCE
+// Define common cosmetic enhancements.
+// -----------------------------------------------------------------------------
+
+// Border width
+
+// Provide a standard border width.
+$border-width-regular: 1px;
+// Provide larger than standard border width values.
+$border-width-thick: 4px;
+
+// Border radius
+
+// Provide a standard border radius.
+$border-radius-regular: 4px;
+// Provide a border radius that produces fully rounded corners.
+$border-radius-full: 4000px;
+
+// Box shadow
+
+// Provide a standard box shadow.
+$box-shadow-regular: 0 0 0 3px;
+
+// Opacity
+
+// Provide a low opacity value.
+$opacity-low: 0.33;

@@ -1,0 +1,22 @@
+// CONTAINER
+// Lay out high-level content units.
+// -----------------------------------------------------------------------------
+
+.o-container {
+  padding-right: $spacing-large-5;
+  padding-left: $spacing-large-5;
+
+  @include media(m) {
+    // Increase padding to distance content from screen edges.
+    padding-right: $spacing-large-5 * 2;
+    padding-left: $spacing-large-5 * 2;
+  }
+}
+
+// Limited container
+
+.o-container--limited {
+  max-width: $content-max-width;
+  margin-right: auto;
+  margin-left: auto;
+}

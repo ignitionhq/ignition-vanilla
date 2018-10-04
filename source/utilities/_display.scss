@@ -1,0 +1,9 @@
+// DISPLAY
+// Designate available box display types.
+// -----------------------------------------------------------------------------
+
+$display-values: (
+  all: (block, flex, none)
+);
+
+@include utility(display, $display-values);

@@ -1,0 +1,14 @@
+// LINK
+// Style link components.
+// -----------------------------------------------------------------------------
+
+.c-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+// Primary link
+
+.c-link--primary {
+  color: $color-primary-regular;
+}

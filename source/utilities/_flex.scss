@@ -1,0 +1,16 @@
+// FLEX
+// Establish flex sizing and ordering traits.
+// -----------------------------------------------------------------------------
+
+$flex-values: (
+  all: (1, none)
+);
+$flex-direction-values: (
+  column: column,
+  all: row
+);
+$flex-wrap-values: wrap;
+
+@include utility(flex, $flex-values);
+@include utility(flex-direction, $flex-direction-values);
+@include utility(flex-wrap, $flex-wrap-values);

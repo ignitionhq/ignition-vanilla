@@ -1,0 +1,122 @@
+// NOTICE
+// Style notice components.
+// -----------------------------------------------------------------------------
+
+.c-notice {
+  padding: $spacing-regular $spacing-large-4;
+  border-radius: $border-radius-regular;
+  color: $color-neutral-dark-1;
+  background-color: $color-neutral-light-1;
+}
+
+// Dismissable notice
+
+.c-notice--dismissable {
+  position: relative;
+  padding-right: $spacing-large-2;
+}
+
+  .c-notice__dismiss {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $spacing-small-4;
+    border: 0;
+    border-top-right-radius: $border-radius-regular;
+    border-bottom-left-radius: $border-radius-regular;
+    color: inherit;
+    background-color: $color-neutral-light-2;
+
+    &:hover {
+      color: $color-neutral-white;
+      background-color: $color-neutral-dark-1;
+    }
+
+    &:focus {
+      // Mind that the outline should be removed only if other styles that imply
+      // focus are set.
+      outline: 0;
+      box-shadow: $box-shadow-regular $color-neutral-light-2;
+    }
+
+    &:active {
+      color: $color-neutral-white;
+      background-color: $color-neutral-dark-2;
+    }
+  }
+
+    .c-notice__dismiss-icon {
+      display: block;
+      // Inherit the text color on `svg` elements.
+      fill: currentColor;
+      stroke: currentColor;
+    }
+
+// Primary notice
+
+.c-notice--primary {
+  color: $color-primary-dark-1;
+  background-color: $color-primary-light-1;
+}
+
+  .c-notice--primary .c-notice__dismiss {
+    background-color: $color-primary-light-2;
+
+    &:hover {
+      background-color: $color-primary-dark-1;
+    }
+
+    &:focus {
+      box-shadow: $box-shadow-regular $color-primary-light-2;
+    }
+
+    &:active {
+      background-color: $color-primary-dark-2;
+    }
+  }
+
+// Positive notice
+
+.c-notice--positive {
+  color: $color-positive-dark-1;
+  background-color: $color-positive-light-1;
+}
+
+  .c-notice--positive .c-notice__dismiss {
+    background-color: $color-positive-light-2;
+
+    &:hover {
+      background-color: $color-positive-dark-1;
+    }
+
+    &:focus {
+      box-shadow: $box-shadow-regular $color-positive-light-2;
+    }
+
+    &:active {
+      background-color: $color-positive-dark-2;
+    }
+  }
+
+// Negative notice
+
+.c-notice--negative {
+  color: $color-negative-dark-1;
+  background-color: $color-negative-light-1;
+}
+
+  .c-notice--negative .c-notice__dismiss {
+    background-color: $color-negative-light-2;
+
+    &:hover {
+      background-color: $color-negative-dark-1;
+    }
+
+    &:focus {
+      box-shadow: $box-shadow-regular $color-negative-light-2;
+    }
+
+    &:active {
+      background-color: $color-negative-dark-2;
+    }
+  }

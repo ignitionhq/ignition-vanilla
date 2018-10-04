@@ -1,0 +1,14 @@
+// LINKING
+// Set default styles for linking elements.
+// -----------------------------------------------------------------------------
+
+// Anchor
+
+a {
+  color: $color-primary-regular;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

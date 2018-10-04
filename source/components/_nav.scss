@@ -1,0 +1,37 @@
+// NAV
+// Style nav components.
+// -----------------------------------------------------------------------------
+
+.c-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+  .c-nav__link {
+    display: inline-block;
+    padding: $spacing-small-2 $spacing-regular;
+    color: $color-neutral-regular;
+
+    &:hover {
+      color: $color-primary-regular;
+      // Override text decoration from anchor elements.
+      text-decoration: none;
+    }
+
+    &.is-selected {
+      color: $color-primary-regular;
+    }
+  }
+
+// Vertical nav
+
+.c-nav--vertical {
+  flex-direction: column;
+}
+
+  .c-nav--vertical .c-nav__link {
+    padding: $spacing-small-4 0;
+  }

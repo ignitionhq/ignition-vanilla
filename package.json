@@ -1,0 +1,16 @@
+{
+  "name": "ignition-vanilla",
+  "version": "0.1.0",
+  "description": "A comprehensive interface development toolkit.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixeltrove/ignition-vanilla.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build:css": "node-sass --output-style expanded --precision 8 --output build/ source/ignition.scss"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
