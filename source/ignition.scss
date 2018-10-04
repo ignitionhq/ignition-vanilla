@@ -2,12 +2,12 @@
 // Manage global configuration options.
 // -----------------------------------------------------------------------------
 
-@import "settings/layout";
-@import "settings/spacing";
 @import "settings/typography";
 @import "settings/color";
 @import "settings/appearance";
-@import "settings/platform";
+@import "settings/spacing";
+@import "settings/layout";
+@import "settings/device";
 
 // TOOLS
 // Provide ways to carry out recurring tasks.
