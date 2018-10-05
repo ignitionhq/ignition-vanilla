@@ -3,11 +3,11 @@
 // -----------------------------------------------------------------------------
 
 .o-segment {
-  padding-top: $spacing-large-2;
-  padding-bottom: $spacing-large-2;
+  padding-top: $space-large-2;
+  padding-bottom: $space-large-2;
 
   @include media(m) {
-    padding-top: $spacing-large-1;
-    padding-bottom: $spacing-large-1;
+    padding-top: $space-large-1;
+    padding-bottom: $space-large-1;
   }
 }
