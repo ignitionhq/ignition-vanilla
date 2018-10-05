@@ -446,7 +446,7 @@ hr {
 }
 
 .c-button--primary:active {
-  background-color: #003666;
+  background-color: #003766;
 }
 
 .c-button--primary-outlined {
@@ -490,7 +490,7 @@ hr {
 }
 
 .c-button--positive:hover {
-  background-color: #055200;
+  background-color: #055100;
 }
 
 .c-button--positive:focus {
@@ -498,7 +498,7 @@ hr {
 }
 
 .c-button--positive:active {
-  background-color: #032900;
+  background-color: #032800;
 }
 
 .c-button--positive-outlined {
@@ -550,7 +550,7 @@ hr {
 }
 
 .c-button--negative:active {
-  background-color: #520500;
+  background-color: #510500;
 }
 
 .c-button--negative-outlined {
@@ -806,11 +806,11 @@ hr {
 }
 
 .c-notice--primary .c-notice__dismiss:active {
-  background-color: #003666;
+  background-color: #003766;
 }
 
 .c-notice--positive {
-  color: #055200;
+  color: #055100;
   background-color: #d9ffd6;
 }
 
@@ -819,7 +819,7 @@ hr {
 }
 
 .c-notice--positive .c-notice__dismiss:hover {
-  background-color: #055200;
+  background-color: #055100;
 }
 
 .c-notice--positive .c-notice__dismiss:focus {
@@ -827,7 +827,7 @@ hr {
 }
 
 .c-notice--positive .c-notice__dismiss:active {
-  background-color: #032900;
+  background-color: #032800;
 }
 
 .c-notice--negative {
@@ -848,7 +848,7 @@ hr {
 }
 
 .c-notice--negative .c-notice__dismiss:active {
-  background-color: #520500;
+  background-color: #510500;
 }
 
 .o-container {
