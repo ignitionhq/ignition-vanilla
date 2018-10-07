@@ -12,7 +12,7 @@
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   color: $color-neutral-regular;
-  background-color: $color-neutral-white;
+  background-color: $color-white-regular;
 
   &:focus {
     border-color: $color-primary-dark-1;
@@ -51,6 +51,6 @@
   // Normalize the selected option text from focused `select` elements in Edge.
   &:focus::-ms-value {
     color: $color-neutral-regular;
-    background-color: $color-neutral-white;
+    background-color: $color-white-regular;
   }
 }

@@ -28,7 +28,7 @@
     background-color: $color-neutral-light-2;
 
     &:hover {
-      color: $color-neutral-white;
+      color: $color-white-regular;
       background-color: $color-neutral-dark-1;
     }
 
@@ -40,7 +40,7 @@
     }
 
     &:active {
-      color: $color-neutral-white;
+      color: $color-white-regular;
       background-color: $color-neutral-dark-2;
     }
   }
