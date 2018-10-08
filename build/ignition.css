@@ -324,7 +324,7 @@ th {
 }
 
 thead th {
-  border-color: #e0e0e0;
+  border-color: #d6d6d6;
   vertical-align: bottom;
 }
 
@@ -354,7 +354,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #e0e0e0;
+  background-color: #d6d6d6;
 }
 
 .c-link {
@@ -692,7 +692,7 @@ hr {
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d6d6d6;
   border-radius: 4px;
   font-size: 1rem;
   line-height: 1.5;
@@ -733,7 +733,7 @@ hr {
 
 .c-card {
   padding: calc(1.5rem - 1px);
-  border: 1px solid #ebebeb;
+  border: 1px solid #d6d6d6;
   border-radius: 4px;
 }
 
