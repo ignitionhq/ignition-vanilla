@@ -324,7 +324,7 @@ th {
 }
 
 thead th {
-  border-color: #d6d6d6;
+  border-color: #e0e0e0;
   vertical-align: bottom;
 }
 
@@ -354,7 +354,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #d6d6d6;
+  background-color: #e0e0e0;
 }
 
 .c-link {
@@ -412,16 +412,16 @@ hr {
 
 .c-button:hover {
   text-decoration: none;
-  background-color: #d6d6d6;
+  background-color: #e0e0e0;
 }
 
 .c-button:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #c2c2c2;
+  box-shadow: 0 0 0 3px #cccccc;
 }
 
 .c-button:active {
-  background-color: #c2c2c2;
+  background-color: #cccccc;
 }
 
 .c-button:disabled,
@@ -442,11 +442,11 @@ hr {
 }
 
 .c-button--primary:focus {
-  box-shadow: 0 0 0 3px #add9ff;
+  box-shadow: 0 0 0 3px #c2e2ff;
 }
 
 .c-button--primary:active {
-  background-color: #003766;
+  background-color: #00417b;
 }
 
 .c-button--primary-outlined {
@@ -460,11 +460,11 @@ hr {
 }
 
 .c-button--primary-outlined:focus {
-  box-shadow: 0 0 0 3px #add9ff;
+  box-shadow: 0 0 0 3px #c2e2ff;
 }
 
 .c-button--primary-outlined:active {
-  background-color: #add9ff;
+  background-color: #c2e2ff;
 }
 
 .c-button--primary-plain {
@@ -477,11 +477,11 @@ hr {
 }
 
 .c-button--primary-plain:focus {
-  box-shadow: 0 0 0 3px #add9ff;
+  box-shadow: 0 0 0 3px #c2e2ff;
 }
 
 .c-button--primary-plain:active {
-  background-color: #add9ff;
+  background-color: #c2e2ff;
 }
 
 .c-button--positive {
@@ -494,11 +494,11 @@ hr {
 }
 
 .c-button--positive:focus {
-  box-shadow: 0 0 0 3px #b3ffad;
+  box-shadow: 0 0 0 3px #c6ffc2;
 }
 
 .c-button--positive:active {
-  background-color: #032800;
+  background-color: #043d00;
 }
 
 .c-button--positive-outlined {
@@ -512,11 +512,11 @@ hr {
 }
 
 .c-button--positive-outlined:focus {
-  box-shadow: 0 0 0 3px #b3ffad;
+  box-shadow: 0 0 0 3px #c6ffc2;
 }
 
 .c-button--positive-outlined:active {
-  background-color: #b3ffad;
+  background-color: #c6ffc2;
 }
 
 .c-button--positive-plain {
@@ -529,11 +529,11 @@ hr {
 }
 
 .c-button--positive-plain:focus {
-  box-shadow: 0 0 0 3px #b3ffad;
+  box-shadow: 0 0 0 3px #c6ffc2;
 }
 
 .c-button--positive-plain:active {
-  background-color: #b3ffad;
+  background-color: #c6ffc2;
 }
 
 .c-button--negative {
@@ -546,11 +546,11 @@ hr {
 }
 
 .c-button--negative:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  box-shadow: 0 0 0 3px #ffc6c2;
 }
 
 .c-button--negative:active {
-  background-color: #510500;
+  background-color: #660700;
 }
 
 .c-button--negative-outlined {
@@ -564,11 +564,11 @@ hr {
 }
 
 .c-button--negative-outlined:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  box-shadow: 0 0 0 3px #ffc6c2;
 }
 
 .c-button--negative-outlined:active {
-  background-color: #ffb3ad;
+  background-color: #ffc6c2;
 }
 
 .c-button--negative-plain {
@@ -581,11 +581,11 @@ hr {
 }
 
 .c-button--negative-plain:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  box-shadow: 0 0 0 3px #ffc6c2;
 }
 
 .c-button--negative-plain:active {
-  background-color: #ffb3ad;
+  background-color: #ffc6c2;
 }
 
 .c-button--neutral {
@@ -598,11 +598,11 @@ hr {
 }
 
 .c-button--neutral:focus {
-  box-shadow: 0 0 0 3px #d6d6d6;
+  box-shadow: 0 0 0 3px #e0e0e0;
 }
 
 .c-button--neutral:active {
-  background-color: #141414;
+  background-color: #1e1e1e;
 }
 
 .c-button--neutral-outlined {
@@ -616,11 +616,11 @@ hr {
 }
 
 .c-button--neutral-outlined:focus {
-  box-shadow: 0 0 0 3px #d6d6d6;
+  box-shadow: 0 0 0 3px #e0e0e0;
 }
 
 .c-button--neutral-outlined:active {
-  background-color: #d6d6d6;
+  background-color: #e0e0e0;
 }
 
 .c-button--neutral-plain {
@@ -633,11 +633,11 @@ hr {
 }
 
 .c-button--neutral-plain:focus {
-  box-shadow: 0 0 0 3px #d6d6d6;
+  box-shadow: 0 0 0 3px #e0e0e0;
 }
 
 .c-button--neutral-plain:active {
-  background-color: #d6d6d6;
+  background-color: #e0e0e0;
 }
 
 .c-button--primary:disabled,
@@ -692,7 +692,7 @@ hr {
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
-  border: 1px solid #d6d6d6;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
   font-size: 1rem;
   line-height: 1.5;
@@ -703,7 +703,7 @@ hr {
 .c-textfield:focus {
   border-color: #004c8f;
   outline: 0;
-  box-shadow: 0 0 0 3px #add9ff;
+  box-shadow: 0 0 0 3px #c2e2ff;
 }
 
 .c-textfield.is-valid {
@@ -711,7 +711,7 @@ hr {
 }
 
 .c-textfield.is-valid:focus {
-  box-shadow: 0 0 0 3px #b3ffad;
+  box-shadow: 0 0 0 3px #c6ffc2;
 }
 
 .c-textfield.is-invalid {
@@ -719,7 +719,7 @@ hr {
 }
 
 .c-textfield.is-invalid:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  box-shadow: 0 0 0 3px #ffc6c2;
 }
 
 .c-textfield--select:not([size]):not([multiple]) {
@@ -764,7 +764,7 @@ hr {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   color: inherit;
-  background-color: #d6d6d6;
+  background-color: #e0e0e0;
 }
 
 .c-notice__dismiss:hover {
@@ -774,12 +774,12 @@ hr {
 
 .c-notice__dismiss:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #d6d6d6;
+  box-shadow: 0 0 0 3px #e0e0e0;
 }
 
 .c-notice__dismiss:active {
   color: #ffffff;
-  background-color: #141414;
+  background-color: #1e1e1e;
 }
 
 .c-notice__dismiss-icon {
@@ -794,7 +794,7 @@ hr {
 }
 
 .c-notice--primary .c-notice__dismiss {
-  background-color: #add9ff;
+  background-color: #c2e2ff;
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
@@ -802,11 +802,11 @@ hr {
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #add9ff;
+  box-shadow: 0 0 0 3px #c2e2ff;
 }
 
 .c-notice--primary .c-notice__dismiss:active {
-  background-color: #003766;
+  background-color: #00417b;
 }
 
 .c-notice--positive {
@@ -815,7 +815,7 @@ hr {
 }
 
 .c-notice--positive .c-notice__dismiss {
-  background-color: #b3ffad;
+  background-color: #c6ffc2;
 }
 
 .c-notice--positive .c-notice__dismiss:hover {
@@ -823,11 +823,11 @@ hr {
 }
 
 .c-notice--positive .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #b3ffad;
+  box-shadow: 0 0 0 3px #c6ffc2;
 }
 
 .c-notice--positive .c-notice__dismiss:active {
-  background-color: #032800;
+  background-color: #043d00;
 }
 
 .c-notice--negative {
@@ -836,7 +836,7 @@ hr {
 }
 
 .c-notice--negative .c-notice__dismiss {
-  background-color: #ffb3ad;
+  background-color: #ffc6c2;
 }
 
 .c-notice--negative .c-notice__dismiss:hover {
@@ -844,11 +844,11 @@ hr {
 }
 
 .c-notice--negative .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  box-shadow: 0 0 0 3px #ffc6c2;
 }
 
 .c-notice--negative .c-notice__dismiss:active {
-  background-color: #510500;
+  background-color: #660700;
 }
 
 .o-container {
