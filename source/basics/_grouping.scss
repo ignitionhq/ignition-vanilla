@@ -42,7 +42,7 @@ table {
   th,
   td {
     padding: $space-small-1 $space-regular;
-    border-bottom: $border-width-regular solid $color-neutral-light-1;
+    border-bottom: $border-width-regular solid $color-neutral-light-2;
     vertical-align: top;
   }
 
@@ -51,7 +51,7 @@ table {
   }
 
   thead th {
-    border-color: $color-neutral-light-2;
+    border-color: $color-neutral-light-3;
     vertical-align: bottom;
   }
 
@@ -91,5 +91,5 @@ hr {
   border: 0;
   margin-top: $space-large-2;
   margin-bottom: $space-large-2;
-  background-color: $color-neutral-light-2;
+  background-color: $color-neutral-light-3;
 }

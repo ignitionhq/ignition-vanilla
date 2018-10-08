@@ -6,7 +6,7 @@
   padding: $space-regular $space-large-4;
   border-radius: $border-radius-regular;
   color: $color-neutral-dark-1;
-  background-color: $color-neutral-light-1;
+  background-color: $color-neutral-light-2;
 }
 
 // Dismissable notice
@@ -25,7 +25,7 @@
     border-top-right-radius: $border-radius-regular;
     border-bottom-left-radius: $border-radius-regular;
     color: inherit;
-    background-color: $color-neutral-light-2;
+    background-color: $color-neutral-light-3;
 
     &:hover {
       color: $color-white-regular;
@@ -36,7 +36,7 @@
       // Mind that the outline should be removed only if other styles that imply
       // focus are set.
       outline: 0;
-      box-shadow: $box-shadow-regular $color-neutral-light-2;
+      box-shadow: $box-shadow-regular $color-neutral-light-3;
     }
 
     &:active {
@@ -56,18 +56,18 @@
 
 .c-notice--primary {
   color: $color-primary-dark-1;
-  background-color: $color-primary-light-1;
+  background-color: $color-primary-light-2;
 }
 
   .c-notice--primary .c-notice__dismiss {
-    background-color: $color-primary-light-2;
+    background-color: $color-primary-light-3;
 
     &:hover {
       background-color: $color-primary-dark-1;
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-primary-light-2;
+      box-shadow: $box-shadow-regular $color-primary-light-3;
     }
 
     &:active {
@@ -79,18 +79,18 @@
 
 .c-notice--positive {
   color: $color-positive-dark-1;
-  background-color: $color-positive-light-1;
+  background-color: $color-positive-light-2;
 }
 
   .c-notice--positive .c-notice__dismiss {
-    background-color: $color-positive-light-2;
+    background-color: $color-positive-light-3;
 
     &:hover {
       background-color: $color-positive-dark-1;
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-positive-light-2;
+      box-shadow: $box-shadow-regular $color-positive-light-3;
     }
 
     &:active {
@@ -102,18 +102,18 @@
 
 .c-notice--negative {
   color: $color-negative-dark-1;
-  background-color: $color-negative-light-1;
+  background-color: $color-negative-light-2;
 }
 
   .c-notice--negative .c-notice__dismiss {
-    background-color: $color-negative-light-2;
+    background-color: $color-negative-light-3;
 
     &:hover {
       background-color: $color-negative-dark-1;
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-negative-light-2;
+      box-shadow: $box-shadow-regular $color-negative-light-3;
     }
 
     &:active {
