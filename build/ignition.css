@@ -417,7 +417,7 @@ hr {
 
 .c-button:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #cccccc;
+  box-shadow: 0 0 0 3px #b8b8b8;
 }
 
 .c-button:active {
@@ -442,7 +442,7 @@ hr {
 }
 
 .c-button--primary:focus {
-  box-shadow: 0 0 0 3px #c2e2ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-button--primary:active {
@@ -460,7 +460,7 @@ hr {
 }
 
 .c-button--primary-outlined:focus {
-  box-shadow: 0 0 0 3px #c2e2ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-button--primary-outlined:active {
@@ -477,7 +477,7 @@ hr {
 }
 
 .c-button--primary-plain:focus {
-  box-shadow: 0 0 0 3px #c2e2ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-button--primary-plain:active {
@@ -494,7 +494,7 @@ hr {
 }
 
 .c-button--positive:focus {
-  box-shadow: 0 0 0 3px #c6ffc2;
+  box-shadow: 0 0 0 3px #a0ff99;
 }
 
 .c-button--positive:active {
@@ -512,7 +512,7 @@ hr {
 }
 
 .c-button--positive-outlined:focus {
-  box-shadow: 0 0 0 3px #c6ffc2;
+  box-shadow: 0 0 0 3px #a0ff99;
 }
 
 .c-button--positive-outlined:active {
@@ -529,7 +529,7 @@ hr {
 }
 
 .c-button--positive-plain:focus {
-  box-shadow: 0 0 0 3px #c6ffc2;
+  box-shadow: 0 0 0 3px #a0ff99;
 }
 
 .c-button--positive-plain:active {
@@ -546,7 +546,7 @@ hr {
 }
 
 .c-button--negative:focus {
-  box-shadow: 0 0 0 3px #ffc6c2;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-button--negative:active {
@@ -564,7 +564,7 @@ hr {
 }
 
 .c-button--negative-outlined:focus {
-  box-shadow: 0 0 0 3px #ffc6c2;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-button--negative-outlined:active {
@@ -581,7 +581,7 @@ hr {
 }
 
 .c-button--negative-plain:focus {
-  box-shadow: 0 0 0 3px #ffc6c2;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-button--negative-plain:active {
@@ -598,7 +598,7 @@ hr {
 }
 
 .c-button--neutral:focus {
-  box-shadow: 0 0 0 3px #e0e0e0;
+  box-shadow: 0 0 0 3px #cccccc;
 }
 
 .c-button--neutral:active {
@@ -616,7 +616,7 @@ hr {
 }
 
 .c-button--neutral-outlined:focus {
-  box-shadow: 0 0 0 3px #e0e0e0;
+  box-shadow: 0 0 0 3px #cccccc;
 }
 
 .c-button--neutral-outlined:active {
@@ -633,7 +633,7 @@ hr {
 }
 
 .c-button--neutral-plain:focus {
-  box-shadow: 0 0 0 3px #e0e0e0;
+  box-shadow: 0 0 0 3px #cccccc;
 }
 
 .c-button--neutral-plain:active {
@@ -703,7 +703,7 @@ hr {
 .c-textfield:focus {
   border-color: #004c8f;
   outline: 0;
-  box-shadow: 0 0 0 3px #c2e2ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-textfield.is-valid {
@@ -711,7 +711,7 @@ hr {
 }
 
 .c-textfield.is-valid:focus {
-  box-shadow: 0 0 0 3px #c6ffc2;
+  box-shadow: 0 0 0 3px #a0ff99;
 }
 
 .c-textfield.is-invalid {
@@ -719,7 +719,7 @@ hr {
 }
 
 .c-textfield.is-invalid:focus {
-  box-shadow: 0 0 0 3px #ffc6c2;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-textfield--select:not([size]):not([multiple]) {
@@ -774,7 +774,7 @@ hr {
 
 .c-notice__dismiss:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #e0e0e0;
+  box-shadow: 0 0 0 3px #cccccc;
 }
 
 .c-notice__dismiss:active {
@@ -802,7 +802,7 @@ hr {
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #c2e2ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-notice--primary .c-notice__dismiss:active {
@@ -823,7 +823,7 @@ hr {
 }
 
 .c-notice--positive .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #c6ffc2;
+  box-shadow: 0 0 0 3px #a0ff99;
 }
 
 .c-notice--positive .c-notice__dismiss:active {
@@ -844,7 +844,7 @@ hr {
 }
 
 .c-notice--negative .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #ffc6c2;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-notice--negative .c-notice__dismiss:active {

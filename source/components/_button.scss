@@ -28,7 +28,7 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-neutral-light-5;
+    box-shadow: $box-shadow-regular $color-neutral-light-6;
   }
 
   &:active {
@@ -55,7 +55,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-3;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &:active {
@@ -73,7 +73,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-3;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &:active {
@@ -90,7 +90,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-3;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &:active {
@@ -109,7 +109,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-3;
+    box-shadow: $box-shadow-regular $color-positive-light-4;
   }
 
   &:active {
@@ -127,7 +127,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-3;
+    box-shadow: $box-shadow-regular $color-positive-light-4;
   }
 
   &:active {
@@ -144,7 +144,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-3;
+    box-shadow: $box-shadow-regular $color-positive-light-4;
   }
 
   &:active {
@@ -163,7 +163,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-3;
+    box-shadow: $box-shadow-regular $color-negative-light-4;
   }
 
   &:active {
@@ -181,7 +181,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-3;
+    box-shadow: $box-shadow-regular $color-negative-light-4;
   }
 
   &:active {
@@ -198,7 +198,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-3;
+    box-shadow: $box-shadow-regular $color-negative-light-4;
   }
 
   &:active {
@@ -217,7 +217,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-3;
+    box-shadow: $box-shadow-regular $color-neutral-light-5;
   }
 
   &:active {
@@ -235,7 +235,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-3;
+    box-shadow: $box-shadow-regular $color-neutral-light-5;
   }
 
   &:active {
@@ -252,7 +252,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-3;
+    box-shadow: $box-shadow-regular $color-neutral-light-5;
   }
 
   &:active {
