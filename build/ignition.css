@@ -747,7 +747,7 @@ hr {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   color: #292929;
-  background-color: #ebebeb;
+  background-color: whitesmoke;
 }
 
 .c-notice--dismissable {
@@ -790,7 +790,7 @@ hr {
 
 .c-notice--primary {
   color: #004c8f;
-  background-color: #d6ecff;
+  background-color: #ebf5ff;
 }
 
 .c-notice--primary .c-notice__dismiss {
@@ -811,7 +811,7 @@ hr {
 
 .c-notice--positive {
   color: #055100;
-  background-color: #d9ffd6;
+  background-color: #ecffeb;
 }
 
 .c-notice--positive .c-notice__dismiss {
@@ -832,7 +832,7 @@ hr {
 
 .c-notice--negative {
   color: #7a0800;
-  background-color: #ffd9d6;
+  background-color: #ffeceb;
 }
 
 .c-notice--negative .c-notice__dismiss {

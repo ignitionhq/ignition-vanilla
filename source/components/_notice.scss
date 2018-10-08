@@ -6,7 +6,7 @@
   padding: $space-regular $space-large-4;
   border-radius: $border-radius-regular;
   color: $color-neutral-dark-1;
-  background-color: $color-neutral-light-2;
+  background-color: $color-neutral-light-1;
 }
 
 // Dismissable notice
@@ -56,7 +56,7 @@
 
 .c-notice--primary {
   color: $color-primary-dark-1;
-  background-color: $color-primary-light-2;
+  background-color: $color-primary-light-1;
 }
 
   .c-notice--primary .c-notice__dismiss {
@@ -79,7 +79,7 @@
 
 .c-notice--positive {
   color: $color-positive-dark-1;
-  background-color: $color-positive-light-2;
+  background-color: $color-positive-light-1;
 }
 
   .c-notice--positive .c-notice__dismiss {
@@ -102,7 +102,7 @@
 
 .c-notice--negative {
   color: $color-negative-dark-1;
-  background-color: $color-negative-light-2;
+  background-color: $color-negative-light-1;
 }
 
   .c-notice--negative .c-notice__dismiss {
