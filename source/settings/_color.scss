@@ -7,44 +7,56 @@
 // Provide a standard primary color.
 $color-primary-regular: #0062b8;
 // Provide lighter than standard primary colors.
-$color-primary-light-1: change-color($color-primary-regular, $lightness: 92%);
-$color-primary-light-2: change-color($color-primary-regular, $lightness: 84%);
+$color-primary-light-1: change-color($color-primary-regular, $lightness: 96%);
+$color-primary-light-2: change-color($color-primary-regular, $lightness: 92%);
+$color-primary-light-3: change-color($color-primary-regular, $lightness: 88%);
+$color-primary-light-4: change-color($color-primary-regular, $lightness: 80%);
 // Provide darker than standard primary colors.
 $color-primary-dark-1: adjust-color($color-primary-regular, $lightness: -8%);
-$color-primary-dark-2: adjust-color($color-primary-regular, $lightness: -16%);
+$color-primary-dark-2: adjust-color($color-primary-regular, $lightness: -12%);
 
 // Positive
 
 // Provide a standard positive color.
 $color-positive-regular: #087a00;
 // Provide lighter than standard positive colors.
-$color-positive-light-1: change-color($color-positive-regular, $lightness: 92%);
-$color-positive-light-2: change-color($color-positive-regular, $lightness: 84%);
+$color-positive-light-1: change-color($color-positive-regular, $lightness: 96%);
+$color-positive-light-2: change-color($color-positive-regular, $lightness: 92%);
+$color-positive-light-3: change-color($color-positive-regular, $lightness: 88%);
+$color-positive-light-4: change-color($color-positive-regular, $lightness: 80%);
 // Provide darker than standard positive colors.
 $color-positive-dark-1: adjust-color($color-positive-regular, $lightness: -8%);
-$color-positive-dark-2: adjust-color($color-positive-regular, $lightness: -16%);
+$color-positive-dark-2: adjust-color($color-positive-regular, $lightness: -12%);
 
 // Negative
 
 // Provide a standard negative color.
 $color-negative-regular: #a30b00;
 // Provide lighter than standard negative colors.
-$color-negative-light-1: change-color($color-negative-regular, $lightness: 92%);
-$color-negative-light-2: change-color($color-negative-regular, $lightness: 84%);
+$color-negative-light-1: change-color($color-negative-regular, $lightness: 96%);
+$color-negative-light-2: change-color($color-negative-regular, $lightness: 92%);
+$color-negative-light-3: change-color($color-negative-regular, $lightness: 88%);
+$color-negative-light-4: change-color($color-negative-regular, $lightness: 80%);
 // Provide darker than standard negative colors.
 $color-negative-dark-1: adjust-color($color-negative-regular, $lightness: -8%);
-$color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -16%);
+$color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -12%);
 
 // Neutral
 
 // Provide a standard neutral color.
 $color-neutral-regular: #3d3d3d;
 // Provide lighter than standard neutral colors.
-$color-neutral-light-1: change-color($color-neutral-regular, $lightness: 92%);
-$color-neutral-light-2: change-color($color-neutral-regular, $lightness: 84%);
-$color-neutral-light-3: change-color($color-neutral-regular, $lightness: 76%);
+$color-neutral-light-1: change-color($color-neutral-regular, $lightness: 96%);
+$color-neutral-light-2: change-color($color-neutral-regular, $lightness: 92%);
+$color-neutral-light-3: change-color($color-neutral-regular, $lightness: 88%);
+$color-neutral-light-4: change-color($color-neutral-regular, $lightness: 84%);
+$color-neutral-light-5: change-color($color-neutral-regular, $lightness: 80%);
+$color-neutral-light-6: change-color($color-neutral-regular, $lightness: 72%);
 // Provide darker than standard neutral colors.
 $color-neutral-dark-1: adjust-color($color-neutral-regular, $lightness: -8%);
-$color-neutral-dark-2: adjust-color($color-neutral-regular, $lightness: -16%);
-// Provide a definite white color.
-$color-neutral-white: #ffffff;
+$color-neutral-dark-2: adjust-color($color-neutral-regular, $lightness: -12%);
+
+// White
+
+// Provide a standard white color.
+$color-white-regular: #ffffff;

@@ -16,29 +16,29 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  background-color: $color-neutral-light-1;
+  background-color: $color-neutral-light-2;
 
   &:hover {
     // Override text decoration from anchor elements.
     text-decoration: none;
-    background-color: $color-neutral-light-2;
+    background-color: $color-neutral-light-4;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-neutral-light-3;
+    box-shadow: $box-shadow-regular $color-neutral-light-6;
   }
 
   &:active {
-    background-color: $color-neutral-light-3;
+    background-color: $color-neutral-light-5;
   }
 
   &:disabled,
   &.is-disabled {
     opacity: $opacity-low;
-    background-color: $color-neutral-light-1;
+    background-color: $color-neutral-light-2;
     box-shadow: none;
     cursor: default;
   }
@@ -47,7 +47,7 @@
 // Primary buttons
 
 .c-button--primary {
-  color: $color-neutral-white;
+  color: $color-white-regular;
   background-color: $color-primary-regular;
 
   &:hover {
@@ -55,7 +55,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-2;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &:active {
@@ -69,15 +69,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-1;
+    background-color: $color-primary-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-2;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &:active {
-    background-color: $color-primary-light-2;
+    background-color: $color-primary-light-3;
   }
 }
 
@@ -86,22 +86,22 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-1;
+    background-color: $color-primary-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-2;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &:active {
-    background-color: $color-primary-light-2;
+    background-color: $color-primary-light-3;
   }
 }
 
 // Positive buttons
 
 .c-button--positive {
-  color: $color-neutral-white;
+  color: $color-white-regular;
   background-color: $color-positive-regular;
 
   &:hover {
@@ -109,7 +109,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-2;
+    box-shadow: $box-shadow-regular $color-positive-light-4;
   }
 
   &:active {
@@ -123,15 +123,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-positive-light-1;
+    background-color: $color-positive-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-2;
+    box-shadow: $box-shadow-regular $color-positive-light-4;
   }
 
   &:active {
-    background-color: $color-positive-light-2;
+    background-color: $color-positive-light-3;
   }
 }
 
@@ -140,22 +140,22 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-positive-light-1;
+    background-color: $color-positive-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-2;
+    box-shadow: $box-shadow-regular $color-positive-light-4;
   }
 
   &:active {
-    background-color: $color-positive-light-2;
+    background-color: $color-positive-light-3;
   }
 }
 
 // Negative buttons
 
 .c-button--negative {
-  color: $color-neutral-white;
+  color: $color-white-regular;
   background-color: $color-negative-regular;
 
   &:hover {
@@ -163,7 +163,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-2;
+    box-shadow: $box-shadow-regular $color-negative-light-4;
   }
 
   &:active {
@@ -177,15 +177,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-negative-light-1;
+    background-color: $color-negative-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-2;
+    box-shadow: $box-shadow-regular $color-negative-light-4;
   }
 
   &:active {
-    background-color: $color-negative-light-2;
+    background-color: $color-negative-light-3;
   }
 }
 
@@ -194,22 +194,22 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-negative-light-1;
+    background-color: $color-negative-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-2;
+    box-shadow: $box-shadow-regular $color-negative-light-4;
   }
 
   &:active {
-    background-color: $color-negative-light-2;
+    background-color: $color-negative-light-3;
   }
 }
 
 // Neutral buttons
 
 .c-button--neutral {
-  color: $color-neutral-white;
+  color: $color-white-regular;
   background-color: $color-neutral-regular;
 
   &:hover {
@@ -217,7 +217,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-2;
+    box-shadow: $box-shadow-regular $color-neutral-light-5;
   }
 
   &:active {
@@ -231,15 +231,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-neutral-light-1;
+    background-color: $color-neutral-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-2;
+    box-shadow: $box-shadow-regular $color-neutral-light-5;
   }
 
   &:active {
-    background-color: $color-neutral-light-2;
+    background-color: $color-neutral-light-3;
   }
 }
 
@@ -248,15 +248,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-neutral-light-1;
+    background-color: $color-neutral-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-2;
+    box-shadow: $box-shadow-regular $color-neutral-light-5;
   }
 
   &:active {
-    background-color: $color-neutral-light-2;
+    background-color: $color-neutral-light-3;
   }
 }
 

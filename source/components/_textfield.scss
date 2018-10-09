@@ -7,26 +7,26 @@
   // Employ the `calc()` function to ensure precise alignment with items that
   // use the same space values but lack a border.
   padding: calc(#{$space-small-2} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
-  border: $border-width-regular solid $color-neutral-light-2;
+  border: $border-width-regular solid $color-neutral-light-4;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   color: $color-neutral-regular;
-  background-color: $color-neutral-white;
+  background-color: $color-white-regular;
 
   &:focus {
     border-color: $color-primary-dark-1;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-primary-light-2;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &.is-valid {
     border-color: $color-positive-regular;
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-positive-light-2;
+      box-shadow: $box-shadow-regular $color-positive-light-4;
     }
   }
 
@@ -34,7 +34,7 @@
     border-color: $color-negative-regular;
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-negative-light-2;
+      box-shadow: $box-shadow-regular $color-negative-light-4;
     }
   }
 }
@@ -51,6 +51,6 @@
   // Normalize the selected option text from focused `select` elements in Edge.
   &:focus::-ms-value {
     color: $color-neutral-regular;
-    background-color: $color-neutral-white;
+    background-color: $color-white-regular;
   }
 }
