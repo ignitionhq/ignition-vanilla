@@ -5,7 +5,7 @@
 .c-notice {
   padding: $space-regular $space-large-4;
   border-radius: $border-radius-regular;
-  color: $color-neutral-dark-1;
+  color: $color-neutral-regular;
   background-color: $color-neutral-light-1;
 }
 
@@ -55,7 +55,7 @@
 // Primary notice
 
 .c-notice--primary {
-  color: $color-primary-dark-1;
+  color: $color-primary-regular;
   background-color: $color-primary-light-1;
 }
 
@@ -78,7 +78,7 @@
 // Positive notice
 
 .c-notice--positive {
-  color: $color-positive-dark-1;
+  color: $color-positive-regular;
   background-color: $color-positive-light-1;
 }
 
@@ -101,7 +101,7 @@
 // Negative notice
 
 .c-notice--negative {
-  color: $color-negative-dark-1;
+  color: $color-negative-regular;
   background-color: $color-negative-light-1;
 }
 

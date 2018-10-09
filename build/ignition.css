@@ -746,7 +746,7 @@ hr {
 .c-notice {
   padding: 1rem 1.5rem;
   border-radius: 4px;
-  color: #292929;
+  color: #3d3d3d;
   background-color: whitesmoke;
 }
 
@@ -789,7 +789,7 @@ hr {
 }
 
 .c-notice--primary {
-  color: #004c8f;
+  color: #0062b8;
   background-color: #ebf5ff;
 }
 
@@ -810,7 +810,7 @@ hr {
 }
 
 .c-notice--positive {
-  color: #055100;
+  color: #087a00;
   background-color: #ecffeb;
 }
 
@@ -831,7 +831,7 @@ hr {
 }
 
 .c-notice--negative {
-  color: #7a0800;
+  color: #a30b00;
   background-color: #ffeceb;
 }
 
