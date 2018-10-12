@@ -12,9 +12,8 @@
     width: 100%;
 
     @include media(m) {
-      // Make the item flexible and cause it to take up the specified proportion
-      // of available space. It will be equal in size to other items on the same
-      // line that are styled this way.
+      // Cause item to take up the specified proportion of available space. It
+      // will be equal to other items on the same line that are styled this way.
       flex: 1;
     }
   }
@@ -22,7 +21,7 @@
 // Spaced lineup
 
 .o-lineup--spaced {
-  // Negate the padding on the leftmost and rightmost lineup items.
+  // Negate padding on the leftmost and rightmost lineup items.
   margin-right: -$space-large-5;
   margin-left: -$space-large-5;
 }
