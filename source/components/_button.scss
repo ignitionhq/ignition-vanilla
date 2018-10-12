@@ -4,8 +4,8 @@
 
 .c-button {
   display: inline-block;
-  // Employ the `calc()` function to ensure precise alignment with items that
-  // use the same space values but lack a border.
+  // Employ `calc()` to ensure precise alignment with items that use the same
+  // space values but lack a border.
   padding: calc(#{$space-small-2} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
   // Use a transparent border so a visible one can be defined more easily.
   border: $border-width-regular solid transparent;
