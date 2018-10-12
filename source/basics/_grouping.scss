@@ -71,12 +71,12 @@ figure {
 // Details
 
 details {
-  // Set the correct display style in Edge.
+  // Correct display style in Edge.
   display: block;
 }
 
   summary {
-    // Set the correct display style in Chrome, Safari, and Edge.
+    // Correct display style in Chrome, Safari, and Edge.
     display: list-item;
     cursor: pointer;
   }
@@ -84,7 +84,7 @@ details {
 // Thematic break
 
 hr {
-  // Normalize the overflow in Chrome and Edge.
+  // Normalize overflow in Chrome and Edge.
   overflow: visible;
   // Mimic a horizontal rule while allowing other decorations to be used.
   height: $border-width-thick;

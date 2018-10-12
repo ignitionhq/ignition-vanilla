@@ -33,14 +33,13 @@ button,
 input,
 textarea,
 select {
-  // Remove the margins from the selected elements in Safari, from `checkbox`
-  // and `radio` inputs in all browsers, and from `textarea` elements in
-  // Firefox.
+  // Remove margins from all selected elements in Safari, from `checkbox` and
+  // `radio` inputs in all browsers, and from `textarea` elements in Firefox.
   margin: 0;
-  // Normalize the font family, font size, and line height.
+  // Normalize font family, font size, and line height.
   font-family: inherit;
   font-size: inherit;
-  // Mind that the line height cannot be changed on `select` elements.
+  // Mind that line height cannot be changed on `select` elements.
   line-height: inherit;
 
   &:disabled {
@@ -54,10 +53,10 @@ button,
 [type="reset"],
 [type="submit"] {
   cursor: pointer;
-  // Allow complete styling on iOS.
+  // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
 
-  // Remove the inner focus outline in Firefox.
+  // Remove inner focus outline in Firefox.
   &::-moz-focus-inner {
     border-style: none;
   }
@@ -71,11 +70,11 @@ select {
 }
 
 ::-webkit-file-upload-button {
-  // Normalize the font family, font size, and line height.
+  // Normalize font family, font size, and line height.
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  // Allow complete styling on iOS.
+  // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
 }
 
@@ -85,13 +84,12 @@ select {
 }
 
 [type="search"] {
-  // Correct the outline offset in Safari.
+  // Correct outline offset in Safari.
   outline-offset: -2px;
-  // Allow complete styling on iOS.
+  // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: none;
 
-  // Remove the cancel button in Chrome and Safari and the extra inner space in
-  // Safari.
+  // Remove cancel button in Chrome and Safari and extra inner space in Safari.
   &::-webkit-search-cancel-button,
   &::-webkit-search-decoration {
     -webkit-appearance: none;
@@ -106,6 +104,6 @@ textarea {
 // Progress
 
 progress {
-  // Normalize the vertical alignment in Chrome and Firefox.
+  // Normalize vertical alignment in Chrome and Firefox.
   vertical-align: baseline;
 }

@@ -10,19 +10,19 @@ video,
 audio,
 canvas,
 iframe {
-  // Remove the space below the baseline.
+  // Remove extra space below baseline.
   vertical-align: middle;
 }
 
 img,
 video,
 audio {
-  // Prevent the width from exceeding that of the parent element.
+  // Prevent item from exceeding parent width.
   max-width: 100%;
 }
 
 img,
 video {
-  // Prevent stretching when using the height attribute.
+  // Prevent stretching when height is set via attribute.
   height: auto;
 }
