@@ -384,6 +384,14 @@
   }
 }
 
+.c-button--inverse {
+  &:disabled,
+  &.is-disabled {
+    background-color: $color-white-regular;
+    box-shadow: none;
+  }
+}
+
 .c-button--primary-outlined,
 .c-button--positive-outlined,
 .c-button--warning-outlined,
@@ -398,6 +406,16 @@
   }
 }
 
+.c-button--inverse-outlined {
+  &:disabled,
+  &.is-disabled {
+    border-color: $color-white-regular;
+    color: $color-white-regular;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
 .c-button--primary-plain,
 .c-button--positive-plain,
 .c-button--warning-plain,
@@ -406,6 +424,15 @@
   &:disabled,
   &.is-disabled {
     color: $color-neutral-regular;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.c-button--inverse-plain {
+  &:disabled,
+  &.is-disabled {
+    color: $color-white-regular;
     background-color: transparent;
     box-shadow: none;
   }
