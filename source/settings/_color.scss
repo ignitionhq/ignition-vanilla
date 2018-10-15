@@ -73,3 +73,9 @@ $color-neutral-dark-2: adjust-color($color-neutral-regular, $lightness: -12%);
 
 // Provide a standard white color.
 $color-white-regular: #ffffff;
+// Provide transparent white colors.
+$color-white-transparent-1: change-color($color-white-regular, $alpha: 0.92);
+$color-white-transparent-2: change-color($color-white-regular, $alpha: 0.88);
+$color-white-transparent-3: change-color($color-white-regular, $alpha: 0.4);
+$color-white-transparent-4: change-color($color-white-regular, $alpha: 0.16);
+$color-white-transparent-5: change-color($color-white-regular, $alpha: 0.12);
