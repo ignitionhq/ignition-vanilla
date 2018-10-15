@@ -692,6 +692,58 @@ hr {
   background-color: #e0e0e0;
 }
 
+.c-button--inverse {
+  color: #3d3d3d;
+  background-color: #ffffff;
+}
+
+.c-button--inverse:hover {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+.c-button--inverse:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.c-button--inverse:active {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+.c-button--inverse-outlined {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.c-button--inverse-outlined:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.c-button--inverse-outlined:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.c-button--inverse-outlined:active {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.c-button--inverse-plain {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.c-button--inverse-plain:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.c-button--inverse-plain:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.c-button--inverse-plain:active {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
 .c-button--primary:disabled,
 .c-button--primary.is-disabled,
 .c-button--positive:disabled,

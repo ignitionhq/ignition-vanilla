@@ -314,6 +314,60 @@
   }
 }
 
+// Inverse buttons
+
+.c-button--inverse {
+  color: $color-neutral-regular;
+  background-color: $color-white-regular;
+
+  &:hover {
+    background-color: $color-white-transparent-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-white-transparent-3;
+  }
+
+  &:active {
+    background-color: $color-white-transparent-2;
+  }
+}
+
+.c-button--inverse-outlined {
+  border-color: $color-white-regular;
+  color: $color-white-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-white-transparent-5;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-white-transparent-3;
+  }
+
+  &:active {
+    background-color: $color-white-transparent-4;
+  }
+}
+
+.c-button--inverse-plain {
+  color: $color-white-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-white-transparent-5;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-white-transparent-3;
+  }
+
+  &:active {
+    background-color: $color-white-transparent-4;
+  }
+}
+
 // Disabled buttons
 // List variant-specific disabled styles after variant definitions to avoid
 // repetition.
