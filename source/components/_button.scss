@@ -152,6 +152,60 @@
   }
 }
 
+// Warning buttons
+
+.c-button--warning {
+  color: $color-white-regular;
+  background-color: $color-warning-regular;
+
+  &:hover {
+    background-color: $color-warning-dark-1;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-warning-light-4;
+  }
+
+  &:active {
+    background-color: $color-warning-dark-2;
+  }
+}
+
+.c-button--warning-outlined {
+  border-color: $color-warning-regular;
+  color: $color-warning-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-warning-light-2;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-warning-light-4;
+  }
+
+  &:active {
+    background-color: $color-warning-light-3;
+  }
+}
+
+.c-button--warning-plain {
+  color: $color-warning-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-warning-light-2;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-warning-light-4;
+  }
+
+  &:active {
+    background-color: $color-warning-light-3;
+  }
+}
+
 // Negative buttons
 
 .c-button--negative {

@@ -536,6 +536,58 @@ hr {
   background-color: #c6ffc2;
 }
 
+.c-button--warning {
+  color: #ffffff;
+  background-color: #8f5f00;
+}
+
+.c-button--warning:hover {
+  background-color: #664400;
+}
+
+.c-button--warning:focus {
+  box-shadow: 0 0 0 3px #ffdd99;
+}
+
+.c-button--warning:active {
+  background-color: #523600;
+}
+
+.c-button--warning-outlined {
+  border-color: #8f5f00;
+  color: #8f5f00;
+  background-color: transparent;
+}
+
+.c-button--warning-outlined:hover {
+  background-color: #fff1d6;
+}
+
+.c-button--warning-outlined:focus {
+  box-shadow: 0 0 0 3px #ffdd99;
+}
+
+.c-button--warning-outlined:active {
+  background-color: #ffeac2;
+}
+
+.c-button--warning-plain {
+  color: #8f5f00;
+  background-color: transparent;
+}
+
+.c-button--warning-plain:hover {
+  background-color: #fff1d6;
+}
+
+.c-button--warning-plain:focus {
+  box-shadow: 0 0 0 3px #ffdd99;
+}
+
+.c-button--warning-plain:active {
+  background-color: #ffeac2;
+}
+
 .c-button--negative {
   color: #ffffff;
   background-color: #a30b00;
