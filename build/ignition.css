@@ -832,7 +832,7 @@ hr {
 }
 
 .c-textfield:focus {
-  border-color: #004c8f;
+  border-color: #0062b8;
   outline: 0;
   box-shadow: 0 0 0 3px #99cfff;
 }
