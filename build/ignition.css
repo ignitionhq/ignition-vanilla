@@ -692,6 +692,58 @@ hr {
   background-color: #e0e0e0;
 }
 
+.c-button--inverse {
+  color: #3d3d3d;
+  background-color: #ffffff;
+}
+
+.c-button--inverse:hover {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+.c-button--inverse:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+}
+
+.c-button--inverse:active {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.c-button--inverse-outlined {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.c-button--inverse-outlined:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.c-button--inverse-outlined:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+}
+
+.c-button--inverse-outlined:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.c-button--inverse-plain {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.c-button--inverse-plain:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.c-button--inverse-plain:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+}
+
+.c-button--inverse-plain:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .c-button--primary:disabled,
 .c-button--primary.is-disabled,
 .c-button--positive:disabled,
@@ -703,6 +755,12 @@ hr {
 .c-button--neutral:disabled,
 .c-button--neutral.is-disabled {
   background-color: #3d3d3d;
+  box-shadow: none;
+}
+
+.c-button--inverse:disabled,
+.c-button--inverse.is-disabled {
+  background-color: #ffffff;
   box-shadow: none;
 }
 
@@ -722,6 +780,14 @@ hr {
   box-shadow: none;
 }
 
+.c-button--inverse-outlined:disabled,
+.c-button--inverse-outlined.is-disabled {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .c-button--primary-plain:disabled,
 .c-button--primary-plain.is-disabled,
 .c-button--positive-plain:disabled,
@@ -733,6 +799,13 @@ hr {
 .c-button--neutral-plain:disabled,
 .c-button--neutral-plain.is-disabled {
   color: #3d3d3d;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.c-button--inverse-plain:disabled,
+.c-button--inverse-plain.is-disabled {
+  color: #ffffff;
   background-color: transparent;
   box-shadow: none;
 }
