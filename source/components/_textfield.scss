@@ -15,7 +15,7 @@
   background-color: $color-white-regular;
 
   &:focus {
-    border-color: $color-primary-dark-1;
+    border-color: $color-primary-regular;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
