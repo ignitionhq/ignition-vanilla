@@ -887,6 +887,10 @@ hr {
   margin-top: -1.5rem;
 }
 
+.c-card p:last-child {
+  margin-bottom: 0;
+}
+
 .c-notice {
   padding: 1rem 1.5rem;
   border-radius: 4px;

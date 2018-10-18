@@ -30,3 +30,8 @@
     border-top-right-radius: $border-radius-regular;
     margin-top: -$space-large-4;
   }
+
+  .c-card p:last-child {
+    // Remove bottom margin because of existing padding.
+    margin-bottom: 0;
+  }
