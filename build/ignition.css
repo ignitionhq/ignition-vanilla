@@ -898,6 +898,10 @@ hr {
   background-color: whitesmoke;
 }
 
+.c-notice p:last-child {
+  margin-bottom: 0;
+}
+
 .c-notice--dismissable {
   position: relative;
   padding-right: 3rem;
