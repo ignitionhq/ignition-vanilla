@@ -9,6 +9,11 @@
   background-color: $color-neutral-light-1;
 }
 
+  .c-notice p:last-child {
+    // Remove bottom margin because of existing padding.
+    margin-bottom: 0;
+  }
+
 // Dismissable notice
 
 .c-notice--dismissable {
