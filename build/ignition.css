@@ -982,6 +982,27 @@ hr {
   background-color: #043d00;
 }
 
+.c-notice--warning {
+  color: #8f5f00;
+  background-color: #fff8eb;
+}
+
+.c-notice--warning .c-notice__dismiss {
+  background-color: #ffeac2;
+}
+
+.c-notice--warning .c-notice__dismiss:hover {
+  background-color: #664400;
+}
+
+.c-notice--warning .c-notice__dismiss:focus {
+  box-shadow: 0 0 0 3px #ffdd99;
+}
+
+.c-notice--warning .c-notice__dismiss:active {
+  background-color: #523600;
+}
+
 .c-notice--negative {
   color: #a30b00;
   background-color: #ffeceb;
