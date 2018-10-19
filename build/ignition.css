@@ -1025,8 +1025,11 @@ hr {
 }
 
 .o-container {
+  max-width: 1240px;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 720px) {
@@ -1034,12 +1037,6 @@ hr {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
   }
-}
-
-.o-container--limited {
-  max-width: 1240px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .o-segment {
