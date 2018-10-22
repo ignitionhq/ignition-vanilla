@@ -8,9 +8,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:css": "node-sass --output-style expanded --precision 8 --output build/ source/ignition.scss"
+    "build:css": "node-sass --output-style expanded --precision 8 --output build/ source/ignition.scss",
+    "minify:css": "cleancss --output build/ignition.min.css build/ignition.css"
   },
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "clean-css-cli": "^4.2.1"
   }
 }
