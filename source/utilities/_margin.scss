@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 
 $margin-right-values: (
-  auto: auto,
   all: (
     regular: $space-regular
   )
@@ -24,8 +23,6 @@ $margin-bottom-values: (
     none: 0
   )
 );
-$margin-left-values: auto;
 
 @include utility(margin-right, $margin-right-values);
 @include utility(margin-bottom, $margin-bottom-values);
-@include utility(margin-left, $margin-left-values);

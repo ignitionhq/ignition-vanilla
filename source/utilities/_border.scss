@@ -1,0 +1,10 @@
+// BORDER
+// Establish border-related traits.
+// -----------------------------------------------------------------------------
+
+$border-radius-values: (
+  regular: $border-radius-regular,
+  round: $border-radius-round
+);
+
+@include utility(border-radius, $border-radius-values);
