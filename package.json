@@ -8,8 +8,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "build:css": "node-sass --output-style expanded --precision 8 --output build/ source/ignition.scss",
-    "minify:css": "cleancss --output build/ignition.min.css build/ignition.css"
+    "compile:sass": "node-sass --output-style expanded --precision 8 --output build/ source/ignition.scss",
+    "minify:css": "cleancss --output build/ignition.min.css build/ignition.css",
+    "build:all": "npm run compile:sass && npm run minify:css"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
