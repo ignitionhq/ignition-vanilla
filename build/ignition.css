@@ -1312,6 +1312,14 @@ hr {
   }
 }
 
+.u-border-radius-regular {
+  border-radius: 4px !important;
+}
+
+.u-border-radius-round {
+  border-radius: 720px !important;
+}
+
 .u-margin-right-auto {
   margin-right: auto !important;
 }
