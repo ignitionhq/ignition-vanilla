@@ -1320,10 +1320,6 @@ hr {
   border-radius: 720px !important;
 }
 
-.u-margin-right-auto {
-  margin-right: auto !important;
-}
-
 .u-margin-right-regular {
   margin-right: 1rem !important;
 }
@@ -1398,10 +1394,6 @@ hr {
   .u-margin-bottom-none\@l {
     margin-bottom: 0 !important;
   }
-}
-
-.u-margin-left-auto {
-  margin-left: auto !important;
 }
 
 .u-text-align-center {
