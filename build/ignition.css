@@ -357,6 +357,31 @@ hr {
   background-color: #d6d6d6;
 }
 
+.c-text-large-1 {
+  font-size: 3rem;
+  line-height: 1.16666666;
+}
+
+.c-text-large-2 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.c-text-large-3 {
+  font-size: 1.5rem;
+  line-height: 1.33333333;
+}
+
+.c-text-large-4 {
+  font-size: 1.3125rem;
+  line-height: 1.33333333;
+}
+
+.c-text-large-5 {
+  font-size: 1.125rem;
+  line-height: 1.33333333;
+}
+
 .c-link {
   color: inherit;
   text-decoration: underline;
