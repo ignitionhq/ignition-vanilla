@@ -357,37 +357,37 @@ hr {
   background-color: #d6d6d6;
 }
 
-.c-heading-large-1 {
+.c-heading-1 {
   margin-bottom: 2rem;
   font-size: 3rem;
   line-height: 1.16666666;
 }
 
-.c-heading-large-2 {
+.c-heading-2 {
   margin-bottom: 1rem;
   font-size: 2rem;
   line-height: 1.25;
 }
 
-.c-heading-large-3 {
+.c-heading-3 {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: 1.33333333;
 }
 
-.c-heading-large-4 {
+.c-heading-4 {
   margin-bottom: 0.25rem;
   font-size: 1.3125rem;
   line-height: 1.33333333;
 }
 
-.c-heading-large-5 {
+.c-heading-5 {
   margin-bottom: 0.25rem;
   font-size: 1.125rem;
   line-height: 1.33333333;
 }
 
-.c-heading-regular {
+.c-heading-6 {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
