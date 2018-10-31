@@ -393,6 +393,12 @@ hr {
   line-height: 1.5;
 }
 
+.c-callout {
+  margin-bottom: 1.5rem;
+  font-size: 1.3125rem;
+  line-height: 1.33333333;
+}
+
 .c-link {
   color: inherit;
   text-decoration: underline;
