@@ -904,6 +904,11 @@ hr {
   background-color: #ffffff;
 }
 
+.c-list {
+  padding-left: 0;
+  list-style: none;
+}
+
 .c-card {
   padding: calc(1.5rem - 1px);
   border: 1px solid #d6d6d6;
