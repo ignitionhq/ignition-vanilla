@@ -6,3 +6,15 @@
   padding-left: 0;
   list-style: none;
 }
+
+  .c-list__link {
+    display: inline-block;
+    padding-top: $space-small-4;
+    padding-bottom: $space-small-4;
+    color: $color-neutral-regular;
+
+    &:hover {
+      color: $color-primary-regular;
+      text-decoration: none;
+    }
+  }
