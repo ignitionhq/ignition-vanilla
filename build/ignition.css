@@ -921,6 +921,15 @@ hr {
   text-decoration: none;
 }
 
+.c-list--horizontal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-list--horizontal > li {
+  margin-right: 1.5rem;
+}
+
 .c-card {
   padding: calc(1.5rem - 1px);
   border: 1px solid #d6d6d6;

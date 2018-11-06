@@ -18,3 +18,14 @@
       text-decoration: none;
     }
   }
+
+// Horizontal list
+
+.c-list--horizontal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .c-list--horizontal > li {
+    margin-right: $space-large-4;
+  }
