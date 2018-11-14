@@ -57,7 +57,7 @@ $color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -12%);
 // Neutral
 
 // Provide a standard neutral color.
-$color-neutral-regular: #3d3d3d;
+$color-neutral-regular: #424242;
 // Provide lighter than standard neutral colors.
 $color-neutral-light-1: change-color($color-neutral-regular, $lightness: 96%);
 $color-neutral-light-2: change-color($color-neutral-regular, $lightness: 92%);
