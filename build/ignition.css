@@ -580,11 +580,11 @@ hr {
 
 .c-button--warning {
   color: #ffffff;
-  background-color: #8f5f00;
+  background-color: #996600;
 }
 
 .c-button--warning:hover {
-  background-color: #664400;
+  background-color: #704b00;
 }
 
 .c-button--warning:focus {
@@ -592,12 +592,12 @@ hr {
 }
 
 .c-button--warning:active {
-  background-color: #523600;
+  background-color: #5c3d00;
 }
 
 .c-button--warning-outlined {
-  border-color: #8f5f00;
-  color: #8f5f00;
+  border-color: #996600;
+  color: #996600;
   background-color: transparent;
 }
 
@@ -610,11 +610,11 @@ hr {
 }
 
 .c-button--warning-outlined:active {
-  background-color: #ffeac2;
+  background-color: #ffebc2;
 }
 
 .c-button--warning-plain {
-  color: #8f5f00;
+  color: #996600;
   background-color: transparent;
 }
 
@@ -627,7 +627,7 @@ hr {
 }
 
 .c-button--warning-plain:active {
-  background-color: #ffeac2;
+  background-color: #ffebc2;
 }
 
 .c-button--negative {
@@ -1051,16 +1051,16 @@ hr {
 }
 
 .c-notice--warning {
-  color: #8f5f00;
+  color: #996600;
   background-color: #fff8eb;
 }
 
 .c-notice--warning .c-notice__dismiss {
-  background-color: #ffeac2;
+  background-color: #ffebc2;
 }
 
 .c-notice--warning .c-notice__dismiss:hover {
-  background-color: #664400;
+  background-color: #704b00;
 }
 
 .c-notice--warning .c-notice__dismiss:focus {
@@ -1068,7 +1068,7 @@ hr {
 }
 
 .c-notice--warning .c-notice__dismiss:active {
-  background-color: #523600;
+  background-color: #5c3d00;
 }
 
 .c-notice--negative {

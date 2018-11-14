@@ -31,7 +31,7 @@ $color-positive-dark-2: adjust-color($color-positive-regular, $lightness: -12%);
 // Warning
 
 // Provide a standard warning color.
-$color-warning-regular: #8f5f00;
+$color-warning-regular: #996600;
 // Provide lighter than standard warning colors.
 $color-warning-light-1: change-color($color-warning-regular, $lightness: 96%);
 $color-warning-light-2: change-color($color-warning-regular, $lightness: 92%);
