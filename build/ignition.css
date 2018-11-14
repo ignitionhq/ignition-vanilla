@@ -528,54 +528,54 @@ hr {
 
 .c-button--positive {
   color: #ffffff;
-  background-color: #087a00;
+  background-color: #00852c;
 }
 
 .c-button--positive:hover {
-  background-color: #055100;
+  background-color: #005c1f;
 }
 
 .c-button--positive:focus {
-  box-shadow: 0 0 0 3px #a0ff99;
+  box-shadow: 0 0 0 3px #99ffbb;
 }
 
 .c-button--positive:active {
-  background-color: #043d00;
+  background-color: #004818;
 }
 
 .c-button--positive-outlined {
-  border-color: #087a00;
-  color: #087a00;
+  border-color: #00852c;
+  color: #00852c;
   background-color: transparent;
 }
 
 .c-button--positive-outlined:hover {
-  background-color: #d9ffd6;
+  background-color: #d6ffe4;
 }
 
 .c-button--positive-outlined:focus {
-  box-shadow: 0 0 0 3px #a0ff99;
+  box-shadow: 0 0 0 3px #99ffbb;
 }
 
 .c-button--positive-outlined:active {
-  background-color: #c6ffc2;
+  background-color: #c2ffd6;
 }
 
 .c-button--positive-plain {
-  color: #087a00;
+  color: #00852c;
   background-color: transparent;
 }
 
 .c-button--positive-plain:hover {
-  background-color: #d9ffd6;
+  background-color: #d6ffe4;
 }
 
 .c-button--positive-plain:focus {
-  box-shadow: 0 0 0 3px #a0ff99;
+  box-shadow: 0 0 0 3px #99ffbb;
 }
 
 .c-button--positive-plain:active {
-  background-color: #c6ffc2;
+  background-color: #c2ffd6;
 }
 
 .c-button--warning {
@@ -880,11 +880,11 @@ hr {
 }
 
 .c-textfield.is-valid {
-  border-color: #087a00;
+  border-color: #00852c;
 }
 
 .c-textfield.is-valid:focus {
-  box-shadow: 0 0 0 3px #a0ff99;
+  box-shadow: 0 0 0 3px #99ffbb;
 }
 
 .c-textfield.is-invalid {
@@ -1030,24 +1030,24 @@ hr {
 }
 
 .c-notice--positive {
-  color: #087a00;
-  background-color: #ecffeb;
+  color: #00852c;
+  background-color: #ebfff1;
 }
 
 .c-notice--positive .c-notice__dismiss {
-  background-color: #c6ffc2;
+  background-color: #c2ffd6;
 }
 
 .c-notice--positive .c-notice__dismiss:hover {
-  background-color: #055100;
+  background-color: #005c1f;
 }
 
 .c-notice--positive .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #a0ff99;
+  box-shadow: 0 0 0 3px #99ffbb;
 }
 
 .c-notice--positive .c-notice__dismiss:active {
-  background-color: #043d00;
+  background-color: #004818;
 }
 
 .c-notice--warning {
