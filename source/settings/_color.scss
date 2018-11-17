@@ -5,7 +5,7 @@
 // Primary
 
 // Provide a standard primary color.
-$color-primary-regular: #0062b8;
+$color-primary-regular: #0056b8;
 // Provide lighter than standard primary colors.
 $color-primary-light-1: change-color($color-primary-regular, $lightness: 96%);
 $color-primary-light-2: change-color($color-primary-regular, $lightness: 92%);
@@ -18,12 +18,12 @@ $color-primary-dark-2: adjust-color($color-primary-regular, $lightness: -12%);
 // Positive
 
 // Provide a standard positive color.
-$color-positive-regular: #087a00;
+$color-positive-regular: #007a29;
 // Provide lighter than standard positive colors.
-$color-positive-light-1: change-color($color-positive-regular, $lightness: 96%);
-$color-positive-light-2: change-color($color-positive-regular, $lightness: 92%);
-$color-positive-light-3: change-color($color-positive-regular, $lightness: 88%);
-$color-positive-light-4: change-color($color-positive-regular, $lightness: 80%);
+$color-positive-light-1: change-color($color-positive-regular, $lightness: 94%);
+$color-positive-light-2: change-color($color-positive-regular, $lightness: 90%);
+$color-positive-light-3: change-color($color-positive-regular, $lightness: 86%);
+$color-positive-light-4: change-color($color-positive-regular, $lightness: 78%);
 // Provide darker than standard positive colors.
 $color-positive-dark-1: adjust-color($color-positive-regular, $lightness: -8%);
 $color-positive-dark-2: adjust-color($color-positive-regular, $lightness: -12%);
@@ -31,12 +31,12 @@ $color-positive-dark-2: adjust-color($color-positive-regular, $lightness: -12%);
 // Warning
 
 // Provide a standard warning color.
-$color-warning-regular: #8f5f00;
+$color-warning-regular: #996600;
 // Provide lighter than standard warning colors.
-$color-warning-light-1: change-color($color-warning-regular, $lightness: 96%);
-$color-warning-light-2: change-color($color-warning-regular, $lightness: 92%);
-$color-warning-light-3: change-color($color-warning-regular, $lightness: 88%);
-$color-warning-light-4: change-color($color-warning-regular, $lightness: 80%);
+$color-warning-light-1: change-color($color-warning-regular, $lightness: 94%);
+$color-warning-light-2: change-color($color-warning-regular, $lightness: 90%);
+$color-warning-light-3: change-color($color-warning-regular, $lightness: 86%);
+$color-warning-light-4: change-color($color-warning-regular, $lightness: 78%);
 // Provide darker than standard warning colors.
 $color-warning-dark-1: adjust-color($color-warning-regular, $lightness: -8%);
 $color-warning-dark-2: adjust-color($color-warning-regular, $lightness: -12%);
@@ -44,7 +44,7 @@ $color-warning-dark-2: adjust-color($color-warning-regular, $lightness: -12%);
 // Negative
 
 // Provide a standard negative color.
-$color-negative-regular: #a30b00;
+$color-negative-regular: #ad0017;
 // Provide lighter than standard negative colors.
 $color-negative-light-1: change-color($color-negative-regular, $lightness: 96%);
 $color-negative-light-2: change-color($color-negative-regular, $lightness: 92%);
