@@ -133,6 +133,21 @@ kbd kbd {
   font-size: 100%;
 }
 
+del,
+ins {
+  padding: 0.125em 0.25em;
+  border-radius: 4px;
+}
+
+del {
+  background-color: #ffd6dc;
+}
+
+ins {
+  text-decoration: none;
+  background-color: #ccffdd;
+}
+
 mark {
   padding: 0.125em 0.25em;
   border-radius: 4px;
