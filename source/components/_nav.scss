@@ -17,8 +17,6 @@
 
     &:hover {
       color: $color-primary-regular;
-      // Override text decoration from anchor elements.
-      text-decoration: none;
     }
 
     &.is-selected {

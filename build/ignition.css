@@ -434,7 +434,6 @@ hr {
 
 .c-nav__link:hover {
   color: #0056b8;
-  text-decoration: none;
 }
 
 .c-nav__link.is-selected {
@@ -463,7 +462,6 @@ hr {
 }
 
 .c-button:hover {
-  text-decoration: none;
   background-color: #d6d6d6;
 }
 
@@ -928,7 +926,6 @@ hr {
 
 .c-list__link:hover {
   color: #0056b8;
-  text-decoration: none;
 }
 
 .c-list--horizontal {
