@@ -199,10 +199,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 fieldset {
   padding: 0;
   border: 0;
