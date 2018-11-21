@@ -71,8 +71,6 @@ p {
 }
 
 blockquote {
-  padding-left: 1.25rem;
-  border-left: 4px solid #ebebeb;
   margin: 0 0 1.5rem;
   font-size: 1.3125rem;
   line-height: 1.33333333;
@@ -132,13 +130,29 @@ kbd {
 
 kbd kbd {
   padding: 0;
-  font-size: 100%;
+  font-size: 1em;
+}
+
+del,
+ins {
+  padding: 0.125em 0.25em;
+  border-radius: 4px;
+}
+
+del {
+  background-color: #ffd6dc;
+}
+
+ins {
+  text-decoration: none;
+  background-color: #ccffdd;
 }
 
 mark {
   padding: 0.125em 0.25em;
   border-radius: 4px;
   color: #3d3d3d;
+  background-color: #ffda8f;
 }
 
 small {

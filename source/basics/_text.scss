@@ -59,8 +59,6 @@ p {
 // Blockquote
 
 blockquote {
-  padding-left: $space-large-5;
-  border-left: $border-width-thick solid $color-neutral-light-2;
   margin: 0 0 $space-large-4;
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
@@ -131,8 +129,25 @@ kbd {
   kbd {
     // Remove unwanted custom styles from nested user input elements.
     padding: 0;
-    font-size: 100%;
+    font-size: 1em;
   }
+}
+
+// Deletion and insertion
+
+del,
+ins {
+  padding: 0.125em 0.25em;
+  border-radius: $border-radius-regular;
+}
+
+del {
+  background-color: $color-negative-light-2;
+}
+
+ins {
+  text-decoration: none;
+  background-color: $color-positive-light-2;
 }
 
 // Mark
@@ -141,6 +156,7 @@ mark {
   padding: 0.125em 0.25em;
   border-radius: $border-radius-regular;
   color: $color-neutral-regular;
+  background-color: $color-warning-light-4;
 }
 
 // Small
