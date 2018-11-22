@@ -339,9 +339,11 @@ thead th {
 }
 
 caption {
-  caption-side: bottom;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  border-bottom: 1px solid #d6d6d6;
+  font-size: 1.125rem;
+  font-weight: bold;
   text-align: left;
 }
 
