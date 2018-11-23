@@ -446,7 +446,7 @@ hr {
 }
 
 .c-nav--vertical .c-nav__link {
-  padding: 0.375rem 0;
+  padding: 0.375rem 0.625rem;
 }
 
 .c-button {
