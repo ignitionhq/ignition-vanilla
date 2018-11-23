@@ -1,10 +1,9 @@
 // NAV
-// Provide navigation links.
+// Provide links to key destinations.
 // -----------------------------------------------------------------------------
 
 .c-nav {
   display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -31,5 +30,5 @@
 }
 
   .c-nav--vertical .c-nav__link {
-    padding: $space-small-4 0;
+    padding: $space-small-4 $space-small-2;
   }
