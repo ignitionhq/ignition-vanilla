@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 $width-values: (
+  auto: auto,
   all: (
     // Interpolate the escape character and division operator otherwise the
     // former will be escaped automatically.

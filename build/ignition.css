@@ -1268,6 +1268,10 @@ hr {
   justify-content: center !important;
 }
 
+.u-width-auto {
+  width: auto !important;
+}
+
 .u-width-1\/2 {
   width: 50% !important;
 }
