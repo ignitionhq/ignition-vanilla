@@ -923,6 +923,18 @@ hr {
   padding-bottom: 0.375rem;
 }
 
+.c-list--menu {
+  margin-bottom: 0;
+}
+
+.c-list--menu a {
+  color: #3d3d3d;
+}
+
+.c-list--menu a:hover {
+  color: #0056b8;
+}
+
 .c-list--horizontal {
   display: flex;
   flex-wrap: wrap;
