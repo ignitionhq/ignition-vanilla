@@ -7,10 +7,18 @@
   list-style: none;
 }
 
-  .c-list__link {
-    display: inline-block;
+  .c-list__item {
     padding-top: $space-small-4;
     padding-bottom: $space-small-4;
+  }
+
+// Menu list
+
+.c-list--menu {
+  margin-bottom: 0;
+}
+
+  .c-list--menu a {
     color: $color-neutral-regular;
 
     &:hover {
@@ -25,6 +33,6 @@
   flex-wrap: wrap;
 }
 
-  .c-list--horizontal > li {
+  .c-list--horizontal > .c-list__item:not(:last-child) {
     margin-right: $space-large-4;
   }

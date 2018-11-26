@@ -918,14 +918,20 @@ hr {
   list-style: none;
 }
 
-.c-list__link {
-  display: inline-block;
+.c-list__item {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
+}
+
+.c-list--menu {
+  margin-bottom: 0;
+}
+
+.c-list--menu a {
   color: #3d3d3d;
 }
 
-.c-list__link:hover {
+.c-list--menu a:hover {
   color: #0056b8;
 }
 
@@ -934,7 +940,7 @@ hr {
   flex-wrap: wrap;
 }
 
-.c-list--horizontal > li {
+.c-list--horizontal > .c-list__item:not(:last-child) {
   margin-right: 1.5rem;
 }
 
