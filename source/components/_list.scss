@@ -7,15 +7,9 @@
   list-style: none;
 }
 
-  .c-list__link {
-    display: inline-block;
+  .c-list__item {
     padding-top: $space-small-4;
     padding-bottom: $space-small-4;
-    color: $color-neutral-regular;
-
-    &:hover {
-      color: $color-primary-regular;
-    }
   }
 
 // Horizontal list
@@ -25,6 +19,6 @@
   flex-wrap: wrap;
 }
 
-  .c-list--horizontal > li {
+  .c-list--horizontal > .c-list__item {
     margin-right: $space-large-4;
   }
