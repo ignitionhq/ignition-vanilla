@@ -19,6 +19,6 @@
   flex-wrap: wrap;
 }
 
-  .c-list--horizontal > .c-list__item {
+  .c-list--horizontal > .c-list__item:not(:last-child) {
     margin-right: $space-large-4;
   }

@@ -928,7 +928,7 @@ hr {
   flex-wrap: wrap;
 }
 
-.c-list--horizontal > .c-list__item {
+.c-list--horizontal > .c-list__item:not(:last-child) {
   margin-right: 1.5rem;
 }
 
