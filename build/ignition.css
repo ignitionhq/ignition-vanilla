@@ -194,7 +194,7 @@ video {
 }
 
 a {
-  color: #0056b8;
+  color: #0062b8;
   text-decoration: none;
 }
 
@@ -416,7 +416,7 @@ hr {
 }
 
 .c-link--primary {
-  color: #0056b8;
+  color: #0062b8;
 }
 
 .c-nav {
@@ -433,11 +433,11 @@ hr {
 }
 
 .c-nav__link:hover {
-  color: #0056b8;
+  color: #0062b8;
 }
 
 .c-nav__link.is-selected {
-  color: #0056b8;
+  color: #0062b8;
 }
 
 .c-nav--vertical {
@@ -484,54 +484,54 @@ hr {
 
 .c-button--primary {
   color: #ffffff;
-  background-color: #0056b8;
+  background-color: #0062b8;
 }
 
 .c-button--primary:hover {
-  background-color: #00438f;
+  background-color: #004c8f;
 }
 
 .c-button--primary:focus {
-  box-shadow: 0 0 0 3px #99c9ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-button--primary:active {
-  background-color: #00397b;
+  background-color: #00417b;
 }
 
 .c-button--primary-outlined {
-  border-color: #0056b8;
-  color: #0056b8;
+  border-color: #0062b8;
+  color: #0062b8;
   background-color: transparent;
 }
 
 .c-button--primary-outlined:hover {
-  background-color: #d6e9ff;
+  background-color: #d6ecff;
 }
 
 .c-button--primary-outlined:focus {
-  box-shadow: 0 0 0 3px #99c9ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-button--primary-outlined:active {
-  background-color: #c2deff;
+  background-color: #c2e2ff;
 }
 
 .c-button--primary-plain {
-  color: #0056b8;
+  color: #0062b8;
   background-color: transparent;
 }
 
 .c-button--primary-plain:hover {
-  background-color: #d6e9ff;
+  background-color: #d6ecff;
 }
 
 .c-button--primary-plain:focus {
-  box-shadow: 0 0 0 3px #99c9ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-button--primary-plain:active {
-  background-color: #c2deff;
+  background-color: #c2e2ff;
 }
 
 .c-button--positive {
@@ -882,9 +882,9 @@ hr {
 }
 
 .c-textfield:focus {
-  border-color: #0056b8;
+  border-color: #0062b8;
   outline: 0;
-  box-shadow: 0 0 0 3px #99c9ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-textfield.is-valid {
@@ -931,7 +931,7 @@ hr {
 }
 
 .c-list--menu a:hover {
-  color: #0056b8;
+  color: #0062b8;
 }
 
 .c-list--horizontal {
@@ -1022,24 +1022,24 @@ hr {
 }
 
 .c-notice--primary {
-  color: #0056b8;
-  background-color: #ebf4ff;
+  color: #0062b8;
+  background-color: #ebf5ff;
 }
 
 .c-notice--primary .c-notice__dismiss {
-  background-color: #c2deff;
+  background-color: #c2e2ff;
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
-  background-color: #00438f;
+  background-color: #004c8f;
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #99c9ff;
+  box-shadow: 0 0 0 3px #99cfff;
 }
 
 .c-notice--primary .c-notice__dismiss:active {
-  background-color: #00397b;
+  background-color: #00417b;
 }
 
 .c-notice--positive {
