@@ -323,7 +323,7 @@ table {
 
 th,
 td {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem calc(0.75rem - 1px);
   border-bottom: 1px solid #ebebeb;
   vertical-align: top;
 }
@@ -339,7 +339,7 @@ thead th {
 
 caption {
   padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: calc(0.75rem - 1px);
   border-bottom: 1px solid #d6d6d6;
   font-size: 1.125rem;
   font-weight: bold;
