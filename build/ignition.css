@@ -194,7 +194,7 @@ video {
 }
 
 a {
-  color: #0062b8;
+  color: #006dcc;
   text-decoration: none;
 }
 
@@ -416,7 +416,7 @@ hr {
 }
 
 .c-link--primary {
-  color: #0062b8;
+  color: #006dcc;
 }
 
 .c-nav {
@@ -433,11 +433,11 @@ hr {
 }
 
 .c-nav__link:hover {
-  color: #0062b8;
+  color: #006dcc;
 }
 
 .c-nav__link.is-selected {
-  color: #0062b8;
+  color: #006dcc;
 }
 
 .c-nav--vertical {
@@ -484,24 +484,24 @@ hr {
 
 .c-button--primary {
   color: #ffffff;
-  background-color: #0062b8;
+  background-color: #006dcc;
 }
 
 .c-button--primary:hover {
-  background-color: #004c8f;
+  background-color: #0057a3;
 }
 
 .c-button--primary:focus {
-  box-shadow: 0 0 0 3px #99cfff;
+  box-shadow: 0 0 0 3px #99d0ff;
 }
 
 .c-button--primary:active {
-  background-color: #00417b;
+  background-color: #004c8f;
 }
 
 .c-button--primary-outlined {
-  border-color: #0062b8;
-  color: #0062b8;
+  border-color: #006dcc;
+  color: #006dcc;
   background-color: transparent;
 }
 
@@ -510,15 +510,15 @@ hr {
 }
 
 .c-button--primary-outlined:focus {
-  box-shadow: 0 0 0 3px #99cfff;
+  box-shadow: 0 0 0 3px #99d0ff;
 }
 
 .c-button--primary-outlined:active {
-  background-color: #c2e2ff;
+  background-color: #c2e3ff;
 }
 
 .c-button--primary-plain {
-  color: #0062b8;
+  color: #006dcc;
   background-color: transparent;
 }
 
@@ -527,11 +527,11 @@ hr {
 }
 
 .c-button--primary-plain:focus {
-  box-shadow: 0 0 0 3px #99cfff;
+  box-shadow: 0 0 0 3px #99d0ff;
 }
 
 .c-button--primary-plain:active {
-  background-color: #c2e2ff;
+  background-color: #c2e3ff;
 }
 
 .c-button--positive {
@@ -882,9 +882,9 @@ hr {
 }
 
 .c-textfield:focus {
-  border-color: #0062b8;
+  border-color: #006dcc;
   outline: 0;
-  box-shadow: 0 0 0 3px #99cfff;
+  box-shadow: 0 0 0 3px #99d0ff;
 }
 
 .c-textfield.is-valid {
@@ -931,7 +931,7 @@ hr {
 }
 
 .c-list--menu a:hover {
-  color: #0062b8;
+  color: #006dcc;
 }
 
 .c-list--horizontal {
@@ -1022,24 +1022,24 @@ hr {
 }
 
 .c-notice--primary {
-  color: #0062b8;
-  background-color: #ebf5ff;
+  color: #006dcc;
+  background-color: #ebf6ff;
 }
 
 .c-notice--primary .c-notice__dismiss {
-  background-color: #c2e2ff;
+  background-color: #c2e3ff;
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
-  background-color: #004c8f;
+  background-color: #0057a3;
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #99cfff;
+  box-shadow: 0 0 0 3px #99d0ff;
 }
 
 .c-notice--primary .c-notice__dismiss:active {
-  background-color: #00417b;
+  background-color: #004c8f;
 }
 
 .c-notice--positive {
