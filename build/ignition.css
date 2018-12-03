@@ -536,24 +536,24 @@ hr {
 
 .c-button--positive {
   color: #ffffff;
-  background-color: #007a29;
+  background-color: #00852c;
 }
 
 .c-button--positive:hover {
-  background-color: #00511b;
+  background-color: #005c1f;
 }
 
 .c-button--positive:focus {
-  box-shadow: 0 0 0 3px #8fffb5;
+  box-shadow: 0 0 0 3px #8fffb4;
 }
 
 .c-button--positive:active {
-  background-color: #003d14;
+  background-color: #004818;
 }
 
 .c-button--positive-outlined {
-  border-color: #007a29;
-  color: #007a29;
+  border-color: #00852c;
+  color: #00852c;
   background-color: transparent;
 }
 
@@ -562,15 +562,15 @@ hr {
 }
 
 .c-button--positive-outlined:focus {
-  box-shadow: 0 0 0 3px #8fffb5;
+  box-shadow: 0 0 0 3px #8fffb4;
 }
 
 .c-button--positive-outlined:active {
-  background-color: #b8ffd0;
+  background-color: #b8ffcf;
 }
 
 .c-button--positive-plain {
-  color: #007a29;
+  color: #00852c;
   background-color: transparent;
 }
 
@@ -579,11 +579,11 @@ hr {
 }
 
 .c-button--positive-plain:focus {
-  box-shadow: 0 0 0 3px #8fffb5;
+  box-shadow: 0 0 0 3px #8fffb4;
 }
 
 .c-button--positive-plain:active {
-  background-color: #b8ffd0;
+  background-color: #b8ffcf;
 }
 
 .c-button--warning {
@@ -888,11 +888,11 @@ hr {
 }
 
 .c-textfield.is-valid {
-  border-color: #007a29;
+  border-color: #00852c;
 }
 
 .c-textfield.is-valid:focus {
-  box-shadow: 0 0 0 3px #8fffb5;
+  box-shadow: 0 0 0 3px #8fffb4;
 }
 
 .c-textfield.is-invalid {
@@ -1043,24 +1043,24 @@ hr {
 }
 
 .c-notice--positive {
-  color: #007a29;
+  color: #00852c;
   background-color: #e0ffeb;
 }
 
 .c-notice--positive .c-notice__dismiss {
-  background-color: #b8ffd0;
+  background-color: #b8ffcf;
 }
 
 .c-notice--positive .c-notice__dismiss:hover {
-  background-color: #00511b;
+  background-color: #005c1f;
 }
 
 .c-notice--positive .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #8fffb5;
+  box-shadow: 0 0 0 3px #8fffb4;
 }
 
 .c-notice--positive .c-notice__dismiss:active {
-  background-color: #003d14;
+  background-color: #004818;
 }
 
 .c-notice--warning {
