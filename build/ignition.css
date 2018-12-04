@@ -139,7 +139,7 @@ ins {
 }
 
 del {
-  background-color: #ffd6dc;
+  background-color: #ffd9d6;
 }
 
 ins {
@@ -640,54 +640,54 @@ hr {
 
 .c-button--negative {
   color: #ffffff;
-  background-color: #ad0017;
+  background-color: #ad0c00;
 }
 
 .c-button--negative:hover {
-  background-color: #840012;
+  background-color: #840900;
 }
 
 .c-button--negative:focus {
-  box-shadow: 0 0 0 3px #ff99a7;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-button--negative:active {
-  background-color: #70000f;
+  background-color: #700800;
 }
 
 .c-button--negative-outlined {
-  border-color: #ad0017;
-  color: #ad0017;
+  border-color: #ad0c00;
+  color: #ad0c00;
   background-color: transparent;
 }
 
 .c-button--negative-outlined:hover {
-  background-color: #ffd6dc;
+  background-color: #ffd9d6;
 }
 
 .c-button--negative-outlined:focus {
-  box-shadow: 0 0 0 3px #ff99a7;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-button--negative-outlined:active {
-  background-color: #ffc2ca;
+  background-color: #ffc6c2;
 }
 
 .c-button--negative-plain {
-  color: #ad0017;
+  color: #ad0c00;
   background-color: transparent;
 }
 
 .c-button--negative-plain:hover {
-  background-color: #ffd6dc;
+  background-color: #ffd9d6;
 }
 
 .c-button--negative-plain:focus {
-  box-shadow: 0 0 0 3px #ff99a7;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-button--negative-plain:active {
-  background-color: #ffc2ca;
+  background-color: #ffc6c2;
 }
 
 .c-button--neutral {
@@ -896,11 +896,11 @@ hr {
 }
 
 .c-textfield.is-invalid {
-  border-color: #ad0017;
+  border-color: #ad0c00;
 }
 
 .c-textfield.is-invalid:focus {
-  box-shadow: 0 0 0 3px #ff99a7;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-textfield--select:not([size]):not([multiple]) {
@@ -1085,24 +1085,24 @@ hr {
 }
 
 .c-notice--negative {
-  color: #ad0017;
-  background-color: #ffebed;
+  color: #ad0c00;
+  background-color: #ffeceb;
 }
 
 .c-notice--negative .c-notice__dismiss {
-  background-color: #ffc2ca;
+  background-color: #ffc6c2;
 }
 
 .c-notice--negative .c-notice__dismiss:hover {
-  background-color: #840012;
+  background-color: #840900;
 }
 
 .c-notice--negative .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #ff99a7;
+  box-shadow: 0 0 0 3px #ffa099;
 }
 
 .c-notice--negative .c-notice__dismiss:active {
-  background-color: #70000f;
+  background-color: #700800;
 }
 
 .o-container {
