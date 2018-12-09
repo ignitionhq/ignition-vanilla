@@ -16,10 +16,10 @@
 // .u-margin-right-regular {
 //   margin-right: 1rem !important;
 // }
-// Pass property values via nested maps associated with keywords to generate
-// non-responsive and responsive utilities. Use a media query name established
-// via responsive settings to create utilities tied to a particular query or `all`
-// to generate all possible non-responsive and responsive utilities.
+// Pass property values via nested maps to generate responsive utilities. Use a
+// media query name established via responsive settings to generate responsive
+// utilities or the `all` keyword to generate all possible non-responsive and
+// responsive utilities for a given set of property values.
 // Example:
 // $margin-right-values: (
 //   regular: 1rem,
