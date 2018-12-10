@@ -48,15 +48,14 @@
   } @else {
     // Generate utilities from values passed via maps.
     @each $entry in $values {
-      // Get a keyword that triggers the generation of a specific set of
-      // utilities or a property value alias.
+      // Get a media query name, a keyword, or a property value alias.
       $key: nth($entry, 1);
       // Get property values accompanied optionally by aliases.
       $key-values: nth($entry, 2);
       @if ($key == "all") {
         @if (type-of($key-values) == map) {
-          // Generate non-responsive utilities designated using aliases for
-          // property values (e.g., `.u-margin-right-regular`).
+          // Generate non-responsive utilities designated using property value
+          // aliases (e.g., `.u-margin-right-regular`).
           @each $value-alias, $value in $key-values {
             .u-#{$property-alias}-#{$value-alias} {
               #{$property}: $value !important;
@@ -73,13 +72,13 @@
         }
       }
       @if (map-has-key($queries, $key) or $key == "all") {
-        // Get query names.
+        // Get media query names.
         $query-names: if(map-has-key($queries, $key), $key, map-keys($queries));
         @each $query-name in $query-names {
           @include media($query-name) {
             @if (type-of($key-values) == map) {
-              // Generate responsive utilities designated using aliases for
-              // property values (e.g., `.u-margin-right-regular@m`).
+              // Generate responsive utilities designated using property value
+              // aliases (e.g., `.u-margin-right-regular@m`).
               @each $value-alias, $value in $key-values {
                 .u-#{$property-alias}-#{$value-alias}\@#{$query-name} {
                   #{$property}: $value !important;
@@ -100,9 +99,8 @@
       @if (map-has-key($queries, $key) == false and $key != "all") {
         $value-alias: $key;
         $value: $key-values;
-        // Generate non-responsive utilities designated using aliases for
-        // property values defined outside nested maps (e.g.,
-        // `.u-margin-right-regular`).
+        // Generate non-responsive utilities designated using property value
+        // aliases outside nested maps (e.g., `.u-margin-right-regular`).
         .u-#{$property-alias}-#{$value-alias} {
           #{$property}: $value !important;
         }
