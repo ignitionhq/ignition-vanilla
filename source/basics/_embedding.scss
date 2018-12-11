@@ -17,12 +17,12 @@ iframe {
 img,
 video,
 audio {
-  // Prevent item from exceeding parent width.
+  // Prevent overflowing when parent width is exceeded.
   max-width: 100%;
 }
 
 img,
 video {
-  // Prevent item from stretching when a width or height attribute is set.
+  // Prevent stretching when a width or height attribute is set.
   height: auto;
 }
