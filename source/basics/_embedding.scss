@@ -23,6 +23,6 @@ audio {
 
 img,
 video {
-  // Prevent stretching when height is set via attribute.
+  // Prevent item from stretching when a width or height attribute is set.
   height: auto;
 }
