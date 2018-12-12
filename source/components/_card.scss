@@ -17,8 +17,7 @@
   }
 
   .c-card__media {
-    // Override maximum width from embedding basics so that this item can span
-    // the entire parent width.
+    // Negate padding and border to span the entire parent width.
     max-width: calc(100% + 2 * #{$space-large-4});
     margin-right: -$space-large-4;
     margin-bottom: $space-large-4;
@@ -32,6 +31,5 @@
   }
 
   .c-card p:last-child {
-    // Remove bottom margin because of existing padding.
     margin-bottom: 0;
   }
