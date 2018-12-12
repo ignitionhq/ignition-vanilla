@@ -42,7 +42,7 @@ table {
   th,
   td {
     // Employ `calc()` to ensure precise alignment with items that use the same
-    // space values but lack a border.
+    // spacing values but lack a border.
     padding: $space-small-1 $space-regular calc(#{$space-small-1} - #{$border-width-regular});
     border-bottom: $border-width-regular solid $color-neutral-light-2;
     vertical-align: top;
@@ -60,7 +60,7 @@ table {
   caption {
     padding-top: $space-small-1;
     // Employ `calc()` to ensure precise alignment with items that use the same
-    // space values but lack a border.
+    // spacing values but lack a border.
     padding-bottom: calc(#{$space-small-1} - #{$border-width-regular});
     border-bottom: $border-width-regular solid $color-neutral-light-4;
     font-size: $font-size-large-5;
