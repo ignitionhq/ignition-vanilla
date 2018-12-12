@@ -367,8 +367,7 @@
 }
 
 // Disabled buttons
-// List variant-specific disabled styles after variant definitions to avoid
-// repetition.
+// Group all variant-specific disabled styles to avoid repetition.
 
 .c-button--primary,
 .c-button--positive,
