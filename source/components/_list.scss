@@ -12,19 +12,13 @@
     padding-bottom: $space-small-4;
   }
 
-// Menu list
+    .c-list__link {
+      color: $color-neutral-regular;
 
-.c-list--menu {
-  margin-bottom: 0;
-}
-
-  .c-list--menu a {
-    color: $color-neutral-regular;
-
-    &:hover {
-      color: $color-primary-regular;
+      &:hover {
+        color: $color-primary-regular;
+      }
     }
-  }
 
 // Horizontal list
 
