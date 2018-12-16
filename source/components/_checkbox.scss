@@ -1,0 +1,27 @@
+// CHECKBOX
+// Afford one or more selection from a set of options.
+// -----------------------------------------------------------------------------
+
+.c-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid $color-neutral-light-4;
+  border-radius: $border-radius-regular;
+  vertical-align: middle;
+  -webkit-appearance: none;
+
+  &:focus {
+    border-color: $color-primary-regular;
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
+  }
+
+  &:checked {
+    background-color: $color-primary-regular;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg fill='none' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m3.4142 6.5858l-1.4142 1.4142 4.2426 4.2426 7.0711-7.071-1.4142-1.4142-5.6569 5.6568-2.8284-2.8284z' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
