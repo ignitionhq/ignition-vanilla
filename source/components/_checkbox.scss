@@ -27,4 +27,9 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &:disabled {
+    border-color: $color-neutral-regular;
+    background-color: $color-neutral-regular;
+  }
 }

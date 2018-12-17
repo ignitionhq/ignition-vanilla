@@ -936,6 +936,11 @@ hr {
   background-position: center;
 }
 
+.c-checkbox:disabled {
+  border-color: #3d3d3d;
+  background-color: #3d3d3d;
+}
+
 .c-list {
   padding-left: 0;
   list-style: none;
