@@ -8,6 +8,7 @@
   border: 1px solid $color-neutral-light-4;
   border-radius: $border-radius-regular;
   vertical-align: middle;
+  // Allow complete styling in all browsers.
   -webkit-appearance: none;
 
   &:focus {
