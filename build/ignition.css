@@ -917,6 +917,7 @@ hr {
   height: 1.25rem;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
+  margin-right: 0.25rem;
   vertical-align: middle;
   -webkit-appearance: none;
 }
