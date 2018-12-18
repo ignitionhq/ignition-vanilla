@@ -941,6 +941,11 @@ hr {
   background-color: #3d3d3d;
 }
 
+.c-checkbox:disabled + label {
+  opacity: 0.33;
+  cursor: default;
+}
+
 .c-list {
   padding-left: 0;
   list-style: none;

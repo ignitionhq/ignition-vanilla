@@ -31,5 +31,11 @@
   &:disabled {
     border-color: $color-neutral-regular;
     background-color: $color-neutral-regular;
+
+    // Style `label` element adjacent to a disabled checkbox.
+    & + label {
+      opacity: $opacity-low;
+      cursor: default;
+    }
   }
 }
