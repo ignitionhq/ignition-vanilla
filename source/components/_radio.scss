@@ -1,0 +1,41 @@
+// RADIO
+// Select one option from a predefined set.
+// -----------------------------------------------------------------------------
+
+.c-radio {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: $border-width-regular solid $color-neutral-light-4;
+  border-radius: $border-radius-round;
+  margin-right: $space-small-5;
+  vertical-align: middle;
+  // Allow complete styling in all browsers.
+  -webkit-appearance: none;
+
+  &:focus {
+    border-color: $color-primary-regular;
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
+    box-shadow: $box-shadow-regular $color-primary-light-4;
+  }
+
+  &:checked {
+    border-color: $color-primary-regular;
+    background-color: $color-primary-regular;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:disabled {
+    border-color: $color-neutral-regular;
+    background-color: $color-neutral-regular;
+
+    // Style `label` element adjacent to a disabled radio.
+    & + label {
+      opacity: $opacity-low;
+      cursor: default;
+    }
+  }
+}
