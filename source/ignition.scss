@@ -2,12 +2,12 @@
 // Manage global configuration options.
 // -----------------------------------------------------------------------------
 
-@import "settings/typography";
-@import "settings/color";
 @import "settings/appearance";
-@import "settings/spacing";
+@import "settings/color";
 @import "settings/layout";
 @import "settings/responsive";
+@import "settings/spacing";
+@import "settings/typography";
 
 // TOOLS
 // Provide ways to carry out recurring tasks.
@@ -21,43 +21,43 @@
 // -----------------------------------------------------------------------------
 
 @import "basics/common";
-@import "basics/text";
 @import "basics/embedding";
-@import "basics/linking";
 @import "basics/form";
 @import "basics/grouping";
+@import "basics/linking";
+@import "basics/text";
 
 // COMPONENTS
 // Define independent, reusable items.
 // -----------------------------------------------------------------------------
 
-@import "components/heading";
-@import "components/callout";
-@import "components/link";
-@import "components/nav";
 @import "components/button";
-@import "components/textfield";
-@import "components/checkbox";
-@import "components/radio";
-@import "components/list";
+@import "components/callout";
 @import "components/card";
+@import "components/checkbox";
+@import "components/heading";
+@import "components/link";
+@import "components/list";
+@import "components/nav";
 @import "components/notice";
+@import "components/radio";
+@import "components/textfield";
 
 // ORGANIZERS
 // Identify generic structural traits.
 // -----------------------------------------------------------------------------
 
 @import "organizers/container";
-@import "organizers/segment";
 @import "organizers/lineup";
+@import "organizers/segment";
 
 // UTILITIES
 // Identify generic individual traits.
 // -----------------------------------------------------------------------------
 
+@import "utilities/border";
+@import "utilities/box-alignment";
 @import "utilities/display";
 @import "utilities/flex";
-@import "utilities/box-alignment";
-@import "utilities/width";
-@import "utilities/border";
 @import "utilities/margin";
+@import "utilities/width";
