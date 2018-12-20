@@ -896,8 +896,8 @@ sup {
 }
 
 .c-link {
-  color: inherit;
   text-decoration: underline;
+  color: inherit;
 }
 
 .c-link--primary {
