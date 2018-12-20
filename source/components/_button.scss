@@ -12,10 +12,10 @@
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
-  color: $color-neutral-regular;
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
+  color: $color-neutral-regular;
   background-color: $color-neutral-light-2;
 
   &:hover {
