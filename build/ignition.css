@@ -1221,14 +1221,6 @@ sup {
   }
 }
 
-.u-border-radius-regular {
-  border-radius: 4px !important;
-}
-
-.u-border-radius-round {
-  border-radius: 720px !important;
-}
-
 .u-align-items-flex-start {
   align-items: flex-start !important;
 }
@@ -1251,6 +1243,14 @@ sup {
 
 .u-justify-content-center {
   justify-content: center !important;
+}
+
+.u-border-radius-regular {
+  border-radius: 4px !important;
+}
+
+.u-border-radius-round {
+  border-radius: 720px !important;
 }
 
 .u-display-block {
