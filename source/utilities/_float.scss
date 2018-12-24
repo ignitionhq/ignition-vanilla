@@ -1,0 +1,9 @@
+// FLOAT
+// Designate available float directions.
+// -----------------------------------------------------------------------------
+
+$float-values: (
+  all: (left, right, none)
+);
+
+@include utility(float, $float-values);
