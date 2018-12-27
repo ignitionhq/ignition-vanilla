@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 $float-values: (
-  all: (left, right, none)
+  all: (left, right)
 );
 
 @include utility(float, $float-values);
