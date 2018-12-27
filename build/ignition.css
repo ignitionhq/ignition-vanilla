@@ -1339,6 +1339,32 @@ sup {
   flex-wrap: wrap !important;
 }
 
+.u-float-left {
+  float: left !important;
+}
+
+.u-float-right {
+  float: right !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-float-left\@m {
+    float: left !important;
+  }
+  .u-float-right\@m {
+    float: right !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-float-left\@l {
+    float: left !important;
+  }
+  .u-float-right\@l {
+    float: right !important;
+  }
+}
+
 .u-margin-right-regular {
   margin-right: 1rem !important;
 }
