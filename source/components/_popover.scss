@@ -9,6 +9,7 @@
   border-radius: $border-radius-regular;
   color: $color-neutral-regular;
   background-color: $color-white-regular;
+  box-shadow: $box-shadow-regular $color-neutral-light-2;
 
   &::after {
     content: "";
@@ -23,5 +24,6 @@
     border-color: $color-neutral-light-4;
     margin-left: -0.5rem;
     background-color: inherit;
+    box-shadow: 3px 3px 0 0 $color-neutral-light-2;
   }
 }
