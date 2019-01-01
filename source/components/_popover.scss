@@ -19,9 +19,9 @@
     transform: rotate(45deg);
     width: 1rem;
     height: 1rem;
-    border-width: 0 $border-width-regular $border-width-regular 0;
-    border-style: solid;
-    border-color: $color-neutral-light-4;
+    border: $border-width-regular solid $color-neutral-light-4;
+    border-top-color: transparent;
+    border-left-color: transparent;
     margin-left: -0.5rem;
     background-color: inherit;
     box-shadow: 3px 3px 0 0 $color-neutral-light-2;
