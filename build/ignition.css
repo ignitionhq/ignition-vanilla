@@ -1127,6 +1127,36 @@ sup {
   cursor: default;
 }
 
+.c-tabs__list {
+  display: flex;
+  padding-left: 0;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.c-tabs__link {
+  display: inline-block;
+  padding: 0.625rem 1rem;
+  margin-bottom: -1px;
+  color: #3d3d3d;
+}
+
+.c-tabs__link:hover {
+  padding-bottom: calc(0.625rem - 4px);
+  border-bottom: 4px solid #ebebeb;
+}
+
+.c-tabs__link.is-selected {
+  padding-bottom: calc(0.625rem - 4px);
+  border-bottom: 4px solid #3d3d3d;
+}
+
+.c-tabs__panel {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
