@@ -1152,11 +1152,6 @@ sup {
   border-bottom: 4px solid #3d3d3d;
 }
 
-.c-tabs__panel {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
