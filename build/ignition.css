@@ -1127,7 +1127,7 @@ sup {
   cursor: default;
 }
 
-.c-tabs__list {
+.c-tabs {
   display: flex;
   padding-left: 0;
   border-bottom: 1px solid #ebebeb;
