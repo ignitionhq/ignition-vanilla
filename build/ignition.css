@@ -1143,13 +1143,13 @@ sup {
 }
 
 .c-tabs__link:hover {
-  padding-bottom: calc(0.625rem - 4px);
-  border-bottom: 4px solid #ebebeb;
+  color: #006dcc;
 }
 
 .c-tabs__link.is-selected {
   padding-bottom: calc(0.625rem - 4px);
-  border-bottom: 4px solid #3d3d3d;
+  border-bottom: 4px solid #006dcc;
+  color: #006dcc;
 }
 
 .c-textfield {

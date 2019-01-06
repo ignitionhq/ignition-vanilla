@@ -17,12 +17,12 @@
     color: $color-neutral-regular;
 
     &:hover {
-      padding-bottom: calc(#{$space-small-2} - #{$border-width-thick});
-      border-bottom: $border-width-thick solid $color-neutral-light-2;
+      color: $color-primary-regular;
     }
 
     &.is-selected {
       padding-bottom: calc(#{$space-small-2} - #{$border-width-thick});
-      border-bottom: $border-width-thick solid $color-neutral-regular;
+      border-bottom: $border-width-thick solid $color-primary-regular;
+      color: $color-primary-regular;
     }
   }
