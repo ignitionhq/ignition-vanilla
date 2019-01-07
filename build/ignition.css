@@ -1152,6 +1152,22 @@ sup {
   color: #006dcc;
 }
 
+.c-tag {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 720px;
+  color: #3d3d3d;
+  background-color: #ebebeb;
+}
+
+.c-tag:hover {
+  background-color: #d6d6d6;
+}
+
+.c-tag:active {
+  background-color: #cccccc;
+}
+
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
