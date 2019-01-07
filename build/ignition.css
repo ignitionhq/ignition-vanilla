@@ -1127,6 +1127,31 @@ sup {
   cursor: default;
 }
 
+.c-tabs {
+  display: flex;
+  padding-left: 0;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.c-tabs__link {
+  display: inline-block;
+  padding: 0.625rem 1rem;
+  margin-bottom: -1px;
+  color: #3d3d3d;
+}
+
+.c-tabs__link:hover {
+  color: #006dcc;
+}
+
+.c-tabs__link.is-selected {
+  padding-bottom: calc(0.625rem - 4px);
+  border-bottom: 4px solid #006dcc;
+  color: #006dcc;
+}
+
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
