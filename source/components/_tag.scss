@@ -8,7 +8,11 @@
   border-radius: $border-radius-round;
   color: $color-neutral-regular;
   background-color: $color-neutral-light-2;
+}
 
+// Interactive tag
+
+.c-tag--interactive {
   &:hover {
     background-color: $color-neutral-light-4;
   }

@@ -1160,11 +1160,11 @@ sup {
   background-color: #ebebeb;
 }
 
-.c-tag:hover {
+.c-tag--interactive:hover {
   background-color: #d6d6d6;
 }
 
-.c-tag:active {
+.c-tag--interactive:active {
   background-color: #cccccc;
 }
 
