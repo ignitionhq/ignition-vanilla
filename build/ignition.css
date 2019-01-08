@@ -1168,6 +1168,24 @@ sup {
   background-color: #cccccc;
 }
 
+.c-tag--primary {
+  color: #ffffff;
+  background-color: #006dcc;
+}
+
+.c-tag--primary-interactive {
+  color: #ffffff;
+  background-color: #006dcc;
+}
+
+.c-tag--primary-interactive:hover {
+  background-color: #0057a3;
+}
+
+.c-tag--primary-interactive:active {
+  background-color: #004c8f;
+}
+
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
