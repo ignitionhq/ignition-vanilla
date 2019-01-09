@@ -346,7 +346,7 @@ mark {
   padding: 0.125em 0.25em;
   border-radius: 4px;
   color: #3d3d3d;
-  background-color: #ffda8f;
+  background-color: #ffe0a3;
 }
 
 small {
@@ -387,7 +387,7 @@ sup {
 
 .c-button:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #b8b8b8;
+  box-shadow: 0 0 0 3px #c2c2c2;
 }
 
 .c-button:active {
@@ -412,7 +412,7 @@ sup {
 }
 
 .c-button--primary:focus {
-  box-shadow: 0 0 0 3px #99d0ff;
+  box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-button--primary:active {
@@ -430,7 +430,7 @@ sup {
 }
 
 .c-button--primary-outlined:focus {
-  box-shadow: 0 0 0 3px #99d0ff;
+  box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-button--primary-outlined:active {
@@ -447,7 +447,7 @@ sup {
 }
 
 .c-button--primary-plain:focus {
-  box-shadow: 0 0 0 3px #99d0ff;
+  box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-button--primary-plain:active {
@@ -464,7 +464,7 @@ sup {
 }
 
 .c-button--positive:focus {
-  box-shadow: 0 0 0 3px #8fff9e;
+  box-shadow: 0 0 0 3px #a3ffaf;
 }
 
 .c-button--positive:active {
@@ -482,7 +482,7 @@ sup {
 }
 
 .c-button--positive-outlined:focus {
-  box-shadow: 0 0 0 3px #8fff9e;
+  box-shadow: 0 0 0 3px #a3ffaf;
 }
 
 .c-button--positive-outlined:active {
@@ -499,7 +499,7 @@ sup {
 }
 
 .c-button--positive-plain:focus {
-  box-shadow: 0 0 0 3px #8fff9e;
+  box-shadow: 0 0 0 3px #a3ffaf;
 }
 
 .c-button--positive-plain:active {
@@ -516,7 +516,7 @@ sup {
 }
 
 .c-button--warning:focus {
-  box-shadow: 0 0 0 3px #ffda8f;
+  box-shadow: 0 0 0 3px #ffe0a3;
 }
 
 .c-button--warning:active {
@@ -534,7 +534,7 @@ sup {
 }
 
 .c-button--warning-outlined:focus {
-  box-shadow: 0 0 0 3px #ffda8f;
+  box-shadow: 0 0 0 3px #ffe0a3;
 }
 
 .c-button--warning-outlined:active {
@@ -551,7 +551,7 @@ sup {
 }
 
 .c-button--warning-plain:focus {
-  box-shadow: 0 0 0 3px #ffda8f;
+  box-shadow: 0 0 0 3px #ffe0a3;
 }
 
 .c-button--warning-plain:active {
@@ -568,7 +568,7 @@ sup {
 }
 
 .c-button--negative:focus {
-  box-shadow: 0 0 0 3px #ffa099;
+  box-shadow: 0 0 0 3px #ffb3ad;
 }
 
 .c-button--negative:active {
@@ -586,7 +586,7 @@ sup {
 }
 
 .c-button--negative-outlined:focus {
-  box-shadow: 0 0 0 3px #ffa099;
+  box-shadow: 0 0 0 3px #ffb3ad;
 }
 
 .c-button--negative-outlined:active {
@@ -603,7 +603,7 @@ sup {
 }
 
 .c-button--negative-plain:focus {
-  box-shadow: 0 0 0 3px #ffa099;
+  box-shadow: 0 0 0 3px #ffb3ad;
 }
 
 .c-button--negative-plain:active {
@@ -668,15 +668,15 @@ sup {
 }
 
 .c-button--inverse:hover {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.84);
 }
 
 .c-button--inverse:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
 }
 
 .c-button--inverse:active {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .c-button--inverse-outlined {
@@ -686,15 +686,15 @@ sup {
 }
 
 .c-button--inverse-outlined:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .c-button--inverse-outlined:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
 }
 
 .c-button--inverse-outlined:active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .c-button--inverse-plain {
@@ -703,15 +703,15 @@ sup {
 }
 
 .c-button--inverse-plain:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .c-button--inverse-plain:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
 }
 
 .c-button--inverse-plain:active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .c-button--primary:disabled,
@@ -838,7 +838,7 @@ sup {
 .c-checkbox:focus {
   border-color: #006dcc;
   outline: 0;
-  box-shadow: 0 0 0 3px #99d0ff;
+  box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-checkbox:checked {
@@ -1023,7 +1023,7 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #99d0ff;
+  box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-notice--primary .c-notice__dismiss:active {
@@ -1044,7 +1044,7 @@ sup {
 }
 
 .c-notice--positive .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #8fff9e;
+  box-shadow: 0 0 0 3px #a3ffaf;
 }
 
 .c-notice--positive .c-notice__dismiss:active {
@@ -1065,7 +1065,7 @@ sup {
 }
 
 .c-notice--warning .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #ffda8f;
+  box-shadow: 0 0 0 3px #ffe0a3;
 }
 
 .c-notice--warning .c-notice__dismiss:active {
@@ -1086,7 +1086,7 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #ffa099;
+  box-shadow: 0 0 0 3px #ffb3ad;
 }
 
 .c-notice--negative .c-notice__dismiss:active {
@@ -1106,7 +1106,7 @@ sup {
 .c-radio:focus {
   border-color: #006dcc;
   outline: 0;
-  box-shadow: 0 0 0 3px #99d0ff;
+  box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-radio:checked {
@@ -1200,7 +1200,7 @@ sup {
 .c-textfield:focus {
   border-color: #006dcc;
   outline: 0;
-  box-shadow: 0 0 0 3px #99d0ff;
+  box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-textfield.is-valid {
@@ -1208,7 +1208,7 @@ sup {
 }
 
 .c-textfield.is-valid:focus {
-  box-shadow: 0 0 0 3px #8fff9e;
+  box-shadow: 0 0 0 3px #a3ffaf;
 }
 
 .c-textfield.is-invalid {
@@ -1216,7 +1216,7 @@ sup {
 }
 
 .c-textfield.is-invalid:focus {
-  box-shadow: 0 0 0 3px #ffa099;
+  box-shadow: 0 0 0 3px #ffb3ad;
 }
 
 .c-textfield--select:not([size]):not([multiple]) {
