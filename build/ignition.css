@@ -668,15 +668,15 @@ sup {
 }
 
 .c-button--inverse:hover {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 0.84);
 }
 
 .c-button--inverse:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
 }
 
 .c-button--inverse:active {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .c-button--inverse-outlined {
@@ -686,15 +686,15 @@ sup {
 }
 
 .c-button--inverse-outlined:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .c-button--inverse-outlined:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
 }
 
 .c-button--inverse-outlined:active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .c-button--inverse-plain {
@@ -703,15 +703,15 @@ sup {
 }
 
 .c-button--inverse-plain:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .c-button--inverse-plain:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.36);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
 }
 
 .c-button--inverse-plain:active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .c-button--primary:disabled,
