@@ -211,7 +211,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: #006dcc;
+  color: #0062b8;
 }
 
 h1,
@@ -404,11 +404,11 @@ sup {
 
 .c-button--primary {
   color: #ffffff;
-  background-color: #006dcc;
+  background-color: #0062b8;
 }
 
 .c-button--primary:hover {
-  background-color: #0057a3;
+  background-color: #004c8f;
 }
 
 .c-button--primary:focus {
@@ -416,12 +416,12 @@ sup {
 }
 
 .c-button--primary:active {
-  background-color: #004c8f;
+  background-color: #00417b;
 }
 
 .c-button--primary-outlined {
-  border-color: #006dcc;
-  color: #006dcc;
+  border-color: #0062b8;
+  color: #0062b8;
   background-color: transparent;
 }
 
@@ -434,11 +434,11 @@ sup {
 }
 
 .c-button--primary-outlined:active {
-  background-color: #c2e3ff;
+  background-color: #c2e2ff;
 }
 
 .c-button--primary-plain {
-  color: #006dcc;
+  color: #0062b8;
   background-color: transparent;
 }
 
@@ -451,7 +451,7 @@ sup {
 }
 
 .c-button--primary-plain:active {
-  background-color: #c2e3ff;
+  background-color: #c2e2ff;
 }
 
 .c-button--positive {
@@ -836,14 +836,14 @@ sup {
 }
 
 .c-checkbox:focus {
-  border-color: #006dcc;
+  border-color: #0062b8;
   outline: 0;
   box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-checkbox:checked {
-  border-color: #006dcc;
-  background-color: #006dcc;
+  border-color: #0062b8;
+  background-color: #0062b8;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.41421 6.58579L3 8L7.24264 12.2426L14.3137 5.17157L12.8995 3.75736L7.24264 9.41421L4.41421 6.58579Z' fill='white'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
@@ -901,7 +901,7 @@ sup {
 }
 
 .c-link--primary {
-  color: #006dcc;
+  color: #0062b8;
 }
 
 .c-list {
@@ -919,7 +919,7 @@ sup {
 }
 
 .c-list__link:hover {
-  color: #006dcc;
+  color: #0062b8;
 }
 
 .c-list--horizontal {
@@ -945,11 +945,11 @@ sup {
 }
 
 .c-nav__link:hover {
-  color: #006dcc;
+  color: #0062b8;
 }
 
 .c-nav__link.is-selected {
-  color: #006dcc;
+  color: #0062b8;
 }
 
 .c-nav--vertical {
@@ -1010,16 +1010,16 @@ sup {
 }
 
 .c-notice--primary {
-  color: #006dcc;
-  background-color: #ebf6ff;
+  color: #0062b8;
+  background-color: #ebf5ff;
 }
 
 .c-notice--primary .c-notice__dismiss {
-  background-color: #c2e3ff;
+  background-color: #c2e2ff;
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
-  background-color: #0057a3;
+  background-color: #004c8f;
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
@@ -1027,7 +1027,7 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss:active {
-  background-color: #004c8f;
+  background-color: #00417b;
 }
 
 .c-notice--positive {
@@ -1104,14 +1104,14 @@ sup {
 }
 
 .c-radio:focus {
-  border-color: #006dcc;
+  border-color: #0062b8;
   outline: 0;
   box-shadow: 0 0 0 3px #add9ff;
 }
 
 .c-radio:checked {
-  border-color: #006dcc;
-  background-color: #006dcc;
+  border-color: #0062b8;
+  background-color: #0062b8;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='4' fill='white'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
@@ -1143,13 +1143,13 @@ sup {
 }
 
 .c-tabs__link:hover {
-  color: #006dcc;
+  color: #0062b8;
 }
 
 .c-tabs__link.is-selected {
   padding-bottom: calc(0.625rem - 4px);
-  border-bottom: 4px solid #006dcc;
-  color: #006dcc;
+  border-bottom: 4px solid #0062b8;
+  color: #0062b8;
 }
 
 .c-tag {
@@ -1170,20 +1170,20 @@ sup {
 
 .c-tag--primary {
   color: #ffffff;
-  background-color: #006dcc;
+  background-color: #0062b8;
 }
 
 .c-tag--primary-interactive {
   color: #ffffff;
-  background-color: #006dcc;
+  background-color: #0062b8;
 }
 
 .c-tag--primary-interactive:hover {
-  background-color: #0057a3;
+  background-color: #004c8f;
 }
 
 .c-tag--primary-interactive:active {
-  background-color: #004c8f;
+  background-color: #00417b;
 }
 
 .c-textfield {
@@ -1198,7 +1198,7 @@ sup {
 }
 
 .c-textfield:focus {
-  border-color: #006dcc;
+  border-color: #0062b8;
   outline: 0;
   box-shadow: 0 0 0 3px #add9ff;
 }
