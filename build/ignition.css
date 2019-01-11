@@ -339,7 +339,7 @@ del {
 
 ins {
   text-decoration: none;
-  background-color: #ccffd3;
+  background-color: #ccffda;
 }
 
 mark {
@@ -456,54 +456,54 @@ sup {
 
 .c-button--positive {
   color: #ffffff;
-  background-color: #007a10;
+  background-color: #007a21;
 }
 
 .c-button--positive:hover {
-  background-color: #00510b;
+  background-color: #005116;
 }
 
 .c-button--positive:focus {
-  box-shadow: 0 0 0 3px #a3ffaf;
+  box-shadow: 0 0 0 3px #a3ffbc;
 }
 
 .c-button--positive:active {
-  background-color: #003d08;
+  background-color: #003d10;
 }
 
 .c-button--positive-outlined {
-  border-color: #007a10;
-  color: #007a10;
+  border-color: #007a21;
+  color: #007a21;
   background-color: transparent;
 }
 
 .c-button--positive-outlined:hover {
-  background-color: #ccffd3;
+  background-color: #ccffda;
 }
 
 .c-button--positive-outlined:focus {
-  box-shadow: 0 0 0 3px #a3ffaf;
+  box-shadow: 0 0 0 3px #a3ffbc;
 }
 
 .c-button--positive-outlined:active {
-  background-color: #b8ffc1;
+  background-color: #b8ffcb;
 }
 
 .c-button--positive-plain {
-  color: #007a10;
+  color: #007a21;
   background-color: transparent;
 }
 
 .c-button--positive-plain:hover {
-  background-color: #ccffd3;
+  background-color: #ccffda;
 }
 
 .c-button--positive-plain:focus {
-  box-shadow: 0 0 0 3px #a3ffaf;
+  box-shadow: 0 0 0 3px #a3ffbc;
 }
 
 .c-button--positive-plain:active {
-  background-color: #b8ffc1;
+  background-color: #b8ffcb;
 }
 
 .c-button--warning {
@@ -1031,24 +1031,24 @@ sup {
 }
 
 .c-notice--positive {
-  color: #007a10;
-  background-color: #e0ffe4;
+  color: #007a21;
+  background-color: #e0ffe9;
 }
 
 .c-notice--positive .c-notice__dismiss {
-  background-color: #b8ffc1;
+  background-color: #b8ffcb;
 }
 
 .c-notice--positive .c-notice__dismiss:hover {
-  background-color: #00510b;
+  background-color: #005116;
 }
 
 .c-notice--positive .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #a3ffaf;
+  box-shadow: 0 0 0 3px #a3ffbc;
 }
 
 .c-notice--positive .c-notice__dismiss:active {
-  background-color: #003d08;
+  background-color: #003d10;
 }
 
 .c-notice--warning {
@@ -1204,11 +1204,11 @@ sup {
 }
 
 .c-textfield.is-valid {
-  border-color: #007a10;
+  border-color: #007a21;
 }
 
 .c-textfield.is-valid:focus {
-  box-shadow: 0 0 0 3px #a3ffaf;
+  box-shadow: 0 0 0 3px #a3ffbc;
 }
 
 .c-textfield.is-invalid {
