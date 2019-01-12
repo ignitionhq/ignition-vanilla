@@ -44,7 +44,7 @@ $color-warning-dark-2: adjust-color($color-warning-regular, $lightness: -12%);
 // Negative
 
 // Provide a standard negative color.
-$color-negative-regular: #ad0c00;
+$color-negative-regular: #a30b00;
 // Provide lighter than standard negative colors.
 $color-negative-light-1: change-color($color-negative-regular, $lightness: 96%);
 $color-negative-light-2: change-color($color-negative-regular, $lightness: 92%);
