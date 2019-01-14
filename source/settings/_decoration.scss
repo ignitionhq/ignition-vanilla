@@ -2,6 +2,11 @@
 // Define common cosmetic enhancements.
 // -----------------------------------------------------------------------------
 
+// Opacity
+
+// Provide a low opacity value.
+$opacity-low: 0.33;
+
 // Border width
 
 // Provide a standard border width.
@@ -20,8 +25,3 @@ $border-radius-full: 720px;
 
 // Provide a standard box shadow.
 $box-shadow-regular: 0 0 0 3px;
-
-// Opacity
-
-// Provide a low opacity value.
-$opacity-low: 0.33;
