@@ -3,11 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .c-tabs {
+  @include list-reset;
   display: flex;
-  padding-left: 0;
   border-bottom: $border-width-regular solid $color-neutral-light-2;
   margin-bottom: 0;
-  list-style: none;
 }
 
   .c-tabs__link {

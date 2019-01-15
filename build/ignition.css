@@ -932,10 +932,10 @@ sup {
 }
 
 .c-nav {
-  display: flex;
   padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
+  display: flex;
+  margin-bottom: 0;
 }
 
 .c-nav__link {
@@ -1128,11 +1128,11 @@ sup {
 }
 
 .c-tabs {
-  display: flex;
   padding-left: 0;
+  list-style: none;
+  display: flex;
   border-bottom: 1px solid #ebebeb;
   margin-bottom: 0;
-  list-style: none;
 }
 
 .c-tabs__link {
