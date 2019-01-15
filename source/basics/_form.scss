@@ -58,7 +58,7 @@ button,
 
   // Remove inner border on focus in Firefox.
   &::-moz-focus-inner {
-    border-style: none;
+    border: 0;
   }
 }
 
