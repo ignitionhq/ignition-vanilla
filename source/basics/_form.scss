@@ -56,9 +56,9 @@ button,
   // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
 
-  // Remove inner focus outline in Firefox.
+  // Remove inner border on focus in Firefox.
   &::-moz-focus-inner {
-    border-style: none;
+    border: 0;
   }
 }
 
@@ -89,8 +89,7 @@ select {
   // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: none;
 
-  // Remove cancel button in Chrome and Safari and extra inner space in Safari.
-  &::-webkit-search-cancel-button,
+  // Remove extra inner space in Safari.
   &::-webkit-search-decoration {
     -webkit-appearance: none;
   }

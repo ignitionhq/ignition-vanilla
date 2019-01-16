@@ -90,7 +90,7 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
+  border: 0;
 }
 
 button,
@@ -115,7 +115,6 @@ select {
   -webkit-appearance: none;
 }
 
-[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -165,7 +164,7 @@ table {
 th,
 td {
   padding: 0.75rem 1rem calc(0.75rem - 1px);
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #e0e0e0;
   vertical-align: top;
 }
 
@@ -174,14 +173,13 @@ th {
 }
 
 thead th {
-  border-color: #d6d6d6;
   vertical-align: bottom;
 }
 
 caption {
   padding-top: 0.75rem;
   padding-bottom: calc(0.75rem - 1px);
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid #e0e0e0;
   font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
@@ -206,7 +204,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #d6d6d6;
+  background-color: #e0e0e0;
 }
 
 a {

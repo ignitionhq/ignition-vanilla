@@ -44,7 +44,7 @@ table {
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
     padding: $space-small-1 $space-regular calc(#{$space-small-1} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-neutral-light-2;
+    border-bottom: $border-width-regular solid $color-neutral-light-3;
     vertical-align: top;
   }
 
@@ -53,7 +53,6 @@ table {
   }
 
   thead th {
-    border-color: $color-neutral-light-4;
     vertical-align: bottom;
   }
 
@@ -62,7 +61,7 @@ table {
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
     padding-bottom: calc(#{$space-small-1} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-neutral-light-4;
+    border-bottom: $border-width-regular solid $color-neutral-light-3;
     font-size: $font-size-large-5;
     font-weight: bold;
     text-align: left;
@@ -97,5 +96,5 @@ hr {
   border: 0;
   margin-top: $space-large-2;
   margin-bottom: $space-large-2;
-  background-color: $color-neutral-light-4;
+  background-color: $color-neutral-light-3;
 }
