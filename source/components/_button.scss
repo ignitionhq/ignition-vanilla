@@ -15,22 +15,22 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-neutral-regular;
-  background-color: $color-neutral-light-2;
+  color: $color-white-regular;
+  background-color: $color-neutral-regular;
 
   &:hover {
-    background-color: $color-neutral-light-4;
+    background-color: $color-neutral-dark-1;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-neutral-light-6;
+    box-shadow: $box-shadow-regular $color-neutral-light-4;
   }
 
   &:active {
-    background-color: $color-neutral-light-5;
+    background-color: $color-neutral-dark-2;
   }
 
   &:disabled,
@@ -39,6 +39,45 @@
     background-color: $color-neutral-light-2;
     box-shadow: none;
     cursor: default;
+  }
+}
+
+// Outlined button
+
+.c-button--outlined {
+  border-color: $color-neutral-regular;
+  color: $color-neutral-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-neutral-light-2;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-neutral-light-4;
+  }
+
+  &:active {
+    background-color: $color-neutral-light-3;
+  }
+}
+
+// Plain button
+
+.c-button--plain {
+  color: $color-neutral-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-neutral-light-2;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-neutral-light-4;
+  }
+
+  &:active {
+    background-color: $color-neutral-light-3;
   }
 }
 
@@ -258,60 +297,6 @@
   }
 }
 
-// Neutral buttons
-
-.c-button--neutral {
-  color: $color-white-regular;
-  background-color: $color-neutral-regular;
-
-  &:hover {
-    background-color: $color-neutral-dark-1;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-5;
-  }
-
-  &:active {
-    background-color: $color-neutral-dark-2;
-  }
-}
-
-.c-button--neutral-outlined {
-  border-color: $color-neutral-regular;
-  color: $color-neutral-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-neutral-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-5;
-  }
-
-  &:active {
-    background-color: $color-neutral-light-3;
-  }
-}
-
-.c-button--neutral-plain {
-  color: $color-neutral-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-neutral-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-5;
-  }
-
-  &:active {
-    background-color: $color-neutral-light-3;
-  }
-}
-
 // Inverse buttons
 
 .c-button--inverse {
@@ -369,11 +354,11 @@
 // Disabled buttons
 // Group all variant-specific disabled styles to avoid repetition.
 
+.c-button,
 .c-button--primary,
 .c-button--positive,
 .c-button--warning,
-.c-button--negative,
-.c-button--neutral {
+.c-button--negative {
   &:disabled,
   &.is-disabled {
     background-color: $color-neutral-regular;
@@ -389,11 +374,11 @@
   }
 }
 
+.c-button--outlined,
 .c-button--primary-outlined,
 .c-button--positive-outlined,
 .c-button--warning-outlined,
-.c-button--negative-outlined,
-.c-button--neutral-outlined {
+.c-button--negative-outlined {
   &:disabled,
   &.is-disabled {
     border-color: $color-neutral-regular;
@@ -413,11 +398,11 @@
   }
 }
 
+.c-button--plain,
 .c-button--primary-plain,
 .c-button--positive-plain,
 .c-button--warning-plain,
-.c-button--negative-plain,
-.c-button--neutral-plain {
+.c-button--negative-plain {
   &:disabled,
   &.is-disabled {
     color: $color-neutral-regular;

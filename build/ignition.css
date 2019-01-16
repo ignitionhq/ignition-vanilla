@@ -375,21 +375,21 @@ sup {
   line-height: 1.5;
   text-align: center;
   white-space: nowrap;
-  color: #3d3d3d;
-  background-color: #ebebeb;
+  color: #ffffff;
+  background-color: #3d3d3d;
 }
 
 .c-button:hover {
-  background-color: #d6d6d6;
+  background-color: #292929;
 }
 
 .c-button:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #c2c2c2;
+  box-shadow: 0 0 0 3px #d6d6d6;
 }
 
 .c-button:active {
-  background-color: #cccccc;
+  background-color: #1e1e1e;
 }
 
 .c-button:disabled,
@@ -398,6 +398,41 @@ sup {
   background-color: #ebebeb;
   box-shadow: none;
   cursor: default;
+}
+
+.c-button--outlined {
+  border-color: #3d3d3d;
+  color: #3d3d3d;
+  background-color: transparent;
+}
+
+.c-button--outlined:hover {
+  background-color: #ebebeb;
+}
+
+.c-button--outlined:focus {
+  box-shadow: 0 0 0 3px #d6d6d6;
+}
+
+.c-button--outlined:active {
+  background-color: #e0e0e0;
+}
+
+.c-button--plain {
+  color: #3d3d3d;
+  background-color: transparent;
+}
+
+.c-button--plain:hover {
+  background-color: #ebebeb;
+}
+
+.c-button--plain:focus {
+  box-shadow: 0 0 0 3px #d6d6d6;
+}
+
+.c-button--plain:active {
+  background-color: #e0e0e0;
 }
 
 .c-button--primary {
@@ -608,58 +643,6 @@ sup {
   background-color: #ffc6c2;
 }
 
-.c-button--neutral {
-  color: #ffffff;
-  background-color: #3d3d3d;
-}
-
-.c-button--neutral:hover {
-  background-color: #292929;
-}
-
-.c-button--neutral:focus {
-  box-shadow: 0 0 0 3px #cccccc;
-}
-
-.c-button--neutral:active {
-  background-color: #1e1e1e;
-}
-
-.c-button--neutral-outlined {
-  border-color: #3d3d3d;
-  color: #3d3d3d;
-  background-color: transparent;
-}
-
-.c-button--neutral-outlined:hover {
-  background-color: #ebebeb;
-}
-
-.c-button--neutral-outlined:focus {
-  box-shadow: 0 0 0 3px #cccccc;
-}
-
-.c-button--neutral-outlined:active {
-  background-color: #e0e0e0;
-}
-
-.c-button--neutral-plain {
-  color: #3d3d3d;
-  background-color: transparent;
-}
-
-.c-button--neutral-plain:hover {
-  background-color: #ebebeb;
-}
-
-.c-button--neutral-plain:focus {
-  box-shadow: 0 0 0 3px #cccccc;
-}
-
-.c-button--neutral-plain:active {
-  background-color: #e0e0e0;
-}
-
 .c-button--inverse {
   color: #3d3d3d;
   background-color: #ffffff;
@@ -712,6 +695,8 @@ sup {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
+.c-button:disabled,
+.c-button.is-disabled,
 .c-button--primary:disabled,
 .c-button--primary.is-disabled,
 .c-button--positive:disabled,
@@ -719,9 +704,7 @@ sup {
 .c-button--warning:disabled,
 .c-button--warning.is-disabled,
 .c-button--negative:disabled,
-.c-button--negative.is-disabled,
-.c-button--neutral:disabled,
-.c-button--neutral.is-disabled {
+.c-button--negative.is-disabled {
   background-color: #3d3d3d;
   box-shadow: none;
 }
@@ -732,6 +715,8 @@ sup {
   box-shadow: none;
 }
 
+.c-button--outlined:disabled,
+.c-button--outlined.is-disabled,
 .c-button--primary-outlined:disabled,
 .c-button--primary-outlined.is-disabled,
 .c-button--positive-outlined:disabled,
@@ -739,9 +724,7 @@ sup {
 .c-button--warning-outlined:disabled,
 .c-button--warning-outlined.is-disabled,
 .c-button--negative-outlined:disabled,
-.c-button--negative-outlined.is-disabled,
-.c-button--neutral-outlined:disabled,
-.c-button--neutral-outlined.is-disabled {
+.c-button--negative-outlined.is-disabled {
   border-color: #3d3d3d;
   color: #3d3d3d;
   background-color: transparent;
@@ -756,6 +739,8 @@ sup {
   box-shadow: none;
 }
 
+.c-button--plain:disabled,
+.c-button--plain.is-disabled,
 .c-button--primary-plain:disabled,
 .c-button--primary-plain.is-disabled,
 .c-button--positive-plain:disabled,
@@ -763,9 +748,7 @@ sup {
 .c-button--warning-plain:disabled,
 .c-button--warning-plain.is-disabled,
 .c-button--negative-plain:disabled,
-.c-button--negative-plain.is-disabled,
-.c-button--neutral-plain:disabled,
-.c-button--neutral-plain.is-disabled {
+.c-button--negative-plain.is-disabled {
   color: #3d3d3d;
   background-color: transparent;
   box-shadow: none;
