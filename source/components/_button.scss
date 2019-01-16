@@ -36,9 +36,9 @@
   &:disabled,
   &.is-disabled {
     opacity: $opacity-low;
-    background-color: $color-neutral-light-2;
-    box-shadow: none;
     cursor: default;
+    // Mind that common disabled styles are set after variant definitions in
+    // order to avoid repetition and establish a consistent look.
   }
 }
 
@@ -352,7 +352,8 @@
 }
 
 // Disabled buttons
-// Group all variant-specific disabled styles to avoid repetition.
+// Group common disabled styles to avoid repetition and establish a consistent
+// look.
 
 .c-button,
 .c-button--primary,

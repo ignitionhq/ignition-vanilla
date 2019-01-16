@@ -395,8 +395,6 @@ sup {
 .c-button:disabled,
 .c-button.is-disabled {
   opacity: 0.33;
-  background-color: #ebebeb;
-  box-shadow: none;
   cursor: default;
 }
 
