@@ -344,7 +344,6 @@ mark {
   padding: 0.125em 0.25em;
   border-radius: 4px;
   color: #3d3d3d;
-  background-color: #ffe0a3;
 }
 
 small {
@@ -502,58 +501,6 @@ sup {
 
 .c-button--positive-plain:active {
   background-color: #b8ffcb;
-}
-
-.c-button--warning {
-  color: #ffffff;
-  background-color: #8f5f00;
-}
-
-.c-button--warning:hover {
-  background-color: #664400;
-}
-
-.c-button--warning:focus {
-  box-shadow: 0 0 0 3px #ffe0a3;
-}
-
-.c-button--warning:active {
-  background-color: #523600;
-}
-
-.c-button--warning-outlined {
-  border-color: #8f5f00;
-  color: #8f5f00;
-  background-color: transparent;
-}
-
-.c-button--warning-outlined:hover {
-  background-color: #ffeecc;
-}
-
-.c-button--warning-outlined:focus {
-  box-shadow: 0 0 0 3px #ffe0a3;
-}
-
-.c-button--warning-outlined:active {
-  background-color: #ffe7b8;
-}
-
-.c-button--warning-plain {
-  color: #8f5f00;
-  background-color: transparent;
-}
-
-.c-button--warning-plain:hover {
-  background-color: #ffeecc;
-}
-
-.c-button--warning-plain:focus {
-  box-shadow: 0 0 0 3px #ffe0a3;
-}
-
-.c-button--warning-plain:active {
-  background-color: #ffe7b8;
 }
 
 .c-button--negative {
@@ -716,8 +663,6 @@ sup {
 .c-button--primary.is-disabled,
 .c-button--positive:disabled,
 .c-button--positive.is-disabled,
-.c-button--warning:disabled,
-.c-button--warning.is-disabled,
 .c-button--negative:disabled,
 .c-button--negative.is-disabled,
 .c-button--neutral:disabled,
@@ -736,8 +681,6 @@ sup {
 .c-button--primary-outlined.is-disabled,
 .c-button--positive-outlined:disabled,
 .c-button--positive-outlined.is-disabled,
-.c-button--warning-outlined:disabled,
-.c-button--warning-outlined.is-disabled,
 .c-button--negative-outlined:disabled,
 .c-button--negative-outlined.is-disabled,
 .c-button--neutral-outlined:disabled,
@@ -760,8 +703,6 @@ sup {
 .c-button--primary-plain.is-disabled,
 .c-button--positive-plain:disabled,
 .c-button--positive-plain.is-disabled,
-.c-button--warning-plain:disabled,
-.c-button--warning-plain.is-disabled,
 .c-button--negative-plain:disabled,
 .c-button--negative-plain.is-disabled,
 .c-button--neutral-plain:disabled,
@@ -1047,27 +988,6 @@ sup {
 
 .c-notice--positive .c-notice__dismiss:active {
   background-color: #003d10;
-}
-
-.c-notice--warning {
-  color: #8f5f00;
-  background-color: #fff5e0;
-}
-
-.c-notice--warning .c-notice__dismiss {
-  background-color: #ffe7b8;
-}
-
-.c-notice--warning .c-notice__dismiss:hover {
-  background-color: #664400;
-}
-
-.c-notice--warning .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #ffe0a3;
-}
-
-.c-notice--warning .c-notice__dismiss:active {
-  background-color: #523600;
 }
 
 .c-notice--negative {
