@@ -79,29 +79,6 @@
     }
   }
 
-// Positive notice
-
-.c-notice--positive {
-  color: $color-positive-regular;
-  background-color: $color-positive-light-1;
-}
-
-  .c-notice--positive .c-notice__dismiss {
-    background-color: $color-positive-light-3;
-
-    &:hover {
-      background-color: $color-positive-dark-1;
-    }
-
-    &:focus {
-      box-shadow: $box-shadow-regular $color-positive-light-4;
-    }
-
-    &:active {
-      background-color: $color-positive-dark-2;
-    }
-  }
-
 // Negative notice
 
 .c-notice--negative {

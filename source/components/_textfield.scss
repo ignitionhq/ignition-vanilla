@@ -22,14 +22,6 @@
     box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
-  &.is-valid {
-    border-color: $color-positive-regular;
-
-    &:focus {
-      box-shadow: $box-shadow-regular $color-positive-light-4;
-    }
-  }
-
   &.is-invalid {
     border-color: $color-negative-regular;
 

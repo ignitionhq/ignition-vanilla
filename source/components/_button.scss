@@ -96,60 +96,6 @@
   }
 }
 
-// Positive buttons
-
-.c-button--positive {
-  color: $color-white-regular;
-  background-color: $color-positive-regular;
-
-  &:hover {
-    background-color: $color-positive-dark-1;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-4;
-  }
-
-  &:active {
-    background-color: $color-positive-dark-2;
-  }
-}
-
-.c-button--positive-outlined {
-  border-color: $color-positive-regular;
-  color: $color-positive-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-positive-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-4;
-  }
-
-  &:active {
-    background-color: $color-positive-light-3;
-  }
-}
-
-.c-button--positive-plain {
-  color: $color-positive-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-positive-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-positive-light-4;
-  }
-
-  &:active {
-    background-color: $color-positive-light-3;
-  }
-}
-
 // Negative buttons
 
 .c-button--negative {
@@ -316,7 +262,6 @@
 // Group all variant-specific disabled styles to avoid repetition.
 
 .c-button--primary,
-.c-button--positive,
 .c-button--negative,
 .c-button--neutral {
   &:disabled,
@@ -335,7 +280,6 @@
 }
 
 .c-button--primary-outlined,
-.c-button--positive-outlined,
 .c-button--negative-outlined,
 .c-button--neutral-outlined {
   &:disabled,
@@ -358,7 +302,6 @@
 }
 
 .c-button--primary-plain,
-.c-button--positive-plain,
 .c-button--negative-plain,
 .c-button--neutral-plain {
   &:disabled,
