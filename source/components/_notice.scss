@@ -102,29 +102,6 @@
     }
   }
 
-// Warning notice
-
-.c-notice--warning {
-  color: $color-warning-regular;
-  background-color: $color-warning-light-1;
-}
-
-  .c-notice--warning .c-notice__dismiss {
-    background-color: $color-warning-light-3;
-
-    &:hover {
-      background-color: $color-warning-dark-1;
-    }
-
-    &:focus {
-      box-shadow: $box-shadow-regular $color-warning-light-4;
-    }
-
-    &:active {
-      background-color: $color-warning-dark-2;
-    }
-  }
-
 // Negative notice
 
 .c-notice--negative {
