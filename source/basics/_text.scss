@@ -133,23 +133,6 @@ kbd {
   }
 }
 
-// Deletion and insertion
-
-del,
-ins {
-  padding: 0.125em 0.25em;
-  border-radius: $border-radius-regular;
-}
-
-del {
-  background-color: $color-negative-light-2;
-}
-
-ins {
-  text-decoration: none;
-  background-color: $color-positive-light-2;
-}
-
 // Mark
 
 mark {
