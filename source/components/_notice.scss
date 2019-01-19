@@ -5,8 +5,8 @@
 .c-notice {
   padding: $space-regular $space-large-4;
   border-radius: $border-radius-regular;
-  color: $color-neutral-regular;
-  background-color: $color-neutral-light-1;
+  color: $color-gray-regular;
+  background-color: $color-gray-light-1;
 }
 
   .c-notice p:last-child {
@@ -29,23 +29,23 @@
     border-top-right-radius: $border-radius-regular;
     border-bottom-left-radius: $border-radius-regular;
     color: inherit;
-    background-color: $color-neutral-light-3;
+    background-color: $color-gray-light-3;
 
     &:hover {
       color: $color-white-regular;
-      background-color: $color-neutral-dark-1;
+      background-color: $color-gray-dark-1;
     }
 
     &:focus {
       // Mind that the outline should be removed only if other styles that imply
       // focus are set.
       outline: 0;
-      box-shadow: $box-shadow-regular $color-neutral-light-5;
+      box-shadow: $box-shadow-regular $color-gray-light-5;
     }
 
     &:active {
       color: $color-white-regular;
-      background-color: $color-neutral-dark-2;
+      background-color: $color-gray-dark-2;
     }
   }
 
