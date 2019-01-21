@@ -35,7 +35,7 @@
     // Style `label` element adjacent to a disabled radio.
     & + label {
       opacity: $opacity-medium;
-      cursor: default;
+      cursor: not-allowed;
     }
   }
 }
