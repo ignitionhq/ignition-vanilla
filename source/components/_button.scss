@@ -35,7 +35,7 @@
 
   &:disabled,
   &.is-disabled {
-    opacity: $opacity-low;
+    opacity: $opacity-medium;
     background-color: $color-gray-light-2;
     box-shadow: none !important;
     cursor: not-allowed;
