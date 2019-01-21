@@ -119,12 +119,12 @@ kbd {
 }
 
 code {
-  background-color: $color-neutral-light-2;
+  background-color: $color-gray-light-2;
 }
 
 kbd {
   color: $color-white-regular;
-  background-color: $color-neutral-regular;
+  background-color: $color-gray-regular;
 
   kbd {
     // Remove unwanted custom styles from nested user input elements.
@@ -138,7 +138,7 @@ kbd {
 mark {
   padding: 0.125em 0.25em;
   border-radius: $border-radius-regular;
-  color: $color-neutral-regular;
+  color: $color-gray-regular;
 }
 
 // Small

@@ -7,11 +7,11 @@
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-small-2} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
-  border: $border-width-regular solid $color-neutral-light-4;
+  border: $border-width-regular solid $color-gray-light-4;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
-  color: $color-neutral-regular;
+  color: $color-gray-regular;
   background-color: $color-white-regular;
 
   &:focus {
@@ -41,7 +41,7 @@
 
   // Normalize selected option text from focused `select` elements in Edge.
   &:focus::-ms-value {
-    color: $color-neutral-regular;
+    color: $color-gray-regular;
     background-color: $color-white-regular;
   }
 }

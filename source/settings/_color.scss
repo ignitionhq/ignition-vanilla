@@ -28,20 +28,20 @@ $color-negative-light-4: change-color($color-negative-regular, $lightness: 84%);
 $color-negative-dark-1: adjust-color($color-negative-regular, $lightness: -8%);
 $color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -12%);
 
-// Neutral
+// Gray
 
-// Provide a standard neutral color.
-$color-neutral-regular: #3d3d3d;
-// Provide lighter than standard neutral colors.
-$color-neutral-light-1: change-color($color-neutral-regular, $lightness: 96%);
-$color-neutral-light-2: change-color($color-neutral-regular, $lightness: 92%);
-$color-neutral-light-3: change-color($color-neutral-regular, $lightness: 88%);
-$color-neutral-light-4: change-color($color-neutral-regular, $lightness: 84%);
-$color-neutral-light-5: change-color($color-neutral-regular, $lightness: 80%);
-$color-neutral-light-6: change-color($color-neutral-regular, $lightness: 76%);
-// Provide darker than standard neutral colors.
-$color-neutral-dark-1: adjust-color($color-neutral-regular, $lightness: -8%);
-$color-neutral-dark-2: adjust-color($color-neutral-regular, $lightness: -12%);
+// Provide a standard gray color.
+$color-gray-regular: #3d3d3d;
+// Provide lighter than standard gray colors.
+$color-gray-light-1: change-color($color-gray-regular, $lightness: 96%);
+$color-gray-light-2: change-color($color-gray-regular, $lightness: 92%);
+$color-gray-light-3: change-color($color-gray-regular, $lightness: 88%);
+$color-gray-light-4: change-color($color-gray-regular, $lightness: 84%);
+$color-gray-light-5: change-color($color-gray-regular, $lightness: 80%);
+$color-gray-light-6: change-color($color-gray-regular, $lightness: 76%);
+// Provide darker than standard gray colors.
+$color-gray-dark-1: adjust-color($color-gray-regular, $lightness: -8%);
+$color-gray-dark-2: adjust-color($color-gray-regular, $lightness: -12%);
 
 // White
 

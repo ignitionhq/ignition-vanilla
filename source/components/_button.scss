@@ -15,28 +15,28 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-neutral-regular;
-  background-color: $color-neutral-light-2;
+  color: $color-gray-regular;
+  background-color: $color-gray-light-2;
 
   &:hover {
-    background-color: $color-neutral-light-4;
+    background-color: $color-gray-light-4;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-neutral-light-6;
+    box-shadow: $box-shadow-regular $color-gray-light-6;
   }
 
   &:active {
-    background-color: $color-neutral-light-5;
+    background-color: $color-gray-light-5;
   }
 
   &:disabled,
   &.is-disabled {
     opacity: $opacity-low;
-    background-color: $color-neutral-light-2;
+    background-color: $color-gray-light-2;
     box-shadow: none;
     cursor: default;
   }
@@ -154,60 +154,60 @@
 
 .c-button--neutral {
   color: $color-white-regular;
-  background-color: $color-neutral-regular;
+  background-color: $color-gray-regular;
 
   &:hover {
-    background-color: $color-neutral-dark-1;
+    background-color: $color-gray-dark-1;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-5;
+    box-shadow: $box-shadow-regular $color-gray-light-5;
   }
 
   &:active {
-    background-color: $color-neutral-dark-2;
+    background-color: $color-gray-dark-2;
   }
 }
 
 .c-button--neutral-outlined {
-  border-color: $color-neutral-regular;
-  color: $color-neutral-regular;
+  border-color: $color-gray-regular;
+  color: $color-gray-regular;
   background-color: transparent;
 
   &:hover {
-    background-color: $color-neutral-light-2;
+    background-color: $color-gray-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-5;
+    box-shadow: $box-shadow-regular $color-gray-light-5;
   }
 
   &:active {
-    background-color: $color-neutral-light-3;
+    background-color: $color-gray-light-3;
   }
 }
 
 .c-button--neutral-plain {
-  color: $color-neutral-regular;
+  color: $color-gray-regular;
   background-color: transparent;
 
   &:hover {
-    background-color: $color-neutral-light-2;
+    background-color: $color-gray-light-2;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-neutral-light-5;
+    box-shadow: $box-shadow-regular $color-gray-light-5;
   }
 
   &:active {
-    background-color: $color-neutral-light-3;
+    background-color: $color-gray-light-3;
   }
 }
 
 // Inverse buttons
 
 .c-button--inverse {
-  color: $color-neutral-regular;
+  color: $color-gray-regular;
   background-color: $color-white-regular;
 
   &:hover {
@@ -266,7 +266,7 @@
 .c-button--neutral {
   &:disabled,
   &.is-disabled {
-    background-color: $color-neutral-regular;
+    background-color: $color-gray-regular;
     box-shadow: none;
   }
 }
@@ -284,8 +284,8 @@
 .c-button--neutral-outlined {
   &:disabled,
   &.is-disabled {
-    border-color: $color-neutral-regular;
-    color: $color-neutral-regular;
+    border-color: $color-gray-regular;
+    color: $color-gray-regular;
     background-color: transparent;
     box-shadow: none;
   }
@@ -306,7 +306,7 @@
 .c-button--neutral-plain {
   &:disabled,
   &.is-disabled {
-    color: $color-neutral-regular;
+    color: $color-gray-regular;
     background-color: transparent;
     box-shadow: none;
   }
