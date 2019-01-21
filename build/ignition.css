@@ -74,7 +74,7 @@ button:disabled,
 input:disabled,
 textarea:disabled,
 select:disabled {
-  opacity: 0.33;
+  opacity: 0.5;
   cursor: default;
 }
 
@@ -378,7 +378,7 @@ sup {
 
 .c-button:disabled,
 .c-button.is-disabled {
-  opacity: 0.33;
+  opacity: 0.5;
   background-color: #ebebeb;
   box-shadow: none !important;
   cursor: not-allowed;
@@ -727,7 +727,7 @@ sup {
 }
 
 .c-checkbox:disabled + label {
-  opacity: 0.33;
+  opacity: 0.5;
   cursor: default;
 }
 
@@ -953,7 +953,7 @@ sup {
 }
 
 .c-radio:disabled + label {
-  opacity: 0.33;
+  opacity: 0.5;
   cursor: default;
 }
 

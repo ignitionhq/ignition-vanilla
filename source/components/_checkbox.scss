@@ -34,7 +34,7 @@
 
     // Style `label` element adjacent to a disabled checkbox.
     & + label {
-      opacity: $opacity-low;
+      opacity: $opacity-medium;
       cursor: default;
     }
   }
