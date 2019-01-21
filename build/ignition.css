@@ -381,7 +381,7 @@ sup {
   opacity: 0.33;
   background-color: #ebebeb;
   box-shadow: none !important;
-  cursor: default;
+  cursor: not-allowed;
 }
 
 .c-button--primary {
