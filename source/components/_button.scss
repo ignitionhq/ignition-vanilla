@@ -37,7 +37,7 @@
   &.is-disabled {
     opacity: $opacity-low;
     background-color: $color-gray-light-2;
-    box-shadow: none;
+    box-shadow: none !important;
     cursor: default;
   }
 }
@@ -59,6 +59,11 @@
   &:active {
     background-color: $color-primary-dark-2;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: $color-primary-regular;
+  }
 }
 
 .c-button--primary-outlined {
@@ -77,6 +82,11 @@
   &:active {
     background-color: $color-primary-light-3;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
 }
 
 .c-button--primary-plain {
@@ -93,6 +103,11 @@
 
   &:active {
     background-color: $color-primary-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
   }
 }
 
@@ -113,6 +128,11 @@
   &:active {
     background-color: $color-negative-dark-2;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: $color-negative-regular;
+  }
 }
 
 .c-button--negative-outlined {
@@ -131,6 +151,11 @@
   &:active {
     background-color: $color-negative-light-3;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
 }
 
 .c-button--negative-plain {
@@ -147,6 +172,11 @@
 
   &:active {
     background-color: $color-negative-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
   }
 }
 
@@ -167,6 +197,11 @@
   &:active {
     background-color: $color-gray-dark-2;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: $color-gray-regular;
+  }
 }
 
 .c-button--neutral-outlined {
@@ -185,6 +220,11 @@
   &:active {
     background-color: $color-gray-light-3;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
 }
 
 .c-button--neutral-plain {
@@ -201,6 +241,11 @@
 
   &:active {
     background-color: $color-gray-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
   }
 }
 
@@ -221,6 +266,11 @@
   &:active {
     background-color: $color-white-transparent-2;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: $color-white-regular;
+  }
 }
 
 .c-button--inverse-outlined {
@@ -239,6 +289,11 @@
   &:active {
     background-color: $color-white-transparent-4;
   }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
 }
 
 .c-button--inverse-plain {
@@ -256,68 +311,10 @@
   &:active {
     background-color: $color-white-transparent-4;
   }
-}
 
-// Disabled buttons
-// Group all variant-specific disabled styles to avoid repetition.
-
-.c-button--primary,
-.c-button--negative,
-.c-button--neutral {
   &:disabled,
   &.is-disabled {
-    background-color: $color-gray-regular;
-    box-shadow: none;
-  }
-}
-
-.c-button--inverse {
-  &:disabled,
-  &.is-disabled {
-    background-color: $color-white-regular;
-    box-shadow: none;
-  }
-}
-
-.c-button--primary-outlined,
-.c-button--negative-outlined,
-.c-button--neutral-outlined {
-  &:disabled,
-  &.is-disabled {
-    border-color: $color-gray-regular;
-    color: $color-gray-regular;
     background-color: transparent;
-    box-shadow: none;
-  }
-}
-
-.c-button--inverse-outlined {
-  &:disabled,
-  &.is-disabled {
-    border-color: $color-white-regular;
-    color: $color-white-regular;
-    background-color: transparent;
-    box-shadow: none;
-  }
-}
-
-.c-button--primary-plain,
-.c-button--negative-plain,
-.c-button--neutral-plain {
-  &:disabled,
-  &.is-disabled {
-    color: $color-gray-regular;
-    background-color: transparent;
-    box-shadow: none;
-  }
-}
-
-.c-button--inverse-plain {
-  &:disabled,
-  &.is-disabled {
-    color: $color-white-regular;
-    background-color: transparent;
-    box-shadow: none;
   }
 }
 

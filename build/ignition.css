@@ -380,7 +380,7 @@ sup {
 .c-button.is-disabled {
   opacity: 0.33;
   background-color: #ebebeb;
-  box-shadow: none;
+  box-shadow: none !important;
   cursor: default;
 }
 
@@ -401,6 +401,11 @@ sup {
   background-color: #00417b;
 }
 
+.c-button--primary:disabled,
+.c-button--primary.is-disabled {
+  background-color: #0062b8;
+}
+
 .c-button--primary-outlined {
   border-color: #0062b8;
   color: #0062b8;
@@ -417,6 +422,11 @@ sup {
 
 .c-button--primary-outlined:active {
   background-color: #c2e2ff;
+}
+
+.c-button--primary-outlined:disabled,
+.c-button--primary-outlined.is-disabled {
+  background-color: transparent;
 }
 
 .c-button--primary-plain {
@@ -436,6 +446,11 @@ sup {
   background-color: #c2e2ff;
 }
 
+.c-button--primary-plain:disabled,
+.c-button--primary-plain.is-disabled {
+  background-color: transparent;
+}
+
 .c-button--negative {
   color: #ffffff;
   background-color: #a30b00;
@@ -451,6 +466,11 @@ sup {
 
 .c-button--negative:active {
   background-color: #660700;
+}
+
+.c-button--negative:disabled,
+.c-button--negative.is-disabled {
+  background-color: #a30b00;
 }
 
 .c-button--negative-outlined {
@@ -471,6 +491,11 @@ sup {
   background-color: #ffc6c2;
 }
 
+.c-button--negative-outlined:disabled,
+.c-button--negative-outlined.is-disabled {
+  background-color: transparent;
+}
+
 .c-button--negative-plain {
   color: #a30b00;
   background-color: transparent;
@@ -488,6 +513,11 @@ sup {
   background-color: #ffc6c2;
 }
 
+.c-button--negative-plain:disabled,
+.c-button--negative-plain.is-disabled {
+  background-color: transparent;
+}
+
 .c-button--neutral {
   color: #ffffff;
   background-color: #3d3d3d;
@@ -503,6 +533,11 @@ sup {
 
 .c-button--neutral:active {
   background-color: #1e1e1e;
+}
+
+.c-button--neutral:disabled,
+.c-button--neutral.is-disabled {
+  background-color: #3d3d3d;
 }
 
 .c-button--neutral-outlined {
@@ -523,6 +558,11 @@ sup {
   background-color: #e0e0e0;
 }
 
+.c-button--neutral-outlined:disabled,
+.c-button--neutral-outlined.is-disabled {
+  background-color: transparent;
+}
+
 .c-button--neutral-plain {
   color: #3d3d3d;
   background-color: transparent;
@@ -540,6 +580,11 @@ sup {
   background-color: #e0e0e0;
 }
 
+.c-button--neutral-plain:disabled,
+.c-button--neutral-plain.is-disabled {
+  background-color: transparent;
+}
+
 .c-button--inverse {
   color: #3d3d3d;
   background-color: #ffffff;
@@ -555,6 +600,11 @@ sup {
 
 .c-button--inverse:active {
   background-color: rgba(255, 255, 255, 0.76);
+}
+
+.c-button--inverse:disabled,
+.c-button--inverse.is-disabled {
+  background-color: #ffffff;
 }
 
 .c-button--inverse-outlined {
@@ -575,6 +625,11 @@ sup {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
+.c-button--inverse-outlined:disabled,
+.c-button--inverse-outlined.is-disabled {
+  background-color: transparent;
+}
+
 .c-button--inverse-plain {
   color: #ffffff;
   background-color: transparent;
@@ -592,58 +647,9 @@ sup {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.c-button--primary:disabled,
-.c-button--primary.is-disabled,
-.c-button--negative:disabled,
-.c-button--negative.is-disabled,
-.c-button--neutral:disabled,
-.c-button--neutral.is-disabled {
-  background-color: #3d3d3d;
-  box-shadow: none;
-}
-
-.c-button--inverse:disabled,
-.c-button--inverse.is-disabled {
-  background-color: #ffffff;
-  box-shadow: none;
-}
-
-.c-button--primary-outlined:disabled,
-.c-button--primary-outlined.is-disabled,
-.c-button--negative-outlined:disabled,
-.c-button--negative-outlined.is-disabled,
-.c-button--neutral-outlined:disabled,
-.c-button--neutral-outlined.is-disabled {
-  border-color: #3d3d3d;
-  color: #3d3d3d;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.c-button--inverse-outlined:disabled,
-.c-button--inverse-outlined.is-disabled {
-  border-color: #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.c-button--primary-plain:disabled,
-.c-button--primary-plain.is-disabled,
-.c-button--negative-plain:disabled,
-.c-button--negative-plain.is-disabled,
-.c-button--neutral-plain:disabled,
-.c-button--neutral-plain.is-disabled {
-  color: #3d3d3d;
-  background-color: transparent;
-  box-shadow: none;
-}
-
 .c-button--inverse-plain:disabled,
 .c-button--inverse-plain.is-disabled {
-  color: #ffffff;
   background-color: transparent;
-  box-shadow: none;
 }
 
 .c-button--small {
