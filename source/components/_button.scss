@@ -7,7 +7,7 @@
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-small-2} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
-  // Use a transparent border so a visible one can be defined more easily.
+  // Use a transparent border so variants can define a visible one more easily.
   border: $border-width-regular solid transparent;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
@@ -37,12 +37,13 @@
   &.is-disabled {
     opacity: $opacity-medium;
     background-color: $color-gray-light-2;
+    // Remove box shadow across all variants.
     box-shadow: none !important;
     cursor: not-allowed;
   }
 }
 
-// Primary buttons
+// Primary button
 
 .c-button--primary {
   color: $color-white-regular;
@@ -65,6 +66,8 @@
     background-color: $color-primary-regular;
   }
 }
+
+// Outlined primary button
 
 .c-button--primary-outlined {
   border-color: $color-primary-regular;
@@ -89,6 +92,8 @@
   }
 }
 
+// Plain primary button
+
 .c-button--primary-plain {
   color: $color-primary-regular;
   background-color: transparent;
@@ -111,7 +116,7 @@
   }
 }
 
-// Negative buttons
+// Negative button
 
 .c-button--negative {
   color: $color-white-regular;
@@ -134,6 +139,8 @@
     background-color: $color-negative-regular;
   }
 }
+
+// Outlined negative button
 
 .c-button--negative-outlined {
   border-color: $color-negative-regular;
@@ -158,6 +165,8 @@
   }
 }
 
+// Plain negative button
+
 .c-button--negative-plain {
   color: $color-negative-regular;
   background-color: transparent;
@@ -180,7 +189,7 @@
   }
 }
 
-// Neutral buttons
+// Neutral button
 
 .c-button--neutral {
   color: $color-white-regular;
@@ -203,6 +212,8 @@
     background-color: $color-gray-regular;
   }
 }
+
+// Outlined neutral button
 
 .c-button--neutral-outlined {
   border-color: $color-gray-regular;
@@ -227,6 +238,8 @@
   }
 }
 
+// Plain neutral button
+
 .c-button--neutral-plain {
   color: $color-gray-regular;
   background-color: transparent;
@@ -249,7 +262,7 @@
   }
 }
 
-// Inverse buttons
+// Inverse button
 
 .c-button--inverse {
   color: $color-gray-regular;
@@ -272,6 +285,8 @@
     background-color: $color-white-regular;
   }
 }
+
+// Outlined inverse button
 
 .c-button--inverse-outlined {
   border-color: $color-white-regular;
@@ -296,6 +311,8 @@
   }
 }
 
+// Plain inverse button
+
 .c-button--inverse-plain {
   color: $color-white-regular;
   background-color: transparent;
@@ -318,11 +335,13 @@
   }
 }
 
-// Button sizes
+// Small button
 
 .c-button--small {
   padding: calc(#{$space-small-4} - #{$border-width-regular}) calc(#{$space-small-1} - #{$border-width-regular});
 }
+
+// Large button
 
 .c-button--large {
   padding: calc(#{$space-small-1} - #{$border-width-regular}) calc(#{$space-large-5} - #{$border-width-regular});
