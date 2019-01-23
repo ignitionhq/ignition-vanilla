@@ -528,7 +528,7 @@ sup {
 }
 
 .c-button--neutral:focus {
-  box-shadow: 0 0 0 3px #cccccc;
+  box-shadow: 0 0 0 3px #d6d6d6;
 }
 
 .c-button--neutral:active {
@@ -551,7 +551,7 @@ sup {
 }
 
 .c-button--neutral-lean:focus {
-  box-shadow: 0 0 0 3px #cccccc;
+  box-shadow: 0 0 0 3px #d6d6d6;
 }
 
 .c-button--neutral-lean:active {
@@ -573,7 +573,7 @@ sup {
 }
 
 .c-button--neutral-plain:focus {
-  box-shadow: 0 0 0 3px #cccccc;
+  box-shadow: 0 0 0 3px #d6d6d6;
 }
 
 .c-button--neutral-plain:active {
