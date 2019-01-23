@@ -406,26 +406,26 @@ sup {
   background-color: #0062b8;
 }
 
-.c-button--primary-outlined {
+.c-button--primary-lean {
   border-color: #0062b8;
   color: #0062b8;
   background-color: transparent;
 }
 
-.c-button--primary-outlined:hover {
+.c-button--primary-lean:hover {
   background-color: #d6ecff;
 }
 
-.c-button--primary-outlined:focus {
+.c-button--primary-lean:focus {
   box-shadow: 0 0 0 3px #add9ff;
 }
 
-.c-button--primary-outlined:active {
+.c-button--primary-lean:active {
   background-color: #c2e2ff;
 }
 
-.c-button--primary-outlined:disabled,
-.c-button--primary-outlined.is-disabled {
+.c-button--primary-lean:disabled,
+.c-button--primary-lean.is-disabled {
   background-color: transparent;
 }
 
@@ -473,26 +473,26 @@ sup {
   background-color: #a30b00;
 }
 
-.c-button--negative-outlined {
+.c-button--negative-lean {
   border-color: #a30b00;
   color: #a30b00;
   background-color: transparent;
 }
 
-.c-button--negative-outlined:hover {
+.c-button--negative-lean:hover {
   background-color: #ffd9d6;
 }
 
-.c-button--negative-outlined:focus {
+.c-button--negative-lean:focus {
   box-shadow: 0 0 0 3px #ffb3ad;
 }
 
-.c-button--negative-outlined:active {
+.c-button--negative-lean:active {
   background-color: #ffc6c2;
 }
 
-.c-button--negative-outlined:disabled,
-.c-button--negative-outlined.is-disabled {
+.c-button--negative-lean:disabled,
+.c-button--negative-lean.is-disabled {
   background-color: transparent;
 }
 
@@ -540,26 +540,26 @@ sup {
   background-color: #3d3d3d;
 }
 
-.c-button--neutral-outlined {
+.c-button--neutral-lean {
   border-color: #3d3d3d;
   color: #3d3d3d;
   background-color: transparent;
 }
 
-.c-button--neutral-outlined:hover {
+.c-button--neutral-lean:hover {
   background-color: #ebebeb;
 }
 
-.c-button--neutral-outlined:focus {
+.c-button--neutral-lean:focus {
   box-shadow: 0 0 0 3px #cccccc;
 }
 
-.c-button--neutral-outlined:active {
+.c-button--neutral-lean:active {
   background-color: #e0e0e0;
 }
 
-.c-button--neutral-outlined:disabled,
-.c-button--neutral-outlined.is-disabled {
+.c-button--neutral-lean:disabled,
+.c-button--neutral-lean.is-disabled {
   background-color: transparent;
 }
 
@@ -607,26 +607,26 @@ sup {
   background-color: #ffffff;
 }
 
-.c-button--inverse-outlined {
+.c-button--inverse-lean {
   border-color: #ffffff;
   color: #ffffff;
   background-color: transparent;
 }
 
-.c-button--inverse-outlined:hover {
+.c-button--inverse-lean:hover {
   background-color: rgba(255, 255, 255, 0.16);
 }
 
-.c-button--inverse-outlined:focus {
+.c-button--inverse-lean:focus {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
 }
 
-.c-button--inverse-outlined:active {
+.c-button--inverse-lean:active {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.c-button--inverse-outlined:disabled,
-.c-button--inverse-outlined.is-disabled {
+.c-button--inverse-lean:disabled,
+.c-button--inverse-lean.is-disabled {
   background-color: transparent;
 }
 
