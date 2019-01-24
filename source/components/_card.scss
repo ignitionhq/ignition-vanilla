@@ -16,6 +16,10 @@
     line-height: $line-height-small-1;
   }
 
+    .c-card__heading a {
+      color: inherit;
+    }
+
   .c-card__media {
     // Negate padding and border to span the entire parent width.
     max-width: calc(100% + 2 * #{$space-large-4});

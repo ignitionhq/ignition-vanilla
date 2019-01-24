@@ -680,6 +680,10 @@ sup {
   line-height: 1.33333333;
 }
 
+.c-card__heading a {
+  color: inherit;
+}
+
 .c-card__media {
   max-width: calc(100% + 2 * 1.5rem);
   margin-right: -1.5rem;
