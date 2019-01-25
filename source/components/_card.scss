@@ -20,8 +20,8 @@
       color: inherit;
     }
 
+  // Define a descendant that spans the entire card width.
   .c-card__spread {
-    // Negate padding and border to span the entire parent width.
     max-width: calc(100% + 2 * #{$space-large-4});
     margin-right: -$space-large-4;
     margin-bottom: $space-large-4;
