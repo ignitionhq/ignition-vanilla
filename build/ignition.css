@@ -662,12 +662,6 @@ sup {
   line-height: 1.33333333;
 }
 
-.c-callout {
-  margin-bottom: 1.5rem;
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
-}
-
 .c-card {
   padding: calc(1.5rem - 1px);
   border: 1px solid #e0e0e0;
