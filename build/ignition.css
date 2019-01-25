@@ -678,14 +678,14 @@ sup {
   color: inherit;
 }
 
-.c-card__media {
+.c-card__spread {
   max-width: calc(100% + 2 * 1.5rem);
   margin-right: -1.5rem;
   margin-bottom: 1.5rem;
   margin-left: -1.5rem;
 }
 
-.c-card__media--top {
+.c-card__spread--top {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   margin-top: -1.5rem;
