@@ -679,6 +679,7 @@ sup {
 }
 
 .c-card__cover {
+  display: block;
   max-width: calc(100% + 2 * 1.5rem);
   margin-right: -1.5rem;
   margin-bottom: 1.5rem;

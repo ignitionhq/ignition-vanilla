@@ -21,6 +21,7 @@
     }
 
   .c-card__cover {
+    display: block;
     max-width: calc(100% + 2 * #{$space-large-4});
     margin-right: -$space-large-4;
     margin-bottom: $space-large-4;
