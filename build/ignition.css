@@ -715,7 +715,8 @@ sup {
 .c-checkbox:checked {
   border-color: #0062b8;
   background-color: #0062b8;
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.41421 6.58579L3 8L7.24264 12.2426L14.3137 5.17157L12.8995 3.75736L7.24264 9.41421L4.41421 6.58579Z' fill='white'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath d='M6.41 1L5.72 1.72L2.94 4.5L2.13 3.72L1.41 3L0 4.41L0.72 5.13L2.22 6.63L2.91 7.35L3.63 6.63L7.13 3.13L7.85 2.41L6.41 1Z' fill='%23fff' /%3E%3C/svg%3E");
+  background-size: 66% 66%;
   background-repeat: no-repeat;
   background-position: center;
 }
