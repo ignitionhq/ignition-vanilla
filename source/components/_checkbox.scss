@@ -29,14 +29,9 @@
     background-color: $color-primary-regular;
   }
 
-  &:disabled {
-    border-color: $color-gray-regular;
-    background-color: $color-gray-regular;
-
-    // Style `label` element adjacent to a disabled checkbox.
-    & + label {
-      opacity: $opacity-medium;
-      cursor: not-allowed;
-    }
+  // Style `label` element adjacent to a disabled checkbox.
+  &:disabled + label {
+    opacity: $opacity-medium;
+    cursor: not-allowed;
   }
 }

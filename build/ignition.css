@@ -721,11 +721,6 @@ sup {
   background-color: #0062b8;
 }
 
-.c-checkbox:disabled {
-  border-color: #3d3d3d;
-  background-color: #3d3d3d;
-}
-
 .c-checkbox:disabled + label {
   opacity: 0.5;
   cursor: not-allowed;
