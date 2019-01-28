@@ -24,7 +24,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: $space-small-4;
+    padding: $space-small-3;
     border: 0;
     border-top-right-radius: $border-radius-regular;
     border-bottom-left-radius: $border-radius-regular;
@@ -51,9 +51,10 @@
 
     .c-notice__dismiss-icon {
       display: block;
+      width: 0.75rem;
+      height: 0.75rem;
       // Inherit text color on `svg` elements.
       fill: currentColor;
-      stroke: currentColor;
     }
 
 // Primary notice

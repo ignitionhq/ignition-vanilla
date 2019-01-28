@@ -852,7 +852,7 @@ sup {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.375rem;
+  padding: 0.5rem;
   border: 0;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -877,8 +877,9 @@ sup {
 
 .c-notice__dismiss-icon {
   display: block;
+  width: 0.75rem;
+  height: 0.75rem;
   fill: currentColor;
-  stroke: currentColor;
 }
 
 .c-notice--primary {
