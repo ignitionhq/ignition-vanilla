@@ -29,8 +29,10 @@
     background-color: $color-primary-regular;
   }
 
-  &:disabled + label {
-    opacity: $opacity-medium;
-    cursor: not-allowed;
+  &:disabled {
+    & + label {
+      opacity: $opacity-medium;
+      cursor: not-allowed;
+    }
   }
 }
