@@ -39,6 +39,11 @@
     height: 2.75rem;
   }
 
+  // Normalize caret in Edge.
+  &::-ms-expand {
+    background-color: transparent;
+  }
+
   // Normalize selected option text from focused `select` elements in Edge.
   &:focus::-ms-value {
     color: $color-gray-regular;
