@@ -7,7 +7,7 @@
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-small-2} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-light-4;
+  border: $border-width-regular solid $color-gray-light-5;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
@@ -37,6 +37,11 @@
   &:not([size]):not([multiple]) {
     // Match textfield height.
     height: 2.75rem;
+  }
+
+  // Normalize caret in Edge.
+  &::-ms-expand {
+    background-color: transparent;
   }
 
   // Normalize selected option text from focused `select` elements in Edge.
