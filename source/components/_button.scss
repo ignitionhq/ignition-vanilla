@@ -15,38 +15,78 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-2;
+  color: $color-white-regular;
+  background-color: $color-gray-regular;
 
   &:hover {
-    background-color: $color-gray-light-4;
+    background-color: $color-gray-dark-1;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-6;
+    box-shadow: $box-shadow-regular $color-gray-light-4;
   }
 
   &:active {
-    background-color: $color-gray-light-5;
+    background-color: $color-gray-dark-2;
   }
 
   &:disabled,
   &.is-disabled {
     opacity: $opacity-medium;
-    background-color: $color-gray-light-2;
+    background-color: $color-gray-regular;
     // Remove box shadow across all variants.
     box-shadow: none !important;
     cursor: not-allowed;
   }
 }
 
+// Lean button
+
+.c-button--lean {
+  border-color: $color-gray-regular;
+  color: $color-gray-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-gray-light-2;
+  }
+
+  &:active {
+    background-color: $color-gray-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
+}
+
+// Plain button
+
+.c-button--plain {
+  color: $color-gray-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-gray-light-2;
+  }
+
+  &:active {
+    background-color: $color-gray-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
+}
+
 // Primary button
 
 .c-button--primary {
-  color: $color-white-regular;
   background-color: $color-primary-regular;
 
   &:hover {
@@ -119,7 +159,6 @@
 // Negative button
 
 .c-button--negative {
-  color: $color-white-regular;
   background-color: $color-negative-regular;
 
   &:hover {
@@ -189,79 +228,6 @@
   }
 }
 
-// Neutral button
-
-.c-button--neutral {
-  color: $color-white-regular;
-  background-color: $color-gray-regular;
-
-  &:hover {
-    background-color: $color-gray-dark-1;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
-  &:active {
-    background-color: $color-gray-dark-2;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: $color-gray-regular;
-  }
-}
-
-// Lean neutral button
-
-.c-button--neutral-lean {
-  border-color: $color-gray-regular;
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
-}
-
-// Plain neutral button
-
-.c-button--neutral-plain {
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
-}
-
 // Inverse button
 
 .c-button--inverse {
@@ -290,7 +256,6 @@
 
 .c-button--inverse-lean {
   border-color: $color-white-regular;
-  color: $color-white-regular;
   background-color: transparent;
 
   &:hover {
@@ -314,7 +279,6 @@
 // Plain inverse button
 
 .c-button--inverse-plain {
-  color: $color-white-regular;
   background-color: transparent;
 
   &:hover {
