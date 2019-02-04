@@ -936,7 +936,7 @@ sup {
 
 .c-tabs__link.is-selected {
   padding-bottom: calc(0.625rem - 4px);
-  border-bottom: 4px solid #0062b8;
+  border-bottom: 4px solid currentColor;
   color: #0062b8;
 }
 
