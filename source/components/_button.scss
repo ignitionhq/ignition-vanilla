@@ -54,10 +54,6 @@
     background-color: $color-gray-light-2;
   }
 
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
   &:active {
     background-color: $color-gray-light-3;
   }
@@ -76,10 +72,6 @@
 
   &:hover {
     background-color: $color-gray-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
   }
 
   &:active {

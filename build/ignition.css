@@ -394,10 +394,6 @@ sup {
   background-color: #ebebeb;
 }
 
-.c-button--lean:focus {
-  box-shadow: 0 0 0 3px #d6d6d6;
-}
-
 .c-button--lean:active {
   background-color: #e0e0e0;
 }
@@ -414,10 +410,6 @@ sup {
 
 .c-button--plain:hover {
   background-color: #ebebeb;
-}
-
-.c-button--plain:focus {
-  box-shadow: 0 0 0 3px #d6d6d6;
 }
 
 .c-button--plain:active {
