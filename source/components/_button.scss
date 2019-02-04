@@ -43,6 +43,55 @@
   }
 }
 
+// Lean button
+
+.c-button--lean {
+  border-color: $color-gray-regular;
+  color: $color-gray-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-gray-light-2;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-gray-light-4;
+  }
+
+  &:active {
+    background-color: $color-gray-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
+}
+
+// Plain button
+
+.c-button--plain {
+  color: $color-gray-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-gray-light-2;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-regular $color-gray-light-4;
+  }
+
+  &:active {
+    background-color: $color-gray-light-3;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-color: transparent;
+  }
+}
+
 // Primary button
 
 .c-button--primary {
@@ -181,55 +230,6 @@
 
   &:active {
     background-color: $color-negative-light-3;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
-}
-
-// Lean neutral button
-
-.c-button--neutral-lean {
-  border-color: $color-gray-regular;
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
-}
-
-// Plain neutral button
-
-.c-button--neutral-plain {
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-2;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
   }
 
   &:disabled,
