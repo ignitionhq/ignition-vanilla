@@ -385,7 +385,7 @@ sup {
 }
 
 .c-button--lean {
-  border-color: #3d3d3d;
+  border-color: currentColor;
   color: #3d3d3d;
   background-color: transparent;
 }
@@ -443,7 +443,7 @@ sup {
 }
 
 .c-button--primary-lean {
-  border-color: #0062b8;
+  border-color: currentColor;
   color: #0062b8;
   background-color: transparent;
 }
@@ -509,7 +509,7 @@ sup {
 }
 
 .c-button--negative-lean {
-  border-color: #a30b00;
+  border-color: currentColor;
   color: #a30b00;
   background-color: transparent;
 }
@@ -576,7 +576,7 @@ sup {
 }
 
 .c-button--inverse-lean {
-  border-color: #ffffff;
+  border-color: currentColor;
   background-color: transparent;
 }
 
