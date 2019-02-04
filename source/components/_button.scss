@@ -87,7 +87,6 @@
 // Primary button
 
 .c-button--primary {
-  color: $color-white-regular;
   background-color: $color-primary-regular;
 
   &:hover {
@@ -160,7 +159,6 @@
 // Negative button
 
 .c-button--negative {
-  color: $color-white-regular;
   background-color: $color-negative-regular;
 
   &:hover {
@@ -258,7 +256,6 @@
 
 .c-button--inverse-lean {
   border-color: $color-white-regular;
-  color: $color-white-regular;
   background-color: transparent;
 
   &:hover {
@@ -282,7 +279,6 @@
 // Plain inverse button
 
 .c-button--inverse-plain {
-  color: $color-white-regular;
   background-color: transparent;
 
   &:hover {

@@ -422,7 +422,6 @@ sup {
 }
 
 .c-button--primary {
-  color: #ffffff;
   background-color: #0062b8;
 }
 
@@ -489,7 +488,6 @@ sup {
 }
 
 .c-button--negative {
-  color: #ffffff;
   background-color: #a30b00;
 }
 
@@ -579,7 +577,6 @@ sup {
 
 .c-button--inverse-lean {
   border-color: #ffffff;
-  color: #ffffff;
   background-color: transparent;
 }
 
@@ -601,7 +598,6 @@ sup {
 }
 
 .c-button--inverse-plain {
-  color: #ffffff;
   background-color: transparent;
 }
 
