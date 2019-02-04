@@ -359,27 +359,27 @@ sup {
   line-height: 1.5;
   text-align: center;
   white-space: nowrap;
-  color: #3d3d3d;
-  background-color: #ebebeb;
+  color: #ffffff;
+  background-color: #3d3d3d;
 }
 
 .c-button:hover {
-  background-color: #d6d6d6;
+  background-color: #292929;
 }
 
 .c-button:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #c2c2c2;
+  box-shadow: 0 0 0 3px #d6d6d6;
 }
 
 .c-button:active {
-  background-color: #cccccc;
+  background-color: #1e1e1e;
 }
 
 .c-button:disabled,
 .c-button.is-disabled {
   opacity: 0.5;
-  background-color: #ebebeb;
+  background-color: #3d3d3d;
   box-shadow: none !important;
   cursor: not-allowed;
 }
@@ -516,28 +516,6 @@ sup {
 .c-button--negative-plain:disabled,
 .c-button--negative-plain.is-disabled {
   background-color: transparent;
-}
-
-.c-button--neutral {
-  color: #ffffff;
-  background-color: #3d3d3d;
-}
-
-.c-button--neutral:hover {
-  background-color: #292929;
-}
-
-.c-button--neutral:focus {
-  box-shadow: 0 0 0 3px #d6d6d6;
-}
-
-.c-button--neutral:active {
-  background-color: #1e1e1e;
-}
-
-.c-button--neutral:disabled,
-.c-button--neutral.is-disabled {
-  background-color: #3d3d3d;
 }
 
 .c-button--neutral-lean {

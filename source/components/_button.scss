@@ -15,28 +15,28 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-2;
+  color: $color-white-regular;
+  background-color: $color-gray-regular;
 
   &:hover {
-    background-color: $color-gray-light-4;
+    background-color: $color-gray-dark-1;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-6;
+    box-shadow: $box-shadow-regular $color-gray-light-4;
   }
 
   &:active {
-    background-color: $color-gray-light-5;
+    background-color: $color-gray-dark-2;
   }
 
   &:disabled,
   &.is-disabled {
     opacity: $opacity-medium;
-    background-color: $color-gray-light-2;
+    background-color: $color-gray-regular;
     // Remove box shadow across all variants.
     box-shadow: none !important;
     cursor: not-allowed;
@@ -186,30 +186,6 @@
   &:disabled,
   &.is-disabled {
     background-color: transparent;
-  }
-}
-
-// Neutral button
-
-.c-button--neutral {
-  color: $color-white-regular;
-  background-color: $color-gray-regular;
-
-  &:hover {
-    background-color: $color-gray-dark-1;
-  }
-
-  &:focus {
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
-  &:active {
-    background-color: $color-gray-dark-2;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: $color-gray-regular;
   }
 }
 
