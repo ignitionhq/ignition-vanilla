@@ -22,7 +22,7 @@
 
     &.is-selected {
       padding-bottom: calc(#{$space-small-2} - #{$border-width-thick});
-      border-bottom: $border-width-thick solid $color-primary-regular;
+      border-bottom: $border-width-thick solid currentColor;
       color: $color-primary-regular;
     }
   }
