@@ -46,7 +46,7 @@
 // Lean button
 
 .c-button--lean {
-  border-color: currentColor;
+  border-color: $color-gray-regular;
   color: $color-gray-regular;
   background-color: transparent;
 
@@ -110,7 +110,7 @@
 // Lean primary button
 
 .c-button--primary-lean {
-  border-color: currentColor;
+  border-color: $color-primary-regular;
   color: $color-primary-regular;
   background-color: transparent;
 
@@ -182,7 +182,7 @@
 // Lean negative button
 
 .c-button--negative-lean {
-  border-color: currentColor;
+  border-color: $color-negative-regular;
   color: $color-negative-regular;
   background-color: transparent;
 
@@ -255,7 +255,7 @@
 // Lean inverse button
 
 .c-button--inverse-lean {
-  border-color: currentColor;
+  border-color: $color-white-regular;
   background-color: transparent;
 
   &:hover {
