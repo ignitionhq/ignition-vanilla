@@ -935,8 +935,8 @@ sup {
 }
 
 .c-tabs__link.is-selected {
-  padding-bottom: calc(0.625rem - 4px);
-  border-bottom: 4px solid #0062b8;
+  padding-bottom: calc(0.625rem - 2px);
+  border-bottom: 2px solid #0062b8;
   color: #0062b8;
 }
 
