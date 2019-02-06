@@ -92,7 +92,7 @@ hr {
   // Normalize overflow in Chrome and Edge.
   overflow: visible;
   // Mimic a horizontal rule while allowing other decorations to be used.
-  height: $border-width-thick;
+  height: $border-width-thick-1;
   border: 0;
   margin-top: $space-large-2;
   margin-bottom: $space-large-2;
