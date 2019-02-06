@@ -60,8 +60,8 @@ table {
     padding-top: $space-small-1;
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
-    padding-bottom: calc(#{$space-small-1} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-gray-light-3;
+    padding-bottom: calc(#{$space-small-1} - #{$border-width-thick-2});
+    border-bottom: $border-width-thick-2 solid $color-gray-light-3;
     font-size: $font-size-large-5;
     font-weight: bold;
     text-align: left;
