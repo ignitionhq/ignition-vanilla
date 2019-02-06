@@ -178,8 +178,8 @@ thead th {
 
 caption {
   padding-top: 0.75rem;
-  padding-bottom: calc(0.75rem - 1px);
-  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: calc(0.75rem - 2px);
+  border-bottom: 2px solid #e0e0e0;
   font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
@@ -935,8 +935,8 @@ sup {
 }
 
 .c-tabs__link.is-selected {
-  padding-bottom: calc(0.625rem - 4px);
-  border-bottom: 4px solid #0062b8;
+  padding-bottom: calc(0.625rem - 2px);
+  border-bottom: 2px solid #0062b8;
   color: #0062b8;
 }
 
