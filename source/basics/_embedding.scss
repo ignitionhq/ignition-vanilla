@@ -2,17 +2,12 @@
 // Set default styles for embedding elements.
 // -----------------------------------------------------------------------------
 
-// Image, video, and audio
-
-img,
-video,
-audio {
-  // Prevent overflowing when parent width is exceeded.
-  max-width: 100%;
-}
+// Image and video
 
 img,
 video {
+  // Prevent overflowing when parent width is exceeded.
+  max-width: 100%;
   // Prevent stretching when an inappropriate height attribute is set.
   height: auto;
 }

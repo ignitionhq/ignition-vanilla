@@ -20,13 +20,8 @@ body {
 }
 
 img,
-video,
-audio {
-  max-width: 100%;
-}
-
-img,
 video {
+  max-width: 100%;
   height: auto;
 }
 
