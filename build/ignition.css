@@ -20,22 +20,8 @@ body {
 }
 
 img,
-svg,
-video,
-audio,
-canvas,
-iframe {
-  vertical-align: middle;
-}
-
-img,
-video,
-audio {
-  max-width: 100%;
-}
-
-img,
 video {
+  max-width: 100%;
   height: auto;
 }
 
