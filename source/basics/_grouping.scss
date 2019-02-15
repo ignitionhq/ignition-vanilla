@@ -73,23 +73,18 @@ figure {
   margin: 0 0 $space-regular;
 }
 
-// Details
+// Summary
 
-details {
-  // Correct display style in Edge.
-  display: block;
+summary {
+  // Correct display style in Chrome and Safari.
+  display: list-item;
+  cursor: pointer;
 }
-
-  summary {
-    // Correct display style in Chrome, Safari, and Edge.
-    display: list-item;
-    cursor: pointer;
-  }
 
 // Thematic break
 
 hr {
-  // Normalize overflow in Chrome and Edge.
+  // Normalize overflow in Chrome.
   overflow: visible;
   // Mimic a horizontal rule while allowing other decorations to be used.
   height: $border-width-thick-1;
