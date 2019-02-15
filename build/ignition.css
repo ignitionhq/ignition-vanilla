@@ -38,7 +38,7 @@ legend {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-weight: bold;
 }
 
@@ -107,7 +107,6 @@ select {
 }
 
 textarea {
-  display: block;
   resize: vertical;
 }
 
