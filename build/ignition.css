@@ -175,10 +175,6 @@ figure {
   margin: 0 0 1rem;
 }
 
-details {
-  display: block;
-}
-
 summary {
   display: list-item;
   cursor: pointer;
@@ -987,15 +983,6 @@ sup {
 
 .c-textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
-}
-
-.c-textfield--select::-ms-expand {
-  background-color: transparent;
-}
-
-.c-textfield--select:focus::-ms-value {
-  color: #3d3d3d;
-  background-color: #ffffff;
 }
 
 .o-container {

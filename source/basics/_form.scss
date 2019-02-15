@@ -66,8 +66,7 @@ button,
 
 button,
 select {
-  // Remove text transform inheritance from `button` elements in Firefox and
-  // Edge, and from `select` elements in Firefox.
+  // Remove text transform inheritance in Firefox.
   text-transform: none;
 }
 
