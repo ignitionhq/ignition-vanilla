@@ -26,6 +26,7 @@ video {
 }
 
 fieldset {
+  min-width: 0;
   padding: 0;
   border: 0;
   margin-right: 0;
@@ -37,7 +38,7 @@ legend {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-weight: bold;
 }
 
@@ -106,7 +107,6 @@ select {
 }
 
 textarea {
-  display: block;
   resize: vertical;
 }
 
@@ -166,17 +166,13 @@ caption {
   padding-top: 0.75rem;
   padding-bottom: calc(0.75rem - 2px);
   border-bottom: 2px solid #e0e0e0;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
 }
 
 figure {
   margin: 0 0 1rem;
-}
-
-details {
-  display: block;
 }
 
 summary {
@@ -186,11 +182,12 @@ summary {
 
 hr {
   overflow: visible;
-  height: 4px;
-  border: 0;
+  border-top: 4px solid #e0e0e0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #e0e0e0;
 }
 
 a {
@@ -987,15 +984,6 @@ sup {
 
 .c-textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
-}
-
-.c-textfield--select::-ms-expand {
-  background-color: transparent;
-}
-
-.c-textfield--select:focus::-ms-value {
-  color: #3d3d3d;
-  background-color: #ffffff;
 }
 
 .o-container {
