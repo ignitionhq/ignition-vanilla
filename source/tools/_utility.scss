@@ -1,5 +1,5 @@
 // UTILITY
-// Generate single-declaration utility classes.
+// Generate single-declaration utilities.
 // -----------------------------------------------------------------------------
 
 // Use as arguments a property name, a set of property values passed via a
@@ -19,7 +19,7 @@
 // Pass property values via nested maps to generate responsive utilities. Use a
 // media query name established via responsive settings to generate responsive
 // utilities or the `all` keyword to generate all possible non-responsive and
-// responsive utilities for a given set of property values.
+// responsive utilities.
 // Example:
 // $margin-right-values: (
 //   regular: 1rem,
