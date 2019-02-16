@@ -182,11 +182,12 @@ summary {
 
 hr {
   overflow: visible;
-  height: 4px;
-  border: 0;
+  border-top: 4px solid #e0e0e0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: #e0e0e0;
 }
 
 a {

@@ -86,10 +86,10 @@ summary {
 hr {
   // Normalize overflow in Chrome.
   overflow: visible;
-  // Mimic a horizontal rule while allowing other decorations to be used.
-  height: $border-width-thick-1;
-  border: 0;
+  border-top: $border-width-thick-1 solid $color-gray-light-3;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
   margin-top: $space-large-2;
   margin-bottom: $space-large-2;
-  background-color: $color-gray-light-3;
 }
