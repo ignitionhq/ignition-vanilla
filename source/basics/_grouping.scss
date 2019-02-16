@@ -62,7 +62,7 @@ table {
     // spacing values but lack a border.
     padding-bottom: calc(#{$space-small-1} - #{$border-width-thick-2});
     border-bottom: $border-width-thick-2 solid $color-gray-light-3;
-    font-size: $font-size-large-5;
+    font-size: $font-size-regular;
     font-weight: bold;
     text-align: left;
   }
