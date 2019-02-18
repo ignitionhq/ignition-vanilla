@@ -46,7 +46,7 @@ select {
 
   &:disabled {
     opacity: $opacity-medium;
-    cursor: not-allowed;
+    cursor: default;
   }
 }
 
