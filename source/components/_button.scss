@@ -37,9 +37,7 @@
   &.is-disabled {
     opacity: $opacity-medium;
     background-color: $color-gray-regular;
-    // Remove box shadow across all variants.
-    box-shadow: none !important;
-    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 

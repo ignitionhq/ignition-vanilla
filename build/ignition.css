@@ -363,8 +363,7 @@ sup {
 .c-button.is-disabled {
   opacity: 0.5;
   background-color: #3d3d3d;
-  box-shadow: none !important;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .c-button--lean {
