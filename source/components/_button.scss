@@ -36,7 +36,6 @@
   &:disabled,
   &.is-disabled {
     opacity: $opacity-medium;
-    background-color: $color-gray-regular;
     pointer-events: none;
   }
 }
@@ -55,11 +54,6 @@
   &:active {
     background-color: $color-gray-light-3;
   }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
 }
 
 // Plain button
@@ -74,11 +68,6 @@
 
   &:active {
     background-color: $color-gray-light-3;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
   }
 }
 
@@ -97,11 +86,6 @@
 
   &:active {
     background-color: $color-primary-dark-2;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: $color-primary-regular;
   }
 }
 
@@ -123,11 +107,6 @@
   &:active {
     background-color: $color-primary-light-3;
   }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
 }
 
 // Plain primary button
@@ -147,11 +126,6 @@
   &:active {
     background-color: $color-primary-light-3;
   }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
 }
 
 // Negative button
@@ -169,11 +143,6 @@
 
   &:active {
     background-color: $color-negative-dark-2;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: $color-negative-regular;
   }
 }
 
@@ -195,11 +164,6 @@
   &:active {
     background-color: $color-negative-light-3;
   }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
 }
 
 // Plain negative button
@@ -218,11 +182,6 @@
 
   &:active {
     background-color: $color-negative-light-3;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
   }
 }
 
@@ -243,11 +202,6 @@
   &:active {
     background-color: $color-white-transparent-2;
   }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: $color-white-regular;
-  }
 }
 
 // Lean inverse button
@@ -267,11 +221,6 @@
   &:active {
     background-color: $color-white-transparent-4;
   }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
-  }
 }
 
 // Plain inverse button
@@ -289,11 +238,6 @@
 
   &:active {
     background-color: $color-white-transparent-4;
-  }
-
-  &:disabled,
-  &.is-disabled {
-    background-color: transparent;
   }
 }
 

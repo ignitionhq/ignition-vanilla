@@ -362,7 +362,6 @@ sup {
 .c-button:disabled,
 .c-button.is-disabled {
   opacity: 0.5;
-  background-color: #3d3d3d;
   pointer-events: none;
 }
 
@@ -380,11 +379,6 @@ sup {
   background-color: #e0e0e0;
 }
 
-.c-button--lean:disabled,
-.c-button--lean.is-disabled {
-  background-color: transparent;
-}
-
 .c-button--plain {
   color: #3d3d3d;
   background-color: transparent;
@@ -396,11 +390,6 @@ sup {
 
 .c-button--plain:active {
   background-color: #e0e0e0;
-}
-
-.c-button--plain:disabled,
-.c-button--plain.is-disabled {
-  background-color: transparent;
 }
 
 .c-button--primary {
@@ -417,11 +406,6 @@ sup {
 
 .c-button--primary:active {
   background-color: #00417b;
-}
-
-.c-button--primary:disabled,
-.c-button--primary.is-disabled {
-  background-color: #0062b8;
 }
 
 .c-button--primary-lean {
@@ -442,11 +426,6 @@ sup {
   background-color: #c2e2ff;
 }
 
-.c-button--primary-lean:disabled,
-.c-button--primary-lean.is-disabled {
-  background-color: transparent;
-}
-
 .c-button--primary-plain {
   color: #0062b8;
   background-color: transparent;
@@ -464,11 +443,6 @@ sup {
   background-color: #c2e2ff;
 }
 
-.c-button--primary-plain:disabled,
-.c-button--primary-plain.is-disabled {
-  background-color: transparent;
-}
-
 .c-button--negative {
   background-color: #a30b00;
 }
@@ -483,11 +457,6 @@ sup {
 
 .c-button--negative:active {
   background-color: #660700;
-}
-
-.c-button--negative:disabled,
-.c-button--negative.is-disabled {
-  background-color: #a30b00;
 }
 
 .c-button--negative-lean {
@@ -508,11 +477,6 @@ sup {
   background-color: #ffc6c2;
 }
 
-.c-button--negative-lean:disabled,
-.c-button--negative-lean.is-disabled {
-  background-color: transparent;
-}
-
 .c-button--negative-plain {
   color: #a30b00;
   background-color: transparent;
@@ -528,11 +492,6 @@ sup {
 
 .c-button--negative-plain:active {
   background-color: #ffc6c2;
-}
-
-.c-button--negative-plain:disabled,
-.c-button--negative-plain.is-disabled {
-  background-color: transparent;
 }
 
 .c-button--inverse {
@@ -552,11 +511,6 @@ sup {
   background-color: rgba(255, 255, 255, 0.76);
 }
 
-.c-button--inverse:disabled,
-.c-button--inverse.is-disabled {
-  background-color: #ffffff;
-}
-
 .c-button--inverse-lean {
   border-color: #ffffff;
   background-color: transparent;
@@ -574,11 +528,6 @@ sup {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.c-button--inverse-lean:disabled,
-.c-button--inverse-lean.is-disabled {
-  background-color: transparent;
-}
-
 .c-button--inverse-plain {
   background-color: transparent;
 }
@@ -593,11 +542,6 @@ sup {
 
 .c-button--inverse-plain:active {
   background-color: rgba(255, 255, 255, 0.24);
-}
-
-.c-button--inverse-plain:disabled,
-.c-button--inverse-plain.is-disabled {
-  background-color: transparent;
 }
 
 .c-button--small {
