@@ -44,6 +44,7 @@
   color: $color-gray-regular;
 
   &:focus {
+    border-color: $color-gray-regular;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
