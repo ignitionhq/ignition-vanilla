@@ -589,6 +589,11 @@ sup {
   color: #3d3d3d;
 }
 
+.c-card--interactive:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px #d6d6d6;
+}
+
 .c-checkbox {
   width: 1.25rem;
   height: 1.25rem;

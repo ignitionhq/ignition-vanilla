@@ -42,4 +42,11 @@
 .c-card--interactive {
   display: block;
   color: $color-gray-regular;
+
+  &:focus {
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
+    box-shadow: $box-shadow-regular $color-gray-light-4;
+  }
 }
