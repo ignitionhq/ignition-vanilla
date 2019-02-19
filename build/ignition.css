@@ -566,10 +566,6 @@ sup {
   line-height: 1.33333333;
 }
 
-.c-card__heading a {
-  color: inherit;
-}
-
 .c-card__cover {
   display: block;
   max-width: calc(100% + 2 * 1.5rem);
