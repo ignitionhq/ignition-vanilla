@@ -36,3 +36,10 @@
   .c-card p:last-child {
     margin-bottom: 0;
   }
+
+// Interactive card
+
+.c-card--interactive {
+  display: block;
+  color: $color-gray-regular;
+}
