@@ -10,9 +10,9 @@
   background-color: $color-gray-light-2;
 }
 
-// Interactive tag
+// Linked tag
 
-.c-tag--interactive {
+.c-tag--linked {
   &:hover {
     background-color: $color-gray-light-4;
   }
@@ -29,7 +29,7 @@
   background-color: $color-primary-regular;
 }
 
-.c-tag--primary-interactive {
+.c-tag--primary-linked {
   color: $color-white-regular;
   background-color: $color-primary-regular;
 

@@ -584,12 +584,12 @@ sup {
   margin-bottom: 0;
 }
 
-.c-card--interactive {
+.c-card--linked {
   display: block;
   color: #3d3d3d;
 }
 
-.c-card--interactive:focus {
+.c-card--linked:focus {
   border-color: #3d3d3d;
   outline: 0;
   box-shadow: 0 0 0 3px #d6d6d6;
@@ -881,11 +881,11 @@ sup {
   background-color: #ebebeb;
 }
 
-.c-tag--interactive:hover {
+.c-tag--linked:hover {
   background-color: #d6d6d6;
 }
 
-.c-tag--interactive:active {
+.c-tag--linked:active {
   background-color: #cccccc;
 }
 
@@ -894,16 +894,16 @@ sup {
   background-color: #0062b8;
 }
 
-.c-tag--primary-interactive {
+.c-tag--primary-linked {
   color: #ffffff;
   background-color: #0062b8;
 }
 
-.c-tag--primary-interactive:hover {
+.c-tag--primary-linked:hover {
   background-color: #004c8f;
 }
 
-.c-tag--primary-interactive:active {
+.c-tag--primary-linked:active {
   background-color: #00417b;
 }
 
