@@ -17,10 +17,9 @@
   }
 
   .c-card__cover {
-    // Allow negative right margin on items that are inline by default.
     display: block;
-    // Override established maximum width and match card width on `img`,
-    // `video`, and `audio` elements.
+    // Override established maximum width and match card width on `img` and
+    // `video` elements.
     max-width: calc(100% + 2 * #{$space-large-4});
     margin-right: -$space-large-4;
     margin-bottom: $space-large-4;
