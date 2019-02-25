@@ -739,7 +739,7 @@ sup {
   margin-bottom: 0;
 }
 
-.c-notice--dismissable {
+.c-notice--dismissible {
   position: relative;
   padding-right: 3rem;
 }
