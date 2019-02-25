@@ -1,3 +1,7 @@
+// TABS
+// Navigate between related sections of content.
+// -----------------------------------------------------------------------------
+
 (function() {
 	let tabLinks = document.querySelectorAll(".c-tabs__link");
   function tabClicks(tabClick) {
