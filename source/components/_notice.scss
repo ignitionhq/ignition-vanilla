@@ -20,6 +20,12 @@
   padding-right: $space-large-2;
 }
 
+  // Remove last paragraph bottom margin using the `:last-of-type` selector
+  // instead of `:last-child` because the dismiss button is placed last.
+  .c-notice--dismissible p:last-of-type {
+    margin-bottom: 0;
+  }
+
   .c-notice__dismiss {
     position: absolute;
     top: 0;

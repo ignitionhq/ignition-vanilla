@@ -744,6 +744,10 @@ sup {
   padding-right: 3rem;
 }
 
+.c-notice--dismissible p:last-of-type {
+  margin-bottom: 0;
+}
+
 .c-notice__dismiss {
   position: absolute;
   top: 0;
