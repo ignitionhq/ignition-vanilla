@@ -28,12 +28,11 @@
 
   .c-notice__dismiss {
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: $space-small-3;
+    top: $space-regular;
+    right: $space-regular;
+    padding: $space-small-4;
     border: 0;
-    border-top-right-radius: $border-radius-regular;
-    border-bottom-left-radius: $border-radius-regular;
+    border-radius: $border-radius-regular;
     color: inherit;
     background-color: $color-gray-light-3;
 
@@ -46,7 +45,7 @@
       // Mind that the outline should be removed only if other styles that imply
       // focus are set.
       outline: 0;
-      box-shadow: $box-shadow-regular $color-gray-light-5;
+      box-shadow: $box-shadow-regular $color-gray-light-4;
     }
 
     &:active {
@@ -57,8 +56,6 @@
 
     .c-notice__dismiss-icon {
       display: block;
-      width: 0.75rem;
-      height: 0.75rem;
       // Inherit text color on `svg` elements.
       fill: currentColor;
     }
