@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .c-textfield {
+  display: block;
   width: 100%;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.

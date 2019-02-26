@@ -921,6 +921,7 @@ sup {
 }
 
 .c-textfield {
+  display: block;
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
   border: 1px solid #cccccc;
