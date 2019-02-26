@@ -884,6 +884,34 @@ sup {
   background-color: #ebebeb;
 }
 
+.c-tag__dismiss {
+  padding: calc(0.375rem - 1px);
+  border: 1px solid #3d3d3d;
+  border-radius: 720px;
+  margin-left: 0.25rem;
+  background-color: #e0e0e0;
+}
+
+.c-tag__dismiss:hover {
+  color: #ffffff;
+  background-color: #292929;
+}
+
+.c-tag__dismiss:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px #d6d6d6;
+}
+
+.c-tag__dismiss:active {
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+
+.c-tag__dismiss-icon {
+  display: block;
+  fill: currentColor;
+}
+
 .c-tag--interactive:hover {
   background-color: #d6d6d6;
 }
