@@ -892,24 +892,6 @@ sup {
   background-color: #cccccc;
 }
 
-.c-tag--primary {
-  color: #ffffff;
-  background-color: #0062b8;
-}
-
-.c-tag--primary-interactive {
-  color: #ffffff;
-  background-color: #0062b8;
-}
-
-.c-tag--primary-interactive:hover {
-  background-color: #004c8f;
-}
-
-.c-tag--primary-interactive:active {
-  background-color: #00417b;
-}
-
 .c-textfield {
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
