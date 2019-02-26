@@ -1,5 +1,5 @@
 // TAG
-// Label or categorize items.
+// Label items and reference content using keywords.
 // -----------------------------------------------------------------------------
 
 .c-tag {
@@ -10,6 +10,39 @@
   background-color: $color-gray-light-2;
 }
 
+  .c-tag__dismiss {
+    // Employ `calc()` to ensure precise alignment with items that use the same
+    // spacing values but lack a border.
+    padding: calc(#{$space-small-4} - #{$border-width-regular});
+    border: $border-width-regular solid $color-gray-regular;
+    border-radius: $border-radius-full;
+    margin-left: $space-small-5;
+    background-color: transparent;
+
+    &:hover {
+      color: $color-white-regular;
+      background-color: $color-gray-dark-1;
+    }
+
+    &:focus {
+      // Mind that the outline should be removed only if other styles that imply
+      // focus are set.
+      outline: 0;
+      box-shadow: $box-shadow-regular $color-gray-light-4;
+    }
+
+    &:active {
+      color: $color-white-regular;
+      background-color: $color-gray-dark-2;
+    }
+  }
+
+    .c-tag__dismiss-icon {
+      display: block;
+      // Inherit text color on `svg` elements.
+      fill: currentColor;
+    }
+
 // Interactive tag
 
 .c-tag--interactive {
@@ -19,27 +52,5 @@
 
   &:active {
     background-color: $color-gray-light-5;
-  }
-}
-
-// Primary tag
-
-.c-tag--primary {
-  color: $color-white-regular;
-  background-color: $color-primary-regular;
-}
-
-// Interactive primary tag
-
-.c-tag--primary-interactive {
-  color: $color-white-regular;
-  background-color: $color-primary-regular;
-
-  &:hover {
-    background-color: $color-primary-dark-1;
-  }
-
-  &:active {
-    background-color: $color-primary-dark-2;
   }
 }
