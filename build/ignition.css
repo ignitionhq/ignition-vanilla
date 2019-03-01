@@ -15,7 +15,7 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   line-height: 1.5;
-  color: #3d3d3d;
+  color: #333333;
   background-color: #ffffff;
 }
 
@@ -300,7 +300,7 @@ code {
 
 kbd {
   color: #ffffff;
-  background-color: #3d3d3d;
+  background-color: #333333;
 }
 
 kbd kbd {
@@ -311,7 +311,7 @@ kbd kbd {
 mark {
   padding: 0.125em 0.25em;
   border-radius: 4px;
-  color: #3d3d3d;
+  color: #333333;
 }
 
 small {
@@ -343,11 +343,11 @@ sup {
   text-align: center;
   white-space: nowrap;
   color: #ffffff;
-  background-color: #3d3d3d;
+  background-color: #333333;
 }
 
 .c-button:hover {
-  background-color: #292929;
+  background-color: #1f1f1f;
 }
 
 .c-button:focus {
@@ -356,7 +356,7 @@ sup {
 }
 
 .c-button:active {
-  background-color: #1e1e1e;
+  background-color: #141414;
 }
 
 .c-button:disabled,
@@ -366,8 +366,8 @@ sup {
 }
 
 .c-button--lean {
-  border-color: #3d3d3d;
-  color: #3d3d3d;
+  border-color: #333333;
+  color: #333333;
   background-color: transparent;
 }
 
@@ -380,7 +380,7 @@ sup {
 }
 
 .c-button--plain {
-  color: #3d3d3d;
+  color: #333333;
   background-color: transparent;
 }
 
@@ -495,7 +495,7 @@ sup {
 }
 
 .c-button--inverse {
-  color: #3d3d3d;
+  color: #333333;
   background-color: #ffffff;
 }
 
@@ -558,7 +558,7 @@ sup {
   padding: calc(1.5rem - 1px);
   border: 1px solid #e0e0e0;
   border-radius: 4px;
-  color: #3d3d3d;
+  color: #333333;
   background-color: #ffffff;
 }
 
@@ -588,11 +588,11 @@ sup {
 
 .c-card--interactive {
   display: block;
-  color: #3d3d3d;
+  color: #333333;
 }
 
 .c-card--interactive:focus {
-  border-color: #3d3d3d;
+  border-color: #333333;
   outline: 0;
   box-shadow: 0 0 0 3px #d6d6d6;
 }
@@ -683,7 +683,7 @@ sup {
 }
 
 .c-list__link {
-  color: #3d3d3d;
+  color: #333333;
 }
 
 .c-list__link:hover {
@@ -709,7 +709,7 @@ sup {
 .c-nav__link {
   display: inline-block;
   padding: 0.625rem 1rem;
-  color: #3d3d3d;
+  color: #333333;
 }
 
 .c-nav__link:hover {
@@ -731,7 +731,7 @@ sup {
 .c-notice {
   padding: 1rem 1.5rem;
   border-radius: 4px;
-  color: #3d3d3d;
+  color: #333333;
   background-color: whitesmoke;
 }
 
@@ -761,7 +761,7 @@ sup {
 
 .c-notice__dismiss:hover {
   color: #ffffff;
-  background-color: #292929;
+  background-color: #1f1f1f;
 }
 
 .c-notice__dismiss:focus {
@@ -771,7 +771,7 @@ sup {
 
 .c-notice__dismiss:active {
   color: #ffffff;
-  background-color: #1e1e1e;
+  background-color: #141414;
 }
 
 .c-notice__dismiss-icon {
@@ -863,7 +863,7 @@ sup {
   display: inline-block;
   padding: 0.625rem 1rem;
   margin-bottom: -1px;
-  color: #3d3d3d;
+  color: #333333;
 }
 
 .c-tabs__link:hover {
@@ -880,13 +880,13 @@ sup {
   display: inline-block;
   padding: 0.375rem 0.75rem;
   border-radius: 720px;
-  color: #3d3d3d;
+  color: #333333;
   background-color: #ebebeb;
 }
 
 .c-tag__dismiss {
   padding: calc(0.375rem - 1px);
-  border: 1px solid #3d3d3d;
+  border: 1px solid #333333;
   border-radius: 720px;
   margin-left: 0.25rem;
   background-color: transparent;
@@ -894,7 +894,7 @@ sup {
 
 .c-tag__dismiss:hover {
   color: #ffffff;
-  background-color: #292929;
+  background-color: #1f1f1f;
 }
 
 .c-tag__dismiss:focus {
@@ -904,7 +904,7 @@ sup {
 
 .c-tag__dismiss:active {
   color: #ffffff;
-  background-color: #1e1e1e;
+  background-color: #141414;
 }
 
 .c-tag__dismiss-icon {
@@ -928,7 +928,7 @@ sup {
   border-radius: 4px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #3d3d3d;
+  color: #333333;
   background-color: #ffffff;
 }
 
