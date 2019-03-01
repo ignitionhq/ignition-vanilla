@@ -760,6 +760,7 @@ sup {
 }
 
 .c-notice__dismiss:hover {
+  border-color: #1f1f1f;
   color: #ffffff;
   background-color: #1f1f1f;
 }
@@ -770,6 +771,7 @@ sup {
 }
 
 .c-notice__dismiss:active {
+  border-color: #141414;
   color: #ffffff;
   background-color: #141414;
 }
@@ -789,6 +791,7 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
+  border-color: #004c8f;
   background-color: #004c8f;
 }
 
@@ -797,6 +800,7 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss:active {
+  border-color: #00417b;
   background-color: #00417b;
 }
 
@@ -810,6 +814,7 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:hover {
+  border-color: #7a0800;
   background-color: #7a0800;
 }
 
@@ -818,6 +823,7 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:active {
+  border-color: #660700;
   background-color: #660700;
 }
 
