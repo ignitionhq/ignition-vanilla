@@ -30,11 +30,13 @@
     position: absolute;
     top: $space-regular;
     right: $space-regular;
-    padding: $space-small-4;
-    border: 0;
+    // Employ `calc()` to ensure precise alignment with items that use the same
+    // spacing values but lack a border.
+    padding: calc(#{$space-small-4} - #{$border-width-regular});
+    border: $border-width-regular solid $color-gray-regular;
     border-radius: $border-radius-regular;
     color: inherit;
-    background-color: $color-gray-light-3;
+    background-color: transparent;
 
     &:hover {
       color: $color-white-regular;
@@ -68,7 +70,7 @@
 }
 
   .c-notice--primary .c-notice__dismiss {
-    background-color: $color-primary-light-3;
+    border-color: $color-primary-regular;
 
     &:hover {
       background-color: $color-primary-dark-1;
@@ -91,7 +93,7 @@
 }
 
   .c-notice--negative .c-notice__dismiss {
-    background-color: $color-negative-light-3;
+    border-color: $color-negative-regular;
 
     &:hover {
       background-color: $color-negative-dark-1;

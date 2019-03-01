@@ -752,11 +752,11 @@ sup {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  padding: 0.375rem;
-  border: 0;
+  padding: calc(0.375rem - 1px);
+  border: 1px solid #333333;
   border-radius: 4px;
   color: inherit;
-  background-color: #e0e0e0;
+  background-color: transparent;
 }
 
 .c-notice__dismiss:hover {
@@ -785,7 +785,7 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss {
-  background-color: #c2e2ff;
+  border-color: #0062b8;
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
@@ -806,7 +806,7 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss {
-  background-color: #ffc6c2;
+  border-color: #a30b00;
 }
 
 .c-notice--negative .c-notice__dismiss:hover {
