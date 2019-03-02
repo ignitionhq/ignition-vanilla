@@ -3,12 +3,14 @@
 // -----------------------------------------------------------------------------
 
 (function() {
-  let notice = document.querySelector(".c-notice--dismissible");
-  let noticeDismiss = document.querySelector(".c-notice__dismiss");
+  let noticeDismissArray = document.querySelectorAll(".c-notice__dismiss");
 
-  function dismissNotice() {
+  function dismissNotice(event) {
+    let notice = event.target.closest(".c-notice--dismissible");
     notice.classList.add("u-display-none");
   }
 
-  noticeDismiss.addEventListener("click", dismissNotice);
+  noticeDismissArray.forEach(function(item) {
+    item.addEventListener("click", dismissNotice);
+  });
 })();
