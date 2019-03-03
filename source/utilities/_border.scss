@@ -4,7 +4,7 @@
 
 $border-radius-values: (
   regular: $border-radius-regular,
-  round: $border-radius-full
+  full: $border-radius-full
 );
 
 @include utility(border-radius, $border-radius-values);
