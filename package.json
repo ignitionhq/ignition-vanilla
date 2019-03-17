@@ -8,14 +8,12 @@
   },
   "license": "MIT",
   "scripts": {
-    "compile:sass": "node-sass --output-style expanded --precision 8 --output build/styles/ source/ignition.scss",
-    "format:css": "prettier --write build/styles/ignition.css",
+    "compile:sass": "node-sass --output build/styles/ source/ignition.scss --output-style expanded --precision 8",
     "minify:css": "cleancss --output build/styles/ignition.min.css build/styles/ignition.css",
-    "build:all": "npm run compile:sass && npm run format:css && npm run minify:css"
+    "build:all": "npm run compile:sass && npm run minify:css"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
-    "prettier": "^1.14.3",
     "clean-css-cli": "^4.2.1"
   }
 }
