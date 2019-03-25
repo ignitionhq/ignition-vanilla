@@ -8,8 +8,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "compile:sass": "node-sass --output build/styles/ source/ignition.scss --output-style expanded --precision 8",
-    "minify:css": "cleancss --output build/styles/ignition.min.css build/styles/ignition.css",
+    "compile:sass": "node-sass source/ignition.scss --output build/styles/ --output-style expanded --precision 8",
+    "minify:css": "cleancss build/styles/ignition.css --output build/styles/ignition.min.css",
     "bundle:js": "rollup source/ignition.js --file build/scripts/ignition.js --format esm",
     "clean:js": "terser build/scripts/ignition.js --output build/scripts/ignition.js --beautify",
     "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",
