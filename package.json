@@ -12,7 +12,8 @@
     "minify:css": "cleancss --output build/styles/ignition.min.css build/styles/ignition.css",
     "bundle:js": "rollup source/ignition.js --file build/scripts/ignition.js --format esm",
     "clean:js": "terser build/scripts/ignition.js --output build/scripts/ignition.js --beautify",
-    "build:all": "npm run compile:sass && npm run minify:css && npm run bundle:js && npm run clean:js",
+    "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",
+    "build:all": "npm run compile:sass && npm run minify:css && npm run bundle:js && npm run clean:js && npm run minify:js",
     "serve:all": "http-server --silent -c-1"
   },
   "devDependencies": {
