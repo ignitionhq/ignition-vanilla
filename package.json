@@ -15,8 +15,8 @@
     "clean:js": "terser build/scripts/ignition.js --output build/scripts/ignition.js --beautify",
     "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",
     "build:js": "npm run bundle:js && npm run clean:js && npm run minify:js",
-    "build:all": "npm run build:css && npm run build:js",
-    "serve:all": "http-server --silent -c-1"
+    "build": "npm run build:css && npm run build:js",
+    "serve": "http-server --silent -c-1"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",
