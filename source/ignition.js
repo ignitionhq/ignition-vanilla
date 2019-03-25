@@ -1,5 +1,5 @@
-import Notice from "./components/notice.js"
-import Tabs from "./components/tabs.js"
-import Tag from "./components/tag.js"
+import Notice from "./components/notice"
+import Tabs from "./components/tabs"
+import Tag from "./components/tag"
 
 export { Notice, Tabs, Tag }
