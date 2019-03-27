@@ -8,9 +8,10 @@
   },
   "license": "MIT",
   "scripts": {
+    "lint:sass": "stylelint \"source/**/*.scss\"",
     "compile:sass": "node-sass source/ignition.scss --output build/styles/ --output-style expanded --precision 8",
     "minify:css": "cleancss build/styles/ignition.css --output build/styles/ignition.min.css",
-    "build:css": "npm run compile:sass && npm run minify:css",
+    "build:css": "npm run lint:sass && npm run compile:sass && npm run minify:css",
     "bundle:js": "rollup source/ignition.js --file build/scripts/ignition.js --format esm",
     "clean:js": "terser build/scripts/ignition.js --output build/scripts/ignition.js --beautify",
     "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",
@@ -19,6 +20,7 @@
     "serve": "http-server --silent -c-1"
   },
   "devDependencies": {
+    "stylelint": "^9.10.1",
     "node-sass": "^4.7.2",
     "clean-css-cli": "^4.2.1",
     "rollup": "^1.4.0",
