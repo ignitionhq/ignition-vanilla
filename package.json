@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint:sass": "stylelint \"source/**/*.scss\"",
+    "lint:sass": "stylelint \"source/**/*.scss\" || exit 0",
     "compile:sass": "node-sass source/ignition.scss --output build/styles/ --output-style expanded --precision 8",
     "minify:css": "cleancss build/styles/ignition.css --output build/styles/ignition.min.css",
     "build:css": "npm run lint:sass && npm run compile:sass && npm run minify:css",
