@@ -13,7 +13,7 @@ document.addEventListener("click", function (event) {
     event.preventDefault()
     let tag = new Tag()
     tag.dismiss(event.target.closest(".c-tag"))
-	}
+  }
 })
 
 export default Tag

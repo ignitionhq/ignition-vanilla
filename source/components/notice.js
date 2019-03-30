@@ -13,7 +13,7 @@ document.addEventListener("click", function (event) {
     event.preventDefault()
     let notice = new Notice()
     notice.dismiss(event.target.closest(".c-notice"))
-	}
+  }
 })
 
 export default Notice
