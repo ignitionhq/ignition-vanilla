@@ -8,7 +8,7 @@ class Tag {
   }
 }
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   if (event.target.closest(".c-tag__dismiss")) {
     event.preventDefault();
     let tag = new Tag()
