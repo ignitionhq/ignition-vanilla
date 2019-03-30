@@ -9,8 +9,8 @@ class Tabs {
 		let tabPanels = document.querySelectorAll(".js-tab-panel")
     let activePanel = document.querySelector(activePanelId)
     for (let i = 0; i < tabPanels.length; i++) {
-      tabLinks[i].classList.remove("is-selected");
-			tabPanels[i].setAttribute("hidden", "");
+      tabLinks[i].classList.remove("is-selected")
+			tabPanels[i].setAttribute("hidden", "")
     }
     element.classList.add("is-selected")
     activePanel.removeAttribute("hidden")
@@ -19,7 +19,7 @@ class Tabs {
 
 document.addEventListener("click", function (event) {
   if (event.target.closest(".c-tabs__link")) {
-    event.preventDefault();
+    event.preventDefault()
     let tabs = new Tabs()
     tabs.select(event.target.closest(".c-tabs__link"))
 	}

@@ -10,7 +10,7 @@ class Tag {
 
 document.addEventListener("click", function (event) {
   if (event.target.closest(".c-tag__dismiss")) {
-    event.preventDefault();
+    event.preventDefault()
     let tag = new Tag()
     tag.dismiss(event.target.closest(".c-tag"))
 	}
