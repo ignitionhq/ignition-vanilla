@@ -16,12 +16,12 @@ ol {
   padding-left: $space-large-4;
 }
 
-  ul ul,
-  ul ol,
-  ol ul,
-  ol ol {
-    margin-bottom: 0;
-  }
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-bottom: 0;
+}
 
 dt {
   font-weight: bold;
@@ -39,33 +39,34 @@ table {
   margin-bottom: $space-large-4;
 }
 
-  th,
-  td {
-    // Employ `calc()` to ensure precise alignment with items that use the same
-    // spacing values but lack a border.
-    padding: $space-small-1 $space-regular calc(#{$space-small-1} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-gray-light-3;
-    vertical-align: top;
-  }
+th,
+td {
+  // Employ `calc()` to ensure precise alignment with items that use the same
+  // spacing values but lack a border.
+  padding: $space-small-1 $space-regular
+    calc(#{$space-small-1} - #{$border-width-regular});
+  border-bottom: $border-width-regular solid $color-gray-light-3;
+  vertical-align: top;
+}
 
-  th {
-    text-align: left;
-  }
+th {
+  text-align: left;
+}
 
-  thead th {
-    vertical-align: bottom;
-  }
+thead th {
+  vertical-align: bottom;
+}
 
-  caption {
-    padding-top: $space-small-1;
-    // Employ `calc()` to ensure precise alignment with items that use the same
-    // spacing values but lack a border.
-    padding-bottom: calc(#{$space-small-1} - #{$border-width-thick-2});
-    border-bottom: $border-width-thick-2 solid $color-gray-light-3;
-    font-size: $font-size-regular;
-    font-weight: bold;
-    text-align: left;
-  }
+caption {
+  padding-top: $space-small-1;
+  // Employ `calc()` to ensure precise alignment with items that use the same
+  // spacing values but lack a border.
+  padding-bottom: calc(#{$space-small-1} - #{$border-width-thick-2});
+  border-bottom: $border-width-thick-2 solid $color-gray-light-3;
+  font-size: $font-size-regular;
+  font-weight: bold;
+  text-align: left;
+}
 
 // Figure
 

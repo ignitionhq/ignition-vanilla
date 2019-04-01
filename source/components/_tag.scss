@@ -10,38 +10,38 @@
   background-color: $color-gray-light-2;
 }
 
-  .c-tag__dismiss {
-    // Employ `calc()` to ensure precise alignment with items that use the same
-    // spacing values but lack a border.
-    padding: calc(#{$space-small-4} - #{$border-width-regular});
-    border: $border-width-regular solid $color-gray-regular;
-    border-radius: $border-radius-full;
-    margin-left: $space-small-5;
-    background-color: transparent;
+.c-tag__dismiss {
+  // Employ `calc()` to ensure precise alignment with items that use the same
+  // spacing values but lack a border.
+  padding: calc(#{$space-small-4} - #{$border-width-regular});
+  border: $border-width-regular solid $color-gray-regular;
+  border-radius: $border-radius-full;
+  margin-left: $space-small-5;
+  background-color: transparent;
 
-    &:hover {
-      color: $color-white-regular;
-      background-color: $color-gray-dark-1;
-    }
-
-    &:focus {
-      // Mind that the outline should be removed only if other styles that imply
-      // focus are set.
-      outline: 0;
-      box-shadow: $box-shadow-regular $color-gray-light-4;
-    }
-
-    &:active {
-      color: $color-white-regular;
-      background-color: $color-gray-dark-2;
-    }
+  &:hover {
+    color: $color-white-regular;
+    background-color: $color-gray-dark-1;
   }
 
-    .c-tag__dismiss-icon {
-      display: block;
-      // Inherit text color on `svg` elements.
-      fill: currentColor;
-    }
+  &:focus {
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
+    box-shadow: $box-shadow-regular $color-gray-light-4;
+  }
+
+  &:active {
+    color: $color-white-regular;
+    background-color: $color-gray-dark-2;
+  }
+}
+
+.c-tag__dismiss-icon {
+  display: block;
+  // Inherit text color on `svg` elements.
+  fill: currentColor;
+}
 
 // Interactive tag
 

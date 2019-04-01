@@ -9,20 +9,20 @@
   margin-bottom: 0;
 }
 
-  .c-tabs__link {
-    display: inline-block;
-    padding: $space-small-2 $space-regular;
-    // Negate parent bottom border.
-    margin-bottom: -#{$border-width-regular};
-    color: $color-gray-regular;
+.c-tabs__link {
+  display: inline-block;
+  padding: $space-small-2 $space-regular;
+  // Negate parent bottom border.
+  margin-bottom: -#{$border-width-regular};
+  color: $color-gray-regular;
 
-    &:hover {
-      color: $color-primary-regular;
-    }
-
-    &.is-selected {
-      padding-bottom: calc(#{$space-small-2} - #{$border-width-thick-2});
-      border-bottom: $border-width-thick-2 solid $color-primary-regular;
-      color: $color-primary-regular;
-    }
+  &:hover {
+    color: $color-primary-regular;
   }
+
+  &.is-selected {
+    padding-bottom: calc(#{$space-small-2} - #{$border-width-thick-2});
+    border-bottom: $border-width-thick-2 solid $color-primary-regular;
+    color: $color-primary-regular;
+  }
+}

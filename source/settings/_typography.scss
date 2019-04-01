@@ -6,18 +6,19 @@
 
 // Provide a standard font stack.
 $font-family-regular:
-// Use a default system font.
--apple-system, BlinkMacSystemFont, "Segoe UI",
-// Use a prevalent system font if none of the previous are available.
-"Helvetica Neue", sans-serif,
-// Use a special font for emojis and other symbols.
-"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // Use a default system font. -apple-system, BlinkMacSystemFont, "Segoe UI",
+  // Use a prevalent system font if none of the previous are available.
+  "Helvetica Neue", sans-serif,
+  // Use a special font for emojis and other symbols.
+  "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
 // Provide a monospace font stack.
 $font-family-mono:
-// Use a default monospace system font.
-SFMono-Regular, Menlo, Consolas,
-// Use a prevalent monospace system font if none of the previous are available.
-"Liberation Mono", monospace;
+  // Use a default monospace system font. SFMono-Regular, Menlo, Consolas,
+  // Use a prevalent monospace system font if none of the previous are
+  // available.
+  "Liberation Mono",
+  monospace;
 
 // Font size
 
