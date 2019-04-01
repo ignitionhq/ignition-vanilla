@@ -3,8 +3,7 @@
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
     "at-rule-no-unknown": [
-      true,
-      {
+      true, {
         "ignoreAtRules": [
           "at-root",
           "content",
@@ -42,8 +41,7 @@
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",
     "custom-property-empty-line-before": [
-      "always",
-      {
+      "always", {
         "except": [
           "after-custom-property",
           "first-nested"
@@ -126,8 +124,7 @@
     "string-quotes": "double",
     "unit-case": "lower",
     "unit-no-unknown": [
-      true,
-      {
+      true, {
         "ignoreUnits": ["\/"]
       }
     ],
