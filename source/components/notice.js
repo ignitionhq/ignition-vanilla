@@ -8,7 +8,7 @@ class Notice {
   }
 }
 
-document.addEventListener("click", function (event) {
+document.addEventListener("click", function(event) {
   if (event.target.closest(".c-notice__dismiss")) {
     event.preventDefault()
     let notice = new Notice()

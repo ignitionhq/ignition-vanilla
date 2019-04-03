@@ -17,7 +17,7 @@ class Tabs {
   }
 }
 
-document.addEventListener("click", function (event) {
+document.addEventListener("click", function(event) {
   if (event.target.closest(".c-tabs__link")) {
     event.preventDefault()
     let tabs = new Tabs()
