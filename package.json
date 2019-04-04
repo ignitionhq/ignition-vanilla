@@ -14,7 +14,7 @@
     "minify:css": "cleancss build/styles/ignition.css --output build/styles/ignition.min.css",
     "build:css": "npm run lint:sass && npm run format:sass && npm run compile:sass && npm run minify:css",
     "lint:js": "eslint \"source/**/*.js\" || exit 0",
-    "format:js": "prettier --no-semi --write \"source/**/*.js\"",
+    "format:js": "prettier --write \"source/**/*.js\"",
     "bundle:js": "rollup source/ignition.js --file build/scripts/ignition.js --format esm",
     "clean:js": "terser build/scripts/ignition.js --output build/scripts/ignition.js --beautify",
     "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",

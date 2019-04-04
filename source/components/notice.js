@@ -4,16 +4,16 @@
 
 class Notice {
   dismiss(element) {
-    element.classList.add("u-display-none")
+    element.classList.add("u-display-none");
   }
 }
 
 document.addEventListener("click", function(event) {
   if (event.target.closest(".c-notice__dismiss")) {
-    event.preventDefault()
-    let notice = new Notice()
-    notice.dismiss(event.target.closest(".c-notice"))
+    event.preventDefault();
+    let notice = new Notice();
+    notice.dismiss(event.target.closest(".c-notice"));
   }
-})
+});
 
-export default Notice
+export default Notice;
