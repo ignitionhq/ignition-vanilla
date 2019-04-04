@@ -4,10 +4,10 @@
 
 class Tabs {
   select(element) {
-    let tabLinks = document.querySelectorAll(".c-tabs__link")
-    let activePanelId = element.getAttribute("href")
-    let tabPanels = document.querySelectorAll(".js-tab-panel")
-    let activePanel = document.querySelector(activePanelId)
+    let tabLinks = document.querySelectorAll(".c-tabs__link"),
+      activePanelId = element.getAttribute("href"),
+      tabPanels = document.querySelectorAll(".js-tab-panel"),
+      activePanel = document.querySelector(activePanelId)
     for (let i = 0; i < tabPanels.length; i++) {
       tabLinks[i].classList.remove("is-selected")
       tabPanels[i].setAttribute("hidden", "")
