@@ -1,3 +1,7 @@
+// NOTICE
+// Provide feedback or additional information.
+// -----------------------------------------------------------------------------
+
 class Notice {
   dismiss(element) {
     element.classList.add("u-display-none");
@@ -11,6 +15,10 @@ document.addEventListener("click", function(event) {
     notice.dismiss(event.target.closest(".c-notice"));
   }
 });
+
+// TABS
+// Navigate between related sections of content.
+// -----------------------------------------------------------------------------
 
 class Tabs {
   select(element) {
@@ -34,6 +42,10 @@ document.addEventListener("click", function(event) {
     tabs.select(event.target.closest(".c-tabs__link"));
   }
 });
+
+// TAG
+// Label items and reference content using keywords.
+// -----------------------------------------------------------------------------
 
 class Tag {
   dismiss(element) {
