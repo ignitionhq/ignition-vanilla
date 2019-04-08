@@ -13,7 +13,7 @@
     "compile:sass": "node-sass source/ignition.scss --output build/styles/ --output-style expanded --precision 8",
     "clean:css": "prettier --write build/styles/ignition.css",
     "minify:css": "cleancss build/styles/ignition.css --output build/styles/ignition.min.css",
-    "build:css": "npm run lint:sass && npm run format:sass && npm run compile:sass && npm run minify:css",
+    "build:css": "npm run lint:sass && npm run format:sass && npm run compile:sass && npm run clean:css && npm run minify:css",
     "lint:js": "eslint \"source/**/*.js\" || exit 0",
     "format:js": "prettier --write \"source/**/*.js\"",
     "bundle:js": "rollup source/ignition.js --file build/scripts/ignition.js --format esm",
