@@ -20,8 +20,7 @@
     "clean:js": "terser build/scripts/ignition.js --output build/scripts/ignition.js --beautify && prettier --write build/scripts/ignition.js",
     "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",
     "build:js": "npm run lint:js && npm run format:js && npm run bundle:js && npm run clean:js && npm run minify:js",
-    "build": "npm run build:css && npm run build:js",
-    "serve": "http-server --silent -c-1"
+    "build": "npm run build:css && npm run build:js"
   },
   "devDependencies": {
     "stylelint": "^9.10.1",
@@ -30,7 +29,6 @@
     "clean-css-cli": "^4.2.1",
     "eslint": "^5.15.3",
     "rollup": "^1.4.0",
-    "terser": "^3.17.0",
-    "http-server": "^0.11.1"
+    "terser": "^3.17.0"
   }
 }

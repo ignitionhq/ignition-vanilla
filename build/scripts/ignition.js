@@ -48,5 +48,3 @@ document.addEventListener("click", function(event) {
     tag.dismiss(event.target.closest(".c-tag"));
   }
 });
-
-export { Notice, Tabs, Tag };
