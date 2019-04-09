@@ -16,9 +16,9 @@
     "watch:css": "nodemon --watch source/ --ext scss --exec npm run build:css",
     "lint:js": "eslint source/**/*.js || exit 0",
     "format:js": "prettier --write source/**/*.js",
-    "bundle:js": "rollup source/ignition.js --file build/scripts/ignition.js --format esm",
+    "compile:js": "rollup source/ignition.js --file build/scripts/ignition.js --format esm",
     "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",
-    "build:js": "npm run lint:js && npm run format:js && npm run bundle:js && npm run minify:js",
+    "build:js": "npm run lint:js && npm run format:js && npm run compile:js && npm run minify:js",
     "watch:js": "nodemon --watch source/ --ext js --exec npm run build:js",
     "build": "npm run build:css && npm run build:js",
     "watch": "npm-run-all --parallel watch:*"
