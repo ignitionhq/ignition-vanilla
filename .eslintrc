@@ -9,26 +9,39 @@
   },
   "rules": {
     "accessor-pairs": "error",
-    "camelcase": ["error", {
-      "properties": "never"
-    }],
+    "camelcase": [
+      "error",
+      {
+        "properties": "never"
+      }
+    ],
     "constructor-super": "error",
-    "eqeqeq": ["error", "always", {
-      "null": "ignore"
-    }],
-    "new-cap": ["error", {
-      "newIsCap": true,
-      "capIsNew": false
-    }],
+    "eqeqeq": [
+      "error",
+      "always",
+      {
+        "null": "ignore"
+      }
+    ],
+    "new-cap": [
+      "error",
+      {
+        "newIsCap": true,
+        "capIsNew": false
+      }
+    ],
     "no-array-constructor": "error",
     "no-caller": "error",
     "no-class-assign": "error",
     "no-compare-neg-zero": "error",
     "no-cond-assign": "error",
     "no-const-assign": "error",
-    "no-constant-condition": ["error", {
-      "checkLoops": false
-    }],
+    "no-constant-condition": [
+      "error",
+      {
+        "checkLoops": false
+      }
+    ],
     "no-control-regex": "error",
     "no-debugger": "error",
     "no-delete-var": "error",
@@ -50,19 +63,25 @@
     "no-inner-declarations": ["error", "functions"],
     "no-invalid-regexp": "error",
     "no-label-var": "error",
-    "no-labels": ["error", {
-      "allowLoop": false,
-      "allowSwitch": false
-    }],
+    "no-labels": [
+      "error",
+      {
+        "allowLoop": false,
+        "allowSwitch": false
+      }
+    ],
     "no-lone-blocks": "error",
-    "no-mixed-operators": ["error", {
-      "groups": [
-        ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-        ["&&", "||"],
-        ["in", "instanceof"]
-      ],
-      "allowSamePrecedence": true
-    }],
+    "no-mixed-operators": [
+      "error",
+      {
+        "groups": [
+          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+          ["&&", "||"],
+          ["in", "instanceof"]
+        ],
+        "allowSamePrecedence": true
+      }
+    ],
     "no-multi-str": "error",
     "no-new": "error",
     "no-new-func": "error",
@@ -90,27 +109,39 @@
     "no-undef": "error",
     "no-undef-init": "error",
     "no-unmodified-loop-condition": "error",
-    "no-unneeded-ternary": ["error", {
-      "defaultAssignment": false
-    }],
+    "no-unneeded-ternary": [
+      "error",
+      {
+        "defaultAssignment": false
+      }
+    ],
     "no-unreachable": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
-    "no-unused-expressions": ["error", {
-      "allowShortCircuit": true,
-      "allowTernary": true,
-      "allowTaggedTemplates": true
-    }],
-    "no-unused-vars": ["error", {
-      "vars": "all",
-      "args": "none",
-      "ignoreRestSiblings": true
-    }],
-    "no-use-before-define": ["error", {
-      "functions": false,
-      "classes": false,
-      "variables": false
-    }],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true,
+        "allowTaggedTemplates": true
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": false,
+        "variables": false
+      }
+    ],
     "no-useless-call": "error",
     "no-useless-computed-key": "error",
     "no-useless-constructor": "error",
@@ -119,21 +150,29 @@
     "no-useless-return": "error",
     "no-with": "error",
     "one-var": "error",
-    "spaced-comment": ["error", "always", {
-      "line": {
-        "markers": ["*package", "!", "/", ",", "="]
-      },
-      "block": {
-        "balanced": true,
-        "markers": ["*package", "!", ",", ":", "::", "flow-include"],"exceptions": ["*"]
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "line": {
+          "markers": ["*package", "!", "/", ",", "="]
+        },
+        "block": {
+          "balanced": true,
+          "markers": ["*package", "!", ",", ":", "::", "flow-include"],
+          "exceptions": ["*"]
+        }
       }
-    }],
+    ],
     "symbol-description": "error",
     "unicode-bom": ["error", "never"],
     "use-isnan": "error",
-    "valid-typeof": ["error", {
-      "requireStringLiterals": true
-    }],
+    "valid-typeof": [
+      "error",
+      {
+        "requireStringLiterals": true
+      }
+    ],
     "yoda": ["error", "never"]
   }
 }
