@@ -60,6 +60,7 @@
       true, {
         "ignoreUnits": ["\/"]
       }
-    ]
+    ],
+    "value-no-vendor-prefix": true
   }
 }
