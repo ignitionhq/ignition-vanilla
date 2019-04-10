@@ -13,6 +13,9 @@
       "properties": "never"
     }],
     "constructor-super": "error",
+    "eqeqeq": ["error", "always", {
+      "null": "ignore"
+    }],
     "new-cap": ["error", {
       "newIsCap": true,
       "capIsNew": false
