@@ -6,7 +6,8 @@
   display: inline-block;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular}) calc(#{$space-regular} - #{$border-width-regular});
+  padding: calc(#{$space-small-2} - #{$border-width-regular})
+    calc(#{$space-regular} - #{$border-width-regular});
   // Use a transparent border so variants can define a visible one more easily.
   border: $border-width-regular solid transparent;
   border-radius: $border-radius-regular;
@@ -244,13 +245,15 @@
 // Small button
 
 .c-button--small {
-  padding: calc(#{$space-small-4} - #{$border-width-regular}) calc(#{$space-small-1} - #{$border-width-regular});
+  padding: calc(#{$space-small-4} - #{$border-width-regular})
+    calc(#{$space-small-1} - #{$border-width-regular});
 }
 
 // Large button
 
 .c-button--large {
-  padding: calc(#{$space-small-1} - #{$border-width-regular}) calc(#{$space-large-5} - #{$border-width-regular});
+  padding: calc(#{$space-small-1} - #{$border-width-regular})
+    calc(#{$space-large-5} - #{$border-width-regular});
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 }

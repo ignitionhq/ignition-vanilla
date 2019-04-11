@@ -3,7 +3,11 @@
 // -----------------------------------------------------------------------------
 
 $display-values: (
-  all: (block, flex, none)
+  all: (
+    block,
+    flex,
+    none
+  )
 );
 
 @include utility(display, $display-values);

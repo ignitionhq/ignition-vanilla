@@ -64,14 +64,14 @@ blockquote {
   line-height: $line-height-small-1;
 }
 
-  blockquote p {
-    margin-bottom: $space-small-3;
-  }
+blockquote p {
+  margin-bottom: $space-small-3;
+}
 
-  blockquote footer {
-    font-size: $font-size-regular;
-    line-height: $line-height-regular;
-  }
+blockquote footer {
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+}
 
 // Preformatted text
 

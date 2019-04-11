@@ -8,15 +8,15 @@
   flex-wrap: wrap;
 }
 
-  .o-lineup__item {
-    width: 100%;
+.o-lineup__item {
+  width: 100%;
 
-    @include media(m) {
-      // Cause item to take up the specified proportion of available space. It
-      // will be equal to other items on the same line that are styled this way.
-      flex: 1;
-    }
+  @include media(m) {
+    // Cause item to take up the specified proportion of available space. It
+    // will be equal to other items on the same line that are styled this way.
+    flex: 1;
   }
+}
 
 // Spaced lineup
 
@@ -26,7 +26,7 @@
   margin-left: -$space-large-5;
 }
 
-  .o-lineup--spaced > .o-lineup__item {
-    padding-right: $space-large-5;
-    padding-left: $space-large-5;
-  }
+.o-lineup--spaced > .o-lineup__item {
+  padding-right: $space-large-5;
+  padding-left: $space-large-5;
+}

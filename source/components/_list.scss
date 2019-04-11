@@ -6,18 +6,18 @@
   @include list-reset;
 }
 
-  .c-list__item {
-    padding-top: $space-small-4;
-    padding-bottom: $space-small-4;
+.c-list__item {
+  padding-top: $space-small-4;
+  padding-bottom: $space-small-4;
+}
+
+.c-list__link {
+  color: $color-gray-regular;
+
+  &:hover {
+    color: $color-primary-regular;
   }
-
-    .c-list__link {
-      color: $color-gray-regular;
-
-      &:hover {
-        color: $color-primary-regular;
-      }
-    }
+}
 
 // Horizontal list
 
@@ -26,6 +26,6 @@
   flex-wrap: wrap;
 }
 
-  .c-list--horizontal > .c-list__item:not(:last-child) {
-    margin-right: $space-large-4;
-  }
+.c-list--horizontal > .c-list__item:not(:last-child) {
+  margin-right: $space-large-4;
+}
