@@ -7,10 +7,10 @@
   border-radius: $border-radius-regular;
   color: $color-gray-regular;
   background-color: $color-gray-light-1;
-}
 
-.c-notice p:last-child {
-  margin-bottom: 0;
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // Dismissible notice
@@ -18,12 +18,12 @@
 .c-notice--dismissible {
   position: relative;
   padding-right: $space-large-2;
-}
 
-// Remove last paragraph bottom margin using the `:last-of-type` selector
-// instead of `:last-child` because the dismiss button is placed last.
-.c-notice--dismissible p:last-of-type {
-  margin-bottom: 0;
+  // Remove last paragraph bottom margin using the `:last-of-type` selector
+  // instead of `:last-child` because the dismiss button is placed last.
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .c-notice__dismiss {
@@ -69,23 +69,23 @@
 .c-notice--primary {
   color: $color-primary-regular;
   background-color: $color-primary-light-1;
-}
 
-.c-notice--primary .c-notice__dismiss {
-  border-color: $color-primary-regular;
+  .c-notice__dismiss {
+    border-color: $color-primary-regular;
 
-  &:hover {
-    border-color: $color-primary-dark-1;
-    background-color: $color-primary-dark-1;
-  }
+    &:hover {
+      border-color: $color-primary-dark-1;
+      background-color: $color-primary-dark-1;
+    }
 
-  &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-4;
-  }
+    &:focus {
+      box-shadow: $box-shadow-regular $color-primary-light-4;
+    }
 
-  &:active {
-    border-color: $color-primary-dark-2;
-    background-color: $color-primary-dark-2;
+    &:active {
+      border-color: $color-primary-dark-2;
+      background-color: $color-primary-dark-2;
+    }
   }
 }
 
@@ -94,22 +94,22 @@
 .c-notice--negative {
   color: $color-negative-regular;
   background-color: $color-negative-light-1;
-}
 
-.c-notice--negative .c-notice__dismiss {
-  border-color: $color-negative-regular;
+  .c-notice__dismiss {
+    border-color: $color-negative-regular;
 
-  &:hover {
-    border-color: $color-negative-dark-1;
-    background-color: $color-negative-dark-1;
-  }
+    &:hover {
+      border-color: $color-negative-dark-1;
+      background-color: $color-negative-dark-1;
+    }
 
-  &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-4;
-  }
+    &:focus {
+      box-shadow: $box-shadow-regular $color-negative-light-4;
+    }
 
-  &:active {
-    border-color: $color-negative-dark-2;
-    background-color: $color-negative-dark-2;
+    &:active {
+      border-color: $color-negative-dark-2;
+      background-color: $color-negative-dark-2;
+    }
   }
 }

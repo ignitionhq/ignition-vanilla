@@ -62,15 +62,15 @@ blockquote {
   margin: 0 0 $space-large-4;
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
-}
 
-blockquote p {
-  margin-bottom: $space-small-3;
-}
+  p {
+    margin-bottom: $space-small-3;
+  }
 
-blockquote footer {
-  font-size: $font-size-regular;
-  line-height: $line-height-regular;
+  footer {
+    font-size: $font-size-regular;
+    line-height: $line-height-regular;
+  }
 }
 
 // Preformatted text
