@@ -24,8 +24,10 @@
 .c-list--horizontal {
   display: flex;
   flex-wrap: wrap;
-}
 
-.c-list--horizontal > .c-list__item:not(:last-child) {
-  margin-right: $space-large-4;
+  > .c-list__item {
+    &:not(:last-child) {
+      margin-right: $space-large-4;
+    }
+  }
 }

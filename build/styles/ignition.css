@@ -560,6 +560,10 @@ sup {
   background-color: #fff;
 }
 
+.c-card p:last-child {
+  margin-bottom: 0;
+}
+
 .c-card__heading {
   margin-bottom: 1.5rem;
   font-size: 1.3125rem;
@@ -578,10 +582,6 @@ sup {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   margin-top: -1.5rem;
-}
-
-.c-card p:last-child {
-  margin-bottom: 0;
 }
 
 .c-card--interactive {
