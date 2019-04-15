@@ -31,7 +31,7 @@ $color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -12%);
 // Gray
 
 // Provide a standard gray color.
-$color-gray-regular: #333;
+$color-gray-regular: #2e2e2e;
 // Provide lighter than standard gray colors.
 $color-gray-light-1: change-color($color-gray-regular, $lightness: 96%);
 $color-gray-light-2: change-color($color-gray-regular, $lightness: 92%);
