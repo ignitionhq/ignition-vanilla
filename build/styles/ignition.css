@@ -442,11 +442,11 @@ sup {
 }
 
 .c-button--negative {
-  background-color: #a30b00;
+  background-color: #ad0c00;
 }
 
 .c-button--negative:hover {
-  background-color: #7a0800;
+  background-color: #840900;
 }
 
 .c-button--negative:focus {
@@ -454,12 +454,12 @@ sup {
 }
 
 .c-button--negative:active {
-  background-color: #660700;
+  background-color: #700800;
 }
 
 .c-button--negative-lean {
-  border-color: #a30b00;
-  color: #a30b00;
+  border-color: #ad0c00;
+  color: #ad0c00;
   background-color: transparent;
 }
 
@@ -476,7 +476,7 @@ sup {
 }
 
 .c-button--negative-plain {
-  color: #a30b00;
+  color: #ad0c00;
   background-color: transparent;
 }
 
@@ -803,17 +803,17 @@ sup {
 }
 
 .c-notice--negative {
-  color: #a30b00;
+  color: #ad0c00;
   background-color: #ffeceb;
 }
 
 .c-notice--negative .c-notice__dismiss {
-  border-color: #a30b00;
+  border-color: #ad0c00;
 }
 
 .c-notice--negative .c-notice__dismiss:hover {
-  border-color: #7a0800;
-  background-color: #7a0800;
+  border-color: #840900;
+  background-color: #840900;
 }
 
 .c-notice--negative .c-notice__dismiss:focus {
@@ -821,8 +821,8 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:active {
-  border-color: #660700;
-  background-color: #660700;
+  border-color: #700800;
+  background-color: #700800;
 }
 
 .c-radio {
@@ -943,7 +943,7 @@ sup {
 }
 
 .c-textfield.is-invalid {
-  border-color: #a30b00;
+  border-color: #ad0c00;
 }
 
 .c-textfield.is-invalid:focus {
