@@ -1,0 +1,33 @@
+// GRID
+// Arrange and size items in a strict format.
+// -----------------------------------------------------------------------------
+
+.o-grid {
+  display: grid;
+  grid-gap: 1.25rem;
+
+  @include media(m) {
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.o-grid__column-1 {
+  grid-column: span 1;
+}
+
+.o-grid__column-2 {
+  grid-column: span 2;
+}
+
+.o-grid__column-3 {
+  grid-column: span 3;
+}
+
+.o-grid__column-4 {
+  grid-column: span 4;
+}
+
+.o-grid__column-5 {
+  grid-column: span 5;
+}
