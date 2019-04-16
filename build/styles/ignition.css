@@ -1059,6 +1059,22 @@ sup {
   }
 }
 
+.o-grid__column-6 {
+  grid-column: span 6;
+}
+
+@media screen and (min-width: 720px) {
+  .o-grid__column-6\@m {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .o-grid__column-6\@l {
+    grid-column: span 6;
+  }
+}
+
 .o-grid--spaced {
   grid-gap: 1.25rem;
 }
