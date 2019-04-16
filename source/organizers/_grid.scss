@@ -14,6 +14,15 @@
   .o-grid__column-#{$i} {
     grid-column: span #{$i};
   }
+
+  $query-names: map-keys($queries);
+  @each $query-name in $query-names {
+    @include media($query-name) {
+      .o-grid__column-#{$i}\@#{$query-name} {
+        grid-column: span #{$i};
+      }
+    }
+  }
 }
 
 // Spaced grid
