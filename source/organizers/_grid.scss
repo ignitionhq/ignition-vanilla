@@ -4,10 +4,8 @@
 
 .o-grid {
   display: grid;
-  grid-gap: 1.25rem;
 
   @include media(m) {
-    grid-gap: 2.5rem;
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -30,4 +28,14 @@
 
 .o-grid__column-5 {
   grid-column: span 5;
+}
+
+// Spaced grid
+
+.o-grid--spaced {
+  grid-gap: 1.25rem;
+
+  @include media(m) {
+    grid-gap: 2.5rem;
+  }
 }
