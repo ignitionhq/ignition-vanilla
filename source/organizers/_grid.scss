@@ -10,24 +10,10 @@
   }
 }
 
-.o-grid__column-1 {
-  grid-column: span 1;
-}
-
-.o-grid__column-2 {
-  grid-column: span 2;
-}
-
-.o-grid__column-3 {
-  grid-column: span 3;
-}
-
-.o-grid__column-4 {
-  grid-column: span 4;
-}
-
-.o-grid__column-5 {
-  grid-column: span 5;
+@for $i from 1 through 5 {
+  .o-grid__column-#{$i} {
+    grid-column: span #{$i};
+  }
 }
 
 // Spaced grid
