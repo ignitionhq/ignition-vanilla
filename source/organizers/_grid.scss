@@ -6,11 +6,11 @@
   display: grid;
 
   @include media(m) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat($grid-columns, 1fr);
   }
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through $grid-columns {
   .o-grid__column-#{$i} {
     grid-column: span #{$i};
   }
@@ -28,9 +28,9 @@
 // Spaced grid
 
 .o-grid--spaced {
-  grid-gap: 1.25rem;
+  grid-gap: $grid-gap;
 
   @include media(m) {
-    grid-gap: 2.5rem;
+    grid-gap: 2 * $grid-gap;
   }
 }
