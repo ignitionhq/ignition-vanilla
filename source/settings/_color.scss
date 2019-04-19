@@ -7,48 +7,48 @@
 // Provide a standard primary color.
 $color-primary-regular: hsl(216, 100%, 42%);
 // Provide lighter than standard primary colors.
-$color-primary-light-1: change-color($color-primary-regular, $lightness: 96%);
-$color-primary-light-2: change-color($color-primary-regular, $lightness: 92%);
-$color-primary-light-3: change-color($color-primary-regular, $lightness: 88%);
-$color-primary-light-4: change-color($color-primary-regular, $lightness: 84%);
+$color-primary-light-1: hsl(216, 100%, 96%);
+$color-primary-light-2: hsl(216, 100%, 92%);
+$color-primary-light-3: hsl(216, 100%, 88%);
+$color-primary-light-4: hsl(216, 100%, 84%);
 // Provide darker than standard primary colors.
-$color-primary-dark-1: adjust-color($color-primary-regular, $lightness: -8%);
-$color-primary-dark-2: adjust-color($color-primary-regular, $lightness: -12%);
+$color-primary-dark-1: hsl(216, 100%, 34%);
+$color-primary-dark-2: hsl(216, 100%, 30%);
 
 // Negative
 
 // Provide a standard negative color.
 $color-negative-regular: hsl(4, 100%, 34%);
 // Provide lighter than standard negative colors.
-$color-negative-light-1: change-color($color-negative-regular, $lightness: 96%);
-$color-negative-light-2: change-color($color-negative-regular, $lightness: 92%);
-$color-negative-light-3: change-color($color-negative-regular, $lightness: 88%);
-$color-negative-light-4: change-color($color-negative-regular, $lightness: 84%);
+$color-negative-light-1: hsl(4, 100%, 96%);
+$color-negative-light-2: hsl(4, 100%, 92%);
+$color-negative-light-3: hsl(4, 100%, 88%);
+$color-negative-light-4: hsl(4, 100%, 84%);
 // Provide darker than standard negative colors.
-$color-negative-dark-1: adjust-color($color-negative-regular, $lightness: -8%);
-$color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -12%);
+$color-negative-dark-1: hsl(4, 100%, 26%);
+$color-negative-dark-2: hsl(4, 100%, 22%);
 
 // Gray
 
 // Provide a standard gray color.
 $color-gray-regular: hsl(0, 0%, 18%);
 // Provide lighter than standard gray colors.
-$color-gray-light-1: change-color($color-gray-regular, $lightness: 96%);
-$color-gray-light-2: change-color($color-gray-regular, $lightness: 92%);
-$color-gray-light-3: change-color($color-gray-regular, $lightness: 88%);
-$color-gray-light-4: change-color($color-gray-regular, $lightness: 84%);
-$color-gray-light-5: change-color($color-gray-regular, $lightness: 80%);
+$color-gray-light-1: hsl(0, 0%, 96%);
+$color-gray-light-2: hsl(0, 0%, 92%);
+$color-gray-light-3: hsl(0, 0%, 88%);
+$color-gray-light-4: hsl(0, 0%, 84%);
+$color-gray-light-5: hsl(0, 0%, 80%);
 // Provide darker than standard gray colors.
-$color-gray-dark-1: adjust-color($color-gray-regular, $lightness: -8%);
-$color-gray-dark-2: adjust-color($color-gray-regular, $lightness: -12%);
+$color-gray-dark-1: hsl(0, 0%, 10%);
+$color-gray-dark-2: hsl(0, 0%, 6%);
 
 // White
 
 // Provide a standard white color.
 $color-white-regular: hsl(0, 0%, 100%);
 // Provide transparent white colors.
-$color-white-transparent-1: change-color($color-white-regular, $alpha: 0.84);
-$color-white-transparent-2: change-color($color-white-regular, $alpha: 0.76);
-$color-white-transparent-3: change-color($color-white-regular, $alpha: 0.32);
-$color-white-transparent-4: change-color($color-white-regular, $alpha: 0.24);
-$color-white-transparent-5: change-color($color-white-regular, $alpha: 0.16);
+$color-white-transparent-1: hsla(0, 0%, 100%, 0.84);
+$color-white-transparent-2: hsla(0, 0%, 100%, 0.76);
+$color-white-transparent-3: hsla(0, 0%, 100%, 0.32);
+$color-white-transparent-4: hsla(0, 0%, 100%, 0.24);
+$color-white-transparent-5: hsla(0, 0%, 100%, 0.16);
