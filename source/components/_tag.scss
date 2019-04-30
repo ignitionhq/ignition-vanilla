@@ -7,7 +7,7 @@
   padding: $space-small-4 $space-small-1;
   border-radius: $border-radius-full;
   color: $color-gray-regular;
-  background-color: $color-gray-light-2;
+  background-color: $color-gray-light-b;
 }
 
 .c-tag__dismiss {
@@ -21,19 +21,19 @@
 
   &:hover {
     color: $color-white-regular;
-    background-color: $color-gray-dark-1;
+    background-color: $color-gray-dark-a;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    box-shadow: $box-shadow-regular $color-gray-light-d;
   }
 
   &:active {
     color: $color-white-regular;
-    background-color: $color-gray-dark-2;
+    background-color: $color-gray-dark-b;
   }
 }
 
@@ -47,10 +47,10 @@
 
 .c-tag--interactive {
   &:hover {
-    background-color: $color-gray-light-4;
+    background-color: $color-gray-light-d;
   }
 
   &:active {
-    background-color: $color-gray-light-5;
+    background-color: $color-gray-light-e;
   }
 }

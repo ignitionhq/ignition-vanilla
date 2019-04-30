@@ -6,7 +6,7 @@
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-large-4} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-light-3;
+  border: $border-width-regular solid $color-gray-light-c;
   border-radius: $border-radius-regular;
   color: $color-gray-regular;
   background-color: $color-white-regular;
@@ -49,6 +49,6 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    box-shadow: $box-shadow-regular $color-gray-light-d;
   }
 }

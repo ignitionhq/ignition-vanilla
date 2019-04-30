@@ -5,7 +5,7 @@
 .c-checkbox {
   width: 1.25rem;
   height: 1.25rem;
-  border: $border-width-regular solid $color-gray-light-5;
+  border: $border-width-regular solid $color-gray-light-e;
   border-radius: $border-radius-regular;
   margin-right: $space-small-5;
   vertical-align: middle;
@@ -18,7 +18,7 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular $color-primary-light-d;
   }
 
   &:checked {

@@ -43,7 +43,7 @@ td {
   // spacing values but lack a border.
   padding: $space-small-1 $space-regular
     calc(#{$space-small-1} - #{$border-width-regular});
-  border-bottom: $border-width-regular solid $color-gray-light-3;
+  border-bottom: $border-width-regular solid $color-gray-light-c;
   vertical-align: top;
 }
 
@@ -60,7 +60,7 @@ caption {
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding-bottom: calc(#{$space-small-1} - #{$border-width-thick-2});
-  border-bottom: $border-width-thick-2 solid $color-gray-light-3;
+  border-bottom: $border-width-thick-2 solid $color-gray-light-c;
   font-size: $font-size-regular;
   font-weight: bold;
   text-align: left;
@@ -85,7 +85,7 @@ summary {
 hr {
   // Normalize overflow in Chrome.
   overflow: visible;
-  border-top: $border-width-thick-1 solid $color-gray-light-3;
+  border-top: $border-width-thick-1 solid $color-gray-light-c;
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
