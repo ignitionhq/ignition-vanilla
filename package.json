@@ -4,7 +4,7 @@
   "description": "A comprehensive interface development toolkit.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixeltrove/ignition-vanilla.git"
+    "url": "https://github.com/ignitionhq/ignition-vanilla.git"
   },
   "license": "MIT",
   "scripts": {
