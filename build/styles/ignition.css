@@ -1166,23 +1166,23 @@ sup {
   }
 }
 
-.u-margin-bottom-small-1 {
+.u-margin-bottom-small-a {
   margin-bottom: 0.75rem !important;
 }
 
-.u-margin-bottom-small-2 {
+.u-margin-bottom-small-b {
   margin-bottom: 0.625rem !important;
 }
 
-.u-margin-bottom-small-3 {
+.u-margin-bottom-small-c {
   margin-bottom: 0.5rem !important;
 }
 
-.u-margin-bottom-small-4 {
+.u-margin-bottom-small-d {
   margin-bottom: 0.375rem !important;
 }
 
-.u-margin-bottom-small-5 {
+.u-margin-bottom-small-e {
   margin-bottom: 0.25rem !important;
 }
 
@@ -1190,23 +1190,23 @@ sup {
   margin-bottom: 1rem !important;
 }
 
-.u-margin-bottom-large-1 {
+.u-margin-bottom-large-a {
   margin-bottom: 4rem !important;
 }
 
-.u-margin-bottom-large-2 {
+.u-margin-bottom-large-b {
   margin-bottom: 3rem !important;
 }
 
-.u-margin-bottom-large-3 {
+.u-margin-bottom-large-c {
   margin-bottom: 2rem !important;
 }
 
-.u-margin-bottom-large-4 {
+.u-margin-bottom-large-d {
   margin-bottom: 1.5rem !important;
 }
 
-.u-margin-bottom-large-5 {
+.u-margin-bottom-large-e {
   margin-bottom: 1.25rem !important;
 }
 
@@ -1218,19 +1218,19 @@ sup {
   .u-margin-bottom-regular\@m {
     margin-bottom: 1rem !important;
   }
-  .u-margin-bottom-large-1\@m {
+  .u-margin-bottom-large-a\@m {
     margin-bottom: 4rem !important;
   }
-  .u-margin-bottom-large-2\@m {
+  .u-margin-bottom-large-b\@m {
     margin-bottom: 3rem !important;
   }
-  .u-margin-bottom-large-3\@m {
+  .u-margin-bottom-large-c\@m {
     margin-bottom: 2rem !important;
   }
-  .u-margin-bottom-large-4\@m {
+  .u-margin-bottom-large-d\@m {
     margin-bottom: 1.5rem !important;
   }
-  .u-margin-bottom-large-5\@m {
+  .u-margin-bottom-large-e\@m {
     margin-bottom: 1.25rem !important;
   }
   .u-margin-bottom-none\@m {
@@ -1242,19 +1242,19 @@ sup {
   .u-margin-bottom-regular\@l {
     margin-bottom: 1rem !important;
   }
-  .u-margin-bottom-large-1\@l {
+  .u-margin-bottom-large-a\@l {
     margin-bottom: 4rem !important;
   }
-  .u-margin-bottom-large-2\@l {
+  .u-margin-bottom-large-b\@l {
     margin-bottom: 3rem !important;
   }
-  .u-margin-bottom-large-3\@l {
+  .u-margin-bottom-large-c\@l {
     margin-bottom: 2rem !important;
   }
-  .u-margin-bottom-large-4\@l {
+  .u-margin-bottom-large-d\@l {
     margin-bottom: 1.5rem !important;
   }
-  .u-margin-bottom-large-5\@l {
+  .u-margin-bottom-large-e\@l {
     margin-bottom: 1.25rem !important;
   }
   .u-margin-bottom-none\@l {

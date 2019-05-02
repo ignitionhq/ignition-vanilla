@@ -6,7 +6,7 @@
   display: inline-block;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular})
+  padding: calc(#{$space-small-b} - #{$border-width-regular})
     calc(#{$space-regular} - #{$border-width-regular});
   // Use a transparent border so variants can define a visible one more easily.
   border: $border-width-regular solid transparent;
@@ -20,18 +20,18 @@
   background-color: $color-gray-regular;
 
   &:hover {
-    background-color: $color-gray-dark-1;
+    background-color: $color-gray-dark-a;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    box-shadow: $box-shadow-regular $color-gray-light-d;
   }
 
   &:active {
-    background-color: $color-gray-dark-2;
+    background-color: $color-gray-dark-b;
   }
 
   &:disabled,
@@ -49,11 +49,11 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-gray-light-2;
+    background-color: $color-gray-light-b;
   }
 
   &:active {
-    background-color: $color-gray-light-3;
+    background-color: $color-gray-light-c;
   }
 }
 
@@ -64,11 +64,11 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-gray-light-2;
+    background-color: $color-gray-light-b;
   }
 
   &:active {
-    background-color: $color-gray-light-3;
+    background-color: $color-gray-light-c;
   }
 }
 
@@ -78,15 +78,15 @@
   background-color: $color-primary-regular;
 
   &:hover {
-    background-color: $color-primary-dark-1;
+    background-color: $color-primary-dark-a;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular $color-primary-light-d;
   }
 
   &:active {
-    background-color: $color-primary-dark-2;
+    background-color: $color-primary-dark-b;
   }
 }
 
@@ -98,15 +98,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-2;
+    background-color: $color-primary-light-b;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular $color-primary-light-d;
   }
 
   &:active {
-    background-color: $color-primary-light-3;
+    background-color: $color-primary-light-c;
   }
 }
 
@@ -117,15 +117,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-2;
+    background-color: $color-primary-light-b;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular $color-primary-light-d;
   }
 
   &:active {
-    background-color: $color-primary-light-3;
+    background-color: $color-primary-light-c;
   }
 }
 
@@ -135,15 +135,15 @@
   background-color: $color-negative-regular;
 
   &:hover {
-    background-color: $color-negative-dark-1;
+    background-color: $color-negative-dark-a;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-4;
+    box-shadow: $box-shadow-regular $color-negative-light-d;
   }
 
   &:active {
-    background-color: $color-negative-dark-2;
+    background-color: $color-negative-dark-b;
   }
 }
 
@@ -155,15 +155,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-negative-light-2;
+    background-color: $color-negative-light-b;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-4;
+    box-shadow: $box-shadow-regular $color-negative-light-d;
   }
 
   &:active {
-    background-color: $color-negative-light-3;
+    background-color: $color-negative-light-c;
   }
 }
 
@@ -174,15 +174,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-negative-light-2;
+    background-color: $color-negative-light-b;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-4;
+    box-shadow: $box-shadow-regular $color-negative-light-d;
   }
 
   &:active {
-    background-color: $color-negative-light-3;
+    background-color: $color-negative-light-c;
   }
 }
 
@@ -193,15 +193,15 @@
   background-color: $color-white-regular;
 
   &:hover {
-    background-color: $color-white-transparent-1;
+    background-color: $color-white-transparent-a;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-white-transparent-3;
+    box-shadow: $box-shadow-regular $color-white-transparent-c;
   }
 
   &:active {
-    background-color: $color-white-transparent-2;
+    background-color: $color-white-transparent-b;
   }
 }
 
@@ -212,15 +212,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-white-transparent-5;
+    background-color: $color-white-transparent-e;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-white-transparent-3;
+    box-shadow: $box-shadow-regular $color-white-transparent-c;
   }
 
   &:active {
-    background-color: $color-white-transparent-4;
+    background-color: $color-white-transparent-d;
   }
 }
 
@@ -230,30 +230,30 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-white-transparent-5;
+    background-color: $color-white-transparent-e;
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-white-transparent-3;
+    box-shadow: $box-shadow-regular $color-white-transparent-c;
   }
 
   &:active {
-    background-color: $color-white-transparent-4;
+    background-color: $color-white-transparent-d;
   }
 }
 
 // Small button
 
 .c-button--small {
-  padding: calc(#{$space-small-4} - #{$border-width-regular})
-    calc(#{$space-small-1} - #{$border-width-regular});
+  padding: calc(#{$space-small-d} - #{$border-width-regular})
+    calc(#{$space-small-a} - #{$border-width-regular});
 }
 
 // Large button
 
 .c-button--large {
-  padding: calc(#{$space-small-1} - #{$border-width-regular})
-    calc(#{$space-large-5} - #{$border-width-regular});
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
+  padding: calc(#{$space-small-a} - #{$border-width-regular})
+    calc(#{$space-large-e} - #{$border-width-regular});
+  font-size: $font-size-large-d;
+  line-height: $line-height-small-a;
 }
