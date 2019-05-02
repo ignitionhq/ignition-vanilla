@@ -11,7 +11,7 @@
 
 .c-tabs__link {
   display: inline-block;
-  padding: $space-small-2 $space-regular;
+  padding: $space-small-b $space-regular;
   // Negate parent bottom border.
   margin-bottom: -#{$border-width-regular};
   color: $color-gray-regular;
@@ -21,7 +21,7 @@
   }
 
   &.is-selected {
-    padding-bottom: calc(#{$space-small-2} - #{$border-width-thick-b});
+    padding-bottom: calc(#{$space-small-b} - #{$border-width-thick-b});
     border-bottom: $border-width-thick-b solid $color-primary-regular;
     color: $color-primary-regular;
   }

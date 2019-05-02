@@ -14,7 +14,7 @@ h6 {
 }
 
 h1 {
-  margin-bottom: $space-large-3;
+  margin-bottom: $space-large-c;
   font-size: $font-size-large-1;
   line-height: $line-height-small-3;
 }
@@ -26,19 +26,19 @@ h2 {
 }
 
 h3 {
-  margin-bottom: $space-small-3;
+  margin-bottom: $space-small-c;
   font-size: $font-size-large-3;
   line-height: $line-height-small-1;
 }
 
 h4 {
-  margin-bottom: $space-small-5;
+  margin-bottom: $space-small-e;
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 }
 
 h5 {
-  margin-bottom: $space-small-5;
+  margin-bottom: $space-small-e;
   font-size: $font-size-large-5;
   line-height: $line-height-small-1;
 }
@@ -59,12 +59,12 @@ p {
 // Blockquote
 
 blockquote {
-  margin: 0 0 $space-large-4;
+  margin: 0 0 $space-large-d;
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 
   p {
-    margin-bottom: $space-small-3;
+    margin-bottom: $space-small-c;
   }
 
   footer {

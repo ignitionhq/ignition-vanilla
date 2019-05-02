@@ -7,7 +7,7 @@
   width: 100%;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular})
+  padding: calc(#{$space-small-b} - #{$border-width-regular})
     calc(#{$space-regular} - #{$border-width-regular});
   border: $border-width-regular solid $color-gray-light-e;
   border-radius: $border-radius-regular;
