@@ -730,7 +730,7 @@ sup {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   color: #2e2e2e;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 .c-notice p:last-child {
