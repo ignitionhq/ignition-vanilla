@@ -14,33 +14,33 @@ h6 {
 }
 
 h1 {
-  margin-bottom: $space-large-c;
-  font-size: $font-size-large-a;
-  line-height: $line-height-small-c;
+  margin-bottom: $space-large-3;
+  font-size: $font-size-large-1;
+  line-height: $line-height-small-3;
 }
 
 h2 {
   margin-bottom: $space-regular;
-  font-size: $font-size-large-b;
-  line-height: $line-height-small-b;
+  font-size: $font-size-large-2;
+  line-height: $line-height-small-2;
 }
 
 h3 {
-  margin-bottom: $space-small-c;
-  font-size: $font-size-large-c;
-  line-height: $line-height-small-a;
+  margin-bottom: $space-small-3;
+  font-size: $font-size-large-3;
+  line-height: $line-height-small-1;
 }
 
 h4 {
-  margin-bottom: $space-small-e;
-  font-size: $font-size-large-d;
-  line-height: $line-height-small-a;
+  margin-bottom: $space-small-5;
+  font-size: $font-size-large-4;
+  line-height: $line-height-small-1;
 }
 
 h5 {
-  margin-bottom: $space-small-e;
-  font-size: $font-size-large-e;
-  line-height: $line-height-small-a;
+  margin-bottom: $space-small-5;
+  font-size: $font-size-large-5;
+  line-height: $line-height-small-1;
 }
 
 h6 {
@@ -59,12 +59,12 @@ p {
 // Blockquote
 
 blockquote {
-  margin: 0 0 $space-large-d;
-  font-size: $font-size-large-d;
-  line-height: $line-height-small-a;
+  margin: 0 0 $space-large-4;
+  font-size: $font-size-large-4;
+  line-height: $line-height-small-1;
 
   p {
-    margin-bottom: $space-small-c;
+    margin-bottom: $space-small-3;
   }
 
   footer {
@@ -119,7 +119,7 @@ kbd {
 }
 
 code {
-  background-color: $color-gray-light-b;
+  background-color: $color-gray-light-2;
 }
 
 kbd {

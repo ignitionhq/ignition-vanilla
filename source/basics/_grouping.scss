@@ -13,7 +13,7 @@ dl {
 
 ul,
 ol {
-  padding-left: $space-large-d;
+  padding-left: $space-large-4;
 
   ul,
   ol {
@@ -34,16 +34,16 @@ dd {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: $space-large-d;
+  margin-bottom: $space-large-4;
 }
 
 th,
 td {
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: $space-small-a $space-regular
-    calc(#{$space-small-a} - #{$border-width-regular});
-  border-bottom: $border-width-regular solid $color-gray-light-c;
+  padding: $space-small-1 $space-regular
+    calc(#{$space-small-1} - #{$border-width-regular});
+  border-bottom: $border-width-regular solid $color-gray-light-3;
   vertical-align: top;
 }
 
@@ -56,11 +56,11 @@ th {
 }
 
 caption {
-  padding-top: $space-small-a;
+  padding-top: $space-small-1;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding-bottom: calc(#{$space-small-a} - #{$border-width-thick-b});
-  border-bottom: $border-width-thick-b solid $color-gray-light-c;
+  padding-bottom: calc(#{$space-small-1} - #{$border-width-thick-2});
+  border-bottom: $border-width-thick-2 solid $color-gray-light-3;
   font-size: $font-size-regular;
   font-weight: bold;
   text-align: left;
@@ -85,10 +85,10 @@ summary {
 hr {
   // Normalize overflow in Chrome.
   overflow: visible;
-  border-top: $border-width-thick-a solid $color-gray-light-c;
+  border-top: $border-width-thick-1 solid $color-gray-light-3;
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
-  margin-top: $space-large-b;
-  margin-bottom: $space-large-b;
+  margin-top: $space-large-2;
+  margin-bottom: $space-large-2;
 }
