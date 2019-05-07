@@ -6,12 +6,12 @@
 
 // Provide a standard primary color.
 $color-primary-regular: #0056d6;
-// Provide lighter than standard primary colors.
+// Provide a set of light primary colors.
 $color-primary-light-1: change-color($color-primary-regular, $lightness: 96%);
 $color-primary-light-2: change-color($color-primary-regular, $lightness: 92%);
 $color-primary-light-3: change-color($color-primary-regular, $lightness: 88%);
 $color-primary-light-4: change-color($color-primary-regular, $lightness: 84%);
-// Provide darker than standard primary colors.
+// Provide a set of dark primary colors.
 $color-primary-dark-1: adjust-color($color-primary-regular, $lightness: -8%);
 $color-primary-dark-2: adjust-color($color-primary-regular, $lightness: -12%);
 
@@ -19,12 +19,12 @@ $color-primary-dark-2: adjust-color($color-primary-regular, $lightness: -12%);
 
 // Provide a standard negative color.
 $color-negative-regular: #ad0c00;
-// Provide lighter than standard negative colors.
+// Provide a set of light negative colors.
 $color-negative-light-1: change-color($color-negative-regular, $lightness: 96%);
 $color-negative-light-2: change-color($color-negative-regular, $lightness: 92%);
 $color-negative-light-3: change-color($color-negative-regular, $lightness: 88%);
 $color-negative-light-4: change-color($color-negative-regular, $lightness: 84%);
-// Provide darker than standard negative colors.
+// Provide a set of dark negative colors.
 $color-negative-dark-1: adjust-color($color-negative-regular, $lightness: -8%);
 $color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -12%);
 
@@ -32,13 +32,13 @@ $color-negative-dark-2: adjust-color($color-negative-regular, $lightness: -12%);
 
 // Provide a standard gray color.
 $color-gray-regular: #2e2e2e;
-// Provide lighter than standard gray colors.
+// Provide a set of light gray colors.
 $color-gray-light-1: change-color($color-gray-regular, $lightness: 96%);
 $color-gray-light-2: change-color($color-gray-regular, $lightness: 92%);
 $color-gray-light-3: change-color($color-gray-regular, $lightness: 88%);
 $color-gray-light-4: change-color($color-gray-regular, $lightness: 84%);
 $color-gray-light-5: change-color($color-gray-regular, $lightness: 80%);
-// Provide darker than standard gray colors.
+// Provide a set of dark gray colors.
 $color-gray-dark-1: adjust-color($color-gray-regular, $lightness: -8%);
 $color-gray-dark-2: adjust-color($color-gray-regular, $lightness: -12%);
 
@@ -46,7 +46,7 @@ $color-gray-dark-2: adjust-color($color-gray-regular, $lightness: -12%);
 
 // Provide a standard white color.
 $color-white-regular: #fff;
-// Provide transparent white colors.
+// Provide a set of transparent white colors.
 $color-white-transparent-1: change-color($color-white-regular, $alpha: 0.84);
 $color-white-transparent-2: change-color($color-white-regular, $alpha: 0.76);
 $color-white-transparent-3: change-color($color-white-regular, $alpha: 0.32);
