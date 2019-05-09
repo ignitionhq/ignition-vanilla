@@ -15,7 +15,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #2e2e2e;
-  background-color: #fff;
+  background-color: white;
 }
 
 img,
@@ -298,7 +298,7 @@ code {
 }
 
 kbd {
-  color: #fff;
+  color: white;
   background-color: #2e2e2e;
 }
 
@@ -341,12 +341,12 @@ sup {
   line-height: 1.5;
   text-align: center;
   white-space: nowrap;
-  color: #fff;
+  color: white;
   background-color: #2e2e2e;
 }
 
 .c-button:hover {
-  background-color: #1a1a1a;
+  background-color: #1a1919;
 }
 
 .c-button:focus {
@@ -395,7 +395,7 @@ sup {
 }
 
 .c-button--primary:hover {
-  background-color: #0046ad;
+  background-color: #0045ad;
 }
 
 .c-button--primary:focus {
@@ -446,7 +446,7 @@ sup {
 }
 
 .c-button--negative:hover {
-  background-color: #840900;
+  background-color: #850900;
 }
 
 .c-button--negative:focus {
@@ -454,7 +454,7 @@ sup {
 }
 
 .c-button--negative:active {
-  background-color: #700800;
+  background-color: #700700;
 }
 
 .c-button--negative-lean {
@@ -494,7 +494,7 @@ sup {
 
 .c-button--inverse {
   color: #2e2e2e;
-  background-color: #fff;
+  background-color: white;
 }
 
 .c-button--inverse:hover {
@@ -510,7 +510,7 @@ sup {
 }
 
 .c-button--inverse-lean {
-  border-color: #fff;
+  border-color: white;
   background-color: transparent;
 }
 
@@ -557,7 +557,7 @@ sup {
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   color: #2e2e2e;
-  background-color: #fff;
+  background-color: white;
 }
 
 .c-card p:last-child {
@@ -598,11 +598,11 @@ sup {
 .c-checkbox {
   width: 1.25rem;
   height: 1.25rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   margin-right: 0.25rem;
   vertical-align: middle;
-  background-color: #fff;
+  background-color: white;
   -webkit-appearance: none;
 }
 
@@ -730,7 +730,7 @@ sup {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   color: #2e2e2e;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
 }
 
 .c-notice p:last-child {
@@ -758,9 +758,9 @@ sup {
 }
 
 .c-notice__dismiss:hover {
-  border-color: #1a1a1a;
-  color: #fff;
-  background-color: #1a1a1a;
+  border-color: #1a1919;
+  color: white;
+  background-color: #1a1919;
 }
 
 .c-notice__dismiss:focus {
@@ -770,7 +770,7 @@ sup {
 
 .c-notice__dismiss:active {
   border-color: #0f0f0f;
-  color: #fff;
+  color: white;
   background-color: #0f0f0f;
 }
 
@@ -789,8 +789,8 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
-  border-color: #0046ad;
-  background-color: #0046ad;
+  border-color: #0045ad;
+  background-color: #0045ad;
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
@@ -812,8 +812,8 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:hover {
-  border-color: #840900;
-  background-color: #840900;
+  border-color: #850900;
+  background-color: #850900;
 }
 
 .c-notice--negative .c-notice__dismiss:focus {
@@ -821,18 +821,18 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:active {
-  border-color: #700800;
-  background-color: #700800;
+  border-color: #700700;
+  background-color: #700700;
 }
 
 .c-radio {
   width: 1.25rem;
   height: 1.25rem;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 720px;
   margin-right: 0.25rem;
   vertical-align: middle;
-  background-color: #fff;
+  background-color: white;
   -webkit-appearance: none;
 }
 
@@ -897,8 +897,8 @@ sup {
 }
 
 .c-tag__dismiss:hover {
-  color: #fff;
-  background-color: #1a1a1a;
+  color: white;
+  background-color: #1a1919;
 }
 
 .c-tag__dismiss:focus {
@@ -907,7 +907,7 @@ sup {
 }
 
 .c-tag__dismiss:active {
-  color: #fff;
+  color: white;
   background-color: #0f0f0f;
 }
 
@@ -921,19 +921,19 @@ sup {
 }
 
 .c-tag--interactive:active {
-  background-color: #ccc;
+  background-color: #cccccc;
 }
 
 .c-textfield {
   display: block;
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
   font-size: 1rem;
   line-height: 1.5;
   color: #2e2e2e;
-  background-color: #fff;
+  background-color: white;
 }
 
 .c-textfield:focus {
