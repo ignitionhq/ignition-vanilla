@@ -598,7 +598,7 @@ sup {
 .c-checkbox {
   width: 1.25rem;
   height: 1.25rem;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   margin-right: 0.25rem;
   vertical-align: middle;
@@ -730,7 +730,7 @@ sup {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   color: #2e2e2e;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 .c-notice p:last-child {
@@ -828,7 +828,7 @@ sup {
 .c-radio {
   width: 1.25rem;
   height: 1.25rem;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 720px;
   margin-right: 0.25rem;
   vertical-align: middle;
@@ -921,14 +921,14 @@ sup {
 }
 
 .c-tag--interactive:active {
-  background-color: #cccccc;
+  background-color: #ccc;
 }
 
 .c-textfield {
   display: block;
   width: 100%;
   padding: calc(0.625rem - 1px) calc(1rem - 1px);
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
   line-height: 1.5;
