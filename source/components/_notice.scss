@@ -5,8 +5,8 @@
 .c-notice {
   padding: $space-regular $space-large-4;
   border-radius: $border-radius-regular;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-1;
+  color: var(--color-gray-regular);
+  background-color: var(--color-gray-light-1);
 
   p:last-child {
     margin-bottom: 0;
@@ -33,28 +33,28 @@
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-small-4} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-regular;
+  border: $border-width-regular solid var(--color-gray-regular);
   border-radius: $border-radius-regular;
   color: inherit;
   background-color: transparent;
 
   &:hover {
-    border-color: $color-gray-dark-1;
-    color: $color-white-regular;
-    background-color: $color-gray-dark-1;
+    border-color: var(--color-gray-dark-1);
+    color: var(--color-white-regular);
+    background-color: var(--color-gray-dark-1);
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    box-shadow: $box-shadow-regular var(--color-gray-light-4);
   }
 
   &:active {
-    border-color: $color-gray-dark-2;
-    color: $color-white-regular;
-    background-color: $color-gray-dark-2;
+    border-color: var(--color-gray-dark-2);
+    color: var(--color-white-regular);
+    background-color: var(--color-gray-dark-2);
   }
 }
 
@@ -67,24 +67,24 @@
 // Primary notice
 
 .c-notice--primary {
-  color: $color-primary-regular;
-  background-color: $color-primary-light-1;
+  color: var(--color-primary-regular);
+  background-color: var(--color-primary-light-1);
 
   .c-notice__dismiss {
-    border-color: $color-primary-regular;
+    border-color: var(--color-primary-regular);
 
     &:hover {
-      border-color: $color-primary-dark-1;
-      background-color: $color-primary-dark-1;
+      border-color: var(--color-primary-dark-1);
+      background-color: var(--color-primary-dark-1);
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-primary-light-4;
+      box-shadow: $box-shadow-regular var(--color-primary-light-4);
     }
 
     &:active {
-      border-color: $color-primary-dark-2;
-      background-color: $color-primary-dark-2;
+      border-color: var(--color-primary-dark-2);
+      background-color: var(--color-primary-dark-2);
     }
   }
 }
@@ -92,24 +92,24 @@
 // Negative notice
 
 .c-notice--negative {
-  color: $color-negative-regular;
-  background-color: $color-negative-light-1;
+  color: var(--color-negative-regular);
+  background-color: var(--color-negative-light-1);
 
   .c-notice__dismiss {
-    border-color: $color-negative-regular;
+    border-color: var(--color-negative-regular);
 
     &:hover {
-      border-color: $color-negative-dark-1;
-      background-color: $color-negative-dark-1;
+      border-color: var(--color-negative-dark-1);
+      background-color: var(--color-negative-dark-1);
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-negative-light-4;
+      box-shadow: $box-shadow-regular var(--color-negative-light-4);
     }
 
     &:active {
-      border-color: $color-negative-dark-2;
-      background-color: $color-negative-dark-2;
+      border-color: var(--color-negative-dark-2);
+      background-color: var(--color-negative-dark-2);
     }
   }
 }

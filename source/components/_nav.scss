@@ -11,14 +11,14 @@
 .c-nav__link {
   display: inline-block;
   padding: $space-small-2 $space-regular;
-  color: $color-gray-regular;
+  color: var(--color-gray-regular);
 
   &:hover {
-    color: $color-primary-regular;
+    color: var(--color-primary-regular);
   }
 
   &.is-selected {
-    color: $color-primary-regular;
+    color: var(--color-primary-regular);
   }
 }
 

@@ -16,22 +16,22 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-white-regular;
-  background-color: $color-gray-regular;
+  color: var(--color-white-regular);
+  background-color: var(--color-gray-regular);
 
   &:hover {
-    background-color: $color-gray-dark-1;
+    background-color: var(--color-gray-dark-1);
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    box-shadow: $box-shadow-regular var(--color-gray-light-4);
   }
 
   &:active {
-    background-color: $color-gray-dark-2;
+    background-color: var(--color-gray-dark-2);
   }
 
   &:disabled,
@@ -44,183 +44,183 @@
 // Lean button
 
 .c-button--lean {
-  border-color: $color-gray-regular;
-  color: $color-gray-regular;
+  border-color: var(--color-gray-regular);
+  color: var(--color-gray-regular);
   background-color: transparent;
 
   &:hover {
-    background-color: $color-gray-light-2;
+    background-color: var(--color-gray-light-2);
   }
 
   &:active {
-    background-color: $color-gray-light-3;
+    background-color: var(--color-gray-light-3);
   }
 }
 
 // Plain button
 
 .c-button--plain {
-  color: $color-gray-regular;
+  color: var(--color-gray-regular);
   background-color: transparent;
 
   &:hover {
-    background-color: $color-gray-light-2;
+    background-color: var(--color-gray-light-2);
   }
 
   &:active {
-    background-color: $color-gray-light-3;
+    background-color: var(--color-gray-light-3);
   }
 }
 
 // Primary button
 
 .c-button--primary {
-  background-color: $color-primary-regular;
+  background-color: var(--color-primary-regular);
 
   &:hover {
-    background-color: $color-primary-dark-1;
+    background-color: var(--color-primary-dark-1);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular var(--color-primary-light-4);
   }
 
   &:active {
-    background-color: $color-primary-dark-2;
+    background-color: var(--color-primary-dark-2);
   }
 }
 
 // Lean primary button
 
 .c-button--primary-lean {
-  border-color: $color-primary-regular;
-  color: $color-primary-regular;
+  border-color: var(--color-primary-regular);
+  color: var(--color-primary-regular);
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-2;
+    background-color: var(--color-primary-light-2);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular var(--color-primary-light-4);
   }
 
   &:active {
-    background-color: $color-primary-light-3;
+    background-color: var(--color-primary-light-3);
   }
 }
 
 // Plain primary button
 
 .c-button--primary-plain {
-  color: $color-primary-regular;
+  color: var(--color-primary-regular);
   background-color: transparent;
 
   &:hover {
-    background-color: $color-primary-light-2;
+    background-color: var(--color-primary-light-2);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular var(--color-primary-light-4);
   }
 
   &:active {
-    background-color: $color-primary-light-3;
+    background-color: var(--color-primary-light-3);
   }
 }
 
 // Negative button
 
 .c-button--negative {
-  background-color: $color-negative-regular;
+  background-color: var(--color-negative-regular);
 
   &:hover {
-    background-color: $color-negative-dark-1;
+    background-color: var(--color-negative-dark-1);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-4;
+    box-shadow: $box-shadow-regular var(--color-negative-light-4);
   }
 
   &:active {
-    background-color: $color-negative-dark-2;
+    background-color: var(--color-negative-dark-2);
   }
 }
 
 // Lean negative button
 
 .c-button--negative-lean {
-  border-color: $color-negative-regular;
-  color: $color-negative-regular;
+  border-color: var(--color-negative-regular);
+  color: var(--color-negative-regular);
   background-color: transparent;
 
   &:hover {
-    background-color: $color-negative-light-2;
+    background-color: var(--color-negative-light-2);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-4;
+    box-shadow: $box-shadow-regular var(--color-negative-light-4);
   }
 
   &:active {
-    background-color: $color-negative-light-3;
+    background-color: var(--color-negative-light-3);
   }
 }
 
 // Plain negative button
 
 .c-button--negative-plain {
-  color: $color-negative-regular;
+  color: var(--color-negative-regular);
   background-color: transparent;
 
   &:hover {
-    background-color: $color-negative-light-2;
+    background-color: var(--color-negative-light-2);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-negative-light-4;
+    box-shadow: $box-shadow-regular var(--color-negative-light-4);
   }
 
   &:active {
-    background-color: $color-negative-light-3;
+    background-color: var(--color-negative-light-3);
   }
 }
 
 // Inverse button
 
 .c-button--inverse {
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
+  color: var(--color-gray-regular);
+  background-color: var(--color-white-regular);
 
   &:hover {
-    background-color: $color-white-transparent-1;
+    background-color: var(--color-white-transparent-1);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-white-transparent-3;
+    box-shadow: $box-shadow-regular var(--color-white-transparent-3);
   }
 
   &:active {
-    background-color: $color-white-transparent-2;
+    background-color: var(--color-white-transparent-2);
   }
 }
 
 // Lean inverse button
 
 .c-button--inverse-lean {
-  border-color: $color-white-regular;
+  border-color: var(--color-white-regular);
   background-color: transparent;
 
   &:hover {
-    background-color: $color-white-transparent-5;
+    background-color: var(--color-white-transparent-5);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-white-transparent-3;
+    box-shadow: $box-shadow-regular var(--color-white-transparent-3);
   }
 
   &:active {
-    background-color: $color-white-transparent-4;
+    background-color: var(--color-white-transparent-4);
   }
 }
 
@@ -230,15 +230,15 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $color-white-transparent-5;
+    background-color: var(--color-white-transparent-5);
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular $color-white-transparent-3;
+    box-shadow: $box-shadow-regular var(--color-white-transparent-3);
   }
 
   &:active {
-    background-color: $color-white-transparent-4;
+    background-color: var(--color-white-transparent-4);
   }
 }
 

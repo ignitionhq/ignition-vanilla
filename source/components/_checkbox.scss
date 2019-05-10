@@ -5,28 +5,28 @@
 .c-checkbox {
   width: 1.25rem;
   height: 1.25rem;
-  border: $border-width-regular solid $color-gray-light-5;
+  border: $border-width-regular solid var(--color-gray-light-5);
   border-radius: $border-radius-regular;
   margin-right: $space-small-5;
   vertical-align: middle;
-  background-color: $color-white-regular;
+  background-color: var(--color-white-regular);
   // Allow complete styling in all browsers.
   -webkit-appearance: none;
 
   &:focus {
-    border-color: $color-primary-regular;
+    border-color: var(--color-primary-regular);
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-primary-light-4;
+    box-shadow: $box-shadow-regular var(--color-primary-light-4);
   }
 
   &:checked {
-    border-color: $color-primary-regular;
+    border-color: var(--color-primary-regular);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M1.74421 4.58579L0.33 6L4.57264 10.2426L11.6437 3.17157L10.2295 1.75736L4.57264 7.41421L1.74421 4.58579Z' fill='%23fff'/%3E%3C/svg%3E");
     background-position: center;
     background-repeat: no-repeat;
-    background-color: $color-primary-regular;
+    background-color: var(--color-primary-regular);
   }
 
   &:disabled {

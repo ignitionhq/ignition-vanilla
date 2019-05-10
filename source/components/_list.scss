@@ -12,10 +12,10 @@
 }
 
 .c-list__link {
-  color: $color-gray-regular;
+  color: var(--color-gray-regular);
 
   &:hover {
-    color: $color-primary-regular;
+    color: var(--color-primary-regular);
   }
 }
 

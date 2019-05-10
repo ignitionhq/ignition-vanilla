@@ -26,6 +26,6 @@ body {
   font-family: $font-family-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
+  color: var(--color-gray-regular);
+  background-color: var(--color-white-regular);
 }

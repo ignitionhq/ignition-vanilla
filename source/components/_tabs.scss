@@ -5,7 +5,7 @@
 .c-tabs {
   @include list-reset;
   display: flex;
-  border-bottom: $border-width-regular solid $color-gray-light-3;
+  border-bottom: $border-width-regular solid var(--color-gray-light-3);
   margin-bottom: 0;
 }
 
@@ -14,15 +14,15 @@
   padding: $space-small-2 $space-regular;
   // Negate parent bottom border.
   margin-bottom: -#{$border-width-regular};
-  color: $color-gray-regular;
+  color: var(--color-gray-regular);
 
   &:hover {
-    color: $color-primary-regular;
+    color: var(--color-primary-regular);
   }
 
   &.is-selected {
     padding-bottom: calc(#{$space-small-2} - #{$border-width-thick-2});
-    border-bottom: $border-width-thick-2 solid $color-primary-regular;
-    color: $color-primary-regular;
+    border-bottom: $border-width-thick-2 solid var(--color-primary-regular);
+    color: var(--color-primary-regular);
   }
 }

@@ -6,34 +6,34 @@
   display: inline-block;
   padding: $space-small-4 $space-small-1;
   border-radius: $border-radius-full;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-2;
+  color: var(--color-gray-regular);
+  background-color: var(--color-gray-light-2);
 }
 
 .c-tag__dismiss {
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-small-4} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-regular;
+  border: $border-width-regular solid var(--color-gray-regular);
   border-radius: $border-radius-full;
   margin-left: $space-small-5;
   background-color: transparent;
 
   &:hover {
-    color: $color-white-regular;
-    background-color: $color-gray-dark-1;
+    color: var(--color-white-regular);
+    background-color: var(--color-gray-dark-1);
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    box-shadow: $box-shadow-regular var(--color-gray-light-4);
   }
 
   &:active {
-    color: $color-white-regular;
-    background-color: $color-gray-dark-2;
+    color: var(--color-white-regular);
+    background-color: var(--color-gray-dark-2);
   }
 }
 
@@ -47,10 +47,10 @@
 
 .c-tag--interactive {
   &:hover {
-    background-color: $color-gray-light-4;
+    background-color: var(--color-gray-light-4);
   }
 
   &:active {
-    background-color: $color-gray-light-5;
+    background-color: var(--color-gray-light-5);
   }
 }

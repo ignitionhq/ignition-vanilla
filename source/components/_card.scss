@@ -6,10 +6,10 @@
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-large-4} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-light-3;
+  border: $border-width-regular solid var(--color-gray-light-3);
   border-radius: $border-radius-regular;
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
+  color: var(--color-gray-regular);
+  background-color: var(--color-white-regular);
 
   p:last-child {
     margin-bottom: 0;
@@ -42,13 +42,13 @@
 
 .c-card--interactive {
   display: block;
-  color: $color-gray-regular;
+  color: var(--color-gray-regular);
 
   &:focus {
-    border-color: $color-gray-regular;
+    border-color: var(--color-gray-regular);
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    box-shadow: $box-shadow-regular var(--color-gray-light-4);
   }
 }
