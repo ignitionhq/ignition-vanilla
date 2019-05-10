@@ -2,27 +2,114 @@
 // Designate available margins.
 // -----------------------------------------------------------------------------
 
-$margin-right-values: (
-  all: (
-    regular: var(--space-regular)
-  )
-);
-$margin-bottom-values: (
-  small-1: var(--space-small-1),
-  small-2: var(--space-small-2),
-  small-3: var(--space-small-3),
-  small-4: var(--space-small-4),
-  small-5: var(--space-small-5),
-  all: (
-    regular: var(--space-regular),
-    large-1: var(--space-large-1),
-    large-2: var(--space-large-2),
-    large-3: var(--space-large-3),
-    large-4: var(--space-large-4),
-    large-5: var(--space-large-5),
-    none: 0
-  )
-);
+.u-margin-right-regular {
+  margin-right: var(--space-regular) !important;
+}
 
-@include utility(margin-right, $margin-right-values);
-@include utility(margin-bottom, $margin-bottom-values);
+@media screen and (min-width: 720px) {
+  .u-margin-right-regular\@m {
+    margin-right: var(--space-regular) !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-margin-right-regular\@l {
+    margin-right: var(--space-regular) !important;
+  }
+}
+
+.u-margin-bottom-small-1 {
+  margin-bottom: var(--space-small-1) !important;
+}
+
+.u-margin-bottom-small-2 {
+  margin-bottom: var(--space-small-2) !important;
+}
+
+.u-margin-bottom-small-3 {
+  margin-bottom: var(--space-small-3) !important;
+}
+
+.u-margin-bottom-small-4 {
+  margin-bottom: var(--space-small-4) !important;
+}
+
+.u-margin-bottom-small-5 {
+  margin-bottom: var(--space-small-5) !important;
+}
+
+.u-margin-bottom-regular {
+  margin-bottom: var(--space-regular) !important;
+}
+
+.u-margin-bottom-large-1 {
+  margin-bottom: var(--space-large-1) !important;
+}
+
+.u-margin-bottom-large-2 {
+  margin-bottom: var(--space-large-2) !important;
+}
+
+.u-margin-bottom-large-3 {
+  margin-bottom: var(--space-large-3) !important;
+}
+
+.u-margin-bottom-large-4 {
+  margin-bottom: var(--space-large-4) !important;
+}
+
+.u-margin-bottom-large-5 {
+  margin-bottom: var(--space-large-5) !important;
+}
+
+.u-margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-margin-bottom-regular\@m {
+    margin-bottom: var(--space-regular) !important;
+  }
+  .u-margin-bottom-large-1\@m {
+    margin-bottom: var(--space-large-1) !important;
+  }
+  .u-margin-bottom-large-2\@m {
+    margin-bottom: var(--space-large-2) !important;
+  }
+  .u-margin-bottom-large-3\@m {
+    margin-bottom: var(--space-large-3) !important;
+  }
+  .u-margin-bottom-large-4\@m {
+    margin-bottom: var(--space-large-4) !important;
+  }
+  .u-margin-bottom-large-5\@m {
+    margin-bottom: var(--space-large-5) !important;
+  }
+  .u-margin-bottom-none\@m {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-margin-bottom-regular\@l {
+    margin-bottom: var(--space-regular) !important;
+  }
+  .u-margin-bottom-large-1\@l {
+    margin-bottom: var(--space-large-1) !important;
+  }
+  .u-margin-bottom-large-2\@l {
+    margin-bottom: var(--space-large-2) !important;
+  }
+  .u-margin-bottom-large-3\@l {
+    margin-bottom: var(--space-large-3) !important;
+  }
+  .u-margin-bottom-large-4\@l {
+    margin-bottom: var(--space-large-4) !important;
+  }
+  .u-margin-bottom-large-5\@l {
+    margin-bottom: var(--space-large-5) !important;
+  }
+  .u-margin-bottom-none\@l {
+    margin-bottom: 0 !important;
+  }
+}

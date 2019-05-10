@@ -2,11 +2,28 @@
 // Designate available float directions.
 // -----------------------------------------------------------------------------
 
-$float-values: (
-  all: (
-    left,
-    right
-  )
-);
+.u-float-left {
+  float: left !important;
+}
 
-@include utility(float, $float-values);
+.u-float-right {
+  float: right !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-float-left\@m {
+    float: left !important;
+  }
+  .u-float-right\@m {
+    float: right !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-float-left\@l {
+    float: left !important;
+  }
+  .u-float-right\@l {
+    float: right !important;
+  }
+}

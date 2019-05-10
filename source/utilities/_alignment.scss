@@ -2,10 +2,26 @@
 // Establish flex and grid alignment traits.
 // -----------------------------------------------------------------------------
 
-$align-items-values: flex-start, center;
-$align-self-values: flex-start, center;
-$justify-content-values: space-between, center;
+.u-align-items-flex-start {
+  align-items: flex-start !important;
+}
 
-@include utility(align-items, $align-items-values);
-@include utility(align-self, $align-self-values);
-@include utility(justify-content, $justify-content-values);
+.u-align-items-center {
+  align-items: center !important;
+}
+
+.u-align-self-flex-start {
+  align-self: flex-start !important;
+}
+
+.u-align-self-center {
+  align-self: center !important;
+}
+
+.u-justify-content-space-between {
+  justify-content: space-between !important;
+}
+
+.u-justify-content-center {
+  justify-content: center !important;
+}

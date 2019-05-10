@@ -2,18 +2,52 @@
 // Establish flex-specific traits.
 // -----------------------------------------------------------------------------
 
-$flex-values: (
-  all: (
-    1,
-    none
-  )
-);
-$flex-direction-values: (
-  column: column,
-  all: row
-);
-$flex-wrap-values: wrap;
+.u-flex-1 {
+  flex: 1 !important;
+}
 
-@include utility(flex, $flex-values);
-@include utility(flex-direction, $flex-direction-values);
-@include utility(flex-wrap, $flex-wrap-values);
+.u-flex-none {
+  flex: none !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-flex-1\@m {
+    flex: 1 !important;
+  }
+  .u-flex-none\@m {
+    flex: none !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-flex-1\@l {
+    flex: 1 !important;
+  }
+  .u-flex-none\@l {
+    flex: none !important;
+  }
+}
+
+.u-flex-direction-column {
+  flex-direction: column !important;
+}
+
+.u-flex-direction-row {
+  flex-direction: row !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-flex-direction-row\@m {
+    flex-direction: row !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-flex-direction-row\@l {
+    flex-direction: row !important;
+  }
+}
+
+.u-flex-wrap-wrap {
+  flex-wrap: wrap !important;
+}

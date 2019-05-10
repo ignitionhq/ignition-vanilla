@@ -2,9 +2,10 @@
 // Establish border-specific traits.
 // -----------------------------------------------------------------------------
 
-$border-radius-values: (
-  regular: var(--border-radius-regular),
-  full: var(--border-radius-full)
-);
+.u-border-radius-regular {
+  border-radius: var(--border-radius-regular) !important;
+}
 
-@include utility(border-radius, $border-radius-values);
+.u-border-radius-full {
+  border-radius: var(--border-radius-full) !important;
+}
