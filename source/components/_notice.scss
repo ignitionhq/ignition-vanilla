@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .c-notice {
-  padding: $space-regular $space-large-4;
+  padding: var(--space-regular) var(--space-large-4);
   border-radius: var(--border-radius-regular);
   color: var(--color-gray-regular);
   background-color: var(--color-gray-light-1);
@@ -17,7 +17,7 @@
 
 .c-notice--dismissible {
   position: relative;
-  padding-right: $space-large-2;
+  padding-right: var(--space-large-2);
 
   // Remove last paragraph bottom margin using the `:last-of-type` selector
   // instead of `:last-child` because the dismiss button is placed last.
@@ -28,11 +28,11 @@
 
 .c-notice__dismiss {
   position: absolute;
-  top: $space-regular;
-  right: $space-regular;
+  top: var(--space-regular);
+  right: var(--space-regular);
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-4} - #{var(--border-width-regular)});
+  padding: calc(#{var(--space-small-4)} - #{var(--border-width-regular)});
   border: var(--border-width-regular) solid var(--color-gray-regular);
   border-radius: var(--border-radius-regular);
   color: inherit;

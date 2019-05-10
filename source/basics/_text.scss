@@ -14,31 +14,31 @@ h6 {
 }
 
 h1 {
-  margin-bottom: $space-large-3;
+  margin-bottom: var(--space-large-3);
   font-size: $font-size-large-1;
   line-height: $line-height-small-3;
 }
 
 h2 {
-  margin-bottom: $space-regular;
+  margin-bottom: var(--space-regular);
   font-size: $font-size-large-2;
   line-height: $line-height-small-2;
 }
 
 h3 {
-  margin-bottom: $space-small-3;
+  margin-bottom: var(--space-small-3);
   font-size: $font-size-large-3;
   line-height: $line-height-small-1;
 }
 
 h4 {
-  margin-bottom: $space-small-5;
+  margin-bottom: var(--space-small-5);
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 }
 
 h5 {
-  margin-bottom: $space-small-5;
+  margin-bottom: var(--space-small-5);
   font-size: $font-size-large-5;
   line-height: $line-height-small-1;
 }
@@ -53,18 +53,18 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: $space-regular;
+  margin-bottom: var(--space-regular);
 }
 
 // Blockquote
 
 blockquote {
-  margin: 0 0 $space-large-4;
+  margin: 0 0 var(--space-large-4);
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 
   p {
-    margin-bottom: $space-small-3;
+    margin-bottom: var(--space-small-3);
   }
 
   footer {
@@ -78,14 +78,14 @@ blockquote {
 pre {
   overflow: auto;
   margin-top: 0;
-  margin-bottom: $space-regular;
+  margin-bottom: var(--space-regular);
   font-family: $font-family-mono;
 }
 
 // Address
 
 address {
-  margin-bottom: $space-regular;
+  margin-bottom: var(--space-regular);
   font-style: normal;
 }
 

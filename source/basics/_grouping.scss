@@ -8,12 +8,12 @@ ul,
 ol,
 dl {
   margin-top: 0;
-  margin-bottom: $space-regular;
+  margin-bottom: var(--space-regular);
 }
 
 ul,
 ol {
-  padding-left: $space-large-4;
+  padding-left: var(--space-large-4);
 
   ul,
   ol {
@@ -34,15 +34,15 @@ dd {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: $space-large-4;
+  margin-bottom: var(--space-large-4);
 }
 
 th,
 td {
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: $space-small-1 $space-regular
-    calc(#{$space-small-1} - #{var(--border-width-regular)});
+  padding: var(--space-small-1) var(--space-regular)
+    calc(#{var(--space-small-1)} - #{var(--border-width-regular)});
   border-bottom: var(--border-width-regular) solid var(--color-gray-light-3);
   vertical-align: top;
 }
@@ -56,10 +56,12 @@ th {
 }
 
 caption {
-  padding-top: $space-small-1;
+  padding-top: var(--space-small-1);
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding-bottom: calc(#{$space-small-1} - #{var(--border-width-thick-2)});
+  padding-bottom: calc(
+    #{var(--space-small-1)} - #{var(--border-width-thick-2)}
+  );
   border-bottom: var(--border-width-thick-2) solid var(--color-gray-light-3);
   font-size: $font-size-regular;
   font-weight: bold;
@@ -69,7 +71,7 @@ caption {
 // Figure
 
 figure {
-  margin: 0 0 $space-regular;
+  margin: 0 0 var(--space-regular);
 }
 
 // Summary
@@ -89,6 +91,6 @@ hr {
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
-  margin-top: $space-large-2;
-  margin-bottom: $space-large-2;
+  margin-top: var(--space-large-2);
+  margin-bottom: var(--space-large-2);
 }

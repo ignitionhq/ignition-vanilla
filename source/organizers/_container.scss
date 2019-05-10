@@ -4,14 +4,14 @@
 
 .o-container {
   max-width: var(--content-max-width);
-  padding-right: $space-large-5;
-  padding-left: $space-large-5;
+  padding-right: var(--space-large-5);
+  padding-left: var(--space-large-5);
   margin-right: auto;
   margin-left: auto;
 
   @include media(m) {
     // Increase padding to distance content from screen edges.
-    padding-right: $space-large-5 * 2;
-    padding-left: $space-large-5 * 2;
+    padding-right: calc(var(--space-large-5) * 2);
+    padding-left: calc(var(--space-large-5) * 2);
   }
 }

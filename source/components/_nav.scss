@@ -10,7 +10,7 @@
 
 .c-nav__link {
   display: inline-block;
-  padding: $space-small-2 $space-regular;
+  padding: var(--space-small-2) var(--space-regular);
   color: var(--color-gray-regular);
 
   &:hover {
@@ -28,6 +28,6 @@
   flex-direction: column;
 
   .c-nav__link {
-    padding: $space-small-4 $space-small-2;
+    padding: var(--space-small-4) var(--space-small-2);
   }
 }

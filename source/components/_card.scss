@@ -5,7 +5,7 @@
 .c-card {
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-large-4} - #{var(--border-width-regular)});
+  padding: calc(#{var(--space-large-4)} - #{var(--border-width-regular)});
   border: var(--border-width-regular) solid var(--color-gray-light-3);
   border-radius: var(--border-radius-regular);
   color: var(--color-gray-regular);
@@ -17,7 +17,7 @@
 }
 
 .c-card__heading {
-  margin-bottom: $space-large-4;
+  margin-bottom: var(--space-large-4);
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 }
@@ -26,16 +26,16 @@
   display: block;
   // Override established maximum width and match card width on `img` and
   // `video` elements.
-  max-width: calc(100% + 2 * #{$space-large-4});
-  margin-right: -$space-large-4;
-  margin-bottom: $space-large-4;
-  margin-left: -$space-large-4;
+  max-width: calc(100% + 2 * #{var(--space-large-4)});
+  margin-right: -var(--space-large-4);
+  margin-bottom: var(--space-large-4);
+  margin-left: -var(--space-large-4);
 }
 
 .c-card__cover--top {
   border-top-left-radius: var(--border-radius-regular);
   border-top-right-radius: var(--border-radius-regular);
-  margin-top: -$space-large-4;
+  margin-top: -var(--space-large-4);
 }
 
 // Interactive card
