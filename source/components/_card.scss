@@ -18,8 +18,8 @@
 
 .c-card__heading {
   margin-bottom: var(--space-large-4);
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }
 
 .c-card__cover {

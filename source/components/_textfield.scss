@@ -11,8 +11,8 @@
     calc(#{var(--space-regular)} - #{var(--border-width-regular)});
   border: var(--border-width-regular) solid var(--color-gray-light-5);
   border-radius: var(--border-radius-regular);
-  font-size: $font-size-regular;
-  line-height: $line-height-regular;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
   color: var(--color-gray-regular);
   background-color: var(--color-white-regular);
 

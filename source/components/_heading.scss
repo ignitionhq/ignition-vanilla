@@ -4,36 +4,36 @@
 
 .c-heading-1 {
   margin-bottom: var(--space-large-3);
-  font-size: $font-size-large-1;
-  line-height: $line-height-small-3;
+  font-size: var(--font-size-large-1);
+  line-height: var(--line-height-small-3);
 }
 
 .c-heading-2 {
   margin-bottom: var(--space-regular);
-  font-size: $font-size-large-2;
-  line-height: $line-height-small-2;
+  font-size: var(--font-size-large-2);
+  line-height: var(--line-height-small-2);
 }
 
 .c-heading-3 {
   margin-bottom: var(--space-small-3);
-  font-size: $font-size-large-3;
-  line-height: $line-height-small-1;
+  font-size: var(--font-size-large-3);
+  line-height: var(--line-height-small-1);
 }
 
 .c-heading-4 {
   margin-bottom: var(--space-small-5);
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }
 
 .c-heading-5 {
   margin-bottom: var(--space-small-5);
-  font-size: $font-size-large-5;
-  line-height: $line-height-small-1;
+  font-size: var(--font-size-large-5);
+  line-height: var(--line-height-small-1);
 }
 
 .c-heading-6 {
   margin-bottom: 0;
-  font-size: $font-size-regular;
-  line-height: $line-height-regular;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
 }

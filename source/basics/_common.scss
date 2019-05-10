@@ -13,7 +13,7 @@
 // Root
 
 html {
-  font-size: $root-font-size;
+  font-size: var(--root-font-size);
   // Prevent text size adjustment on device orientation change in Chrome and
   // Safari on iOS.
   -webkit-text-size-adjust: 100%;
@@ -23,9 +23,9 @@ html {
 
 body {
   margin: 0;
-  font-family: $font-family-regular;
-  font-size: $font-size-regular;
-  line-height: $line-height-regular;
+  font-family: var(--font-family-regular);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
   color: var(--color-gray-regular);
   background-color: var(--color-white-regular);
 }

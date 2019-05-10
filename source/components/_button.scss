@@ -11,8 +11,8 @@
   // Use a transparent border so variants can define a visible one more easily.
   border: var(--border-width-regular) solid transparent;
   border-radius: var(--border-radius-regular);
-  font-size: $font-size-regular;
-  line-height: $line-height-regular;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
@@ -254,6 +254,6 @@
 .c-button--large {
   padding: calc(#{var(--space-small-1)} - #{var(--border-width-regular)})
     calc(#{var(--space-large-5)} - #{var(--border-width-regular)});
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }

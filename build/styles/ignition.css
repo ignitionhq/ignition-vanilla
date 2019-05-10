@@ -57,6 +57,25 @@
   --space-small-5: 0.25rem;
 }
 
+:root {
+  --font-family-regular: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --font-family-mono: SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    monospace;
+  --root-font-size: 100%;
+  --font-size-regular: 1rem;
+  --font-size-large-1: 3rem;
+  --font-size-large-2: 2rem;
+  --font-size-large-3: 1.5rem;
+  --font-size-large-4: 1.3125rem;
+  --font-size-large-5: 1.125rem;
+  --line-height-regular: 1.5;
+  --line-height-small-1: 1.33333333;
+  --line-height-small-2: 1.25;
+  --line-height-small-3: 1.16666666;
+}
+
 *,
 *::before,
 *::after {
@@ -64,15 +83,15 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: var(--root-font-size);
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1rem;
-  line-height: 1.5;
+  font-family: var(--font-family-regular);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
   color: var(--color-gray-regular);
   background-color: var(--color-white-regular);
 }
@@ -224,7 +243,7 @@ caption {
   padding-top: var(--space-small-1);
   padding-bottom: calc( var(--space-small-1) - var(--border-width-thick-2));
   border-bottom: var(--border-width-thick-2) solid var(--color-gray-light-3);
-  font-size: 1rem;
+  font-size: var(--font-size-regular);
   font-weight: bold;
   text-align: left;
 }
@@ -264,38 +283,38 @@ h6 {
 
 h1 {
   margin-bottom: var(--space-large-3);
-  font-size: 3rem;
-  line-height: 1.16666666;
+  font-size: var(--font-size-large-1);
+  line-height: var(--line-height-small-3);
 }
 
 h2 {
   margin-bottom: var(--space-regular);
-  font-size: 2rem;
-  line-height: 1.25;
+  font-size: var(--font-size-large-2);
+  line-height: var(--line-height-small-2);
 }
 
 h3 {
   margin-bottom: var(--space-small-3);
-  font-size: 1.5rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-3);
+  line-height: var(--line-height-small-1);
 }
 
 h4 {
   margin-bottom: var(--space-small-5);
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }
 
 h5 {
   margin-bottom: var(--space-small-5);
-  font-size: 1.125rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-5);
+  line-height: var(--line-height-small-1);
 }
 
 h6 {
   margin-bottom: 0;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
 }
 
 p {
@@ -305,8 +324,8 @@ p {
 
 blockquote {
   margin: 0 0 var(--space-large-4);
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }
 
 blockquote p {
@@ -314,15 +333,15 @@ blockquote p {
 }
 
 blockquote footer {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
 }
 
 pre {
   overflow: auto;
   margin-top: 0;
   margin-bottom: var(--space-regular);
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: var(--font-family-mono);
 }
 
 address {
@@ -342,7 +361,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: var(--font-family-mono);
 }
 
 code,
@@ -396,8 +415,8 @@ sup {
   padding: calc(var(--space-small-2) - var(--border-width-regular)) calc(var(--space-regular) - var(--border-width-regular));
   border: var(--border-width-regular) solid transparent;
   border-radius: var(--border-radius-regular);
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
   text-align: center;
   white-space: nowrap;
   color: var(--color-white-regular);
@@ -607,8 +626,8 @@ sup {
 
 .c-button--large {
   padding: calc(var(--space-small-1) - var(--border-width-regular)) calc(var(--space-large-5) - var(--border-width-regular));
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }
 
 .c-card {
@@ -625,8 +644,8 @@ sup {
 
 .c-card__heading {
   margin-bottom: var(--space-large-4);
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }
 
 .c-card__cover {
@@ -686,38 +705,38 @@ sup {
 
 .c-heading-1 {
   margin-bottom: var(--space-large-3);
-  font-size: 3rem;
-  line-height: 1.16666666;
+  font-size: var(--font-size-large-1);
+  line-height: var(--line-height-small-3);
 }
 
 .c-heading-2 {
   margin-bottom: var(--space-regular);
-  font-size: 2rem;
-  line-height: 1.25;
+  font-size: var(--font-size-large-2);
+  line-height: var(--line-height-small-2);
 }
 
 .c-heading-3 {
   margin-bottom: var(--space-small-3);
-  font-size: 1.5rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-3);
+  line-height: var(--line-height-small-1);
 }
 
 .c-heading-4 {
   margin-bottom: var(--space-small-5);
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-4);
+  line-height: var(--line-height-small-1);
 }
 
 .c-heading-5 {
   margin-bottom: var(--space-small-5);
-  font-size: 1.125rem;
-  line-height: 1.33333333;
+  font-size: var(--font-size-large-5);
+  line-height: var(--line-height-small-1);
 }
 
 .c-heading-6 {
   margin-bottom: 0;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
 }
 
 .c-link {
@@ -989,8 +1008,8 @@ sup {
   padding: calc(var(--space-small-2) - var(--border-width-regular)) calc(var(--space-regular) - var(--border-width-regular));
   border: var(--border-width-regular) solid var(--color-gray-light-5);
   border-radius: var(--border-radius-regular);
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
   color: var(--color-gray-regular);
   background-color: var(--color-white-regular);
 }
