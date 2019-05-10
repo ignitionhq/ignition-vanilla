@@ -4,7 +4,7 @@
 
 .c-notice {
   padding: $space-regular $space-large-4;
-  border-radius: $border-radius-regular;
+  border-radius: var(--border-radius-regular);
   color: var(--color-gray-regular);
   background-color: var(--color-gray-light-1);
 
@@ -32,9 +32,9 @@
   right: $space-regular;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-4} - #{$border-width-regular});
-  border: $border-width-regular solid var(--color-gray-regular);
-  border-radius: $border-radius-regular;
+  padding: calc(#{$space-small-4} - #{var(--border-width-regular)});
+  border: var(--border-width-regular) solid var(--color-gray-regular);
+  border-radius: var(--border-radius-regular);
   color: inherit;
   background-color: transparent;
 
@@ -48,7 +48,7 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular var(--color-gray-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-gray-light-4);
   }
 
   &:active {
@@ -79,7 +79,7 @@
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular var(--color-primary-light-4);
+      box-shadow: var(--box-shadow-regular) var(--color-primary-light-4);
     }
 
     &:active {
@@ -104,7 +104,7 @@
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular var(--color-negative-light-4);
+      box-shadow: var(--box-shadow-regular) var(--color-negative-light-4);
     }
 
     &:active {

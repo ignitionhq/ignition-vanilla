@@ -6,11 +6,11 @@
   display: inline-block;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular})
-    calc(#{$space-regular} - #{$border-width-regular});
+  padding: calc(#{$space-small-2} - #{var(--border-width-regular)})
+    calc(#{$space-regular} - #{var(--border-width-regular)});
   // Use a transparent border so variants can define a visible one more easily.
-  border: $border-width-regular solid transparent;
-  border-radius: $border-radius-regular;
+  border: var(--border-width-regular) solid transparent;
+  border-radius: var(--border-radius-regular);
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   text-align: center;
@@ -27,7 +27,7 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular var(--color-gray-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-gray-light-4);
   }
 
   &:active {
@@ -36,7 +36,7 @@
 
   &:disabled,
   &.is-disabled {
-    opacity: $opacity-medium;
+    opacity: var(--opacity-medium);
     pointer-events: none;
   }
 }
@@ -82,7 +82,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-primary-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-primary-light-4);
   }
 
   &:active {
@@ -102,7 +102,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-primary-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-primary-light-4);
   }
 
   &:active {
@@ -121,7 +121,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-primary-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-primary-light-4);
   }
 
   &:active {
@@ -139,7 +139,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-negative-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-negative-light-4);
   }
 
   &:active {
@@ -159,7 +159,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-negative-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-negative-light-4);
   }
 
   &:active {
@@ -178,7 +178,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-negative-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-negative-light-4);
   }
 
   &:active {
@@ -197,7 +197,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-white-transparent-3);
+    box-shadow: var(--box-shadow-regular) var(--color-white-transparent-3);
   }
 
   &:active {
@@ -216,7 +216,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-white-transparent-3);
+    box-shadow: var(--box-shadow-regular) var(--color-white-transparent-3);
   }
 
   &:active {
@@ -234,7 +234,7 @@
   }
 
   &:focus {
-    box-shadow: $box-shadow-regular var(--color-white-transparent-3);
+    box-shadow: var(--box-shadow-regular) var(--color-white-transparent-3);
   }
 
   &:active {
@@ -245,15 +245,15 @@
 // Small button
 
 .c-button--small {
-  padding: calc(#{$space-small-4} - #{$border-width-regular})
-    calc(#{$space-small-1} - #{$border-width-regular});
+  padding: calc(#{$space-small-4} - #{var(--border-width-regular)})
+    calc(#{$space-small-1} - #{var(--border-width-regular)});
 }
 
 // Large button
 
 .c-button--large {
-  padding: calc(#{$space-small-1} - #{$border-width-regular})
-    calc(#{$space-large-5} - #{$border-width-regular});
+  padding: calc(#{$space-small-1} - #{var(--border-width-regular)})
+    calc(#{$space-large-5} - #{var(--border-width-regular)});
   font-size: $font-size-large-4;
   line-height: $line-height-small-1;
 }

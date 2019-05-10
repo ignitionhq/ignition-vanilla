@@ -45,7 +45,7 @@ select {
   line-height: inherit;
 
   &:disabled {
-    opacity: $opacity-medium;
+    opacity: var(--opacity-medium);
     cursor: default;
   }
 }

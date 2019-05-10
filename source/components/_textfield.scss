@@ -7,10 +7,10 @@
   width: 100%;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular})
-    calc(#{$space-regular} - #{$border-width-regular});
-  border: $border-width-regular solid var(--color-gray-light-5);
-  border-radius: $border-radius-regular;
+  padding: calc(#{$space-small-2} - #{var(--border-width-regular)})
+    calc(#{$space-regular} - #{var(--border-width-regular)});
+  border: var(--border-width-regular) solid var(--color-gray-light-5);
+  border-radius: var(--border-radius-regular);
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   color: var(--color-gray-regular);
@@ -21,14 +21,14 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular var(--color-primary-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-primary-light-4);
   }
 
   &.is-invalid {
     border-color: var(--color-negative-regular);
 
     &:focus {
-      box-shadow: $box-shadow-regular var(--color-negative-light-4);
+      box-shadow: var(--box-shadow-regular) var(--color-negative-light-4);
     }
   }
 }

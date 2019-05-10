@@ -3,8 +3,8 @@
 // -----------------------------------------------------------------------------
 
 $border-radius-values: (
-  regular: $border-radius-regular,
-  full: $border-radius-full
+  regular: var(--border-radius-regular),
+  full: var(--border-radius-full)
 );
 
 @include utility(border-radius, $border-radius-values);

@@ -5,9 +5,9 @@
 .c-card {
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-large-4} - #{$border-width-regular});
-  border: $border-width-regular solid var(--color-gray-light-3);
-  border-radius: $border-radius-regular;
+  padding: calc(#{$space-large-4} - #{var(--border-width-regular)});
+  border: var(--border-width-regular) solid var(--color-gray-light-3);
+  border-radius: var(--border-radius-regular);
   color: var(--color-gray-regular);
   background-color: var(--color-white-regular);
 
@@ -33,8 +33,8 @@
 }
 
 .c-card__cover--top {
-  border-top-left-radius: $border-radius-regular;
-  border-top-right-radius: $border-radius-regular;
+  border-top-left-radius: var(--border-radius-regular);
+  border-top-right-radius: var(--border-radius-regular);
   margin-top: -$space-large-4;
 }
 
@@ -49,6 +49,6 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular var(--color-gray-light-4);
+    box-shadow: var(--box-shadow-regular) var(--color-gray-light-4);
   }
 }
