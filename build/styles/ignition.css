@@ -776,10 +776,10 @@ sup {
 }
 
 .c-nav {
-  padding-left: 0;
-  list-style: none;
   display: flex;
+  padding-left: 0;
   margin-bottom: 0;
+  list-style: none;
 }
 
 .c-nav__link {
@@ -934,11 +934,11 @@ sup {
 }
 
 .c-tabs {
-  padding-left: 0;
-  list-style: none;
   display: flex;
+  padding-left: 0;
   border-bottom: var(--border-width-regular) solid var(--color-gray-light-3);
   margin-bottom: 0;
+  list-style: none;
 }
 
 .c-tabs__link {

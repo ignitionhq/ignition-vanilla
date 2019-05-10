@@ -3,7 +3,8 @@
 // -----------------------------------------------------------------------------
 
 .c-list {
-  @include list-reset;
+  padding-left: 0;
+  list-style: none;
 }
 
 .c-list__item {
