@@ -39,6 +39,10 @@
   --box-shadow-regular: 0 0 0 3px;
 }
 
+:root {
+  --content-max-width: 1240px;
+}
+
 *,
 *::before,
 *::after {
@@ -996,7 +1000,7 @@ sup {
 }
 
 .o-container {
-  max-width: 1240px;
+  max-width: var(--content-max-width);
   padding-right: 1.25rem;
   padding-left: 1.25rem;
   margin-right: auto;

@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .o-container {
-  max-width: $content-max-width;
+  max-width: var(--content-max-width);
   padding-right: $space-large-5;
   padding-left: $space-large-5;
   margin-right: auto;
