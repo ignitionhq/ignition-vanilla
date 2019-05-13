@@ -191,7 +191,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: #0056d6;
+  color: #0044cc;
 }
 
 h1,
@@ -391,54 +391,54 @@ sup {
 }
 
 .c-button--primary {
-  background-color: #0056d6;
+  background-color: #0044cc;
 }
 
 .c-button--primary:hover {
-  background-color: #0045ad;
+  background-color: #0036a3;
 }
 
 .c-button--primary:focus {
-  box-shadow: 0 0 0 3px #adceff;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-button--primary:active {
-  background-color: #003d99;
+  background-color: #00308f;
 }
 
 .c-button--primary-lean {
-  border-color: #0056d6;
-  color: #0056d6;
+  border-color: #0044cc;
+  color: #0044cc;
   background-color: transparent;
 }
 
 .c-button--primary-lean:hover {
-  background-color: #d6e7ff;
+  background-color: #d6e4ff;
 }
 
 .c-button--primary-lean:focus {
-  box-shadow: 0 0 0 3px #adceff;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-button--primary-lean:active {
-  background-color: #c2daff;
+  background-color: #c2d6ff;
 }
 
 .c-button--primary-plain {
-  color: #0056d6;
+  color: #0044cc;
   background-color: transparent;
 }
 
 .c-button--primary-plain:hover {
-  background-color: #d6e7ff;
+  background-color: #d6e4ff;
 }
 
 .c-button--primary-plain:focus {
-  box-shadow: 0 0 0 3px #adceff;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-button--primary-plain:active {
-  background-color: #c2daff;
+  background-color: #c2d6ff;
 }
 
 .c-button--negative {
@@ -607,17 +607,17 @@ sup {
 }
 
 .c-checkbox:focus {
-  border-color: #0056d6;
+  border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adceff;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-checkbox:checked {
-  border-color: #0056d6;
+  border-color: #0044cc;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M1.74421 4.58579L0.33 6L4.57264 10.2426L11.6437 3.17157L10.2295 1.75736L4.57264 7.41421L1.74421 4.58579Z' fill='%23fff'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #0056d6;
+  background-color: #0044cc;
 }
 
 .c-checkbox:disabled + label {
@@ -667,7 +667,7 @@ sup {
 }
 
 .c-link--primary {
-  color: #0056d6;
+  color: #0044cc;
 }
 
 .c-list {
@@ -685,7 +685,7 @@ sup {
 }
 
 .c-list__link:hover {
-  color: #0056d6;
+  color: #0044cc;
 }
 
 .c-list--horizontal {
@@ -711,11 +711,11 @@ sup {
 }
 
 .c-nav__link:hover {
-  color: #0056d6;
+  color: #0044cc;
 }
 
 .c-nav__link.is-selected {
-  color: #0056d6;
+  color: #0044cc;
 }
 
 .c-nav--vertical {
@@ -780,26 +780,26 @@ sup {
 }
 
 .c-notice--primary {
-  color: #0056d6;
-  background-color: #ebf3ff;
+  color: #0044cc;
+  background-color: #ebf1ff;
 }
 
 .c-notice--primary .c-notice__dismiss {
-  border-color: #0056d6;
+  border-color: #0044cc;
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
-  border-color: #0045ad;
-  background-color: #0045ad;
+  border-color: #0036a3;
+  background-color: #0036a3;
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
-  box-shadow: 0 0 0 3px #adceff;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-notice--primary .c-notice__dismiss:active {
-  border-color: #003d99;
-  background-color: #003d99;
+  border-color: #00308f;
+  background-color: #00308f;
 }
 
 .c-notice--negative {
@@ -837,17 +837,17 @@ sup {
 }
 
 .c-radio:focus {
-  border-color: #0056d6;
+  border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adceff;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-radio:checked {
-  border-color: #0056d6;
+  border-color: #0044cc;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 2C3.78667 2 2 3.78667 2 6C2 8.21333 3.78667 10 6 10C8.21333 10 10 8.21333 10 6C10 3.78667 8.21333 2 6 2Z' fill='%23fff'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #0056d6;
+  background-color: #0044cc;
 }
 
 .c-radio:disabled + label {
@@ -871,13 +871,13 @@ sup {
 }
 
 .c-tabs__link:hover {
-  color: #0056d6;
+  color: #0044cc;
 }
 
 .c-tabs__link.is-selected {
   padding-bottom: calc(0.625rem - 2px);
-  border-bottom: 2px solid #0056d6;
-  color: #0056d6;
+  border-bottom: 2px solid #0044cc;
+  color: #0044cc;
 }
 
 .c-tag {
@@ -937,9 +937,9 @@ sup {
 }
 
 .c-textfield:focus {
-  border-color: #0056d6;
+  border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adceff;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-textfield.is-invalid {
