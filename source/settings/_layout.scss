@@ -14,5 +14,7 @@ $grid-columns: 6;
 
 // Grid gap
 
-// Set the grid gap size.
-$grid-gap: 1.25rem;
+// Provide a standard grid gap size.
+$grid-gap-regular: 1.25rem;
+// Provide a large grid gap size.
+$grid-gap-large: 2.5rem;

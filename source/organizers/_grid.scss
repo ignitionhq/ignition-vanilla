@@ -28,9 +28,9 @@
 // Spaced grid
 
 .o-grid--spaced {
-  grid-gap: $grid-gap;
+  grid-gap: $grid-gap-regular;
 
   @include media(m) {
-    grid-gap: 2 * $grid-gap;
+    grid-gap: $grid-gap-large;
   }
 }
