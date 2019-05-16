@@ -1,8 +1,6 @@
-# Test files
+# Folders
+node_modules
 test
 
-# Package manager
-node_modules
-
-# macOS
+# Files
 .DS_Store
