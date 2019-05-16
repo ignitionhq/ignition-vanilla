@@ -4,7 +4,7 @@ Create stunning, efficient interfaces in no time. Ignition Vanilla provides robu
 
 ## Installation
 
-[Download the latest release](https://github.com/ignitionhq/ignition-vanilla/releases) or clone the repository using `git clone https://github.com/ignitionhq/ignition-vanilla.git`.
+[Download the latest release](https://github.com/pixeltrove/ignition-vanilla/releases) or clone the repository using `git clone https://github.com/pixeltrove/ignition-vanilla.git`.
 
 ## Documentation
 
@@ -12,4 +12,4 @@ A detailed documentation is still being written; however, source code is thoroug
 
 ## Copyright and license
 
-Copyright (c) 2018 [Mihnea-Luchian Cosma](https://github.com/luchian). Released under the [MIT License](https://github.com/ignitionhq/ignition-vanilla/blob/master/LICENSE.md).
+Copyright (c) 2018 [Mihnea-Luchian Cosma](https://github.com/luchian). Released under the [MIT License](https://github.com/pixeltrove/ignition-vanilla/blob/master/LICENSE.md).
