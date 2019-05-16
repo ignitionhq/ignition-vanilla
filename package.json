@@ -9,14 +9,10 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run build:css && npm run build:js",
-    "build:css": "npm run lint:css && npm run format:css && npm run compile:css && npm run minify:css",
-    "build:js": "npm run lint:js && npm run format:js && npm run compile:js && npm run minify:js",
+    "build:css": "npm run compile:css && npm run minify:css",
+    "build:js": "npm run compile:js && npm run minify:js",
     "compile:css": "node-sass --output-style expanded --precision 8 source/ignition.scss --output build/styles/",
     "compile:js": "rollup --format esm source/ignition.js --file build/scripts/ignition.js",
-    "format:css": "prettier --write source/**/*.scss",
-    "format:js": "prettier --write source/**/*.js",
-    "lint:css": "stylelint source/**/*.scss || exit 0",
-    "lint:js": "eslint source/**/*.js || exit 0",
     "minify:css": "cleancss build/styles/ignition.css --output build/styles/ignition.min.css",
     "minify:js": "terser build/scripts/ignition.js --output build/scripts/ignition.min.js",
     "watch": "npm-run-all --parallel watch:*",
@@ -25,13 +21,10 @@
   },
   "devDependencies": {
     "clean-css-cli": "^4.2.1",
-    "eslint": "^5.15.3",
     "nodemon": "^1.18.10",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.16.4",
     "rollup": "^1.4.0",
-    "stylelint": "^9.10.1",
     "terser": "^3.17.0"
   }
 }
