@@ -12,4 +12,4 @@ A detailed documentation is still being written; however, source code is thoroug
 
 ## Copyright and license
 
-Copyright (c) 2018 [Mihnea-Luchian Cosma](https://github.com/luchian). Released under the [MIT License](https://github.com/pixeltrove/ignition-vanilla/blob/master/LICENSE.md).
+Copyright (c) 2018-2019 [Mihnea-Luchian Cosma](https://github.com/luchian). Released under the [MIT License](https://github.com/pixeltrove/ignition-vanilla/blob/master/LICENSE.md).
