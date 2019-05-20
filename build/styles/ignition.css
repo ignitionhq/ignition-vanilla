@@ -346,12 +346,12 @@ sup {
 }
 
 .c-button:hover {
-  background-color: #1f1f1f;
+  background-color: #292929;
 }
 
 .c-button:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px #d6d6d6;
+  background-color: #1f1f1f;
 }
 
 .c-button:active {
@@ -370,6 +370,10 @@ sup {
 }
 
 .c-button--lean:hover {
+  background-color: whitesmoke;
+}
+
+.c-button--lean:focus {
   background-color: #ebebeb;
 }
 
@@ -383,6 +387,10 @@ sup {
 }
 
 .c-button--plain:hover {
+  background-color: whitesmoke;
+}
+
+.c-button--plain:focus {
   background-color: #ebebeb;
 }
 
@@ -395,11 +403,11 @@ sup {
 }
 
 .c-button--primary:hover {
-  background-color: #0036a3;
+  background-color: #003db8;
 }
 
 .c-button--primary:focus {
-  box-shadow: 0 0 0 3px #adc9ff;
+  background-color: #0036a3;
 }
 
 .c-button--primary:active {
@@ -413,11 +421,11 @@ sup {
 }
 
 .c-button--primary-lean:hover {
-  background-color: #d6e4ff;
+  background-color: #ebf1ff;
 }
 
 .c-button--primary-lean:focus {
-  box-shadow: 0 0 0 3px #adc9ff;
+  background-color: #d6e4ff;
 }
 
 .c-button--primary-lean:active {
@@ -430,11 +438,11 @@ sup {
 }
 
 .c-button--primary-plain:hover {
-  background-color: #d6e4ff;
+  background-color: #ebf1ff;
 }
 
 .c-button--primary-plain:focus {
-  box-shadow: 0 0 0 3px #adc9ff;
+  background-color: #d6e4ff;
 }
 
 .c-button--primary-plain:active {
@@ -446,11 +454,11 @@ sup {
 }
 
 .c-button--negative:hover {
-  background-color: #8f0a00;
+  background-color: #a30b00;
 }
 
 .c-button--negative:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  background-color: #8f0a00;
 }
 
 .c-button--negative:active {
@@ -464,11 +472,11 @@ sup {
 }
 
 .c-button--negative-lean:hover {
-  background-color: #ffd9d6;
+  background-color: #ffeceb;
 }
 
 .c-button--negative-lean:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  background-color: #ffd9d6;
 }
 
 .c-button--negative-lean:active {
@@ -481,11 +489,11 @@ sup {
 }
 
 .c-button--negative-plain:hover {
-  background-color: #ffd9d6;
+  background-color: #ffeceb;
 }
 
 .c-button--negative-plain:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  background-color: #ffd9d6;
 }
 
 .c-button--negative-plain:active {
@@ -498,15 +506,15 @@ sup {
 }
 
 .c-button--inverse:hover {
-  background-color: rgba(255, 255, 255, 0.84);
+  background-color: rgba(255, 255, 255, 0.92);
 }
 
 .c-button--inverse:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
+  background-color: rgba(255, 255, 255, 0.84);
 }
 
 .c-button--inverse:active {
-  background-color: rgba(255, 255, 255, 0.76);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .c-button--inverse-lean {
@@ -515,11 +523,11 @@ sup {
 }
 
 .c-button--inverse-lean:hover {
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .c-button--inverse-lean:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .c-button--inverse-lean:active {
@@ -531,11 +539,11 @@ sup {
 }
 
 .c-button--inverse-plain:hover {
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .c-button--inverse-plain:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.32);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
 .c-button--inverse-plain:active {
@@ -758,9 +766,9 @@ sup {
 }
 
 .c-notice__dismiss:hover {
-  border-color: #1f1f1f;
+  border-color: #292929;
   color: white;
-  background-color: #1f1f1f;
+  background-color: #292929;
 }
 
 .c-notice__dismiss:focus {
@@ -769,9 +777,9 @@ sup {
 }
 
 .c-notice__dismiss:active {
-  border-color: #141414;
+  border-color: #1f1f1f;
   color: white;
-  background-color: #141414;
+  background-color: #1f1f1f;
 }
 
 .c-notice__dismiss-icon {
@@ -789,8 +797,8 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss:hover {
-  border-color: #0036a3;
-  background-color: #0036a3;
+  border-color: #003db8;
+  background-color: #003db8;
 }
 
 .c-notice--primary .c-notice__dismiss:focus {
@@ -798,8 +806,8 @@ sup {
 }
 
 .c-notice--primary .c-notice__dismiss:active {
-  border-color: #00308f;
-  background-color: #00308f;
+  border-color: #0036a3;
+  background-color: #0036a3;
 }
 
 .c-notice--negative {
@@ -812,8 +820,8 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:hover {
-  border-color: #8f0a00;
-  background-color: #8f0a00;
+  border-color: #a30b00;
+  background-color: #a30b00;
 }
 
 .c-notice--negative .c-notice__dismiss:focus {
@@ -821,8 +829,8 @@ sup {
 }
 
 .c-notice--negative .c-notice__dismiss:active {
-  border-color: #7a0800;
-  background-color: #7a0800;
+  border-color: #8f0a00;
+  background-color: #8f0a00;
 }
 
 .c-radio {
@@ -898,7 +906,7 @@ sup {
 
 .c-tag__dismiss:hover {
   color: white;
-  background-color: #1f1f1f;
+  background-color: #292929;
 }
 
 .c-tag__dismiss:focus {
@@ -908,7 +916,7 @@ sup {
 
 .c-tag__dismiss:active {
   color: white;
-  background-color: #141414;
+  background-color: #1f1f1f;
 }
 
 .c-tag__dismiss-icon {
