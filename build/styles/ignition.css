@@ -597,10 +597,17 @@ sup {
   color: #333333;
 }
 
+.c-card--interactive:hover {
+  background-color: whitesmoke;
+}
+
 .c-card--interactive:focus {
-  border-color: #333333;
   outline: 0;
-  box-shadow: 0 0 0 3px #d6d6d6;
+  background-color: #ebebeb;
+}
+
+.c-card--interactive:active {
+  background-color: #e0e0e0;
 }
 
 .c-checkbox {
