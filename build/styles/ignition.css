@@ -514,7 +514,7 @@ sup {
 }
 
 .c-button--inverse:active {
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
 .c-button--inverse-lean {
