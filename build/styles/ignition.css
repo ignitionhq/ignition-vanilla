@@ -966,9 +966,9 @@ sup {
 }
 
 .c-textfield:focus {
-  border-color: #0044cc;
+  padding: calc(0.625rem - 2px) calc(1rem - 2px);
+  border: 2px solid #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adc9ff;
 }
 
 .c-textfield.is-invalid {
@@ -976,7 +976,8 @@ sup {
 }
 
 .c-textfield.is-invalid:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
+  padding: calc(0.625rem - 2px) calc(1rem - 2px);
+  border: 2px solid #b80c00;
 }
 
 .c-textfield--select:not([size]):not([multiple]) {
