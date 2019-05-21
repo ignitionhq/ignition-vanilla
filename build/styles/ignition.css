@@ -880,18 +880,27 @@ sup {
 
 .c-tabs__link {
   display: inline-block;
-  padding: 0.625rem 1rem;
+  padding: 0.625rem 1rem calc(0.625rem - 2px) 1rem;
+  border-bottom: 2px solid transparent;
   margin-bottom: -1px;
   color: #333333;
 }
 
 .c-tabs__link:hover {
-  color: #0044cc;
+  border-color: #e0e0e0;
+}
+
+.c-tabs__link:focus {
+  border-color: #d6d6d6;
+  outline: 0;
+}
+
+.c-tabs__link:active {
+  border-color: #cccccc;
 }
 
 .c-tabs__link.is-selected {
-  padding-bottom: calc(0.625rem - 2px);
-  border-bottom: 2px solid #0044cc;
+  border-color: #0044cc;
   color: #0044cc;
 }
 

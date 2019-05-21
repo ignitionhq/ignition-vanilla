@@ -11,18 +11,30 @@
 
 .c-tabs__link {
   display: inline-block;
-  padding: $space-small-2 $space-regular;
+  padding: $space-small-2 $space-regular
+    calc(#{$space-small-2} - #{$border-width-thick-2}) $space-regular;
+  border-bottom: $border-width-thick-2 solid transparent;
   // Negate parent bottom border.
   margin-bottom: -#{$border-width-regular};
   color: $color-gray-regular;
 
   &:hover {
-    color: $color-primary-regular;
+    border-color: $color-gray-light-3;
+  }
+
+  &:focus {
+    border-color: $color-gray-light-4;
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
+  }
+
+  &:active {
+    border-color: $color-gray-light-5;
   }
 
   &.is-selected {
-    padding-bottom: calc(#{$space-small-2} - #{$border-width-thick-2});
-    border-bottom: $border-width-thick-2 solid $color-primary-regular;
+    border-color: $color-primary-regular;
     color: $color-primary-regular;
   }
 }
