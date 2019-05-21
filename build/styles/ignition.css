@@ -941,7 +941,12 @@ sup {
 }
 
 .c-tag--interactive:hover {
+  background-color: #e0e0e0;
+}
+
+.c-tag--interactive:focus {
   background-color: #d6d6d6;
+  outline: 0;
 }
 
 .c-tag--interactive:active {
