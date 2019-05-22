@@ -44,11 +44,18 @@
   display: block;
   color: $color-gray-regular;
 
+  &:hover {
+    background-color: $color-gray-light-1;
+  }
+
   &:focus {
-    border-color: $color-gray-regular;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
+    background-color: $color-gray-light-2;
+  }
+
+  &:active {
+    background-color: $color-gray-light-3;
   }
 }

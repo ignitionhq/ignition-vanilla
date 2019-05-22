@@ -47,7 +47,14 @@
 
 .c-tag--interactive {
   &:hover {
+    background-color: $color-gray-light-3;
+  }
+
+  &:focus {
     background-color: $color-gray-light-4;
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
   }
 
   &:active {

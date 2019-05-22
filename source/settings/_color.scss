@@ -12,8 +12,9 @@ $color-primary-light-2: hsl(220, 100%, 92%);
 $color-primary-light-3: hsl(220, 100%, 88%);
 $color-primary-light-4: hsl(220, 100%, 84%);
 // Provide a set of dark primary colors.
-$color-primary-dark-1: hsl(220, 100%, 32%);
-$color-primary-dark-2: hsl(220, 100%, 28%);
+$color-primary-dark-1: hsl(220, 100%, 36%);
+$color-primary-dark-2: hsl(220, 100%, 32%);
+$color-primary-dark-3: hsl(220, 100%, 28%);
 
 // Negative
 
@@ -25,8 +26,9 @@ $color-negative-light-2: hsl(4, 100%, 92%);
 $color-negative-light-3: hsl(4, 100%, 88%);
 $color-negative-light-4: hsl(4, 100%, 84%);
 // Provide a set of dark negative colors.
-$color-negative-dark-1: hsl(4, 100%, 28%);
-$color-negative-dark-2: hsl(4, 100%, 24%);
+$color-negative-dark-1: hsl(4, 100%, 32%);
+$color-negative-dark-2: hsl(4, 100%, 28%);
+$color-negative-dark-3: hsl(4, 100%, 24%);
 
 // Gray
 
@@ -39,16 +41,18 @@ $color-gray-light-3: hsl(0, 0%, 88%);
 $color-gray-light-4: hsl(0, 0%, 84%);
 $color-gray-light-5: hsl(0, 0%, 80%);
 // Provide a set of dark gray colors.
-$color-gray-dark-1: hsl(0, 0%, 12%);
-$color-gray-dark-2: hsl(0, 0%, 8%);
+$color-gray-dark-1: hsl(0, 0%, 16%);
+$color-gray-dark-2: hsl(0, 0%, 12%);
+$color-gray-dark-3: hsl(0, 0%, 8%);
 
 // White
 
 // Provide a standard white color.
 $color-white-regular: hsl(0, 0%, 100%);
 // Provide a set of transparent white colors.
-$color-white-transparent-1: hsla(0, 0%, 100%, 0.84);
-$color-white-transparent-2: hsla(0, 0%, 100%, 0.76);
-$color-white-transparent-3: hsla(0, 0%, 100%, 0.32);
+$color-white-transparent-1: hsla(0, 0%, 100%, 0.92);
+$color-white-transparent-2: hsla(0, 0%, 100%, 0.84);
+$color-white-transparent-3: hsla(0, 0%, 100%, 0.76);
 $color-white-transparent-4: hsla(0, 0%, 100%, 0.24);
 $color-white-transparent-5: hsla(0, 0%, 100%, 0.16);
+$color-white-transparent-6: hsla(0, 0%, 100%, 0.08);

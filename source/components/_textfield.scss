@@ -17,18 +17,21 @@
   background-color: $color-white-regular;
 
   &:focus {
-    border-color: $color-primary-regular;
+    padding: calc(#{$space-small-2} - #{$border-width-thick-2})
+      calc(#{$space-regular} - #{$border-width-thick-2});
+    border: $border-width-thick-2 solid $color-primary-regular;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &.is-invalid {
     border-color: $color-negative-regular;
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-negative-light-4;
+      padding: calc(#{$space-small-2} - #{$border-width-thick-2})
+        calc(#{$space-regular} - #{$border-width-thick-2});
+      border: $border-width-thick-2 solid $color-negative-regular;
     }
   }
 }
