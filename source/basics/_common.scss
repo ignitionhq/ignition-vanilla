@@ -12,15 +12,6 @@
   box-sizing: border-box;
 }
 
-// Root
-
-html {
-  font-size: $root-font-size;
-  // Prevent text size adjustment on device orientation change in Chrome and
-  // Safari on iOS.
-  -webkit-text-size-adjust: 100%;
-}
-
 // Body
 
 body {
@@ -30,4 +21,7 @@ body {
   line-height: $line-height-regular;
   color: $color-gray-regular;
   background-color: $color-white-regular;
+  // Prevent text size adjustment on device orientation change in Chrome and
+  // Safari on iOS.
+  -webkit-text-size-adjust: 100%;
 }
