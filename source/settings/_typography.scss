@@ -13,10 +13,6 @@ $font-family-mono: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace
 
 // Font size
 
-// Set the root font size as a percentage of the browser default, which is
-// usually 16px, so that users can specify some other default font size without
-// it being overridden.
-$root-font-size: 100%;
 // Provide a standard font size.
 $font-size-regular: 1rem;
 // Provide a set of large font sizes.
