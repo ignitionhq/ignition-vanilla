@@ -12,6 +12,15 @@
   box-sizing: border-box;
 }
 
+// Set keyboard focus styles. This pseudo-class is not currently supported in
+// any browser but is scheduled for implementation.
+*:focus-visible {
+  // Mind that the outline should be removed only if other styles that imply
+  // focus are set.
+  outline: 0;
+  box-shadow: $box-shadow-regular $color-highlight-regular;
+}
+
 // Body
 
 body {
