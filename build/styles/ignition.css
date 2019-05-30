@@ -14,6 +14,14 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+audio,
+canvas,
+iframe,
+img,
+video {
+  display: block;
+}
+
 img,
 video {
   max-width: 100%;
