@@ -2,7 +2,16 @@
 // Set default styles for embedding elements.
 // -----------------------------------------------------------------------------
 
-// Image and video
+// Audio, canvas, iframe, image, and video
+
+audio,
+canvas,
+iframe,
+img,
+video {
+  // Set a natural display style and remove the extra space below.
+  display: block;
+}
 
 img,
 video {
