@@ -34,6 +34,10 @@
       border: $border-width-thick-2 solid $color-negative-regular;
     }
   }
+
+  &:disabled {
+    opacity: $opacity-medium;
+  }
 }
 
 // Select textfield
