@@ -30,6 +30,8 @@
   }
 
   &:disabled {
+    opacity: $opacity-medium;
+
     + label {
       opacity: $opacity-medium;
       cursor: default;

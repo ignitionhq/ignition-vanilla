@@ -64,7 +64,6 @@ button:disabled,
 input:disabled,
 textarea:disabled,
 select:disabled {
-  opacity: 0.5;
   cursor: default;
 }
 
@@ -639,6 +638,10 @@ sup {
   background-color: #0044cc;
 }
 
+.c-checkbox:disabled {
+  opacity: 0.5;
+}
+
 .c-checkbox:disabled + label {
   opacity: 0.5;
   cursor: default;
@@ -869,6 +872,10 @@ sup {
   background-color: #0044cc;
 }
 
+.c-radio:disabled {
+  opacity: 0.5;
+}
+
 .c-radio:disabled + label {
   opacity: 0.5;
   cursor: default;
@@ -982,6 +989,10 @@ sup {
 .c-textfield.is-invalid:focus {
   padding: calc(0.625rem - 2px) calc(1rem - 2px);
   border: 2px solid #b80c00;
+}
+
+.c-textfield:disabled {
+  opacity: 0.5;
 }
 
 .c-textfield--select:not([size]):not([multiple]) {
