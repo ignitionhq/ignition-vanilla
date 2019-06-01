@@ -58,6 +58,7 @@ select {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:disabled,
@@ -195,6 +196,7 @@ hr {
 a {
   text-decoration: none;
   color: #0044cc;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
