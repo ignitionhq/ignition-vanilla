@@ -7,4 +7,6 @@
 a {
   text-decoration: none;
   color: $color-primary-regular;
+  // Remove tap highlight.
+  -webkit-tap-highlight-color: transparent;
 }
