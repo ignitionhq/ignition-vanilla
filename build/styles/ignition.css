@@ -548,14 +548,14 @@ sup {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.c-button--small {
-  padding: calc(0.375rem - 1px) calc(0.75rem - 1px);
-}
-
 .c-button--large {
   padding: calc(0.75rem - 1px) calc(1.25rem - 1px);
   font-size: 1.3125rem;
   line-height: 1.33333333;
+}
+
+.c-button--small {
+  padding: calc(0.375rem - 1px) calc(0.625rem - 1px);
 }
 
 .c-card {
