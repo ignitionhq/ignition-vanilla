@@ -32,7 +32,7 @@
   &:disabled {
     opacity: $opacity-medium;
 
-    + label {
+    ~ label {
       opacity: $opacity-medium;
       cursor: default;
     }

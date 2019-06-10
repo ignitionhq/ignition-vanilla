@@ -630,7 +630,7 @@ sup {
   opacity: 0.5;
 }
 
-.c-checkbox:disabled + label {
+.c-checkbox:disabled ~ label {
   opacity: 0.5;
   cursor: default;
 }
@@ -864,7 +864,7 @@ sup {
   opacity: 0.5;
 }
 
-.c-radio:disabled + label {
+.c-radio:disabled ~ label {
   opacity: 0.5;
   cursor: default;
 }
