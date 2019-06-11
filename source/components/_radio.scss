@@ -1,11 +1,11 @@
 // RADIO
-// Afford a single selection from a set options.
+// Select one option from a predefined set.
 // -----------------------------------------------------------------------------
 
 .c-radio {
   width: 1.25rem;
   height: 1.25rem;
-  border: $border-width-regular solid $color-gray-light-5;
+  border: $border-width-regular solid $color-gray-light-6;
   border-radius: $border-radius-full;
   margin-right: $space-small-5;
   vertical-align: middle;
@@ -23,7 +23,7 @@
 
   &:checked {
     border-color: $color-primary-regular;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 2C3.78667 2 2 3.78667 2 6C2 8.21333 3.78667 10 6 10C8.21333 10 10 8.21333 10 6C10 3.78667 8.21333 2 6 2Z' fill='%23fff'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M6 2C3.78667 2 2 3.78667 2 6C2 8.21333 3.78667 10 6 10C8.21333 10 10 8.21333 10 6C10 3.78667 8.21333 2 6 2Z' fill='%23fff'/></svg>");
     background-position: center;
     background-repeat: no-repeat;
     background-color: $color-primary-regular;
@@ -32,7 +32,7 @@
   &:disabled {
     opacity: $opacity-medium;
 
-    + label {
+    ~ label {
       opacity: $opacity-medium;
       cursor: default;
     }
