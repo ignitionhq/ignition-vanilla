@@ -3,9 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .c-nav {
-  @include list-reset;
   display: flex;
+  padding-left: 0;
   margin-bottom: 0;
+  list-style: none;
 }
 
 .c-nav__link {

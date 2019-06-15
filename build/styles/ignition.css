@@ -708,10 +708,10 @@ sup {
 }
 
 .c-nav {
-  padding-left: 0;
-  list-style: none;
   display: flex;
+  padding-left: 0;
   margin-bottom: 0;
+  list-style: none;
 }
 
 .c-nav__link {
@@ -870,11 +870,11 @@ sup {
 }
 
 .c-tabs {
-  padding-left: 0;
-  list-style: none;
   display: flex;
+  padding-left: 0;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 0;
+  list-style: none;
 }
 
 .c-tabs__link {
