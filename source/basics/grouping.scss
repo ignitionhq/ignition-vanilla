@@ -22,33 +22,7 @@ dd {
 // Table
 
 table {
-  width: 100%;
   border-collapse: collapse;
-  margin-bottom: $space-large-4;
-}
-
-th,
-td {
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: $space-small-1 $space-regular
-    calc(#{$space-small-1} - #{$border-width-regular});
-  border-bottom: $border-width-regular solid $color-gray-light-3;
-  vertical-align: top;
-}
-
-th {
-  text-align: left;
-}
-
-caption {
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: $space-small-1 $space-regular
-    calc(#{$space-small-1} - #{$border-width-regular});
-  border-bottom: $border-width-regular solid $color-gray-light-3;
-  font-weight: bold;
-  text-align: left;
 }
 
 // Figure
