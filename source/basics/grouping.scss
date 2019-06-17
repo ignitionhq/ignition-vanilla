@@ -8,21 +8,11 @@ ul,
 ol,
 dl {
   margin-top: 0;
-  margin-bottom: $space-regular;
 }
 
 ul,
 ol {
-  padding-left: $space-large-4;
-
-  ul,
-  ol {
-    margin-bottom: 0;
-  }
-}
-
-dt {
-  font-weight: bold;
+  padding-left: 3ch;
 }
 
 dd {

@@ -118,23 +118,11 @@ ul,
 ol,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 ul,
 ol {
-  padding-left: 1.5rem;
-}
-
-ul ul,
-ul ol,
-ol ul,
-ol ol {
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: bold;
+  padding-left: 3ch;
 }
 
 dd {
