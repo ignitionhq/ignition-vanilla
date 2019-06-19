@@ -14,63 +14,23 @@ h6 {
 }
 
 h1 {
-  margin-bottom: $space-large-3;
-  font-size: $font-size-large-1;
-  line-height: $line-height-small-3;
-}
-
-h2 {
-  margin-bottom: $space-regular;
-  font-size: $font-size-large-2;
-  line-height: $line-height-small-2;
-}
-
-h3 {
-  margin-bottom: $space-small-3;
-  font-size: $font-size-large-3;
-  line-height: $line-height-small-1;
-}
-
-h4 {
-  margin-bottom: $space-small-5;
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
-}
-
-h5 {
-  margin-bottom: $space-small-5;
-  font-size: $font-size-large-5;
-  line-height: $line-height-small-1;
-}
-
-h6 {
-  margin-bottom: 0;
-  font-size: $font-size-regular;
-  line-height: $line-height-regular;
+  // Normalize font size and bottom margin when inside sectioning elements.
+  margin-bottom: 0.67em;
+  font-size: 2em;
 }
 
 // Paragraph
 
 p {
   margin-top: 0;
-  margin-bottom: $space-regular;
 }
 
 // Blockquote
 
 blockquote {
-  margin: 0 0 $space-large-4;
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
-
-  p {
-    margin-bottom: $space-small-3;
-  }
-
-  footer {
-    font-size: $font-size-regular;
-    line-height: $line-height-regular;
-  }
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 // Preformatted text
@@ -78,14 +38,12 @@ blockquote {
 pre {
   overflow: auto;
   margin-top: 0;
-  margin-bottom: $space-regular;
   font-family: $font-family-mono;
 }
 
 // Address
 
 address {
-  margin-bottom: $space-regular;
   font-style: normal;
 }
 
@@ -113,32 +71,14 @@ samp {
 
 code,
 kbd {
-  padding: 0.125em 0.25em;
-  border-radius: $border-radius-regular;
   font-size: 0.875em;
 }
 
-code {
-  background-color: $color-gray-light-2;
-}
-
 kbd {
-  color: $color-white-regular;
-  background-color: $color-gray-regular;
-
   kbd {
     // Remove unwanted custom styles from nested user input elements.
-    padding: 0;
     font-size: 1em;
   }
-}
-
-// Mark
-
-mark {
-  padding: 0.125em 0.25em;
-  border-radius: $border-radius-regular;
-  color: $color-gray-regular;
 }
 
 // Small
