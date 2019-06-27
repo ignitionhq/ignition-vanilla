@@ -23,7 +23,8 @@ h6 {
 }
 
 h1 {
-  // Normalize font size and bottom margin when inside sectioning elements.
+  // Normalize bottom margin and font size when inside `article`, `aside`,
+  // `nav`, and `section` elements.
   margin-bottom: 0.67em;
   font-size: 2em;
 }
@@ -91,7 +92,7 @@ strong {
   font-weight: bolder;
 }
 
-// Code, user input, and sample output
+// Code and user input
 
 code,
 kbd {
@@ -100,7 +101,7 @@ kbd {
 
 kbd {
   kbd {
-    // Remove unwanted custom styles from nested user input elements.
+    // Prevent compounding effect because of relative font size.
     font-size: 1em;
   }
 }
@@ -195,7 +196,7 @@ select {
 // Fieldset
 
 fieldset {
-  // Ensure sizing behavior identical to that of block elements.
+  // Emulate minimum width of all other block elements.
   min-width: 0;
   padding: 0;
   border: 0;
@@ -204,6 +205,7 @@ fieldset {
 }
 
 legend {
+  // Emulate width of all other block elements.
   width: 100%;
   padding-right: 0;
   padding-left: 0;

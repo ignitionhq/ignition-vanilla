@@ -95,6 +95,7 @@ label {
 // Textarea
 
 textarea {
+  // Prevent horizontal resizing.
   resize: vertical;
 }
 
