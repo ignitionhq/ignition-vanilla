@@ -1,0 +1,130 @@
+// REFRESH
+// Provide practical defaults.
+// -----------------------------------------------------------------------------
+
+// Universal
+
+// Make setting item dimensions easier and more intuitive by changing the box
+// model on all elements and pseudo-elements.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Body
+
+body {
+  font-family: $font-family-regular;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+  color: $color-gray-regular;
+  background-color: $color-white-regular;
+}
+
+// Audio, canvas, iframe, image, and video
+
+audio,
+canvas,
+iframe,
+img,
+video {
+  // Switch display style to cover most common use cases and remove the extra
+  // space below.
+  display: block;
+}
+
+img,
+video {
+  // Prevent overflow when parent width is exceeded.
+  max-width: 100%;
+  // Prevent stretching when an incorrect height attribute is set.
+  height: auto;
+}
+
+// Label
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+// Button
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+// Checkbox and radio
+
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+// Textarea
+
+textarea {
+  resize: vertical;
+}
+
+// Unordered and ordered list
+
+ul,
+ol {
+  padding-left: 3ch;
+}
+
+// Summary
+
+summary {
+  cursor: pointer;
+}
+
+// Anchor
+
+// Mind that the anchor element should have a simple default look because it is
+// an integral part of various components that require different bespoke styles.
+// When part of running text, anchors should employ an underline or some other
+// visual cue, but can be unembellished otherwise.
+a {
+  text-decoration: none;
+  color: $color-primary-regular;
+}
+
+// Preformatted text
+
+pre {
+  font-family: $font-family-mono;
+}
+
+// Code, user input, and sample output
+
+code,
+kbd,
+samp {
+  font-family: $font-family-mono;
+}
+
+// Address
+
+address {
+  font-style: normal;
+}
+
+// Abbreviation
+
+abbr[title] {
+  cursor: help;
+}

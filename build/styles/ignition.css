@@ -5,13 +5,11 @@
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   line-height: 1.5;
   color: #333333;
   background-color: white;
-  -webkit-text-size-adjust: 100%;
 }
 
 audio,
@@ -28,6 +26,58 @@ video {
   height: auto;
 }
 
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+}
+
+[type="checkbox"]:disabled,
+[type="radio"]:disabled {
+  cursor: default;
+}
+
+summary {
+  cursor: pointer;
+}
+
+a {
+  color: #0044cc;
+}
+
+pre {
+  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+body {
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
 fieldset {
   min-width: 0;
   padding: 0;
@@ -42,11 +92,6 @@ legend {
   padding-left: 0;
 }
 
-label {
-  display: inline-block;
-  cursor: pointer;
-}
-
 button,
 input,
 textarea,
@@ -58,18 +103,10 @@ select {
   -webkit-tap-highlight-color: transparent;
 }
 
-button:disabled,
-input:disabled,
-textarea:disabled,
-select:disabled {
-  cursor: default;
-}
-
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  cursor: pointer;
   -webkit-appearance: button;
 }
 
@@ -90,11 +127,6 @@ select {
   font-size: inherit;
   line-height: inherit;
   -webkit-appearance: button;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  cursor: pointer;
 }
 
 [type="search"] {
@@ -141,7 +173,6 @@ figure {
 
 summary {
   display: list-item;
-  cursor: pointer;
 }
 
 hr {
@@ -150,7 +181,6 @@ hr {
 
 a {
   text-decoration: none;
-  color: #0044cc;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -181,7 +211,6 @@ blockquote {
 pre {
   overflow: auto;
   margin-top: 0;
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 address {
@@ -195,12 +224,6 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
-}
-
-code,
-kbd,
-samp {
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 code,
