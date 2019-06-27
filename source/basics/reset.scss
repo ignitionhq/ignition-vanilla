@@ -11,29 +11,135 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-// Fieldset
+// Heading
 
-fieldset {
-  // Ensure sizing behavior identical to that of block elements.
-  min-width: 0;
-  padding: 0;
-  border: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1 {
+  // Normalize font size and bottom margin when inside sectioning elements.
+  margin-bottom: 0.67em;
+  font-size: 2em;
+}
+
+// Blockquote
+
+blockquote {
+  margin-top: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
-legend {
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+// Definition, ordered, and unordered list
+
+dl,
+ol,
+ul {
+  margin-top: 0;
 }
 
-// Button, input, textarea, and select
+dd {
+  margin-left: 0;
+}
+
+// Figure
+
+figure {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+// Thematic break
+
+hr {
+  // Normalize overflow in Chrome.
+  overflow: visible;
+}
+
+// Paragraph
+
+p {
+  margin-top: 0;
+}
+
+// Preformatted text
+
+pre {
+  overflow: auto;
+  margin-top: 0;
+}
+
+// Anchor
+
+a {
+  // Remove tap highlight.
+  -webkit-tap-highlight-color: transparent;
+}
+
+// Bold and strong
+
+b,
+strong {
+  // Normalize font weight in Chrome and Safari.
+  font-weight: bolder;
+}
+
+// Code, user input, and sample output
+
+code,
+kbd {
+  font-size: 0.875em;
+}
+
+kbd {
+  kbd {
+    // Remove unwanted custom styles from nested user input elements.
+    font-size: 1em;
+  }
+}
+
+// Small
+
+small {
+  font-size: 0.875em;
+}
+
+// Subscript and superscript
+
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+// Table
+
+table {
+  border-collapse: collapse;
+}
+
+// Button, input, select, and textarea
 
 button,
 input,
-textarea,
-select {
+select,
+textarea {
   // Remove margins from all selected elements in Safari, from `checkbox` and
   // `radio` inputs in all browsers, and from `textarea` elements in Firefox.
   margin: 0;
@@ -86,6 +192,23 @@ select {
   }
 }
 
+// Fieldset
+
+fieldset {
+  // Ensure sizing behavior identical to that of block elements.
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+legend {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
 // Progress
 
 progress {
@@ -93,132 +216,9 @@ progress {
   vertical-align: baseline;
 }
 
-// Unordered, ordered, and definition list
-
-ul,
-ol,
-dl {
-  margin-top: 0;
-}
-
-dd {
-  margin-left: 0;
-}
-
-// Table
-
-table {
-  border-collapse: collapse;
-}
-
-// Figure
-
-figure {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
 // Summary
 
 summary {
   // Correct display style in Chrome and Safari.
   display: list-item;
-}
-
-// Thematic break
-
-hr {
-  // Normalize overflow in Chrome.
-  overflow: visible;
-}
-
-// Anchor
-
-a {
-  // Remove tap highlight.
-  -webkit-tap-highlight-color: transparent;
-}
-
-// Heading
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-}
-
-h1 {
-  // Normalize font size and bottom margin when inside sectioning elements.
-  margin-bottom: 0.67em;
-  font-size: 2em;
-}
-
-// Paragraph
-
-p {
-  margin-top: 0;
-}
-
-// Blockquote
-
-blockquote {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-// Preformatted text
-
-pre {
-  overflow: auto;
-  margin-top: 0;
-}
-
-// Bold and strong
-
-b,
-strong {
-  // Normalize font weight in Chrome and Safari.
-  font-weight: bolder;
-}
-
-// Code, user input, and sample output
-
-code,
-kbd {
-  font-size: 0.875em;
-}
-
-kbd {
-  kbd {
-    // Remove unwanted custom styles from nested user input elements.
-    font-size: 1em;
-  }
-}
-
-// Small
-
-small {
-  font-size: 0.875em;
-}
-
-// Subscript and superscript
-
-sub,
-sup {
-  position: relative;
-  font-size: 0.75em;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
 }

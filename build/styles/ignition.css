@@ -12,6 +12,19 @@ body {
   background-color: white;
 }
 
+address {
+  font-style: normal;
+}
+
+pre {
+  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+ul,
+ol {
+  padding-left: 3ch;
+}
+
 audio,
 canvas,
 iframe,
@@ -24,11 +37,6 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-
-label {
-  display: inline-block;
-  cursor: pointer;
 }
 
 button,
@@ -55,16 +63,22 @@ button:disabled,
   cursor: default;
 }
 
-summary {
+label {
+  display: inline-block;
   cursor: pointer;
 }
 
+textarea {
+  resize: vertical;
+}
+
 a {
+  text-decoration: none;
   color: #0044cc;
 }
 
-pre {
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+abbr[title] {
+  cursor: help;
 }
 
 code,
@@ -73,29 +87,109 @@ samp {
   font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
+summary {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
 }
 
-fieldset {
-  min-width: 0;
-  padding: 0;
-  border: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.67em;
+  font-size: 2em;
+}
+
+blockquote {
+  margin-top: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
-legend {
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+dl,
+ol,
+ul {
+  margin-top: 0;
+}
+
+dd {
+  margin-left: 0;
+}
+
+figure {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+hr {
+  overflow: visible;
+}
+
+p {
+  margin-top: 0;
+}
+
+pre {
+  overflow: auto;
+  margin-top: 0;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd {
+  font-size: 0.875em;
+}
+
+kbd kbd {
+  font-size: 1em;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 button,
 input,
-textarea,
-select {
+select,
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -138,120 +232,26 @@ select {
   -webkit-appearance: none;
 }
 
-textarea {
-  resize: vertical;
+fieldset {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+legend {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 progress {
   vertical-align: baseline;
 }
 
-ul,
-ol,
-dl {
-  margin-top: 0;
-}
-
-ul,
-ol {
-  padding-left: 3ch;
-}
-
-dd {
-  margin-left: 0;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-figure {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
 summary {
   display: list-item;
-}
-
-hr {
-  overflow: visible;
-}
-
-a {
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-}
-
-h1 {
-  margin-bottom: 0.67em;
-  font-size: 2em;
-}
-
-p {
-  margin-top: 0;
-}
-
-blockquote {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-pre {
-  overflow: auto;
-  margin-top: 0;
-}
-
-address {
-  font-style: normal;
-}
-
-abbr[title] {
-  cursor: help;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd {
-  font-size: 0.875em;
-}
-
-kbd kbd {
-  font-size: 1em;
-}
-
-small {
-  font-size: 0.875em;
-}
-
-sub,
-sup {
-  position: relative;
-  font-size: 0.75em;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
 }
 
 .c-button {

@@ -22,6 +22,25 @@ body {
   background-color: $color-white-regular;
 }
 
+// Address
+
+address {
+  font-style: normal;
+}
+
+// Preformatted text
+
+pre {
+  font-family: $font-family-mono;
+}
+
+// Unordered and ordered list
+
+ul,
+ol {
+  padding-left: 3ch;
+}
+
 // Audio, canvas, iframe, image, and video
 
 audio,
@@ -40,13 +59,6 @@ video {
   max-width: 100%;
   // Prevent stretching when an incorrect height attribute is set.
   height: auto;
-}
-
-// Label
-
-label {
-  display: inline-block;
-  cursor: pointer;
 }
 
 // Button
@@ -73,23 +85,17 @@ button,
   }
 }
 
+// Label
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
 // Textarea
 
 textarea {
   resize: vertical;
-}
-
-// Unordered and ordered list
-
-ul,
-ol {
-  padding-left: 3ch;
-}
-
-// Summary
-
-summary {
-  cursor: pointer;
 }
 
 // Anchor
@@ -103,10 +109,10 @@ a {
   color: $color-primary-regular;
 }
 
-// Preformatted text
+// Abbreviation
 
-pre {
-  font-family: $font-family-mono;
+abbr[title] {
+  cursor: help;
 }
 
 // Code, user input, and sample output
@@ -117,14 +123,8 @@ samp {
   font-family: $font-family-mono;
 }
 
-// Address
+// Summary
 
-address {
-  font-style: normal;
-}
-
-// Abbreviation
-
-abbr[title] {
-  cursor: help;
+summary {
+  cursor: pointer;
 }
