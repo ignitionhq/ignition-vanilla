@@ -5,94 +5,12 @@
 }
 
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   line-height: 1.5;
   color: #333333;
   background-color: white;
-}
-
-address {
-  font-style: normal;
-}
-
-pre {
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-}
-
-ul,
-ol {
-  padding-left: 3ch;
-}
-
-audio,
-canvas,
-iframe,
-img,
-video {
-  display: block;
-}
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  cursor: pointer;
-}
-
-button:disabled,
-[type="button"]:disabled,
-[type="reset"]:disabled,
-[type="submit"]:disabled {
-  cursor: default;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  cursor: pointer;
-}
-
-[type="checkbox"]:disabled,
-[type="radio"]:disabled {
-  cursor: default;
-}
-
-label {
-  display: inline-block;
-  cursor: pointer;
-}
-
-textarea {
-  resize: vertical;
-}
-
-a {
-  text-decoration: none;
-  color: #0044cc;
-}
-
-abbr[title] {
-  cursor: help;
-}
-
-code,
-kbd,
-samp {
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-}
-
-summary {
-  cursor: pointer;
-}
-
-body {
-  margin: 0;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -110,6 +28,10 @@ h1 {
   font-size: 2em;
 }
 
+address {
+  font-style: normal;
+}
+
 blockquote {
   margin-top: 0;
   margin-right: 0;
@@ -120,6 +42,11 @@ dl,
 ol,
 ul {
   margin-top: 0;
+}
+
+ul,
+ol {
+  padding-left: 3ch;
 }
 
 dd {
@@ -143,15 +70,28 @@ p {
 pre {
   overflow: auto;
   margin-top: 0;
+  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 a {
+  text-decoration: none;
+  color: #0044cc;
   -webkit-tap-highlight-color: transparent;
+}
+
+abbr[title] {
+  cursor: help;
 }
 
 b,
 strong {
   font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
 code,
@@ -182,6 +122,20 @@ sup {
   top: -0.5em;
 }
 
+audio,
+canvas,
+iframe,
+img,
+video {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -194,7 +148,15 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: default;
 }
 
 button,
@@ -223,6 +185,16 @@ select {
   -webkit-appearance: button;
 }
 
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+}
+
+[type="checkbox"]:disabled,
+[type="radio"]:disabled {
+  cursor: default;
+}
+
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
@@ -230,6 +202,10 @@ select {
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+textarea {
+  resize: vertical;
 }
 
 fieldset {
@@ -246,12 +222,18 @@ legend {
   padding-left: 0;
 }
 
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
 progress {
   vertical-align: baseline;
 }
 
 summary {
   display: list-item;
+  cursor: pointer;
 }
 
 .c-button {

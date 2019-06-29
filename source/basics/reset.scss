@@ -2,13 +2,34 @@
 // Remove unnecessary defaults and fix browser inconsistencies.
 // -----------------------------------------------------------------------------
 
+// Universal
+
+// Make setting item dimensions easier and more intuitive by changing the box
+// model on all elements and pseudo-elements.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 // Body
 
 body {
   margin: 0;
+  font-family: $font-family-regular;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+  color: $color-gray-regular;
+  background-color: $color-white-regular;
   // Prevent text size adjustment on device orientation change in Chrome and
   // Safari on iOS.
   -webkit-text-size-adjust: 100%;
+}
+
+// Address
+
+address {
+  font-style: normal;
 }
 
 // Heading
@@ -45,6 +66,11 @@ ul {
   margin-top: 0;
 }
 
+ul,
+ol {
+  padding-left: 3ch;
+}
+
 dd {
   margin-left: 0;
 }
@@ -75,13 +101,26 @@ p {
 pre {
   overflow: auto;
   margin-top: 0;
+  font-family: $font-family-mono;
 }
 
 // Anchor
 
+// Mind that the anchor element should have a simple default look because it is
+// an integral part of various components that require different bespoke styles.
+// When part of running text, anchors should employ an underline or some other
+// visual cue, but can be unembellished otherwise.
 a {
+  text-decoration: none;
+  color: $color-primary-regular;
   // Remove tap highlight.
   -webkit-tap-highlight-color: transparent;
+}
+
+// Abbreviation
+
+abbr[title] {
+  cursor: help;
 }
 
 // Bold and strong
@@ -92,7 +131,13 @@ strong {
   font-weight: bolder;
 }
 
-// Code and user input
+// Code, user input, and sample output
+
+code,
+kbd,
+samp {
+  font-family: $font-family-mono;
+}
 
 code,
 kbd {
@@ -129,6 +174,26 @@ sup {
   top: -0.5em;
 }
 
+// Audio, canvas, iframe, image, and video
+
+audio,
+canvas,
+iframe,
+img,
+video {
+  // Switch display style to cover most common use cases and remove the extra
+  // space below.
+  display: block;
+}
+
+img,
+video {
+  // Prevent overflow when parent width is exceeded.
+  max-width: 100%;
+  // Prevent stretching when an incorrect height attribute is set.
+  height: auto;
+}
+
 // Table
 
 table {
@@ -149,8 +214,13 @@ textarea {
   font-size: inherit;
   // Mind that line height cannot be changed on `select` elements.
   line-height: inherit;
+  cursor: pointer;
   // Remove tap highlight.
   -webkit-tap-highlight-color: transparent;
+
+  &:disabled {
+    cursor: default;
+  }
 }
 
 button,
@@ -181,6 +251,15 @@ select {
   -webkit-appearance: button;
 }
 
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
 [type="search"] {
   // Correct outline offset in Safari.
   outline-offset: -2px;
@@ -191,6 +270,11 @@ select {
   &::-webkit-search-decoration {
     -webkit-appearance: none;
   }
+}
+
+textarea {
+  // Prevent horizontal resizing.
+  resize: vertical;
 }
 
 // Fieldset
@@ -211,6 +295,13 @@ legend {
   padding-left: 0;
 }
 
+// Label
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
 // Progress
 
 progress {
@@ -223,4 +314,5 @@ progress {
 summary {
   // Correct display style in Chrome and Safari.
   display: list-item;
+  cursor: pointer;
 }
