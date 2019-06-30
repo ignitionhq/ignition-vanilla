@@ -41,21 +41,39 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 h1 {
   // Normalize bottom margin and font size when inside `article`, `aside`,
   // `nav`, and `section` elements.
-  margin-bottom: 0.67em;
-  font-size: 2em;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
 }
 
 // Blockquote
 
 blockquote {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
+  margin: 0 0 1rem;
 }
 
 // Definition, ordered, and unordered list
@@ -64,11 +82,12 @@ dl,
 ol,
 ul {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 ul,
 ol {
-  padding-left: 3ch;
+  padding-left: 2rem;
 }
 
 dd {
@@ -78,9 +97,7 @@ dd {
 // Figure
 
 figure {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
+  margin: 0 0 1rem;
 }
 
 // Thematic break
@@ -88,12 +105,15 @@ figure {
 hr {
   // Normalize overflow in Chrome.
   overflow: visible;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 // Paragraph
 
 p {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 // Preformatted text
@@ -101,6 +121,7 @@ p {
 pre {
   overflow: auto;
   margin-top: 0;
+  margin-bottom: 1rem;
   font-family: $font-family-mono;
 }
 
@@ -302,11 +323,27 @@ label {
   cursor: pointer;
 }
 
-// Progress
+// Meter and progress
 
+meter,
 progress {
+  height: 1rem;
   // Normalize vertical alignment in Chrome and Firefox.
   vertical-align: baseline;
+}
+
+meter {
+  width: 5rem;
+}
+
+progress {
+  width: 10rem;
+}
+
+// Dialog
+
+dialog {
+  padding: 1rem;
 }
 
 // Summary
