@@ -113,6 +113,9 @@ hr {
   overflow: visible;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  border-style: solid;
+  // Normalize border color in Firefox.
+  border-color: $color-gray-regular;
 }
 
 // Paragraph

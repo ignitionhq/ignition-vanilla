@@ -84,6 +84,8 @@ hr {
   overflow: visible;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  border-style: solid;
+  border-color: #333333;
 }
 
 p {
