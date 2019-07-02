@@ -1,0 +1,364 @@
+// RESET
+// Remove unnecessary defaults and fix browser inconsistencies.
+// -----------------------------------------------------------------------------
+
+// Universal
+
+// Make setting item dimensions easier and more intuitive by changing the box
+// model on all elements and pseudo-elements.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Root
+
+html {
+  font-size: $root-font-size;
+}
+
+// Body
+
+body {
+  margin: 0;
+  font-family: $font-family-regular;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+  color: $color-gray-regular;
+  background-color: $color-white-regular;
+  // Prevent text size adjustment on device orientation change in Chrome and
+  // Safari on iOS.
+  -webkit-text-size-adjust: 100%;
+}
+
+// Address
+
+address {
+  font-style: normal;
+}
+
+// Heading
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  // Normalize bottom margin and font size when inside `article`, `aside`,
+  // `nav`, and `section` elements.
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+// Blockquote
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+// Definition, ordered, and unordered list
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 2rem;
+}
+
+dd {
+  margin-left: 0;
+}
+
+// Figure
+
+figure {
+  margin: 0 0 1rem;
+}
+
+// Thematic break
+
+hr {
+  // Normalize overflow in Chrome.
+  overflow: visible;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-style: solid;
+  // Normalize border color in Firefox.
+  border-color: $color-gray-regular;
+}
+
+// Paragraph
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+// Preformatted text
+
+pre {
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: $font-family-mono;
+}
+
+// Anchor
+
+// Mind that the anchor element should have a simple default look because it is
+// an integral part of various components that require different bespoke styles.
+// When part of running text, anchors should employ an underline or some other
+// visual cue, but can be unembellished otherwise.
+a {
+  text-decoration: none;
+  color: $color-primary-regular;
+  // Remove tap highlight.
+  -webkit-tap-highlight-color: transparent;
+}
+
+// Abbreviation
+
+abbr[title] {
+  cursor: help;
+}
+
+// Bold and strong
+
+b,
+strong {
+  // Normalize font weight in Chrome and Safari.
+  font-weight: bolder;
+}
+
+// Code, user input, and sample output
+
+code,
+kbd,
+samp {
+  font-family: $font-family-mono;
+}
+
+code,
+kbd {
+  font-size: 0.875em;
+}
+
+kbd {
+  kbd {
+    // Prevent compounding effect because of relative font size.
+    font-size: 1em;
+  }
+}
+
+// Small
+
+small {
+  font-size: 0.875em;
+}
+
+// Subscript and superscript
+
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+// Audio, canvas, iframe, image, and video
+
+audio,
+canvas,
+iframe,
+img,
+video {
+  // Switch display style to cover most common use cases and remove the extra
+  // space below.
+  display: block;
+}
+
+img,
+video {
+  // Prevent overflow when parent width is exceeded.
+  max-width: 100%;
+  // Prevent stretching when an incorrect height attribute is set.
+  height: auto;
+}
+
+// Table
+
+table {
+  border-collapse: collapse;
+}
+
+// Button, input, select, and textarea
+
+button,
+input,
+select,
+textarea {
+  // Remove margins from all selected elements in Safari, from `checkbox` and
+  // `radio` inputs in all browsers, and from `textarea` elements in Firefox.
+  margin: 0;
+  // Normalize font family, font size, and line height.
+  font-family: inherit;
+  font-size: inherit;
+  // Mind that line height cannot be changed on `select` elements.
+  line-height: inherit;
+  cursor: pointer;
+  // Remove tap highlight.
+  -webkit-tap-highlight-color: transparent;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  // Allow complete styling in Chrome and Safari on iOS.
+  -webkit-appearance: button;
+
+  // Remove inner border on focus in Firefox.
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+button,
+select {
+  // Remove text transform inheritance in Firefox.
+  text-transform: none;
+}
+
+::-webkit-file-upload-button {
+  // Normalize font family, font size, and line height.
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  // Allow complete styling in Chrome and Safari on iOS.
+  -webkit-appearance: button;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+[type="search"] {
+  // Correct outline offset in Safari.
+  outline-offset: -2px;
+  // Allow complete styling in Chrome and Safari on iOS.
+  -webkit-appearance: none;
+
+  // Remove extra inner space in Safari.
+  &::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+textarea {
+  // Prevent horizontal resizing.
+  resize: vertical;
+}
+
+// Fieldset
+
+fieldset {
+  // Emulate minimum width of all other block elements.
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+legend {
+  // Emulate width of all other block elements.
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// Label
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+// Meter and progress
+
+meter,
+progress {
+  height: 1rem;
+  // Normalize vertical alignment in Chrome and Firefox.
+  vertical-align: baseline;
+}
+
+meter {
+  width: 5rem;
+}
+
+progress {
+  width: 10rem;
+}
+
+// Dialog
+
+dialog {
+  padding: 1rem;
+}
+
+// Summary
+
+summary {
+  // Correct display style in Chrome and Safari.
+  display: list-item;
+  cursor: pointer;
+}
