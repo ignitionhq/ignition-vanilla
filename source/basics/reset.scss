@@ -1,11 +1,13 @@
 // RESET
-// Remove unnecessary defaults and fix browser inconsistencies.
+// Remove unnecessary defaults, apply several useful ones, and fix browser
+// inconsistencies.
 // -----------------------------------------------------------------------------
 
 // Universal
 
-// Make setting item dimensions easier and more intuitive by changing the box
-// model on all elements and pseudo-elements.
+// Simplify setting item dimensions by changing the box model on all elements
+// and pseudo-elements so that their width and height include border and padding
+// values.
 *,
 *::before,
 *::after {
@@ -15,6 +17,7 @@
 // Root
 
 html {
+  // Provide a reference value for all rems.
   font-size: $root-font-size;
 }
 
@@ -47,12 +50,13 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  // Set a singular bottom margin for the sake of simplicity.
   margin-bottom: 1rem;
 }
 
 h1 {
-  // Normalize bottom margin and font size when inside `article`, `aside`,
-  // `nav`, and `section` elements.
+  // Normalize font size when inside `article`, `aside`, `nav`, and `section`
+  // elements.
   font-size: 2rem;
 }
 
@@ -176,7 +180,7 @@ kbd {
 
 kbd {
   kbd {
-    // Prevent compounding effect because of relative font size.
+    // Prevent compounding effect that results from using ems.
     font-size: 1em;
   }
 }
@@ -303,7 +307,6 @@ select {
 }
 
 textarea {
-  // Prevent horizontal resizing.
   resize: vertical;
 }
 
