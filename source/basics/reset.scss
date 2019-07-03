@@ -1,11 +1,13 @@
 // RESET
-// Remove unnecessary defaults and fix browser inconsistencies.
+// Remove unnecessary defaults, apply several useful ones, and fix browser
+// inconsistencies.
 // -----------------------------------------------------------------------------
 
 // Universal
 
-// Make setting item dimensions easier and more intuitive by changing the box
-// model on all elements and pseudo-elements.
+// Simplify setting item dimensions by changing the box model on all elements
+// and pseudo-elements so that their width and height include border and padding
+// values.
 *,
 *::before,
 *::after {
@@ -15,6 +17,7 @@
 // Root
 
 html {
+  // Provide a reference value for rems.
   font-size: $root-font-size;
 }
 
@@ -47,12 +50,13 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  // Set a singular bottom margin for the sake of simplicity.
   margin-bottom: 1rem;
 }
 
 h1 {
-  // Normalize bottom margin and font size when inside `article`, `aside`,
-  // `nav`, and `section` elements.
+  // Normalize font size when inside `article`, `aside`, `nav`, and `section`
+  // elements.
   font-size: 2rem;
 }
 
@@ -138,12 +142,12 @@ pre {
 
 // Mind that the anchor element should have a simple default look because it is
 // an integral part of various components that require different bespoke styles.
-// When part of running text, anchors should employ an underline or some other
-// visual cue, but can be unembellished otherwise.
+// An underline or some other visual cue should be employed for anchors that are
+// inside running text.
 a {
   text-decoration: none;
   color: $color-primary-regular;
-  // Remove tap highlight.
+  // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -176,7 +180,7 @@ kbd {
 
 kbd {
   kbd {
-    // Prevent compounding effect because of relative font size.
+    // Prevent compounding effect that results from using ems.
     font-size: 1em;
   }
 }
@@ -245,7 +249,7 @@ textarea {
   // Mind that line height cannot be changed on `select` elements.
   line-height: inherit;
   cursor: pointer;
-  // Remove tap highlight.
+  // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
 
   &:disabled {
@@ -303,7 +307,6 @@ select {
 }
 
 textarea {
-  // Prevent horizontal resizing.
   resize: vertical;
 }
 
