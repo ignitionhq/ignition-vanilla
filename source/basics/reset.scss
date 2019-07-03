@@ -17,7 +17,7 @@
 // Root
 
 html {
-  // Provide a reference value for all rems.
+  // Provide a reference value for rems.
   font-size: $root-font-size;
 }
 
@@ -142,12 +142,12 @@ pre {
 
 // Mind that the anchor element should have a simple default look because it is
 // an integral part of various components that require different bespoke styles.
-// When part of running text, anchors should employ an underline or some other
-// visual cue, but can be unembellished otherwise.
+// An underline or some other visual cue should be employed for anchors that are
+// inside running text.
 a {
   text-decoration: none;
   color: $color-primary-regular;
-  // Remove tap highlight.
+  // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -249,7 +249,7 @@ textarea {
   // Mind that line height cannot be changed on `select` elements.
   line-height: inherit;
   cursor: pointer;
-  // Remove tap highlight.
+  // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
 
   &:disabled {
