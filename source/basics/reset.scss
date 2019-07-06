@@ -248,21 +248,21 @@ textarea {
   font-size: inherit;
   // Mind that line height cannot be changed on `select` elements.
   line-height: inherit;
-  cursor: pointer;
   // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
-
-  &:disabled {
-    cursor: default;
-  }
 }
 
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  cursor: pointer;
   // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
+
+  &:disabled {
+    cursor: default;
+  }
 
   // Remove inner border on focus in Firefox.
   &::-moz-focus-inner {
@@ -283,15 +283,6 @@ select {
   line-height: inherit;
   // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  cursor: pointer;
-
-  &:disabled {
-    cursor: default;
-  }
 }
 
 [type="search"] {
@@ -332,7 +323,6 @@ legend {
 
 label {
   display: inline-block;
-  cursor: pointer;
 }
 
 // Meter and progress
