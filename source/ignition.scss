@@ -5,7 +5,7 @@
 @import "settings/color";
 @import "settings/decoration";
 @import "settings/layout";
-@import "settings/responsive";
+@import "settings/media";
 @import "settings/spacing";
 @import "settings/typography";
 
@@ -13,7 +13,7 @@
 // Provide ways to carry out recurring tasks.
 // -----------------------------------------------------------------------------
 
-@import "helpers/media";
+@import "helpers/query";
 @import "helpers/utility";
 
 // BASICS

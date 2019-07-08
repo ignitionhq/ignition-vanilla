@@ -5,7 +5,7 @@
 .o-grid {
   display: grid;
 
-  @include media(m) {
+  @include query(m) {
     grid-template-columns: repeat($grid-columns, 1fr);
   }
 }
@@ -17,7 +17,7 @@
 
   $query-names: map-keys($queries);
   @each $query-name in $query-names {
-    @include media($query-name) {
+    @include query($query-name) {
       .o-grid__column-#{$i}\@#{$query-name} {
         grid-column: span #{$i};
       }
@@ -30,7 +30,7 @@
 .o-grid--spaced {
   grid-gap: $grid-gap-regular;
 
-  @include media(m) {
+  @include query(m) {
     grid-gap: $grid-gap-large;
   }
 }
