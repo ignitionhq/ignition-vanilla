@@ -5,9 +5,8 @@
 
 // Universal
 
-// Simplify setting item dimensions by changing the box model on all elements
-// and pseudo-elements so that their width and height include border and padding
-// values.
+// Change box model on all elements and pseudo-elements so that their width and
+// height include border and padding values.
 *,
 *::before,
 *::after {
@@ -17,7 +16,7 @@
 // Root
 
 html {
-  // Provide a reference value for rems.
+  // Establish rem reference value.
   font-size: $root-font-size;
 }
 
@@ -50,7 +49,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  // Set a singular bottom margin for the sake of simplicity.
+  // Consolidate bottom margins for the sake of simplicity.
   margin-bottom: 1rem;
 }
 
@@ -140,10 +139,8 @@ pre {
 
 // Anchor
 
-// Mind that the anchor element should have a simple default look because it is
-// an integral part of various components that require different bespoke styles.
-// An underline or some other visual cue should be employed for anchors that are
-// inside running text.
+// Simplify anchor default look because, as an integral part of various
+// components, it will require different bespoke styles.
 a {
   text-decoration: none;
   color: $color-primary-regular;
