@@ -175,22 +175,22 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-}
-
-button:disabled,
-input:disabled,
-select:disabled,
-textarea:disabled {
-  cursor: default;
 }
 
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  cursor: pointer;
   -webkit-appearance: button;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
 }
 
 button::-moz-focus-inner,
@@ -210,16 +210,6 @@ select {
   font-size: inherit;
   line-height: inherit;
   -webkit-appearance: button;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  cursor: pointer;
-}
-
-[type="checkbox"]:disabled,
-[type="radio"]:disabled {
-  cursor: default;
 }
 
 [type="search"] {
@@ -251,7 +241,6 @@ legend {
 
 label {
   display: inline-block;
-  cursor: pointer;
 }
 
 meter,
@@ -814,6 +803,29 @@ summary {
 .c-radio:disabled ~ label {
   opacity: 0.5;
   cursor: default;
+}
+
+.c-table {
+  width: 100%;
+}
+
+.c-table__caption {
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.c-table__head {
+  padding: 0.75rem 1rem calc(0.75rem - 2px);
+  border-bottom: 2px solid #e0e0e0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.c-table__cell {
+  padding: 0.75rem 1rem calc(0.75rem - 1px);
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
 }
 
 .c-tabs {

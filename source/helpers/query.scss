@@ -1,23 +1,23 @@
-// MEDIA
+// QUERY
 // Generate media queries.
 // -----------------------------------------------------------------------------
 
-// Use as argument a media query name established via responsive settings.
+// Use as argument a media query name established via media settings.
 // Example:
-// @include media(m) {
+// @include query(m) {
 //   margin-right: 1rem;
 // }
 // will output:
 // @media screen and (min-width: 720px) {
 //   margin-right: 1rem;
 // }
-@mixin media($query-name) {
+@mixin query($query-name) {
   @if map-has-key($queries, $query-name) {
     $query: map-get($queries, $query-name);
     @media #{$query} {
       @content;
     }
   } @else {
-    @error "No query named `#{$query-name}` found. Check spelling or review responsive settings.";
+    @error "No query named `#{$query-name}` found. Check spelling or review media settings.";
   }
 }
