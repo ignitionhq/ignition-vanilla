@@ -1,10 +1,10 @@
 // COLOR
-// Establish the color palette.
+// Specify palette colors.
 // -----------------------------------------------------------------------------
 
 // Primary
 
-// Provide a standard primary color.
+// Establish a standard primary color.
 $color-primary-regular: hsl(220, 100%, 40%);
 // Provide a set of light primary colors.
 $color-primary-light-1: hsl(220, 100%, 96%);
@@ -18,7 +18,7 @@ $color-primary-dark-3: hsl(220, 100%, 28%);
 
 // Negative
 
-// Provide a standard negative color.
+// Establish a standard negative color.
 $color-negative-regular: hsl(4, 100%, 36%);
 // Provide a set of light negative colors.
 $color-negative-light-1: hsl(4, 100%, 96%);
@@ -32,7 +32,7 @@ $color-negative-dark-3: hsl(4, 100%, 24%);
 
 // Gray
 
-// Provide a standard gray color.
+// Establish a standard gray color.
 $color-gray-regular: hsl(0, 0%, 20%);
 // Provide a set of light gray colors.
 $color-gray-light-1: hsl(0, 0%, 96%);
@@ -48,7 +48,7 @@ $color-gray-dark-3: hsl(0, 0%, 8%);
 
 // White
 
-// Provide a standard white color.
+// Establish a standard white color.
 $color-white-regular: hsl(0, 0%, 100%);
 // Provide a set of transparent white colors.
 $color-white-transparent-1: hsla(0, 0%, 100%, 0.92);
