@@ -2,7 +2,7 @@
 // Generate media queries.
 // -----------------------------------------------------------------------------
 
-// Use as argument a media query name established via media settings.
+// Use as argument a media query name established via platform settings.
 // Example:
 // @include query(m) {
 //   margin-right: 1rem;
@@ -18,6 +18,6 @@
       @content;
     }
   } @else {
-    @error "No query named `#{$query-name}` found. Check spelling or review media settings.";
+    @error "No query named `#{$query-name}` found. Check spelling or review platform settings.";
   }
 }
