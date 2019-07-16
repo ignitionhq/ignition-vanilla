@@ -97,7 +97,7 @@ pre {
   overflow: auto;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 a {
@@ -118,7 +118,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-family: SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 code,
