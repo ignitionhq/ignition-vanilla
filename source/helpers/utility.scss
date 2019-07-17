@@ -17,7 +17,7 @@
 //   margin-right: 1rem !important;
 // }
 // Pass property values via nested maps to generate responsive utilities. Use a
-// media query name established via platform settings to generate responsive
+// media query name established via viewport settings to generate responsive
 // utilities or the `all` keyword to generate all possible non-responsive and
 // responsive utilities.
 // Example:
@@ -71,9 +71,13 @@
           }
         }
       }
-      @if (map-has-key($queries, $key) or $key == "all") {
+      @if (map-has-key($breakpoints, $key) or $key == "all") {
         // Get media query names.
-        $query-names: if(map-has-key($queries, $key), $key, map-keys($queries));
+        $query-names: if(
+          map-has-key($breakpoints, $key),
+          $key,
+          map-keys($breakpoints)
+        );
         @each $query-name in $query-names {
           @include query($query-name) {
             @if (type-of($key-values) == map) {
@@ -96,7 +100,7 @@
           }
         }
       }
-      @if (map-has-key($queries, $key) == false and $key != "all") {
+      @if (map-has-key($breakpoints, $key) == false and $key != "all") {
         $value-alias: $key;
         $value: $key-values;
         // Generate non-responsive utilities designated using property value

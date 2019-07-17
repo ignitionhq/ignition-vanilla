@@ -15,7 +15,7 @@
     grid-column: span #{$i};
   }
 
-  $query-names: map-keys($queries);
+  $query-names: map-keys($breakpoints);
   @each $query-name in $query-names {
     @include query($query-name) {
       .o-grid__column-#{$i}\@#{$query-name} {
