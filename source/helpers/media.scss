@@ -11,12 +11,20 @@
 // @media screen and (min-width: 720px) {
 //   margin-right: 1rem;
 // }
-@mixin media($breakpoint-name) {
-  @if map-has-key($breakpoints, $breakpoint-name) {
-    @media screen and (min-width: map-get($breakpoints, $breakpoint-name)) {
+@mixin media($query) {
+  @if map-has-key($breakpoints, $query) {
+    @media screen and (min-width: map-get($breakpoints, $query)) {
+      @content;
+    }
+  } @else if ($query == "print") {
+    @media print {
+      @content;
+    }
+  } @else if ($query == "speech") {
+    @media speech {
       @content;
     }
   } @else {
-    @error "No query named `#{$breakpoint-name}` found. Check spelling or review viewport settings.";
+    @error "Invalid query. Check spelling or review viewport settings.";
   }
 }
