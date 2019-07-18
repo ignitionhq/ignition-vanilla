@@ -1,17 +1,17 @@
-// QUERY
+// MEDIA
 // Generate media queries.
 // -----------------------------------------------------------------------------
 
 // Use as argument a media query name established via viewport settings.
 // Example:
-// @include query(m) {
+// @include media(m) {
 //   margin-right: 1rem;
 // }
 // will output:
 // @media screen and (min-width: 720px) {
 //   margin-right: 1rem;
 // }
-@mixin query($breakpoint-name) {
+@mixin media($breakpoint-name) {
   @if map-has-key($breakpoints, $breakpoint-name) {
     @media screen and (min-width: map-get($breakpoints, $breakpoint-name)) {
       @content;

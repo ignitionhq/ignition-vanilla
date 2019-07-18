@@ -79,7 +79,7 @@
           map-keys($breakpoints)
         );
         @each $query-name in $query-names {
-          @include query($query-name) {
+          @include media($query-name) {
             @if (type-of($key-values) == map) {
               // Generate responsive utilities designated using property value
               // aliases (e.g., `.u-margin-right-regular@m`).

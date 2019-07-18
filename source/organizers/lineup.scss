@@ -11,7 +11,7 @@
 .o-lineup__item {
   width: 100%;
 
-  @include query(m) {
+  @include media(m) {
     // Cause item to take up the specified proportion of available space. It
     // will be equal to other items on the same line that are styled this way.
     flex: 1;
