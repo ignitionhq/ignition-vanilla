@@ -71,12 +71,12 @@
           }
         }
       }
-      @if (map-has-key($breakpoints, $key) or $key == "all") {
+      @if (map-has-key($viewport-widths, $key) or $key == "all") {
         // Get media query names.
         $query-names: if(
-          map-has-key($breakpoints, $key),
+          map-has-key($viewport-widths, $key),
           $key,
-          map-keys($breakpoints)
+          map-keys($viewport-widths)
         );
         @each $query-name in $query-names {
           @include media($query-name) {
@@ -100,7 +100,7 @@
           }
         }
       }
-      @if (map-has-key($breakpoints, $key) == false and $key != "all") {
+      @if (map-has-key($viewport-widths, $key) == false and $key != "all") {
         $value-alias: $key;
         $value: $key-values;
         // Generate non-responsive utilities designated using property value

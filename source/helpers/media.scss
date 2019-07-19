@@ -12,8 +12,8 @@
 //   margin-right: 1rem;
 // }
 @mixin media($query) {
-  @if map-has-key($breakpoints, $query) {
-    @media screen and (min-width: map-get($breakpoints, $query)) {
+  @if map-has-key($viewport-widths, $query) {
+    @media screen and (min-width: map-get($viewport-widths, $query)) {
       @content;
     }
   } @else if ($query == "print") {

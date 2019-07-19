@@ -15,7 +15,7 @@
     grid-column: span #{$i};
   }
 
-  $query-names: map-keys($breakpoints);
+  $query-names: map-keys($viewport-widths);
   @each $query-name in $query-names {
     @include media($query-name) {
       .o-grid__column-#{$i}\@#{$query-name} {

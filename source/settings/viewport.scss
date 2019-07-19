@@ -2,10 +2,10 @@
 // Identify screen features that mark a change in the way content is presented.
 // -----------------------------------------------------------------------------
 
-// Breakpoints
+// Width
 
-// Set the screen widths that signal style adjustments.
-$breakpoints: (
+// Set the viewport widths that signal style adjustments.
+$viewport-widths: (
   m: "720px",
   l: "1080px"
 );
