@@ -15,10 +15,10 @@
     grid-column: span #{$i};
   }
 
-  $query-names: map-keys($viewport-widths);
-  @each $query-name in $query-names {
-    @include breakpoint($query-name) {
-      .o-grid__column-#{$i}\@#{$query-name} {
+  $breakpoint-names: map-keys($breakpoints);
+  @each $breakpoint-name in $breakpoint-names {
+    @include breakpoint($breakpoint-name) {
+      .o-grid__column-#{$i}\@#{$breakpoint-name} {
         grid-column: span #{$i};
       }
     }
