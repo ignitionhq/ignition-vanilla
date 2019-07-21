@@ -5,16 +5,16 @@
 @import "settings/color";
 @import "settings/decoration";
 @import "settings/layout";
-@import "settings/platform";
 @import "settings/spacing";
 @import "settings/typography";
+@import "settings/viewport";
 @import "settings/visibility";
 
 // HELPERS
 // Provide ways to carry out recurring tasks.
 // -----------------------------------------------------------------------------
 
-@import "helpers/query";
+@import "helpers/breakpoint";
 @import "helpers/utility";
 
 // BASICS

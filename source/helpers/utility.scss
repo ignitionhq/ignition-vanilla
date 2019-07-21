@@ -17,7 +17,7 @@
 //   margin-right: 1rem !important;
 // }
 // Pass property values via nested maps to generate responsive utilities. Use a
-// media query name established via platform settings to generate responsive
+// breakpoint name established via viewport settings to generate responsive
 // utilities or the `all` keyword to generate all possible non-responsive and
 // responsive utilities.
 // Example:
@@ -48,7 +48,7 @@
   } @else {
     // Generate utilities from values passed via maps.
     @each $entry in $values {
-      // Get a media query name, a keyword, or a property value alias.
+      // Get a breakpoint name, a keyword, or a property value alias.
       $key: nth($entry, 1);
       // Get property values accompanied optionally by aliases.
       $key-values: nth($entry, 2);
@@ -71,16 +71,20 @@
           }
         }
       }
-      @if (map-has-key($queries, $key) or $key == "all") {
-        // Get media query names.
-        $query-names: if(map-has-key($queries, $key), $key, map-keys($queries));
-        @each $query-name in $query-names {
-          @include query($query-name) {
+      @if (map-has-key($breakpoints, $key) or $key == "all") {
+        // Get breakpoint names.
+        $breakpoint-names: if(
+          map-has-key($breakpoints, $key),
+          $key,
+          map-keys($breakpoints)
+        );
+        @each $breakpoint-name in $breakpoint-names {
+          @include breakpoint($breakpoint-name) {
             @if (type-of($key-values) == map) {
               // Generate responsive utilities designated using property value
               // aliases (e.g., `.u-margin-right-regular@m`).
               @each $value-alias, $value in $key-values {
-                .u-#{$property-alias}-#{$value-alias}\@#{$query-name} {
+                .u-#{$property-alias}-#{$value-alias}\@#{$breakpoint-name} {
                   #{$property}: $value !important;
                 }
               }
@@ -88,7 +92,7 @@
               // Generate responsive utilities designated using property values
               // (e.g., `.u-display-block@m`).
               @each $value in $key-values {
-                .u-#{$property-alias}-#{$value}\@#{$query-name} {
+                .u-#{$property-alias}-#{$value}\@#{$breakpoint-name} {
                   #{$property}: $value !important;
                 }
               }
@@ -96,7 +100,7 @@
           }
         }
       }
-      @if (map-has-key($queries, $key) == false and $key != "all") {
+      @if (map-has-key($breakpoints, $key) == false and $key != "all") {
         $value-alias: $key;
         $value: $key-values;
         // Generate non-responsive utilities designated using property value

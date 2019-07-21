@@ -1,0 +1,12 @@
+// VIEWPORT
+// Identify viewport features that mark a change in the way content is
+// presented.
+// -----------------------------------------------------------------------------
+
+// Breakpoints
+
+// Set the viewport widths that signal style adjustments.
+$breakpoints: (
+  m: "720px",
+  l: "1080px"
+);

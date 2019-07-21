@@ -1,0 +1,22 @@
+// BREAKPOINT
+// Generate mobile-first media queries.
+// -----------------------------------------------------------------------------
+
+// Use as argument a breakpoint name established via viewport settings.
+// Example:
+// @include breakpoint(m) {
+//   margin-right: 1rem;
+// }
+// will output:
+// @media screen and (min-width: 720px) {
+//   margin-right: 1rem;
+// }
+@mixin breakpoint($breakpoint-name) {
+  @if map-has-key($breakpoints, $breakpoint-name) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint-name)) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint name. Check spelling or review viewport settings.";
+  }
+}

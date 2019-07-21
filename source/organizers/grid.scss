@@ -5,7 +5,7 @@
 .o-grid {
   display: grid;
 
-  @include query(m) {
+  @include breakpoint(m) {
     grid-template-columns: repeat($grid-columns, 1fr);
   }
 }
@@ -15,10 +15,10 @@
     grid-column: span #{$i};
   }
 
-  $query-names: map-keys($queries);
-  @each $query-name in $query-names {
-    @include query($query-name) {
-      .o-grid__column-#{$i}\@#{$query-name} {
+  $breakpoint-names: map-keys($breakpoints);
+  @each $breakpoint-name in $breakpoint-names {
+    @include breakpoint($breakpoint-name) {
+      .o-grid__column-#{$i}\@#{$breakpoint-name} {
         grid-column: span #{$i};
       }
     }
@@ -30,7 +30,7 @@
 .o-grid--spaced {
   grid-gap: $grid-gap-regular;
 
-  @include query(m) {
+  @include breakpoint(m) {
     grid-gap: $grid-gap-large;
   }
 }
