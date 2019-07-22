@@ -178,6 +178,13 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  opacity: 0.5;
+}
+
 button,
 [type="button"],
 [type="reset"],
@@ -190,7 +197,7 @@ button:disabled,
 [type="button"]:disabled,
 [type="reset"]:disabled,
 [type="submit"]:disabled {
-  cursor: default;
+  pointer-events: none;
 }
 
 button::-moz-focus-inner,
@@ -243,6 +250,12 @@ label {
   display: inline-block;
 }
 
+[type="checkbox"]:disabled + label,
+[type="radio"]:disabled + label {
+  opacity: 0.5;
+  cursor: default;
+}
+
 meter,
 progress {
   height: 1rem;
@@ -290,11 +303,6 @@ summary {
 
 .c-button:active {
   background-color: #141414;
-}
-
-.c-button:disabled {
-  opacity: 0.5;
-  pointer-events: none;
 }
 
 .c-button--lean {
@@ -562,15 +570,6 @@ summary {
   background-color: #0044cc;
 }
 
-.c-checkbox:disabled {
-  opacity: 0.5;
-}
-
-.c-checkbox:disabled ~ label {
-  opacity: 0.5;
-  cursor: default;
-}
-
 .c-heading-1 {
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -796,15 +795,6 @@ summary {
   background-color: #0044cc;
 }
 
-.c-radio:disabled {
-  opacity: 0.5;
-}
-
-.c-radio:disabled ~ label {
-  opacity: 0.5;
-  cursor: default;
-}
-
 .c-table {
   width: 100%;
 }
@@ -936,10 +926,6 @@ summary {
 .c-textfield.is-invalid:focus {
   padding: calc(0.625rem - 2px) calc(1rem - 2px);
   border: 2px solid #b80c00;
-}
-
-.c-textfield:disabled {
-  opacity: 0.5;
 }
 
 .c-textfield--select:not([size]):not([multiple]) {

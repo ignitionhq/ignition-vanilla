@@ -28,13 +28,4 @@
     background-repeat: no-repeat;
     background-color: $color-primary-regular;
   }
-
-  &:disabled {
-    opacity: $opacity-medium;
-
-    ~ label {
-      opacity: $opacity-medium;
-      cursor: default;
-    }
-  }
 }

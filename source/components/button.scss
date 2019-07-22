@@ -33,11 +33,6 @@
   &:active {
     background-color: $color-gray-dark-3;
   }
-
-  &:disabled {
-    opacity: $opacity-medium;
-    pointer-events: none;
-  }
 }
 
 // Lean button

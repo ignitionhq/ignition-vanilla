@@ -247,6 +247,10 @@ textarea {
   line-height: inherit;
   // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
+
+  &:disabled {
+    opacity: $opacity-medium;
+  }
 }
 
 button,
@@ -258,7 +262,7 @@ button,
   -webkit-appearance: button;
 
   &:disabled {
-    cursor: default;
+    pointer-events: none;
   }
 
   // Remove inner border on focus in Firefox.
@@ -320,6 +324,12 @@ legend {
 
 label {
   display: inline-block;
+
+  [type="checkbox"]:disabled + &,
+  [type="radio"]:disabled + & {
+    opacity: $opacity-medium;
+    cursor: default;
+  }
 }
 
 // Meter and progress
