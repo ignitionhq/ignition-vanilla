@@ -292,7 +292,7 @@ summary {
   background-color: #141414;
 }
 
-.c-button:disabled, .c-button.is-disabled {
+.c-button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }

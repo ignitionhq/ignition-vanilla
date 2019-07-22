@@ -34,8 +34,7 @@
     background-color: $color-gray-dark-3;
   }
 
-  &:disabled,
-  &.is-disabled {
+  &:disabled {
     opacity: $opacity-medium;
     pointer-events: none;
   }
