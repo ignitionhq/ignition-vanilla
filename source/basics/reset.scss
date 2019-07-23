@@ -249,7 +249,7 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 
   &:disabled {
-    opacity: $opacity-medium;
+    opacity: 0.5;
   }
 }
 
@@ -327,7 +327,7 @@ label {
 
   [type="checkbox"]:disabled + &,
   [type="radio"]:disabled + & {
-    opacity: $opacity-medium;
+    opacity: 0.5;
     cursor: default;
   }
 }
