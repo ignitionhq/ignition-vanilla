@@ -178,13 +178,6 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
-button:disabled,
-input:disabled,
-select:disabled,
-textarea:disabled {
-  opacity: 0.5;
-}
-
 button,
 [type="button"],
 [type="reset"],
@@ -303,6 +296,11 @@ summary {
 
 .c-button:active {
   background-color: #141414;
+}
+
+.c-button:disabled {
+  color: #8f8f8f;
+  background-color: #ebebeb;
 }
 
 .c-button--lean {
@@ -492,6 +490,15 @@ summary {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
+.c-button[class*="lean"]:disabled {
+  border-color: #ebebeb;
+  background-color: transparent;
+}
+
+.c-button[class*="plain"]:disabled {
+  background-color: transparent;
+}
+
 .c-button--large {
   padding: calc(0.75rem - 1px) calc(1.25rem - 1px);
   font-size: 1.3125rem;
@@ -568,6 +575,10 @@ summary {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0044cc;
+}
+
+.c-checkbox:disabled {
+  border-color: #d6d6d6;
 }
 
 .c-heading-1 {
@@ -795,6 +806,10 @@ summary {
   background-color: #0044cc;
 }
 
+.c-radio:disabled {
+  border-color: #d6d6d6;
+}
+
 .c-table {
   width: 100%;
 }
@@ -917,6 +932,10 @@ summary {
   padding: calc(0.625rem - 2px) calc(1rem - 2px);
   border: 2px solid #0044cc;
   outline: 0;
+}
+
+.c-textfield:disabled {
+  border-color: #d6d6d6;
 }
 
 .c-textfield.is-invalid {

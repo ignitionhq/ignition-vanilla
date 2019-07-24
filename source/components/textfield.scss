@@ -25,6 +25,10 @@
     outline: 0;
   }
 
+  &:disabled {
+    border-color: $color-gray-light-4;
+  }
+
   &.is-invalid {
     border-color: $color-negative-regular;
 

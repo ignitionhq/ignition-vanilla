@@ -247,10 +247,6 @@ textarea {
   line-height: inherit;
   // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
-
-  &:disabled {
-    opacity: 0.5;
-  }
 }
 
 button,

@@ -28,4 +28,8 @@
     background-repeat: no-repeat;
     background-color: $color-primary-regular;
   }
+
+  &:disabled {
+    border-color: $color-gray-light-4;
+  }
 }
