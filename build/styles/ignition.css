@@ -186,13 +186,6 @@ button,
   -webkit-appearance: button;
 }
 
-button:disabled,
-[type="button"]:disabled,
-[type="reset"]:disabled,
-[type="submit"]:disabled {
-  pointer-events: none;
-}
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -290,11 +283,6 @@ summary {
 
 .c-button:active {
   background-color: #141414;
-}
-
-.c-button:disabled {
-  color: #8f8f8f;
-  background-color: #ebebeb;
 }
 
 .c-button--lean {
@@ -484,13 +472,18 @@ summary {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.c-button[class*="lean"]:disabled {
-  border-color: #ebebeb;
+.c-button:disabled {
+  color: #8f8f8f;
+  background-color: #ebebeb;
+  cursor: default;
+}
+
+.c-button:disabled[class*="lean"], .c-button:disabled[class*="plain"] {
   background-color: transparent;
 }
 
-.c-button[class*="plain"]:disabled {
-  background-color: transparent;
+.c-button:disabled[class*="lean"] {
+  border-color: #ebebeb;
 }
 
 .c-button--large {

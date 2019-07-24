@@ -34,10 +34,8 @@
     background-color: $color-gray-dark-3;
   }
 
-  &:disabled {
-    color: $color-gray-medium;
-    background-color: $color-gray-light-2;
-  }
+  // Mind that disabled state definitions are placed near the end of the file so
+  // as to override other states and provide shared styles.
 }
 
 // Lean button
@@ -251,13 +249,19 @@
 
 // Disabled buttons
 
-.c-button[class*="lean"]:disabled {
-  border-color: $color-gray-light-2;
-  background-color: transparent;
-}
+.c-button:disabled {
+  color: $color-gray-medium;
+  background-color: $color-gray-light-2;
+  cursor: default;
 
-.c-button[class*="plain"]:disabled {
-  background-color: transparent;
+  &[class*="lean"],
+  &[class*="plain"] {
+    background-color: transparent;
+  }
+
+  &[class*="lean"] {
+    border-color: $color-gray-light-2;
+  }
 }
 
 // Large button
