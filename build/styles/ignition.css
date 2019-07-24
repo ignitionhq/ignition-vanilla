@@ -243,12 +243,6 @@ label {
   display: inline-block;
 }
 
-[type="checkbox"]:disabled + label,
-[type="radio"]:disabled + label {
-  opacity: 0.5;
-  cursor: default;
-}
-
 meter,
 progress {
   height: 1rem;

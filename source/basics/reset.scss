@@ -320,12 +320,6 @@ legend {
 
 label {
   display: inline-block;
-
-  [type="checkbox"]:disabled + &,
-  [type="radio"]:disabled + & {
-    opacity: 0.5;
-    cursor: default;
-  }
 }
 
 // Meter and progress
