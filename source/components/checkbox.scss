@@ -30,11 +30,16 @@
   }
 
   &:disabled {
-    opacity: $opacity-medium;
+    border-color: $color-gray-light-3;
+    cursor: not-allowed;
+  }
+}
 
-    ~ label {
-      opacity: $opacity-medium;
-      cursor: default;
-    }
+// Checkbox label
+
+.c-checkbox-label {
+  &.is-disabled {
+    color: $color-gray-medium;
+    cursor: not-allowed;
   }
 }

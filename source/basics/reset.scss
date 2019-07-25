@@ -257,10 +257,6 @@ button,
   // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
 
-  &:disabled {
-    cursor: default;
-  }
-
   // Remove inner border on focus in Firefox.
   &::-moz-focus-inner {
     border: 0;
