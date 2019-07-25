@@ -475,7 +475,7 @@ summary {
 .c-button:disabled {
   color: #8f8f8f;
   background-color: #ebebeb;
-  cursor: default;
+  cursor: not-allowed;
 }
 
 .c-button:disabled[class*="lean"], .c-button:disabled[class*="plain"] {
@@ -566,10 +566,12 @@ summary {
 
 .c-checkbox:disabled {
   border-color: #d6d6d6;
+  cursor: not-allowed;
 }
 
 .c-checkbox-label.is-disabled {
   color: #8f8f8f;
+  cursor: not-allowed;
 }
 
 .c-heading-1 {
@@ -799,10 +801,12 @@ summary {
 
 .c-radio:disabled {
   border-color: #d6d6d6;
+  cursor: not-allowed;
 }
 
 .c-radio-label.is-disabled {
   color: #8f8f8f;
+  cursor: not-allowed;
 }
 
 .c-table {
@@ -931,6 +935,7 @@ summary {
 
 .c-textfield:disabled {
   border-color: #d6d6d6;
+  cursor: not-allowed;
 }
 
 .c-textfield.is-invalid {
@@ -948,6 +953,7 @@ summary {
 
 .c-textfield-label.is-disabled {
   color: #8f8f8f;
+  cursor: not-allowed;
 }
 
 .o-container {

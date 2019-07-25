@@ -27,6 +27,7 @@
 
   &:disabled {
     border-color: $color-gray-light-4;
+    cursor: not-allowed;
   }
 
   &.is-invalid {
@@ -54,5 +55,6 @@
 .c-textfield-label {
   &.is-disabled {
     color: $color-gray-medium;
+    cursor: not-allowed;
   }
 }

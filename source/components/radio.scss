@@ -31,6 +31,7 @@
 
   &:disabled {
     border-color: $color-gray-light-4;
+    cursor: not-allowed;
   }
 }
 
@@ -39,5 +40,6 @@
 .c-radio-label {
   &.is-disabled {
     color: $color-gray-medium;
+    cursor: not-allowed;
   }
 }
