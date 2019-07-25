@@ -473,7 +473,7 @@ summary {
 }
 
 .c-button:disabled {
-  color: #8f8f8f;
+  color: #999999;
   background-color: #ebebeb;
   cursor: not-allowed;
 }
@@ -565,12 +565,12 @@ summary {
 }
 
 .c-checkbox:disabled {
-  border-color: #d6d6d6;
+  border-color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c-checkbox-label.is-disabled {
-  color: #8f8f8f;
+  color: #999999;
   cursor: not-allowed;
 }
 
@@ -800,12 +800,12 @@ summary {
 }
 
 .c-radio:disabled {
-  border-color: #d6d6d6;
+  border-color: #e0e0e0;
   cursor: not-allowed;
 }
 
 .c-radio-label.is-disabled {
-  color: #8f8f8f;
+  color: #999999;
   cursor: not-allowed;
 }
 
@@ -934,7 +934,7 @@ summary {
 }
 
 .c-textfield:disabled {
-  border-color: #d6d6d6;
+  border-color: #e0e0e0;
   cursor: not-allowed;
 }
 
@@ -952,7 +952,7 @@ summary {
 }
 
 .c-textfield-label.is-disabled {
-  color: #8f8f8f;
+  color: #999999;
   cursor: not-allowed;
 }
 
