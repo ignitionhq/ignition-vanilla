@@ -48,3 +48,11 @@
     height: 2.75rem;
   }
 }
+
+// Textfield label
+
+.c-textfield-label {
+  &.is-disabled {
+    color: $color-gray-medium;
+  }
+}

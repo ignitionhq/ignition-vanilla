@@ -33,3 +33,11 @@
     border-color: $color-gray-light-4;
   }
 }
+
+// Radio label
+
+.c-radio-label {
+  &.is-disabled {
+    color: $color-gray-medium;
+  }
+}

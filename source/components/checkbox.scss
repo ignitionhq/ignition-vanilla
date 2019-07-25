@@ -33,3 +33,11 @@
     border-color: $color-gray-light-4;
   }
 }
+
+// Checkbox label
+
+.c-checkbox-label {
+  &.is-disabled {
+    color: $color-gray-medium;
+  }
+}

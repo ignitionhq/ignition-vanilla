@@ -568,6 +568,10 @@ summary {
   border-color: #d6d6d6;
 }
 
+.c-checkbox-label.is-disabled {
+  color: #8f8f8f;
+}
+
 .c-heading-1 {
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -797,6 +801,10 @@ summary {
   border-color: #d6d6d6;
 }
 
+.c-radio-label.is-disabled {
+  color: #8f8f8f;
+}
+
 .c-table {
   width: 100%;
 }
@@ -936,6 +944,10 @@ summary {
 
 .c-textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
+}
+
+.c-textfield-label.is-disabled {
+  color: #8f8f8f;
 }
 
 .o-container {
