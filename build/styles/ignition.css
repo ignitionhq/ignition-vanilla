@@ -189,6 +189,13 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+}
+
 button,
 [type="button"],
 [type="reset"],
@@ -486,7 +493,6 @@ summary {
 .c-button:disabled {
   color: #999999;
   background-color: #ebebeb;
-  cursor: not-allowed;
 }
 
 .c-button:disabled[class*="lean"], .c-button:disabled[class*="plain"] {
@@ -577,7 +583,6 @@ summary {
 
 .c-checkbox:disabled {
   border-color: #e0e0e0;
-  cursor: not-allowed;
 }
 
 .c-checkbox-label.is-disabled {
@@ -812,7 +817,6 @@ summary {
 
 .c-radio:disabled {
   border-color: #e0e0e0;
-  cursor: not-allowed;
 }
 
 .c-radio-label.is-disabled {
@@ -946,7 +950,6 @@ summary {
 
 .c-textfield:disabled {
   border-color: #e0e0e0;
-  cursor: not-allowed;
 }
 
 .c-textfield.is-invalid {
