@@ -67,6 +67,13 @@ ul {
   margin-bottom: 1rem;
 }
 
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
 ul,
 ol {
   padding-left: 2rem;
