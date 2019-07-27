@@ -234,6 +234,14 @@ video {
   height: auto;
 }
 
+// Scalable vector graphics
+
+svg {
+  // Switch vertical alignment style to cover most common use cases and remove
+  // the extra space below.
+  vertical-align: middle;
+}
+
 // Table
 
 table {
