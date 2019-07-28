@@ -308,7 +308,7 @@ select {
   // Correct outline offset in Safari.
   outline-offset: -2px;
   // Allow complete styling in Chrome and Safari on iOS.
-  -webkit-appearance: none;
+  -webkit-appearance: textfield;
 
   // Remove extra inner space in Safari.
   &::-webkit-search-decoration {
