@@ -144,6 +144,11 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: $font-family-monospace;
+
+  code {
+    // Prevent compounding effect that results from using ems.
+    font-size: inherit;
+  }
 }
 
 // Anchor
@@ -187,7 +192,7 @@ kbd {
 kbd {
   kbd {
     // Prevent compounding effect that results from using ems.
-    font-size: 1em;
+    font-size: inherit;
   }
 }
 

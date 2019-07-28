@@ -111,6 +111,10 @@ pre {
   font-family: SFMono-Regular, Menlo, Consolas, monospace;
 }
 
+pre code {
+  font-size: inherit;
+}
+
 a {
   text-decoration: none;
   color: #0044cc;
@@ -138,7 +142,7 @@ kbd {
 }
 
 kbd kbd {
-  font-size: 1em;
+  font-size: inherit;
 }
 
 small {
