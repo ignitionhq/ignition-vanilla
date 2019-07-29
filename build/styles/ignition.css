@@ -67,9 +67,20 @@ ul {
   margin-bottom: 1rem;
 }
 
-ul,
-ol {
+ol,
+ul {
   padding-left: 2rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: bold;
 }
 
 dd {
@@ -82,10 +93,12 @@ figure {
 
 hr {
   overflow: visible;
+  height: 0.125rem;
+  border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border-style: solid;
-  border-color: #333333;
+  color: inherit;
+  background-color: currentColor;
 }
 
 p {
@@ -98,6 +111,10 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+pre code {
+  font-size: inherit;
 }
 
 a {
@@ -127,7 +144,7 @@ kbd {
 }
 
 kbd kbd {
-  font-size: 1em;
+  font-size: inherit;
 }
 
 small {
@@ -163,6 +180,10 @@ video {
   height: auto;
 }
 
+svg {
+  vertical-align: middle;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -176,6 +197,13 @@ textarea {
   font-size: inherit;
   line-height: inherit;
   -webkit-tap-highlight-color: transparent;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
 }
 
 button,
@@ -207,7 +235,7 @@ select {
 
 [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: none;
+  -webkit-appearance: textfield;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -230,6 +258,7 @@ legend {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
+  font-weight: bold;
 }
 
 label {
@@ -475,7 +504,6 @@ summary {
 .c-button:disabled {
   color: #999999;
   background-color: #ebebeb;
-  cursor: not-allowed;
 }
 
 .c-button:disabled[class*="lean"], .c-button:disabled[class*="plain"] {
@@ -566,7 +594,6 @@ summary {
 
 .c-checkbox:disabled {
   border-color: #e0e0e0;
-  cursor: not-allowed;
 }
 
 .c-checkbox-label.is-disabled {
@@ -801,7 +828,6 @@ summary {
 
 .c-radio:disabled {
   border-color: #e0e0e0;
-  cursor: not-allowed;
 }
 
 .c-radio-label.is-disabled {
@@ -935,7 +961,6 @@ summary {
 
 .c-textfield:disabled {
   border-color: #e0e0e0;
-  cursor: not-allowed;
 }
 
 .c-textfield.is-invalid {

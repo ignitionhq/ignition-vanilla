@@ -252,7 +252,6 @@
 .c-button:disabled {
   color: $color-gray-medium;
   background-color: $color-gray-light-2;
-  cursor: not-allowed;
 
   &[class*="lean"],
   &[class*="plain"] {
