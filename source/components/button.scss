@@ -16,22 +16,22 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-white-regular;
-  background-color: $color-gray-regular;
+  color: $color-gray-regular;
+  background-color: $color-gray-light-2;
 
   &:hover {
-    background-color: $color-gray-dark-1;
+    background-color: $color-gray-light-3;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-gray-dark-2;
+    background-color: $color-gray-light-4;
   }
 
   &:active {
-    background-color: $color-gray-dark-3;
+    background-color: $color-gray-light-5;
   }
 
   // Mind that disabled state definitions are placed near the end of the file so
@@ -80,6 +80,7 @@
 // Primary button
 
 .c-button--primary {
+  color: $color-white-regular;
   background-color: $color-primary-regular;
 
   &:hover {
@@ -137,6 +138,7 @@
 // Negative button
 
 .c-button--negative {
+  color: $color-white-regular;
   background-color: $color-negative-regular;
 
   &:hover {
@@ -214,6 +216,7 @@
 
 .c-button--inverse-lean {
   border-color: $color-white-regular;
+  color: $color-white-regular;
   background-color: transparent;
 
   &:hover {
@@ -232,6 +235,7 @@
 // Plain inverse button
 
 .c-button--inverse-plain {
+  color: $color-white-regular;
   background-color: transparent;
 
   &:hover {
