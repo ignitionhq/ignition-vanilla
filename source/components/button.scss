@@ -17,21 +17,21 @@
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
   color: $color-gray-regular;
-  background-color: $color-gray-light-2;
+  background-color: $color-gray-light-3;
 
   &:hover {
-    background-color: $color-gray-light-3;
+    background-color: $color-gray-light-4;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-gray-light-4;
+    background-color: $color-gray-light-5;
   }
 
   &:active {
-    background-color: $color-gray-light-5;
+    background-color: $color-gray-light-6;
   }
 
   // Mind that disabled state definitions are placed near the end of the file so

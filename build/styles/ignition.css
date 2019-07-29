@@ -298,20 +298,20 @@ summary {
   text-align: center;
   white-space: nowrap;
   color: #333333;
-  background-color: #ebebeb;
+  background-color: #e0e0e0;
 }
 
 .c-button:hover {
-  background-color: #e0e0e0;
+  background-color: #d6d6d6;
 }
 
 .c-button:focus {
   outline: 0;
-  background-color: #d6d6d6;
+  background-color: #cccccc;
 }
 
 .c-button:active {
-  background-color: #cccccc;
+  background-color: #c2c2c2;
 }
 
 .c-button--lean {
