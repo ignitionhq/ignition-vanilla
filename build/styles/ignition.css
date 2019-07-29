@@ -93,10 +93,12 @@ figure {
 
 hr {
   overflow: visible;
+  height: 0.125rem;
+  border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border-style: solid;
-  border-color: #333333;
+  color: inherit;
+  background-color: currentColor;
 }
 
 p {

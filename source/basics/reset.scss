@@ -123,11 +123,16 @@ figure {
 hr {
   // Normalize overflow in Chrome.
   overflow: visible;
+  // Emulate default horizontal rule while allowing other decorations to be
+  // easily defined.
+  height: 0.125rem;
+  border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border-style: solid;
-  // Normalize border color in Firefox.
-  border-color: $color-gray-regular;
+  // Inherit text color in Firefox.
+  color: inherit;
+  // Increase versatility by using the text color as a background color.
+  background-color: currentColor;
 }
 
 // Paragraph
