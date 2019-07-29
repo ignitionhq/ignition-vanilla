@@ -314,41 +314,6 @@ summary {
   background-color: #c2c2c2;
 }
 
-.c-button--lean {
-  border-color: #333333;
-  color: #333333;
-  background-color: transparent;
-}
-
-.c-button--lean:hover {
-  background-color: whitesmoke;
-}
-
-.c-button--lean:focus {
-  background-color: #ebebeb;
-}
-
-.c-button--lean:active {
-  background-color: #e0e0e0;
-}
-
-.c-button--plain {
-  color: #333333;
-  background-color: transparent;
-}
-
-.c-button--plain:hover {
-  background-color: whitesmoke;
-}
-
-.c-button--plain:focus {
-  background-color: #ebebeb;
-}
-
-.c-button--plain:active {
-  background-color: #e0e0e0;
-}
-
 .c-button--primary {
   color: white;
   background-color: #0044cc;
@@ -451,6 +416,58 @@ summary {
 
 .c-button--negative-plain:active {
   background-color: #ffc6c2;
+}
+
+.c-button--neutral {
+  color: white;
+  background-color: #333333;
+}
+
+.c-button--neutral:hover {
+  background-color: #292929;
+}
+
+.c-button--neutral:focus {
+  background-color: #1f1f1f;
+}
+
+.c-button--neutral:active {
+  background-color: #141414;
+}
+
+.c-button--neutral-lean {
+  border-color: #333333;
+  color: #333333;
+  background-color: transparent;
+}
+
+.c-button--neutral-lean:hover {
+  background-color: whitesmoke;
+}
+
+.c-button--neutral-lean:focus {
+  background-color: #ebebeb;
+}
+
+.c-button--neutral-lean:active {
+  background-color: #e0e0e0;
+}
+
+.c-button--neutral-plain {
+  color: #333333;
+  background-color: transparent;
+}
+
+.c-button--neutral-plain:hover {
+  background-color: whitesmoke;
+}
+
+.c-button--neutral-plain:focus {
+  background-color: #ebebeb;
+}
+
+.c-button--neutral-plain:active {
+  background-color: #e0e0e0;
 }
 
 .c-button--inverse {

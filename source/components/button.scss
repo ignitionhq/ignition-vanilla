@@ -38,45 +38,6 @@
   // as to override other states and provide shared styles.
 }
 
-// Lean button
-
-.c-button--lean {
-  border-color: $color-gray-regular;
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-1;
-  }
-
-  &:focus {
-    background-color: $color-gray-light-2;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
-
-// Plain button
-
-.c-button--plain {
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-1;
-  }
-
-  &:focus {
-    background-color: $color-gray-light-2;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
-
 // Primary button
 
 .c-button--primary {
@@ -190,6 +151,64 @@
 
   &:active {
     background-color: $color-negative-light-3;
+  }
+}
+
+// Neutral button
+
+.c-button--neutral {
+  color: $color-white-regular;
+  background-color: $color-gray-regular;
+
+  &:hover {
+    background-color: $color-gray-dark-1;
+  }
+
+  &:focus {
+    background-color: $color-gray-dark-2;
+  }
+
+  &:active {
+    background-color: $color-gray-dark-3;
+  }
+}
+
+// Neutral lean button
+
+.c-button--neutral-lean {
+  border-color: $color-gray-regular;
+  color: $color-gray-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-gray-light-1;
+  }
+
+  &:focus {
+    background-color: $color-gray-light-2;
+  }
+
+  &:active {
+    background-color: $color-gray-light-3;
+  }
+}
+
+// Neutral plain button
+
+.c-button--neutral-plain {
+  color: $color-gray-regular;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $color-gray-light-1;
+  }
+
+  &:focus {
+    background-color: $color-gray-light-2;
+  }
+
+  &:active {
+    background-color: $color-gray-light-3;
   }
 }
 
