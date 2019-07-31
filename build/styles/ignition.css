@@ -331,24 +331,6 @@ summary {
   background-color: #00308f;
 }
 
-.c-button--primary-lean {
-  border-color: #0044cc;
-  color: #0044cc;
-  background-color: transparent;
-}
-
-.c-button--primary-lean:hover {
-  background-color: #ebf1ff;
-}
-
-.c-button--primary-lean:focus {
-  background-color: #d6e4ff;
-}
-
-.c-button--primary-lean:active {
-  background-color: #c2d6ff;
-}
-
 .c-button--primary-plain {
   color: #0044cc;
   background-color: transparent;
@@ -381,24 +363,6 @@ summary {
 
 .c-button--negative:active {
   background-color: #7a0800;
-}
-
-.c-button--negative-lean {
-  border-color: #b80c00;
-  color: #b80c00;
-  background-color: transparent;
-}
-
-.c-button--negative-lean:hover {
-  background-color: #ffeceb;
-}
-
-.c-button--negative-lean:focus {
-  background-color: #ffd9d6;
-}
-
-.c-button--negative-lean:active {
-  background-color: #ffc6c2;
 }
 
 .c-button--negative-plain {
@@ -435,24 +399,6 @@ summary {
   background-color: #141414;
 }
 
-.c-button--neutral-lean {
-  border-color: #333333;
-  color: #333333;
-  background-color: transparent;
-}
-
-.c-button--neutral-lean:hover {
-  background-color: whitesmoke;
-}
-
-.c-button--neutral-lean:focus {
-  background-color: #ebebeb;
-}
-
-.c-button--neutral-lean:active {
-  background-color: #e0e0e0;
-}
-
 .c-button--neutral-plain {
   color: #333333;
   background-color: transparent;
@@ -487,24 +433,6 @@ summary {
   background-color: rgba(255, 255, 255, 0.76);
 }
 
-.c-button--inverse-lean {
-  border-color: white;
-  color: white;
-  background-color: transparent;
-}
-
-.c-button--inverse-lean:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-}
-
-.c-button--inverse-lean:focus {
-  background-color: rgba(255, 255, 255, 0.16);
-}
-
-.c-button--inverse-lean:active {
-  background-color: rgba(255, 255, 255, 0.24);
-}
-
 .c-button--inverse-plain {
   color: white;
   background-color: transparent;
@@ -527,12 +455,8 @@ summary {
   background-color: #ebebeb;
 }
 
-.c-button:disabled[class*="lean"], .c-button:disabled[class*="plain"] {
+.c-button:disabled[class*="plain"] {
   background-color: transparent;
-}
-
-.c-button:disabled[class*="lean"] {
-  border-color: #ebebeb;
 }
 
 .c-button--large {

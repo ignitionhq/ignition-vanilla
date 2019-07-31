@@ -57,26 +57,6 @@
   }
 }
 
-// Lean primary button
-
-.c-button--primary-lean {
-  border-color: $color-primary-regular;
-  color: $color-primary-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-primary-light-1;
-  }
-
-  &:focus {
-    background-color: $color-primary-light-2;
-  }
-
-  &:active {
-    background-color: $color-primary-light-3;
-  }
-}
-
 // Plain primary button
 
 .c-button--primary-plain {
@@ -112,26 +92,6 @@
 
   &:active {
     background-color: $color-negative-dark-3;
-  }
-}
-
-// Lean negative button
-
-.c-button--negative-lean {
-  border-color: $color-negative-regular;
-  color: $color-negative-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-negative-light-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-light-2;
-  }
-
-  &:active {
-    background-color: $color-negative-light-3;
   }
 }
 
@@ -173,26 +133,6 @@
   }
 }
 
-// Neutral lean button
-
-.c-button--neutral-lean {
-  border-color: $color-gray-regular;
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-1;
-  }
-
-  &:focus {
-    background-color: $color-gray-light-2;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
-
 // Neutral plain button
 
 .c-button--neutral-plain {
@@ -231,26 +171,6 @@
   }
 }
 
-// Lean inverse button
-
-.c-button--inverse-lean {
-  border-color: $color-white-regular;
-  color: $color-white-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-white-transparent-6;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-5;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-4;
-  }
-}
-
 // Plain inverse button
 
 .c-button--inverse-plain {
@@ -276,13 +196,8 @@
   color: $color-gray-medium;
   background-color: $color-gray-light-2;
 
-  &[class*="lean"],
   &[class*="plain"] {
     background-color: transparent;
-  }
-
-  &[class*="lean"] {
-    border-color: $color-gray-light-2;
   }
 }
 
