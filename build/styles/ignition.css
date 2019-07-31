@@ -382,37 +382,20 @@ summary {
   background-color: #ffc6c2;
 }
 
-.c-button--neutral {
-  color: white;
-  background-color: #333333;
-}
-
-.c-button--neutral:hover {
-  background-color: #292929;
-}
-
-.c-button--neutral:focus {
-  background-color: #1f1f1f;
-}
-
-.c-button--neutral:active {
-  background-color: #141414;
-}
-
-.c-button--neutral-plain {
+.c-button--plain {
   color: #333333;
   background-color: transparent;
 }
 
-.c-button--neutral-plain:hover {
+.c-button--plain:hover {
   background-color: whitesmoke;
 }
 
-.c-button--neutral-plain:focus {
+.c-button--plain:focus {
   background-color: #ebebeb;
 }
 
-.c-button--neutral-plain:active {
+.c-button--plain:active {
   background-color: #e0e0e0;
 }
 

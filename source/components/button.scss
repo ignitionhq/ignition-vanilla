@@ -114,28 +114,9 @@
   }
 }
 
-// Neutral button
+// Plain button
 
-.c-button--neutral {
-  color: $color-white-regular;
-  background-color: $color-gray-regular;
-
-  &:hover {
-    background-color: $color-gray-dark-1;
-  }
-
-  &:focus {
-    background-color: $color-gray-dark-2;
-  }
-
-  &:active {
-    background-color: $color-gray-dark-3;
-  }
-}
-
-// Neutral plain button
-
-.c-button--neutral-plain {
+.c-button--plain {
   color: $color-gray-regular;
   background-color: transparent;
 
