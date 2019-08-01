@@ -32,156 +32,155 @@
 
   // Mind that disabled state definitions are placed at the bottom of the file
   // so as to override other states and provide shared styles.
-}
 
-// Primary button
+  // Plain button
 
-.c-button--primary {
-  color: $color-white-regular;
-  background-color: $color-primary-regular;
-
-  &:hover {
-    background-color: $color-primary-dark-1;
-  }
-
-  &:focus {
-    background-color: $color-primary-dark-2;
-  }
-
-  &:active {
-    background-color: $color-primary-dark-3;
-  }
-}
-
-// Plain primary button
-
-.c-button--primary-plain {
-  color: $color-primary-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-primary-light-1;
-  }
-
-  &:focus {
-    background-color: $color-primary-light-2;
-  }
-
-  &:active {
-    background-color: $color-primary-light-3;
-  }
-}
-
-// Negative button
-
-.c-button--negative {
-  color: $color-white-regular;
-  background-color: $color-negative-regular;
-
-  &:hover {
-    background-color: $color-negative-dark-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-dark-2;
-  }
-
-  &:active {
-    background-color: $color-negative-dark-3;
-  }
-}
-
-// Plain negative button
-
-.c-button--negative-plain {
-  color: $color-negative-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-negative-light-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-light-2;
-  }
-
-  &:active {
-    background-color: $color-negative-light-3;
-  }
-}
-
-// Plain button
-
-.c-button--plain {
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-1;
-  }
-
-  &:focus {
-    background-color: $color-gray-light-2;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
-
-// Inverse button
-
-.c-button--inverse {
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
-
-  &:hover {
-    background-color: $color-white-transparent-1;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-2;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-3;
-  }
-}
-
-// Plain inverse button
-
-.c-button--inverse-plain {
-  color: $color-white-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-white-transparent-6;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-5;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-4;
-  }
-}
-
-// Large button
-
-.c-button--large {
-  padding: $space-small-1 $space-large-5;
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
-}
-
-// Disabled button
-
-.c-button:disabled {
-  color: $color-gray-medium;
-  background-color: $color-gray-light-2;
-
-  &[class*="plain"] {
+  &--plain {
     background-color: transparent;
+
+    &:hover {
+      background-color: $color-gray-light-1;
+    }
+
+    &:focus {
+      background-color: $color-gray-light-2;
+    }
+
+    &:active {
+      background-color: $color-gray-light-3;
+    }
+  }
+
+  // Primary button
+
+  &--primary {
+    color: $color-white-regular;
+    background-color: $color-primary-regular;
+
+    &:hover {
+      background-color: $color-primary-dark-1;
+    }
+
+    &:focus {
+      background-color: $color-primary-dark-2;
+    }
+
+    &:active {
+      background-color: $color-primary-dark-3;
+    }
+  }
+
+  // Plain primary button
+
+  &--primary-plain {
+    color: $color-primary-regular;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-primary-light-1;
+    }
+
+    &:focus {
+      background-color: $color-primary-light-2;
+    }
+
+    &:active {
+      background-color: $color-primary-light-3;
+    }
+  }
+
+  // Negative button
+
+  &--negative {
+    color: $color-white-regular;
+    background-color: $color-negative-regular;
+
+    &:hover {
+      background-color: $color-negative-dark-1;
+    }
+
+    &:focus {
+      background-color: $color-negative-dark-2;
+    }
+
+    &:active {
+      background-color: $color-negative-dark-3;
+    }
+  }
+
+  // Plain negative button
+
+  &--negative-plain {
+    color: $color-negative-regular;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-negative-light-1;
+    }
+
+    &:focus {
+      background-color: $color-negative-light-2;
+    }
+
+    &:active {
+      background-color: $color-negative-light-3;
+    }
+  }
+
+  // Inverse button
+
+  &--inverse {
+    color: $color-gray-regular;
+    background-color: $color-white-regular;
+
+    &:hover {
+      background-color: $color-white-transparent-1;
+    }
+
+    &:focus {
+      background-color: $color-white-transparent-2;
+    }
+
+    &:active {
+      background-color: $color-white-transparent-3;
+    }
+  }
+
+  // Plain inverse button
+
+  &--inverse-plain {
+    color: $color-white-regular;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-white-transparent-6;
+    }
+
+    &:focus {
+      background-color: $color-white-transparent-5;
+    }
+
+    &:active {
+      background-color: $color-white-transparent-4;
+    }
+  }
+
+  // Large button
+
+  &--large {
+    padding: $space-small-1 $space-large-5;
+    font-size: $font-size-large-4;
+    line-height: $line-height-small-1;
+  }
+
+  // Disabled button
+
+  &:disabled {
+    color: $color-gray-medium;
+    background-color: $color-gray-light-2;
+
+    &[class*="plain"] {
+      background-color: transparent;
+    }
   }
 }

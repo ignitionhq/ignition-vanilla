@@ -314,6 +314,22 @@ summary {
   background-color: #c2c2c2;
 }
 
+.c-button--plain {
+  background-color: transparent;
+}
+
+.c-button--plain:hover {
+  background-color: whitesmoke;
+}
+
+.c-button--plain:focus {
+  background-color: #ebebeb;
+}
+
+.c-button--plain:active {
+  background-color: #e0e0e0;
+}
+
 .c-button--primary {
   color: white;
   background-color: #0044cc;
@@ -380,23 +396,6 @@ summary {
 
 .c-button--negative-plain:active {
   background-color: #ffc6c2;
-}
-
-.c-button--plain {
-  color: #333333;
-  background-color: transparent;
-}
-
-.c-button--plain:hover {
-  background-color: whitesmoke;
-}
-
-.c-button--plain:focus {
-  background-color: #ebebeb;
-}
-
-.c-button--plain:active {
-  background-color: #e0e0e0;
 }
 
 .c-button--inverse {
