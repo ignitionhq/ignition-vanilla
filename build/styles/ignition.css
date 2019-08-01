@@ -448,10 +448,6 @@ summary {
   line-height: 1.33333333;
 }
 
-.c-button--small {
-  padding: 0.375rem 0.625rem;
-}
-
 .c-card {
   padding: calc(1.5rem - 1px);
   border: 1px solid #e0e0e0;
