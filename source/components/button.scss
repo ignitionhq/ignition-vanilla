@@ -4,8 +4,6 @@
 
 .c-button {
   display: inline-block;
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
   padding: $space-small-2 $space-regular;
   border: 0;
   border-radius: $border-radius-regular;
@@ -177,7 +175,7 @@
   line-height: $line-height-small-1;
 }
 
-// Disabled buttons
+// Disabled button
 
 .c-button:disabled {
   color: $color-gray-medium;
