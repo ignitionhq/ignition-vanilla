@@ -177,7 +177,10 @@
 
   &:disabled {
     color: $color-gray-medium;
-    background-color: $color-gray-light-2;
+
+    &:not([class*="plain"]) {
+      background-color: $color-gray-light-2;
+    }
 
     &[class*="plain"] {
       background-color: transparent;
