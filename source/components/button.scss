@@ -32,8 +32,8 @@
     background-color: $color-gray-light-6;
   }
 
-  // Mind that disabled state definitions are placed near the end of the file so
-  // as to override other states and provide shared styles.
+  // Mind that disabled state definitions are placed at the bottom of the file
+  // so as to override other states and provide shared styles.
 }
 
 // Primary button
@@ -169,6 +169,14 @@
   }
 }
 
+// Large button
+
+.c-button--large {
+  padding: $space-small-1 $space-large-5;
+  font-size: $font-size-large-4;
+  line-height: $line-height-small-1;
+}
+
 // Disabled buttons
 
 .c-button:disabled {
@@ -178,12 +186,4 @@
   &[class*="plain"] {
     background-color: transparent;
   }
-}
-
-// Large button
-
-.c-button--large {
-  padding: $space-small-1 $space-large-5;
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
 }
