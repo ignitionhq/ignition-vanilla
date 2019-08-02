@@ -32,7 +32,7 @@
   right: $space-regular;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-4} - #{$border-width-regular});
+  padding: calc(#{$space-small-5} - #{$border-width-regular});
   border: $border-width-regular solid $color-gray-regular;
   border-radius: $border-radius-regular;
   color: inherit;
