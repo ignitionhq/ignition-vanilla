@@ -30,10 +30,11 @@
     background-color: $color-gray-light-6;
   }
 
-  // Mind that disabled state definitions are placed at the bottom of the file
-  // so as to override other states and provide shared styles.
+  // Mind that because similar variants share disabled state styles these are
+  // placed at the bottom of the file so as to override state declarations with
+  // the same specificity.
 
-  // Plain button
+  // Plain
 
   &--plain {
     background-color: transparent;
@@ -51,7 +52,7 @@
     }
   }
 
-  // Primary button
+  // Primary
 
   &--primary {
     color: $color-white-regular;
@@ -70,7 +71,7 @@
     }
   }
 
-  // Plain primary button
+  // Plain primary
 
   &--primary-plain {
     color: $color-primary-regular;
@@ -89,7 +90,7 @@
     }
   }
 
-  // Negative button
+  // Negative
 
   &--negative {
     color: $color-white-regular;
@@ -108,7 +109,7 @@
     }
   }
 
-  // Plain negative button
+  // Plain negative
 
   &--negative-plain {
     color: $color-negative-regular;
@@ -127,7 +128,7 @@
     }
   }
 
-  // Inverse button
+  // Inverse
 
   &--inverse {
     color: $color-gray-regular;
@@ -146,7 +147,7 @@
     }
   }
 
-  // Plain inverse button
+  // Plain inverse
 
   &--inverse-plain {
     color: $color-white-regular;
@@ -165,7 +166,7 @@
     }
   }
 
-  // Large button
+  // Large
 
   &--large {
     padding: $space-small-1 $space-large-5;
@@ -173,7 +174,7 @@
     line-height: $line-height-small-1;
   }
 
-  // Disabled button
+  // Disabled
 
   &:disabled {
     color: $color-gray-medium;
