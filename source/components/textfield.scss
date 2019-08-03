@@ -7,7 +7,7 @@
   width: 100%;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular})
+  padding: calc(#{$space-small-3} - #{$border-width-regular})
     calc(#{$space-regular} - #{$border-width-regular});
   border: $border-width-regular solid $color-gray-light-6;
   border-radius: $border-radius-regular;
@@ -17,7 +17,7 @@
   background-color: $color-white-regular;
 
   &:focus {
-    padding: calc(#{$space-small-2} - #{$border-width-thick-2})
+    padding: calc(#{$space-small-3} - #{$border-width-thick-2})
       calc(#{$space-regular} - #{$border-width-thick-2});
     border: $border-width-thick-2 solid $color-primary-regular;
     // Mind that the outline should be removed only if other styles that imply
@@ -33,7 +33,7 @@
     border-color: $color-negative-regular;
 
     &:focus {
-      padding: calc(#{$space-small-2} - #{$border-width-thick-2})
+      padding: calc(#{$space-small-3} - #{$border-width-thick-2})
         calc(#{$space-regular} - #{$border-width-thick-2});
       border: $border-width-thick-2 solid $color-negative-regular;
     }

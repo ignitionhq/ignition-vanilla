@@ -4,277 +4,187 @@
 
 .c-button {
   display: inline-block;
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular})
-    calc(#{$space-regular} - #{$border-width-regular});
-  // Use a transparent border so variants can define a visible one more easily.
-  border: $border-width-regular solid transparent;
+  padding: $space-small-3 $space-regular;
+  border: 0;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-white-regular;
-  background-color: $color-gray-regular;
+  color: $color-gray-regular;
+  background-color: $color-gray-light-3;
 
   &:hover {
-    background-color: $color-gray-dark-1;
+    background-color: $color-gray-light-4;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-gray-dark-2;
+    background-color: $color-gray-light-5;
   }
 
   &:active {
-    background-color: $color-gray-dark-3;
+    background-color: $color-gray-light-6;
   }
 
-  // Mind that disabled state definitions are placed near the end of the file so
-  // as to override other states and provide shared styles.
-}
+  // Mind that because similar variants share disabled state styles these are
+  // placed at the bottom of the file so as to override state declarations with
+  // the same specificity.
 
-// Lean button
+  // Plain
 
-.c-button--lean {
-  border-color: $color-gray-regular;
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-1;
-  }
-
-  &:focus {
-    background-color: $color-gray-light-2;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
-
-// Plain button
-
-.c-button--plain {
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-1;
-  }
-
-  &:focus {
-    background-color: $color-gray-light-2;
-  }
-
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
-
-// Primary button
-
-.c-button--primary {
-  background-color: $color-primary-regular;
-
-  &:hover {
-    background-color: $color-primary-dark-1;
-  }
-
-  &:focus {
-    background-color: $color-primary-dark-2;
-  }
-
-  &:active {
-    background-color: $color-primary-dark-3;
-  }
-}
-
-// Lean primary button
-
-.c-button--primary-lean {
-  border-color: $color-primary-regular;
-  color: $color-primary-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-primary-light-1;
-  }
-
-  &:focus {
-    background-color: $color-primary-light-2;
-  }
-
-  &:active {
-    background-color: $color-primary-light-3;
-  }
-}
-
-// Plain primary button
-
-.c-button--primary-plain {
-  color: $color-primary-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-primary-light-1;
-  }
-
-  &:focus {
-    background-color: $color-primary-light-2;
-  }
-
-  &:active {
-    background-color: $color-primary-light-3;
-  }
-}
-
-// Negative button
-
-.c-button--negative {
-  background-color: $color-negative-regular;
-
-  &:hover {
-    background-color: $color-negative-dark-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-dark-2;
-  }
-
-  &:active {
-    background-color: $color-negative-dark-3;
-  }
-}
-
-// Lean negative button
-
-.c-button--negative-lean {
-  border-color: $color-negative-regular;
-  color: $color-negative-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-negative-light-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-light-2;
-  }
-
-  &:active {
-    background-color: $color-negative-light-3;
-  }
-}
-
-// Plain negative button
-
-.c-button--negative-plain {
-  color: $color-negative-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-negative-light-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-light-2;
-  }
-
-  &:active {
-    background-color: $color-negative-light-3;
-  }
-}
-
-// Inverse button
-
-.c-button--inverse {
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
-
-  &:hover {
-    background-color: $color-white-transparent-1;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-2;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-3;
-  }
-}
-
-// Lean inverse button
-
-.c-button--inverse-lean {
-  border-color: $color-white-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-white-transparent-6;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-5;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-4;
-  }
-}
-
-// Plain inverse button
-
-.c-button--inverse-plain {
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-white-transparent-6;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-5;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-4;
-  }
-}
-
-// Disabled buttons
-
-.c-button:disabled {
-  color: $color-gray-medium;
-  background-color: $color-gray-light-2;
-
-  &[class*="lean"],
-  &[class*="plain"] {
+  &--plain {
     background-color: transparent;
+
+    &:hover {
+      background-color: $color-gray-light-1;
+    }
+
+    &:focus {
+      background-color: $color-gray-light-2;
+    }
+
+    &:active {
+      background-color: $color-gray-light-3;
+    }
   }
 
-  &[class*="lean"] {
-    border-color: $color-gray-light-2;
+  // Primary
+
+  &--primary {
+    color: $color-white-regular;
+    background-color: $color-primary-regular;
+
+    &:hover {
+      background-color: $color-primary-dark-1;
+    }
+
+    &:focus {
+      background-color: $color-primary-dark-2;
+    }
+
+    &:active {
+      background-color: $color-primary-dark-3;
+    }
   }
-}
 
-// Large button
+  // Plain primary
 
-.c-button--large {
-  padding: calc(#{$space-small-1} - #{$border-width-regular})
-    calc(#{$space-large-5} - #{$border-width-regular});
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
-}
+  &--primary-plain {
+    color: $color-primary-regular;
+    background-color: transparent;
 
-// Small button
+    &:hover {
+      background-color: $color-primary-light-1;
+    }
 
-.c-button--small {
-  padding: calc(#{$space-small-4} - #{$border-width-regular})
-    calc(#{$space-small-2} - #{$border-width-regular});
+    &:focus {
+      background-color: $color-primary-light-2;
+    }
+
+    &:active {
+      background-color: $color-primary-light-3;
+    }
+  }
+
+  // Negative
+
+  &--negative {
+    color: $color-white-regular;
+    background-color: $color-negative-regular;
+
+    &:hover {
+      background-color: $color-negative-dark-1;
+    }
+
+    &:focus {
+      background-color: $color-negative-dark-2;
+    }
+
+    &:active {
+      background-color: $color-negative-dark-3;
+    }
+  }
+
+  // Plain negative
+
+  &--negative-plain {
+    color: $color-negative-regular;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-negative-light-1;
+    }
+
+    &:focus {
+      background-color: $color-negative-light-2;
+    }
+
+    &:active {
+      background-color: $color-negative-light-3;
+    }
+  }
+
+  // Inverse
+
+  &--inverse {
+    color: $color-gray-regular;
+    background-color: $color-white-regular;
+
+    &:hover {
+      background-color: $color-white-transparent-1;
+    }
+
+    &:focus {
+      background-color: $color-white-transparent-2;
+    }
+
+    &:active {
+      background-color: $color-white-transparent-3;
+    }
+  }
+
+  // Plain inverse
+
+  &--inverse-plain {
+    color: $color-white-regular;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-white-transparent-6;
+    }
+
+    &:focus {
+      background-color: $color-white-transparent-5;
+    }
+
+    &:active {
+      background-color: $color-white-transparent-4;
+    }
+  }
+
+  // Large
+
+  &--large {
+    padding: $space-small-1 $space-large-5;
+    font-size: $font-size-large-4;
+    line-height: $line-height-small-1;
+  }
+
+  // Disabled
+
+  &:disabled {
+    color: $color-gray-medium;
+
+    &:not([class*="plain"]) {
+      background-color: $color-gray-light-2;
+    }
+
+    &[class*="plain"] {
+      background-color: transparent;
+    }
+  }
 }
