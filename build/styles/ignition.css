@@ -458,7 +458,7 @@ summary {
   background-color: white;
 }
 
-.c-card__cover {
+.c-card__media {
   display: block;
   max-width: calc(100% + 2 * 1.5rem);
   border-top-left-radius: 4px;
