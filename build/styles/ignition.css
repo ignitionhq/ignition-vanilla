@@ -458,10 +458,6 @@ summary {
   background-color: white;
 }
 
-.c-card p:last-child {
-  margin-bottom: 0;
-}
-
 .c-card__cover {
   display: block;
   max-width: calc(100% + 2 * 1.5rem);
@@ -474,6 +470,10 @@ summary {
   margin-bottom: 1.5rem;
   font-size: 1.3125rem;
   line-height: 1.33333333;
+}
+
+.c-card p:last-child {
+  margin-bottom: 0;
 }
 
 .c-card--interactive {
