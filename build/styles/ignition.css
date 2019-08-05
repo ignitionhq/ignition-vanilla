@@ -458,22 +458,28 @@ summary {
   background-color: white;
 }
 
-.c-card p:last-child {
-  margin-bottom: 0;
-}
-
-.c-card__cover {
+.c-card__media {
   display: block;
   max-width: calc(100% + 2 * 1.5rem);
+  margin-right: -1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: -1.5rem;
+}
+
+.c-card__media:first-child {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  margin: -1.5rem -1.5rem 1.5rem;
+  margin-top: -1.5rem;
 }
 
 .c-card__heading {
   margin-bottom: 1.5rem;
   font-size: 1.3125rem;
   line-height: 1.33333333;
+}
+
+.c-card p:last-child {
+  margin-bottom: 0;
 }
 
 .c-card--interactive {
