@@ -524,7 +524,7 @@ summary {
 }
 
 .c-checkbox:disabled {
-  border-color: #e0e0e0;
+  border-color: #d6d6d6;
 }
 
 .c-checkbox-label {
@@ -762,7 +762,7 @@ summary {
 }
 
 .c-radio:disabled {
-  border-color: #e0e0e0;
+  border-color: #d6d6d6;
 }
 
 .c-radio-label {
