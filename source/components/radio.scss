@@ -32,13 +32,14 @@
   &:disabled {
     border-color: $color-gray-light-3;
   }
-}
 
-// Radio label
+  // Label
+  // Mind that labels are separate, support elements, not descendants.
 
-.c-radio-label {
-  &.is-disabled {
-    color: $color-gray-medium;
-    cursor: not-allowed;
+  &-label {
+    &.is-disabled {
+      color: $color-gray-medium;
+      cursor: not-allowed;
+    }
   }
 }
