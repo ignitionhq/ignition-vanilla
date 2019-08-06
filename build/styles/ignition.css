@@ -506,6 +506,7 @@ summary {
   border-radius: 4px;
   vertical-align: middle;
   background-color: white;
+  cursor: pointer;
   -webkit-appearance: none;
 }
 
@@ -530,6 +531,7 @@ summary {
 .c-checkbox-label {
   padding-right: 0.25rem;
   padding-left: 0.25rem;
+  cursor: pointer;
 }
 
 .c-checkbox-label.is-disabled {
@@ -744,6 +746,7 @@ summary {
   border-radius: 720px;
   vertical-align: middle;
   background-color: white;
+  cursor: pointer;
   -webkit-appearance: none;
 }
 
@@ -768,6 +771,7 @@ summary {
 .c-radio-label {
   padding-right: 0.25rem;
   padding-left: 0.25rem;
+  cursor: pointer;
 }
 
 .c-radio-label.is-disabled {

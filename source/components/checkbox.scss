@@ -9,6 +9,7 @@
   border-radius: $border-radius-regular;
   vertical-align: middle;
   background-color: $color-white-regular;
+  cursor: pointer;
   // Allow complete styling in all browsers.
   -webkit-appearance: none;
 
@@ -38,6 +39,7 @@
   &-label {
     padding-right: $space-small-6;
     padding-left: $space-small-6;
+    cursor: pointer;
 
     &.is-disabled {
       color: $color-gray-medium;
