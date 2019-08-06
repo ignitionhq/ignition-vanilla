@@ -504,7 +504,6 @@ summary {
   height: 1.25rem;
   border: 1px solid #999999;
   border-radius: 4px;
-  margin-right: 0.25rem;
   vertical-align: middle;
   background-color: white;
   -webkit-appearance: none;
@@ -526,6 +525,11 @@ summary {
 
 .c-checkbox:disabled {
   border-color: #e0e0e0;
+}
+
+.c-checkbox-label {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 .c-checkbox-label.is-disabled {
@@ -738,7 +742,6 @@ summary {
   height: 1.25rem;
   border: 1px solid #999999;
   border-radius: 720px;
-  margin-right: 0.25rem;
   vertical-align: middle;
   background-color: white;
   -webkit-appearance: none;
@@ -760,6 +763,11 @@ summary {
 
 .c-radio:disabled {
   border-color: #e0e0e0;
+}
+
+.c-radio-label {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 .c-radio-label.is-disabled {
