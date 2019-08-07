@@ -5,11 +5,11 @@
 .c-checkbox {
   width: 1.25rem;
   height: 1.25rem;
-  border: $border-width-regular solid $color-gray-light-6;
+  border: $border-width-regular solid $color-gray-medium;
   border-radius: $border-radius-regular;
-  margin-right: $space-small-6;
   vertical-align: middle;
   background-color: $color-white-regular;
+  cursor: pointer;
   // Allow complete styling in all browsers.
   -webkit-appearance: none;
 
@@ -30,15 +30,20 @@
   }
 
   &:disabled {
-    border-color: $color-gray-light-3;
+    border-color: $color-gray-light-4;
   }
-}
 
-// Checkbox label
+  // Label
+  // Mind that labels are separate support elements, not descendants.
 
-.c-checkbox-label {
-  &.is-disabled {
-    color: $color-gray-medium;
-    cursor: not-allowed;
+  &-label {
+    padding-right: $space-small-6;
+    padding-left: $space-small-6;
+    cursor: pointer;
+
+    &.is-disabled {
+      color: $color-gray-medium;
+      cursor: not-allowed;
+    }
   }
 }

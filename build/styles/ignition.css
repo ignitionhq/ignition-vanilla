@@ -502,11 +502,11 @@ summary {
 .c-checkbox {
   width: 1.25rem;
   height: 1.25rem;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #999999;
   border-radius: 4px;
-  margin-right: 0.25rem;
   vertical-align: middle;
   background-color: white;
+  cursor: pointer;
   -webkit-appearance: none;
 }
 
@@ -525,7 +525,13 @@ summary {
 }
 
 .c-checkbox:disabled {
-  border-color: #e0e0e0;
+  border-color: #d6d6d6;
+}
+
+.c-checkbox-label {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  cursor: pointer;
 }
 
 .c-checkbox-label.is-disabled {
@@ -736,11 +742,11 @@ summary {
 .c-radio {
   width: 1.25rem;
   height: 1.25rem;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #999999;
   border-radius: 720px;
-  margin-right: 0.25rem;
   vertical-align: middle;
   background-color: white;
+  cursor: pointer;
   -webkit-appearance: none;
 }
 
@@ -759,7 +765,13 @@ summary {
 }
 
 .c-radio:disabled {
-  border-color: #e0e0e0;
+  border-color: #d6d6d6;
+}
+
+.c-radio-label {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  cursor: pointer;
 }
 
 .c-radio-label.is-disabled {
