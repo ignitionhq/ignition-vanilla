@@ -1,6 +1,11 @@
-# Folders
-node_modules
-demo
-
-# Files
+# System
 .DS_Store
+
+# Node
+node_modules
+
+# Editor
+*.code-workspace
+
+# Project
+demo
