@@ -5,10 +5,10 @@
 .c-link {
   text-decoration: underline;
   color: inherit;
-}
 
-// Primary link
+  // Primary
 
-.c-link--primary {
-  color: $color-primary-regular;
+  &--primary {
+    color: $color-primary-regular;
+  }
 }
