@@ -8,6 +8,11 @@
   border-bottom: $border-width-regular solid currentColor;
   color: inherit;
 
+  &:hover,
+  &:focus {
+    border-width: $border-width-thick-2;
+  }
+
   // Primary
 
   &--primary {
