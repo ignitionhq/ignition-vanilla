@@ -545,6 +545,14 @@ summary {
   border-width: 2px;
 }
 
+.c-link--plain {
+  border-width: 0;
+}
+
+.c-link--plain:hover, .c-link--plain:focus {
+  border-width: 1px;
+}
+
 .c-link--primary {
   color: #0044cc;
 }
