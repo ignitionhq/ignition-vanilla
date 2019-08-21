@@ -5,8 +5,8 @@
 .c-link {
   // Distance bottom border from descenders.
   padding-bottom: 0.0625em;
-  border-bottom: $border-width-regular solid currentColor;
-  color: inherit;
+  border-bottom: $border-width-regular solid $color-gray-regular;
+  color: $color-gray-regular;
 
   &:hover,
   &:focus {
@@ -27,6 +27,7 @@
   // Primary
 
   &--primary {
+    border-color: $color-primary-regular;
     color: $color-primary-regular;
   }
 }
