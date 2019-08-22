@@ -537,8 +537,8 @@ summary {
 
 .c-link {
   padding-bottom: 0.0625em;
-  border-bottom: 1px solid #333333;
-  color: #333333;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
 }
 
 .c-link:hover, .c-link:focus {
@@ -554,7 +554,6 @@ summary {
 }
 
 .c-link--primary {
-  border-color: #0044cc;
   color: #0044cc;
 }
 
