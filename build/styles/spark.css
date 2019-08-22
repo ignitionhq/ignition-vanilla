@@ -537,7 +537,7 @@ summary {
 
 .c-link {
   padding-bottom: 0.0625em;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1px solid;
   color: inherit;
 }
 

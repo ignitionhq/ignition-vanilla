@@ -5,7 +5,9 @@
 .c-link {
   // Distance bottom border from descenders.
   padding-bottom: 0.0625em;
-  border-bottom: $border-width-regular solid currentColor;
+  // Mind that the border color defaults to the current text color unless
+  // otherwise specified.
+  border-bottom: $border-width-regular solid;
   color: inherit;
 
   &:hover,
