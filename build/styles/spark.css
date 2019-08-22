@@ -536,8 +536,21 @@ summary {
 }
 
 .c-link {
-  text-decoration: underline;
+  padding-bottom: 0.0625em;
+  border-bottom: 1px solid;
   color: inherit;
+}
+
+.c-link:hover, .c-link:focus {
+  border-width: 2px;
+}
+
+.c-link--plain {
+  border-width: 0;
+}
+
+.c-link--plain:hover, .c-link--plain:focus {
+  border-width: 1px;
 }
 
 .c-link--primary {
