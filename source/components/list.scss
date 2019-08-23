@@ -5,30 +5,30 @@
 .c-list {
   padding-left: 0;
   list-style: none;
-}
 
-.c-list__item {
-  padding-top: $space-small-5;
-  padding-bottom: $space-small-5;
-}
-
-.c-list__link {
-  color: $color-gray-regular;
-
-  &:hover {
-    color: $color-primary-regular;
+  &__item {
+    padding-top: $space-small-5;
+    padding-bottom: $space-small-5;
   }
-}
 
-// Horizontal list
+  &__link {
+    color: $color-gray-regular;
 
-.c-list--horizontal {
-  display: flex;
-  flex-wrap: wrap;
+    &:hover {
+      color: $color-primary-regular;
+    }
+  }
 
-  > .c-list__item {
-    &:not(:last-child) {
-      margin-right: $space-large-4;
+  // Horizontal
+
+  &--horizontal {
+    display: flex;
+    flex-wrap: wrap;
+
+    > .c-list__item {
+      &:not(:last-child) {
+        margin-right: $space-large-4;
+      }
     }
   }
 }
