@@ -567,14 +567,6 @@ summary {
   padding-bottom: 0.375rem;
 }
 
-.c-list__link {
-  color: #333333;
-}
-
-.c-list__link:hover {
-  color: #0044cc;
-}
-
 .c-list--horizontal {
   display: flex;
   flex-wrap: wrap;
