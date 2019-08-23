@@ -451,6 +451,7 @@ summary {
 }
 
 .c-card {
+  display: block;
   padding: calc(1.5rem - 1px);
   border: 1px solid #e0e0e0;
   border-radius: 4px;
@@ -480,10 +481,6 @@ summary {
 
 .c-card p:last-child {
   margin-bottom: 0;
-}
-
-.c-card--interactive {
-  display: block;
 }
 
 .c-card--interactive:hover {
@@ -558,6 +555,8 @@ summary {
 }
 
 .c-list {
+  display: flex;
+  flex-direction: column;
   padding-left: 0;
   list-style: none;
 }
@@ -568,7 +567,7 @@ summary {
 }
 
 .c-list--horizontal {
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
