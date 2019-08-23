@@ -3,6 +3,8 @@
 // -----------------------------------------------------------------------------
 
 .c-list {
+  display: flex;
+  flex-direction: column;
   padding-left: 0;
   list-style: none;
 
@@ -14,7 +16,7 @@
   // Horizontal
 
   &--horizontal {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
     > .c-list__item {
