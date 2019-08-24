@@ -13,10 +13,7 @@
     padding: $space-small-3 $space-regular;
     color: $color-gray-regular;
 
-    &:hover {
-      color: $color-primary-regular;
-    }
-
+    &:hover,
     &.is-selected {
       color: $color-primary-regular;
     }

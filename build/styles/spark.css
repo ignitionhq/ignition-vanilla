@@ -588,11 +588,7 @@ summary {
   color: #333333;
 }
 
-.c-nav__link:hover {
-  color: #0044cc;
-}
-
-.c-nav__link.is-selected {
+.c-nav__link:hover, .c-nav__link.is-selected {
   color: #0044cc;
 }
 
