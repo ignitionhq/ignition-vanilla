@@ -22,7 +22,7 @@
     padding-right: $space-large-2;
   }
 
-  &__dismiss {
+  &__dismiss-button {
     position: absolute;
     top: $space-regular;
     right: $space-regular;
@@ -60,7 +60,7 @@
     color: $color-primary-regular;
     background-color: $color-primary-light-1;
 
-    .c-notice__dismiss {
+    .c-notice__dismiss-button {
       &:hover {
         background-color: $color-primary-light-2;
       }
@@ -81,7 +81,7 @@
     color: $color-negative-regular;
     background-color: $color-negative-light-1;
 
-    .c-notice__dismiss {
+    .c-notice__dismiss-button {
       &:hover {
         background-color: $color-negative-light-2;
       }

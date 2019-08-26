@@ -616,7 +616,7 @@ summary {
   padding-right: 3rem;
 }
 
-.c-notice__dismiss {
+.c-notice__dismiss-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -627,16 +627,16 @@ summary {
   background-color: transparent;
 }
 
-.c-notice__dismiss:hover {
+.c-notice__dismiss-button:hover {
   background-color: #ebebeb;
 }
 
-.c-notice__dismiss:focus {
+.c-notice__dismiss-button:focus {
   outline: 0;
   background-color: #e0e0e0;
 }
 
-.c-notice__dismiss:active {
+.c-notice__dismiss-button:active {
   background-color: #d6d6d6;
 }
 
@@ -650,15 +650,15 @@ summary {
   background-color: #ebf1ff;
 }
 
-.c-notice--primary .c-notice__dismiss:hover {
+.c-notice--primary .c-notice__dismiss-button:hover {
   background-color: #d6e4ff;
 }
 
-.c-notice--primary .c-notice__dismiss:focus {
+.c-notice--primary .c-notice__dismiss-button:focus {
   background-color: #c2d6ff;
 }
 
-.c-notice--primary .c-notice__dismiss:active {
+.c-notice--primary .c-notice__dismiss-button:active {
   background-color: #adc9ff;
 }
 
@@ -667,15 +667,15 @@ summary {
   background-color: #ffeceb;
 }
 
-.c-notice--negative .c-notice__dismiss:hover {
+.c-notice--negative .c-notice__dismiss-button:hover {
   background-color: #ffd9d6;
 }
 
-.c-notice--negative .c-notice__dismiss:focus {
+.c-notice--negative .c-notice__dismiss-button:focus {
   background-color: #ffc6c2;
 }
 
-.c-notice--negative .c-notice__dismiss:active {
+.c-notice--negative .c-notice__dismiss-button:active {
   background-color: #ffb3ad;
 }
 

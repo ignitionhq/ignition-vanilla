@@ -9,7 +9,7 @@ class Notice {
 }
 
 document.addEventListener("click", function(event) {
-  if (event.target.closest(".c-notice__dismiss")) {
+  if (event.target.closest(".c-notice__dismiss-button")) {
     event.preventDefault();
     let notice = new Notice();
     notice.dismiss(event.target.closest(".c-notice"));
