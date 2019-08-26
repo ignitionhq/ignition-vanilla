@@ -607,17 +607,13 @@ summary {
   background-color: whitesmoke;
 }
 
-.c-notice p:last-child {
+.c-notice p:last-of-type {
   margin-bottom: 0;
 }
 
 .c-notice--dismissible {
   position: relative;
   padding-right: 3rem;
-}
-
-.c-notice--dismissible p:last-of-type {
-  margin-bottom: 0;
 }
 
 .c-notice__dismiss {

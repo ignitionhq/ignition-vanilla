@@ -8,7 +8,10 @@
   color: $color-gray-regular;
   background-color: $color-gray-light-1;
 
-  p:last-child {
+  // Remove last paragraph bottom margin using the `:last-of-type` selector
+  // instead of `:last-child` because dismissible notices place the dismiss
+  // button last.
+  p:last-of-type {
     margin-bottom: 0;
   }
 
@@ -17,12 +20,6 @@
   &--dismissible {
     position: relative;
     padding-right: $space-large-2;
-
-    // Remove last paragraph bottom margin using the `:last-of-type` selector
-    // instead of `:last-child` because the dismiss button is placed last.
-    p:last-of-type {
-      margin-bottom: 0;
-    }
   }
 
   &__dismiss {
