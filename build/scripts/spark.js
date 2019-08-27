@@ -3,18 +3,24 @@
 // -----------------------------------------------------------------------------
 
 class Notice {
+  constructor() {
+    this.notices = [];
+  }
+  select() {
+    this.notices = Array.from(document.getElementsByClassName("c-notice"));
+    this.notices.forEach(notice => {
+      notice.addEventListener("click", () => {
+        this.dismiss(event.target.closest(".c-notice"));
+      });
+    });
+  }
   dismiss(element) {
     element.classList.add("u-display-none");
   }
 }
 
-document.addEventListener("click", function(event) {
-  if (event.target.closest(".c-notice__dismiss-button")) {
-    event.preventDefault();
-    let notice = new Notice();
-    notice.dismiss(event.target.closest(".c-notice"));
-  }
-});
+let notice = new Notice();
+notice.select();
 
 // TABS
 // Navigate between related sections of content.
