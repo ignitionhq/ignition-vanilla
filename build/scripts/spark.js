@@ -2,7 +2,7 @@
 // Provide feedback or additional information.
 // -----------------------------------------------------------------------------
 
-const NoticeClasses = {
+const NoticeSelectors = {
   COMPONENT: ".c-notice",
   DISMISS_BUTTON: ".c-notice__dismiss-button",
   HIDE: "u-display-none"
@@ -10,21 +10,21 @@ const NoticeClasses = {
 
 class Notice {
   constructor() {
-    this.elementArray = document.querySelectorAll(NoticeClasses.COMPONENT);
+    this.elementArray = document.querySelectorAll(NoticeSelectors.COMPONENT);
   }
 
   handle() {
     this.elementArray.forEach(element => {
       element
-        .querySelector(NoticeClasses.DISMISS_BUTTON)
+        .querySelector(NoticeSelectors.DISMISS_BUTTON)
         .addEventListener("click", () => {
-          this.dismiss(event.target.closest(NoticeClasses.COMPONENT));
+          this.dismiss(event.target.closest(NoticeSelectors.COMPONENT));
         });
     });
   }
 
   dismiss(element) {
-    element.classList.add(NoticeClasses.HIDE);
+    element.classList.add(NoticeSelectors.HIDE);
   }
 }
 
