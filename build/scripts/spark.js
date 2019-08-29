@@ -2,27 +2,33 @@
 // Provide feedback or additional information.
 // -----------------------------------------------------------------------------
 
+const Name = {
+  COMPONENT: ".c-notice",
+  DISMISS_BUTTON: ".c-notice__dismiss-button",
+  HIDE: "u-display-none"
+};
+
 class Notice {
   constructor() {
-    this.elementArray = document.querySelectorAll(".c-notice");
+    this.elementArray = document.querySelectorAll(Name.COMPONENT);
   }
 
   listen() {
     this.elementArray.forEach(element => {
       element
-        .querySelector(".c-notice__dismiss-button")
+        .querySelector(Name.DISMISS_BUTTON)
         .addEventListener("click", () => {
-          this.dismiss(event.target.closest(".c-notice"));
+          this.dismiss(event.target.closest(Name.COMPONENT));
         });
     });
   }
 
   dismiss(element) {
-    element.classList.add("u-display-none");
+    element.classList.add(Name.HIDE);
   }
 }
 
-let notice = new Notice();
+const notice = new Notice();
 notice.listen();
 
 // TABS
