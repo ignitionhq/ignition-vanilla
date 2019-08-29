@@ -4,22 +4,25 @@
 
 class Notice {
   constructor() {
-    this.notices = [];
+    this.elementArray = document.querySelectorAll(".c-notice");
   }
-  select() {
-    this.notices = Array.from(document.getElementsByClassName("c-notice"));
-    this.notices.forEach(notice => {
-      notice.addEventListener("click", () => {
-        this.dismiss(event.target.closest(".c-notice"));
-      });
+
+  listen() {
+    this.elementArray.forEach(element => {
+      element
+        .querySelector(".c-notice__dismiss-button")
+        .addEventListener("click", () => {
+          this.dismiss(event.target.closest(".c-notice"));
+        });
     });
   }
+
   dismiss(element) {
     element.classList.add("u-display-none");
   }
 }
 
 let notice = new Notice();
-notice.select();
+notice.listen();
 
 export default Notice;
