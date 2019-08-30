@@ -11,7 +11,7 @@
     text-align: left;
   }
 
-  &__head {
+  &__header {
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
     padding: $space-small-2 $space-regular
@@ -21,7 +21,7 @@
     vertical-align: top;
   }
 
-  &__cell {
+  &__data {
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
     padding: $space-small-2 $space-regular
