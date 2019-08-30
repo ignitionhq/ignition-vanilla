@@ -4,29 +4,29 @@
 
 .c-table {
   width: 100%;
-}
 
-.c-table__caption {
-  padding: $space-small-2 $space-regular;
-  font-weight: bold;
-  text-align: left;
-}
+  &__caption {
+    padding: $space-small-2 $space-regular;
+    font-weight: bold;
+    text-align: left;
+  }
 
-.c-table__head {
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: $space-small-2 $space-regular
-    calc(#{$space-small-2} - #{$border-width-thick-2});
-  border-bottom: $border-width-thick-2 solid $color-gray-light-3;
-  text-align: left;
-  vertical-align: top;
-}
+  &__head {
+    // Employ `calc()` to ensure precise alignment with items that use the same
+    // spacing values but lack a border.
+    padding: $space-small-2 $space-regular
+      calc(#{$space-small-2} - #{$border-width-thick-2});
+    border-bottom: $border-width-thick-2 solid $color-gray-light-3;
+    text-align: left;
+    vertical-align: top;
+  }
 
-.c-table__cell {
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: $space-small-2 $space-regular
-    calc(#{$space-small-2} - #{$border-width-regular});
-  border-bottom: $border-width-regular solid $color-gray-light-3;
-  vertical-align: top;
+  &__cell {
+    // Employ `calc()` to ensure precise alignment with items that use the same
+    // spacing values but lack a border.
+    padding: $space-small-2 $space-regular
+      calc(#{$space-small-2} - #{$border-width-regular});
+    border-bottom: $border-width-regular solid $color-gray-light-3;
+    vertical-align: top;
+  }
 }
