@@ -689,14 +689,14 @@ summary {
   text-align: left;
 }
 
-.c-table__head {
+.c-table__header {
   padding: 0.75rem 1rem calc(0.75rem - 2px);
   border-bottom: 2px solid #e0e0e0;
   text-align: left;
   vertical-align: top;
 }
 
-.c-table__cell {
+.c-table__data {
   padding: 0.75rem 1rem calc(0.75rem - 1px);
   border-bottom: 1px solid #e0e0e0;
   vertical-align: top;
