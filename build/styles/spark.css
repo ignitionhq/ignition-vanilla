@@ -702,7 +702,7 @@ summary {
   vertical-align: top;
 }
 
-.c-tabs {
+.c-tabset {
   display: flex;
   padding-left: 0;
   border-bottom: 1px solid #e0e0e0;
@@ -710,7 +710,7 @@ summary {
   list-style: none;
 }
 
-.c-tabs__link {
+.c-tabset__tab {
   display: inline-block;
   padding: 0.625rem 1rem calc(0.625rem - 2px) 1rem;
   border-bottom: 2px solid transparent;
@@ -718,20 +718,20 @@ summary {
   color: #333333;
 }
 
-.c-tabs__link:hover {
+.c-tabset__tab:hover {
   border-color: #e0e0e0;
 }
 
-.c-tabs__link:focus {
+.c-tabset__tab:focus {
   border-color: #d6d6d6;
   outline: 0;
 }
 
-.c-tabs__link:active {
+.c-tabset__tab:active {
   border-color: #cccccc;
 }
 
-.c-tabs__link.is-selected {
+.c-tabset__tab.is-selected {
   border-color: #0044cc;
   color: #0044cc;
 }

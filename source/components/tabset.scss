@@ -1,8 +1,8 @@
-// TABS
+// TABSET
 // Navigate between related sections of content.
 // -----------------------------------------------------------------------------
 
-.c-tabs {
+.c-tabset {
   display: flex;
   padding-left: 0;
   border-bottom: $border-width-regular solid $color-gray-light-3;
@@ -10,7 +10,7 @@
   list-style: none;
 }
 
-.c-tabs__link {
+.c-tabset__tab {
   display: inline-block;
   padding: $space-small-3 $space-regular
     calc(#{$space-small-3} - #{$border-width-thick-2}) $space-regular;

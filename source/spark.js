@@ -1,3 +1,3 @@
 import Notice from "./components/notice";
-import Tabs from "./components/tabs";
+import Tabset from "./components/tabset";
 import Tag from "./components/tag";

@@ -1,10 +1,10 @@
-// TABS
+// TABSET
 // Navigate between related sections of content.
 // -----------------------------------------------------------------------------
 
-class Tabs {
+class Tabset {
   select(element) {
-    let tabLinks = document.querySelectorAll(".c-tabs__link"),
+    let tabLinks = document.querySelectorAll(".c-tabset__tab"),
       activePanelId = element.getAttribute("href"),
       tabPanels = document.querySelectorAll(".js-tab-panel"),
       activePanel = document.querySelector(activePanelId);
@@ -18,11 +18,11 @@ class Tabs {
 }
 
 document.addEventListener("click", function(event) {
-  if (event.target.closest(".c-tabs__link")) {
+  if (event.target.closest(".c-tabset__tab")) {
     event.preventDefault();
-    let tabs = new Tabs();
-    tabs.select(event.target.closest(".c-tabs__link"));
+    let tabset = new Tabset();
+    tabset.select(event.target.closest(".c-tabset__tab"));
   }
 });
 
-export default Tabs;
+export default Tabset;
