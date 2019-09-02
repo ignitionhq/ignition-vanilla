@@ -718,17 +718,8 @@ summary {
   color: #333333;
 }
 
-.c-tabset__tab:hover {
+.c-tabset__tab:hover, .c-tabset__tab:focus {
   border-color: #e0e0e0;
-}
-
-.c-tabset__tab:focus {
-  border-color: #d6d6d6;
-  outline: 0;
-}
-
-.c-tabset__tab:active {
-  border-color: #cccccc;
 }
 
 .c-tabset__tab.is-selected {

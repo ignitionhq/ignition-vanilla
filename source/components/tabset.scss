@@ -18,19 +18,9 @@
     margin-bottom: -#{$border-width-regular};
     color: $color-gray-regular;
 
-    &:hover {
-      border-color: $color-gray-light-3;
-    }
-
+    &:hover,
     &:focus {
-      border-color: $color-gray-light-4;
-      // Mind that the outline should be removed only if other styles that imply
-      // focus are set.
-      outline: 0;
-    }
-
-    &:active {
-      border-color: $color-gray-light-5;
+      border-color: $color-gray-light-3;
     }
 
     &.is-selected {
