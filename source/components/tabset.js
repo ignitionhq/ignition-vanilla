@@ -6,7 +6,7 @@ class Tabset {
   select(element) {
     let tabLinks = document.querySelectorAll(".c-tabset__tab"),
       activePanelId = element.getAttribute("href"),
-      tabPanels = document.querySelectorAll(".js-tab-panel"),
+      tabPanels = document.querySelectorAll(".c-tabset__panel"),
       activePanel = document.querySelector(activePanelId);
     for (let i = 0; i < tabPanels.length; i++) {
       tabLinks[i].classList.remove("is-selected");

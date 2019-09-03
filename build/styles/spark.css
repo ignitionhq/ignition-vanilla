@@ -702,7 +702,7 @@ summary {
   vertical-align: top;
 }
 
-.c-tabset {
+.c-tabset__menu {
   display: flex;
   padding-left: 0;
   border-bottom: 1px solid #e0e0e0;
@@ -725,6 +725,11 @@ summary {
 .c-tabset__tab.is-selected {
   border-color: #0044cc;
   color: #0044cc;
+}
+
+.c-tabset__panel {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .c-tag {
