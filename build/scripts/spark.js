@@ -53,24 +53,28 @@ class Tabset {
         const panelArray = component.querySelectorAll(TabsetSelectors.PANEL);
 
         if (event.target.matches(TabsetSelectors.TAB)) {
-          event.preventDefault();
-
-          const tab = event.target;
-          const tabId = tab.getAttribute("href").split("#")[1];
-
-          tabArray.forEach(tab => {
-            tab.classList.remove("is-selected");
-          });
-          tab.classList.add("is-selected");
-
-          panelArray.forEach(panel => {
-            panel.setAttribute("hidden", "");
-            if (panel.id == tabId) {
-              panel.removeAttribute("hidden");
-            }
-          });
+          this.select(tabArray, panelArray);
         }
       });
+    });
+  }
+
+  select(tabArray, panelArray) {
+    event.preventDefault();
+
+    const tab = event.target;
+    const tabId = tab.getAttribute("href").split("#")[1];
+
+    tabArray.forEach(tab => {
+      tab.classList.remove("is-selected");
+    });
+    tab.classList.add("is-selected");
+
+    panelArray.forEach(panel => {
+      panel.setAttribute("hidden", "");
+      if (panel.id == tabId) {
+        panel.removeAttribute("hidden");
+      }
     });
   }
 }
