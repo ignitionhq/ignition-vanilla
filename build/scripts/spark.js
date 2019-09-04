@@ -43,34 +43,34 @@ const TabsetSelectors = {
 
 class Tabset {
   constructor() {
-    this.componentArray = document.querySelectorAll(TabsetSelectors.COMPONENT);
+    this.components = document.querySelectorAll(TabsetSelectors.COMPONENT);
   }
 
   handle() {
-    this.componentArray.forEach(component => {
+    this.components.forEach(component => {
       component.addEventListener("click", () => {
-        const tabArray = component.querySelectorAll(TabsetSelectors.TAB);
-        const panelArray = component.querySelectorAll(TabsetSelectors.PANEL);
+        const tabs = component.querySelectorAll(TabsetSelectors.TAB);
+        const panels = component.querySelectorAll(TabsetSelectors.PANEL);
 
         if (event.target.matches(TabsetSelectors.TAB)) {
-          this.select(tabArray, panelArray);
+          this.select(tabs, panels);
         }
       });
     });
   }
 
-  select(tabArray, panelArray) {
+  select(tabs, panels) {
     event.preventDefault();
 
     const tab = event.target;
     const tabId = tab.getAttribute("href").split("#")[1];
 
-    tabArray.forEach(tab => {
+    tabs.forEach(tab => {
       tab.classList.remove("is-selected");
     });
     tab.classList.add("is-selected");
 
-    panelArray.forEach(panel => {
+    panels.forEach(panel => {
       panel.setAttribute("hidden", "");
       if (panel.id == tabId) {
         panel.removeAttribute("hidden");
