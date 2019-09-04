@@ -35,28 +35,48 @@ notice.handle();
 // Navigate between related sections of content.
 // -----------------------------------------------------------------------------
 
+const TabsetSelectors = {
+  COMPONENT: ".c-tabset",
+  TAB: ".c-tabset__tab",
+  PANEL: ".c-tabset__panel"
+};
+
 class Tabset {
-  select(element) {
-    let tabLinks = document.querySelectorAll(".c-tabset__tab"),
-      activePanelId = element.getAttribute("href"),
-      tabPanels = document.querySelectorAll(".c-tabset__panel"),
-      activePanel = document.querySelector(activePanelId);
-    for (let i = 0; i < tabPanels.length; i++) {
-      tabLinks[i].classList.remove("is-selected");
-      tabPanels[i].setAttribute("hidden", "");
-    }
-    element.classList.add("is-selected");
-    activePanel.removeAttribute("hidden");
+  constructor() {
+    this.componentArray = document.querySelectorAll(TabsetSelectors.COMPONENT);
+  }
+
+  handle() {
+    this.componentArray.forEach(component => {
+      component.addEventListener("click", () => {
+        const tabArray = component.querySelectorAll(TabsetSelectors.TAB);
+        const panelArray = component.querySelectorAll(TabsetSelectors.PANEL);
+
+        if (event.target.matches(TabsetSelectors.TAB)) {
+          event.preventDefault();
+
+          const tab = event.target;
+          const tabId = tab.getAttribute("href").split("#")[1];
+
+          tabArray.forEach(tab => {
+            tab.classList.remove("is-selected");
+          });
+          tab.classList.add("is-selected");
+
+          panelArray.forEach(panel => {
+            panel.setAttribute("hidden", "");
+            if (panel.id == tabId) {
+              panel.removeAttribute("hidden");
+            }
+          });
+        }
+      });
+    });
   }
 }
 
-document.addEventListener("click", function(event) {
-  if (event.target.closest(".c-tabset__tab")) {
-    event.preventDefault();
-    let tabset = new Tabset();
-    tabset.select(event.target.closest(".c-tabset__tab"));
-  }
-});
+const tabset = new Tabset();
+tabset.handle();
 
 // TAG
 // Label items and reference content using keywords.
