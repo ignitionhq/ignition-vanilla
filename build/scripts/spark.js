@@ -38,7 +38,9 @@ notice.handle();
 const TabsetSelectors = {
   COMPONENT: ".c-tabset",
   TAB: ".c-tabset__tab",
-  PANEL: ".c-tabset__panel"
+  PANEL: ".c-tabset__panel",
+  SELECT: "is-selected",
+  HIDE: "hidden"
 };
 
 class Tabset {
@@ -66,14 +68,14 @@ class Tabset {
     const tabId = tab.getAttribute("href").split("#")[1];
 
     tabs.forEach(tab => {
-      tab.classList.remove("is-selected");
+      tab.classList.remove(TabsetSelectors.SELECT);
     });
-    tab.classList.add("is-selected");
+    tab.classList.add(TabsetSelectors.SELECT);
 
     panels.forEach(panel => {
-      panel.setAttribute("hidden", "");
+      panel.setAttribute(TabsetSelectors.HIDE, "");
       if (panel.id == tabId) {
-        panel.removeAttribute("hidden");
+        panel.removeAttribute(TabsetSelectors.HIDE);
       }
     });
   }
