@@ -745,7 +745,7 @@ summary {
   background-color: #ebebeb;
 }
 
-.c-tag__dismiss {
+.c-tag__dismiss-button {
   padding: calc(0.375rem - 1px);
   border: 1px solid #333333;
   border-radius: 720px;
@@ -753,17 +753,17 @@ summary {
   background-color: transparent;
 }
 
-.c-tag__dismiss:hover {
+.c-tag__dismiss-button:hover {
   color: white;
   background-color: #292929;
 }
 
-.c-tag__dismiss:focus {
+.c-tag__dismiss-button:focus {
   outline: 0;
   box-shadow: 0 0 0 3px #d6d6d6;
 }
 
-.c-tag__dismiss:active {
+.c-tag__dismiss-button:active {
   color: white;
   background-color: #1f1f1f;
 }

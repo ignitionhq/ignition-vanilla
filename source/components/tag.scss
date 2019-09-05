@@ -9,7 +9,7 @@
   color: $color-gray-regular;
   background-color: $color-gray-light-2;
 
-  &__dismiss {
+  &__dismiss-button {
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
     padding: calc(#{$space-small-5} - #{$border-width-regular});
