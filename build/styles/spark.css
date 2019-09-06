@@ -739,7 +739,7 @@ summary {
 
 .c-tag {
   display: inline-block;
-  padding: 0.375rem 0.75rem;
+  padding: 0.25rem 0.625rem;
   border-radius: 720px;
   color: #333333;
   background-color: #e0e0e0;
