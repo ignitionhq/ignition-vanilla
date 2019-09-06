@@ -7,24 +7,24 @@
   padding: $space-small-5 $space-small-2;
   border-radius: $border-radius-full;
   color: $color-gray-regular;
-  background-color: $color-gray-light-2;
+  background-color: $color-gray-light-3;
 
   // Interactive
 
   &--interactive {
     &:hover {
-      background-color: $color-gray-light-3;
+      background-color: $color-gray-light-4;
     }
 
     &:focus {
-      background-color: $color-gray-light-4;
+      background-color: $color-gray-light-5;
       // Mind that the outline should be removed only if other styles that imply
       // focus are set.
       outline: 0;
     }
 
     &:active {
-      background-color: $color-gray-light-5;
+      background-color: $color-gray-light-6;
     }
   }
 }
