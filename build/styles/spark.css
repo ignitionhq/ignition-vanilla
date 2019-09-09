@@ -758,6 +758,13 @@ summary {
   background-color: #c2c2c2;
 }
 
+.c-tag--small {
+  padding: 0.3125rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  vertical-align: top;
+}
+
 .c-textfield {
   display: block;
   width: 100%;
