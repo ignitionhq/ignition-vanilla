@@ -9,7 +9,7 @@
   // spacing values but lack a border.
   padding: calc(#{$space-small-3} - #{$border-width-regular})
     calc(#{$space-regular} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-light-6;
+  border: $border-width-regular solid $color-gray-medium;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
