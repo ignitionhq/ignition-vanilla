@@ -22,11 +22,11 @@
 
 .o-lineup--spaced {
   // Negate padding on the leftmost and rightmost lineup items.
-  margin-right: -$space-large-5;
-  margin-left: -$space-large-5;
+  margin-right: -$space-large-6;
+  margin-left: -$space-large-6;
 
   > .o-lineup__item {
-    padding-right: $space-large-5;
-    padding-left: $space-large-5;
+    padding-right: $space-large-6;
+    padding-left: $space-large-6;
   }
 }
