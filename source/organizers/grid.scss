@@ -8,29 +8,29 @@
   @include breakpoint(m) {
     grid-template-columns: repeat($grid-columns, 1fr);
   }
-}
 
-@for $i from 1 through $grid-columns {
-  .o-grid__column-#{$i} {
-    grid-column: span #{$i};
-  }
+  @for $i from 1 through $grid-columns {
+    &__column-#{$i} {
+      grid-column: span #{$i};
+    }
 
-  $breakpoint-names: map-keys($breakpoints);
-  @each $breakpoint-name in $breakpoint-names {
-    @include breakpoint($breakpoint-name) {
-      .o-grid__column-#{$i}\@#{$breakpoint-name} {
-        grid-column: span #{$i};
+    $breakpoint-names: map-keys($breakpoints);
+    @each $breakpoint-name in $breakpoint-names {
+      @include breakpoint($breakpoint-name) {
+        &__column-#{$i}\@#{$breakpoint-name} {
+          grid-column: span #{$i};
+        }
       }
     }
   }
-}
 
-// Spaced grid
+  // Spaced grid
 
-.o-grid--spaced {
-  grid-gap: $grid-gap-regular;
+  &--spaced {
+    grid-gap: $grid-gap-regular;
 
-  @include breakpoint(m) {
-    grid-gap: $grid-gap-large;
+    @include breakpoint(m) {
+      grid-gap: $grid-gap-large;
+    }
   }
 }
