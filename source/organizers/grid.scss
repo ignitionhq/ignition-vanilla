@@ -4,22 +4,34 @@
 
 .o-grid {
   display: grid;
+  grid-template-columns: repeat($grid-columns-regular, 1fr);
 
   @include breakpoint(m) {
-    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-template-columns: repeat($grid-columns-medium, 1fr);
   }
 
-  @for $i from 1 through $grid-columns {
+  @include breakpoint(l) {
+    grid-template-columns: repeat($grid-columns-large, 1fr);
+  }
+
+  @for $i from 1 through $grid-columns-regular {
     &__column-#{$i} {
       grid-column: span #{$i};
     }
+  }
 
-    $breakpoint-names: map-keys($breakpoints);
-    @each $breakpoint-name in $breakpoint-names {
-      @include breakpoint($breakpoint-name) {
-        &__column-#{$i}\@#{$breakpoint-name} {
-          grid-column: span #{$i};
-        }
+  @include breakpoint(m) {
+    @for $i from 1 through $grid-columns-medium {
+      &__column-#{$i}\@m {
+        grid-column: span #{$i};
+      }
+    }
+  }
+
+  @include breakpoint(l) {
+    @for $i from 1 through $grid-columns-large {
+      &__column-#{$i}\@l {
+        grid-column: span #{$i};
       }
     }
   }
@@ -30,7 +42,7 @@
     grid-gap: $grid-gap-regular;
 
     @include breakpoint(m) {
-      grid-gap: $grid-gap-large;
+      grid-gap: $grid-gap-medium;
     }
   }
 }
