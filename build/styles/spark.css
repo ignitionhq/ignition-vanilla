@@ -876,18 +876,6 @@ summary {
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (min-width: 720px) {
-  .o-grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-@media screen and (min-width: 1080px) {
-  .o-grid {
-    grid-template-columns: repeat(12, 1fr);
-  }
-}
-
 .o-grid__column-1 {
   grid-column: span 1;
 }
@@ -897,63 +885,87 @@ summary {
 }
 
 @media screen and (min-width: 720px) {
-  .o-grid__column-1\@m {
-    grid-column: span 1;
-  }
-  .o-grid__column-2\@m {
-    grid-column: span 2;
-  }
-  .o-grid__column-3\@m {
-    grid-column: span 3;
-  }
-  .o-grid__column-4\@m {
-    grid-column: span 4;
-  }
-  .o-grid__column-5\@m {
-    grid-column: span 5;
-  }
-  .o-grid__column-6\@m {
-    grid-column: span 6;
+  .o-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
+.o-grid__column-1\@m {
+  grid-column: span 1;
+}
+
+.o-grid__column-2\@m {
+  grid-column: span 2;
+}
+
+.o-grid__column-3\@m {
+  grid-column: span 3;
+}
+
+.o-grid__column-4\@m {
+  grid-column: span 4;
+}
+
+.o-grid__column-5\@m {
+  grid-column: span 5;
+}
+
+.o-grid__column-6\@m {
+  grid-column: span 6;
+}
+
 @media screen and (min-width: 1080px) {
-  .o-grid__column-1\@l {
-    grid-column: span 1;
+  .o-grid {
+    grid-template-columns: repeat(12, 1fr);
   }
-  .o-grid__column-2\@l {
-    grid-column: span 2;
-  }
-  .o-grid__column-3\@l {
-    grid-column: span 3;
-  }
-  .o-grid__column-4\@l {
-    grid-column: span 4;
-  }
-  .o-grid__column-5\@l {
-    grid-column: span 5;
-  }
-  .o-grid__column-6\@l {
-    grid-column: span 6;
-  }
-  .o-grid__column-7\@l {
-    grid-column: span 7;
-  }
-  .o-grid__column-8\@l {
-    grid-column: span 8;
-  }
-  .o-grid__column-9\@l {
-    grid-column: span 9;
-  }
-  .o-grid__column-10\@l {
-    grid-column: span 10;
-  }
-  .o-grid__column-11\@l {
-    grid-column: span 11;
-  }
-  .o-grid__column-12\@l {
-    grid-column: span 12;
-  }
+}
+
+.o-grid__column-1\@l {
+  grid-column: span 1;
+}
+
+.o-grid__column-2\@l {
+  grid-column: span 2;
+}
+
+.o-grid__column-3\@l {
+  grid-column: span 3;
+}
+
+.o-grid__column-4\@l {
+  grid-column: span 4;
+}
+
+.o-grid__column-5\@l {
+  grid-column: span 5;
+}
+
+.o-grid__column-6\@l {
+  grid-column: span 6;
+}
+
+.o-grid__column-7\@l {
+  grid-column: span 7;
+}
+
+.o-grid__column-8\@l {
+  grid-column: span 8;
+}
+
+.o-grid__column-9\@l {
+  grid-column: span 9;
+}
+
+.o-grid__column-10\@l {
+  grid-column: span 10;
+}
+
+.o-grid__column-11\@l {
+  grid-column: span 11;
+}
+
+.o-grid__column-12\@l {
+  grid-column: span 12;
 }
 
 .o-grid--spaced {

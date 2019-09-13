@@ -10,12 +10,16 @@ $content-max-width: 1240px;
 // Grid columns
 
 // Set the number of grid columns for each breakpoint.
-$grid-columns-regular: 2;
-$grid-columns-medium: 6;
-$grid-columns-large: 12;
+$grid-columns: (
+  all: 2,
+  m: 6,
+  l: 12
+);
 
 // Grid gap
 
 // Set the grid gap size for each breakpoint.
-$grid-gap-regular: 1.25rem;
-$grid-gap-medium: 2.5rem;
+$grid-gaps: (
+  all: 1.25rem,
+  m: 2.5rem
+);

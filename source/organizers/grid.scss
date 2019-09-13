@@ -4,34 +4,28 @@
 
 .o-grid {
   display: grid;
-  grid-template-columns: repeat($grid-columns-regular, 1fr);
 
-  @include breakpoint(m) {
-    grid-template-columns: repeat($grid-columns-medium, 1fr);
-  }
+  @each $entry in $grid-columns {
+    $key: nth($entry, 1);
+    $key-value: nth($entry, 2);
 
-  @include breakpoint(l) {
-    grid-template-columns: repeat($grid-columns-large, 1fr);
-  }
+    @if ($key == "all") {
+      grid-template-columns: repeat($key-value, 1fr);
 
-  @for $i from 1 through $grid-columns-regular {
-    &__column-#{$i} {
-      grid-column: span #{$i};
-    }
-  }
-
-  @include breakpoint(m) {
-    @for $i from 1 through $grid-columns-medium {
-      &__column-#{$i}\@m {
-        grid-column: span #{$i};
+      @for $i from 1 through $key-value {
+        &__column-#{$i} {
+          grid-column: span #{$i};
+        }
       }
-    }
-  }
+    } @else {
+      @include breakpoint($key) {
+        grid-template-columns: repeat($key-value, 1fr);
+      }
 
-  @include breakpoint(l) {
-    @for $i from 1 through $grid-columns-large {
-      &__column-#{$i}\@l {
-        grid-column: span #{$i};
+      @for $i from 1 through $key-value {
+        &__column-#{$i}\@#{$key} {
+          grid-column: span #{$i};
+        }
       }
     }
   }
@@ -39,10 +33,17 @@
   // Spaced grid
 
   &--spaced {
-    grid-gap: $grid-gap-regular;
+    @each $entry in $grid-gaps {
+      $key: nth($entry, 1);
+      $key-value: nth($entry, 2);
 
-    @include breakpoint(m) {
-      grid-gap: $grid-gap-medium;
+      @if ($key == "all") {
+        grid-gap: $key-value;
+      } @else {
+        @include breakpoint($key) {
+          grid-gap: $key-value;
+        }
+      }
     }
   }
 }
