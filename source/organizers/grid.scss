@@ -2,48 +2,4 @@
 // Arrange and size items using a two-dimensional layout system.
 // -----------------------------------------------------------------------------
 
-.o-grid {
-  display: grid;
-
-  @each $entry in $grid-columns {
-    $key: nth($entry, 1);
-    $key-value: nth($entry, 2);
-
-    @if ($key == "all") {
-      grid-template-columns: repeat($key-value, 1fr);
-
-      @for $i from 1 through $key-value {
-        &__column-#{$i} {
-          grid-column: span #{$i};
-        }
-      }
-    } @else {
-      @include breakpoint($key) {
-        grid-template-columns: repeat($key-value, 1fr);
-      }
-
-      @for $i from 1 through $key-value {
-        &__column-#{$i}\@#{$key} {
-          grid-column: span #{$i};
-        }
-      }
-    }
-  }
-
-  // Spaced grid
-
-  &--spaced {
-    @each $entry in $grid-gaps {
-      $key: nth($entry, 1);
-      $key-value: nth($entry, 2);
-
-      @if ($key == "all") {
-        grid-gap: $key-value;
-      } @else {
-        @include breakpoint($key) {
-          grid-gap: $key-value;
-        }
-      }
-    }
-  }
-}
+@include grid($grid-columns, $grid-gaps);
