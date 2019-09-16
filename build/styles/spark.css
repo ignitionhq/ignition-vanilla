@@ -874,6 +874,7 @@ summary {
 .o-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.25rem;
 }
 
 .o-grid__column-1 {
@@ -887,6 +888,7 @@ summary {
 @media screen and (min-width: 720px) {
   .o-grid {
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.25rem;
   }
   .o-grid__column-1\@m {
     grid-column: span 1;
@@ -911,6 +913,7 @@ summary {
 @media screen and (min-width: 1080px) {
   .o-grid {
     grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2.5rem;
   }
   .o-grid__column-1\@l {
     grid-column: span 1;
@@ -947,16 +950,6 @@ summary {
   }
   .o-grid__column-12\@l {
     grid-column: span 12;
-  }
-}
-
-.o-grid--spaced {
-  grid-gap: 1.25rem;
-}
-
-@media screen and (min-width: 720px) {
-  .o-grid--spaced {
-    grid-gap: 2.5rem;
   }
 }
 
