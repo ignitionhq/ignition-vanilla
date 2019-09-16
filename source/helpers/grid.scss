@@ -7,27 +7,27 @@
     display: grid;
 
     @each $entry in $grid {
-      $key: nth($entry, 1);
-      $key-value: nth($entry, 2);
-      $grid-columns: nth($key-value, 1);
-      $grid-gap: nth($key-value, 2);
+      $breakpoint-name: nth($entry, 1);
+      $breakpoint-definition: nth($entry, 2);
+      $column-count: nth($breakpoint-definition, 1);
+      $gap-size: nth($breakpoint-definition, 2);
 
-      @if ($key == "all") {
-        grid-template-columns: repeat($grid-columns, 1fr);
-        grid-gap: $grid-gap;
+      @if ($breakpoint-name == "all") {
+        grid-template-columns: repeat($column-count, 1fr);
+        grid-gap: $gap-size;
 
-        @for $i from 1 through $grid-columns {
+        @for $i from 1 through $column-count {
           &__column-#{$i} {
             grid-column: span #{$i};
           }
         }
       } @else {
-        @include breakpoint($key) {
-          grid-template-columns: repeat($grid-columns, 1fr);
-          grid-gap: $grid-gap;
+        @include breakpoint($breakpoint-name) {
+          grid-template-columns: repeat($column-count, 1fr);
+          grid-gap: $gap-size;
 
-          @for $i from 1 through $grid-columns {
-            &__column-#{$i}\@#{$key} {
+          @for $i from 1 through $column-count {
+            &__column-#{$i}\@#{$breakpoint-name} {
               grid-column: span #{$i};
             }
           }
