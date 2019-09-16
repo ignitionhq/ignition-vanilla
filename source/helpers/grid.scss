@@ -21,11 +21,11 @@
       } @else {
         @include breakpoint($key) {
           grid-template-columns: repeat($key-value, 1fr);
-        }
 
-        @for $i from 1 through $key-value {
-          &__column-#{$i}\@#{$key} {
-            grid-column: span #{$i};
+          @for $i from 1 through $key-value {
+            &__column-#{$i}\@#{$key} {
+              grid-column: span #{$i};
+            }
           }
         }
       }
