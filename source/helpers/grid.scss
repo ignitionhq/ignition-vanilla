@@ -2,8 +2,12 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
-@mixin grid($grid) {
-  .o-grid {
+@mixin grid($grid, $name: null) {
+  @if ($name) {
+    $name: --#{$name};
+  }
+
+  .o-grid#{$name} {
     display: grid;
 
     @each $entry in $grid {
