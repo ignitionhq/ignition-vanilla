@@ -7,14 +7,19 @@
 // Set the maximum width of high-level content units.
 $content-max-width: 1240px;
 
-// Grid columns
+// Grid
 
-// Set the number of grid columns.
-$grid-columns: 6;
-
-// Grid gap
-
-// Establish a standard grid gap size.
-$grid-gap-regular: 1.25rem;
-// Provide a large grid gap size.
-$grid-gap-large: 2.5rem;
+$grid-regular: (
+  all: (
+    2,
+    1.25rem
+  ),
+  m: (
+    6,
+    1.25rem
+  ),
+  l: (
+    12,
+    2.5rem
+  )
+);

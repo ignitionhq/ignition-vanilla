@@ -1,0 +1,44 @@
+// GRID
+// Generate bespoke grids.
+// -----------------------------------------------------------------------------
+
+@mixin grid($grid, $name: null) {
+  @if ($name) {
+    $name: --#{$name};
+  }
+
+  .o-grid#{$name} {
+    display: grid;
+
+    @each $entry in $grid {
+      // Get a breakpoint name.
+      $breakpoint-name: nth($entry, 1);
+      // Get a set of traits related to the previously acquired breakpoint.
+      $breakpoint-definition: nth($entry, 2);
+      $column-count: nth($breakpoint-definition, 1);
+      $gap-size: nth($breakpoint-definition, 2);
+
+      @if ($breakpoint-name == "all") {
+        grid-template-columns: repeat($column-count, 1fr);
+        grid-gap: $gap-size;
+
+        @for $i from 1 through $column-count {
+          &__column-#{$i} {
+            grid-column: span #{$i};
+          }
+        }
+      } @else {
+        @include breakpoint($breakpoint-name) {
+          grid-template-columns: repeat($column-count, 1fr);
+          grid-gap: $gap-size;
+
+          @for $i from 1 through $column-count {
+            &__column-#{$i}\@#{$breakpoint-name} {
+              grid-column: span #{$i};
+            }
+          }
+        }
+      }
+    }
+  }
+}
