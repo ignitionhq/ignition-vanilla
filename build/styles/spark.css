@@ -953,31 +953,6 @@ summary {
   }
 }
 
-.o-lineup {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.o-lineup__item {
-  width: 100%;
-}
-
-@media screen and (min-width: 720px) {
-  .o-lineup__item {
-    flex: 1;
-  }
-}
-
-.o-lineup--spaced {
-  margin-right: -1.25rem;
-  margin-left: -1.25rem;
-}
-
-.o-lineup--spaced > .o-lineup__item {
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
-}
-
 .o-segment {
   padding-top: 3rem;
   padding-bottom: 3rem;
