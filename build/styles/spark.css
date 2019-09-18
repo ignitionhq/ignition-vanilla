@@ -936,30 +936,6 @@ summary {
   }
 }
 
-.u-align-items-flex-start {
-  align-items: flex-start !important;
-}
-
-.u-align-items-center {
-  align-items: center !important;
-}
-
-.u-align-self-flex-start {
-  align-self: flex-start !important;
-}
-
-.u-align-self-center {
-  align-self: center !important;
-}
-
-.u-justify-content-space-between {
-  justify-content: space-between !important;
-}
-
-.u-justify-content-center {
-  justify-content: center !important;
-}
-
 .u-border-radius-regular {
   border-radius: 4px !important;
 }
