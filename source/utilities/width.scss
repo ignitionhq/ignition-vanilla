@@ -4,7 +4,7 @@
 
 $width-values: (
   auto: auto,
-  all: (
+  complete: (
     // Interpolate the escape character and division operator otherwise the
       // former will be escaped automatically.
       1#{\/}2: percentage(1/2),

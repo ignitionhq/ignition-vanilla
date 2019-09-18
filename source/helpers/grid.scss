@@ -18,24 +18,18 @@
       $column-count: nth($breakpoint-definition, 1);
       $gap-size: nth($breakpoint-definition, 2);
 
-      @if ($breakpoint-name == "all") {
+      @include breakpoint($breakpoint-name) {
+        $breakpoint-suffix: null;
+        @if ($breakpoint-name != "all") {
+          $breakpoint-suffix: \@#{$breakpoint-name};
+        }
+
         grid-template-columns: repeat($column-count, 1fr);
         grid-gap: $gap-size;
 
         @for $i from 1 through $column-count {
-          &__column-#{$i} {
+          &__column-#{$i}#{$breakpoint-suffix} {
             grid-column: span #{$i};
-          }
-        }
-      } @else {
-        @include breakpoint($breakpoint-name) {
-          grid-template-columns: repeat($column-count, 1fr);
-          grid-gap: $gap-size;
-
-          @for $i from 1 through $column-count {
-            &__column-#{$i}\@#{$breakpoint-name} {
-              grid-column: span #{$i};
-            }
           }
         }
       }

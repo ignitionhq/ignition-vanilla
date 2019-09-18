@@ -52,39 +52,22 @@
       $key: nth($entry, 1);
       // Get property values accompanied optionally by aliases.
       $key-values: nth($entry, 2);
-      @if ($key == "all") {
-        @if (type-of($key-values) == map) {
-          // Generate non-responsive utilities designated using property value
-          // aliases (e.g., `.u-margin-right-regular`).
-          @each $value-alias, $value in $key-values {
-            .u-#{$property-alias}-#{$value-alias} {
-              #{$property}: $value !important;
-            }
-          }
-        } @else {
-          // Generate non-responsive utilities designated using property values
-          // (e.g., `.u-display-block`).
-          @each $value in $key-values {
-            .u-#{$property-alias}-#{$value} {
-              #{$property}: $value !important;
-            }
-          }
+      @if (map-has-key($breakpoints, $key) or $key == "complete") {
+        $breakpoint-names: $key;
+        @if ($key == "complete") {
+          $breakpoint-names: join(all, map-keys($breakpoints));
         }
-      }
-      @if (map-has-key($breakpoints, $key) or $key == "all") {
-        // Get breakpoint names.
-        $breakpoint-names: if(
-          map-has-key($breakpoints, $key),
-          $key,
-          map-keys($breakpoints)
-        );
         @each $breakpoint-name in $breakpoint-names {
+          $breakpoint-suffix: null;
+          @if ($breakpoint-name != "all") {
+            $breakpoint-suffix: \@#{$breakpoint-name};
+          }
           @include breakpoint($breakpoint-name) {
             @if (type-of($key-values) == map) {
               // Generate responsive utilities designated using property value
               // aliases (e.g., `.u-margin-right-regular@m`).
               @each $value-alias, $value in $key-values {
-                .u-#{$property-alias}-#{$value-alias}\@#{$breakpoint-name} {
+                .u-#{$property-alias}-#{$value-alias}#{$breakpoint-suffix} {
                   #{$property}: $value !important;
                 }
               }
@@ -92,7 +75,7 @@
               // Generate responsive utilities designated using property values
               // (e.g., `.u-display-block@m`).
               @each $value in $key-values {
-                .u-#{$property-alias}-#{$value}\@#{$breakpoint-name} {
+                .u-#{$property-alias}-#{$value}#{$breakpoint-suffix} {
                   #{$property}: $value !important;
                 }
               }
@@ -100,7 +83,7 @@
           }
         }
       }
-      @if (map-has-key($breakpoints, $key) == false and $key != "all") {
+      @if (map-has-key($breakpoints, $key) == false and $key != "complete") {
         $value-alias: $key;
         $value: $key-values;
         // Generate non-responsive utilities designated using property value
