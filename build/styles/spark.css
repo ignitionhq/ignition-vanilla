@@ -1009,14 +1009,18 @@ summary {
 }
 
 .u-margin-bottom-large-3 {
-  margin-bottom: 2rem !important;
+  margin-bottom: 2.5rem !important;
 }
 
 .u-margin-bottom-large-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .u-margin-bottom-large-5 {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-large-6 {
   margin-bottom: 1.25rem !important;
 }
 
@@ -1035,12 +1039,15 @@ summary {
     margin-bottom: 3rem !important;
   }
   .u-margin-bottom-large-3\@m {
-    margin-bottom: 2rem !important;
+    margin-bottom: 2.5rem !important;
   }
   .u-margin-bottom-large-4\@m {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 2rem !important;
   }
   .u-margin-bottom-large-5\@m {
+    margin-bottom: 1.5rem !important;
+  }
+  .u-margin-bottom-large-6\@m {
     margin-bottom: 1.25rem !important;
   }
   .u-margin-bottom-none\@m {
@@ -1059,12 +1066,15 @@ summary {
     margin-bottom: 3rem !important;
   }
   .u-margin-bottom-large-3\@l {
-    margin-bottom: 2rem !important;
+    margin-bottom: 2.5rem !important;
   }
   .u-margin-bottom-large-4\@l {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 2rem !important;
   }
   .u-margin-bottom-large-5\@l {
+    margin-bottom: 1.5rem !important;
+  }
+  .u-margin-bottom-large-6\@l {
     margin-bottom: 1.25rem !important;
   }
   .u-margin-bottom-none\@l {
