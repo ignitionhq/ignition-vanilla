@@ -936,14 +936,6 @@ summary {
   }
 }
 
-.u-border-radius-regular {
-  border-radius: 4px !important;
-}
-
-.u-border-radius-full {
-  border-radius: 720px !important;
-}
-
 .u-display-block {
   display: block !important;
 }
