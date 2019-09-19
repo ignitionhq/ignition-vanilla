@@ -52,14 +52,14 @@
       $key: nth($entry, 1);
       // Get property values accompanied optionally by aliases.
       $key-values: nth($entry, 2);
-      @if (map-has-key($breakpoints, $key) or $key == "complete") {
+      @if (map-has-key($breakpoints, $key) or $key == "all") {
         $breakpoint-names: $key;
-        @if ($key == "complete") {
-          $breakpoint-names: join(all, map-keys($breakpoints));
+        @if ($key == "all") {
+          $breakpoint-names: join("s", map-keys($breakpoints));
         }
         @each $breakpoint-name in $breakpoint-names {
           $breakpoint-suffix: null;
-          @if ($breakpoint-name != "all") {
+          @if ($breakpoint-name != "s") {
             $breakpoint-suffix: \@#{$breakpoint-name};
           }
           @include breakpoint($breakpoint-name) {
@@ -83,7 +83,7 @@
           }
         }
       }
-      @if (map-has-key($breakpoints, $key) == false and $key != "complete") {
+      @if (map-has-key($breakpoints, $key) == false and $key != "all") {
         $value-alias: $key;
         $value: $key-values;
         // Generate non-responsive utilities designated using property value
