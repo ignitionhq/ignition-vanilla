@@ -55,11 +55,11 @@
       @if (map-has-key($breakpoints, $key) or $key == "all") {
         $breakpoint-names: $key;
         @if ($key == "all") {
-          $breakpoint-names: join("s", map-keys($breakpoints));
+          $breakpoint-names: join("default", map-keys($breakpoints));
         }
         @each $breakpoint-name in $breakpoint-names {
           $breakpoint-suffix: null;
-          @if ($breakpoint-name != "s") {
+          @if ($breakpoint-name != "default") {
             $breakpoint-suffix: \@#{$breakpoint-name};
           }
           @include breakpoint($breakpoint-name) {

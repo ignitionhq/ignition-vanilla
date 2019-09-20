@@ -10,15 +10,15 @@ $content-max-width: 1240px;
 // Grid
 
 $grid-regular: (
-  s: (
+  default: (
     2,
     1.25rem
   ),
-  m: (
+  medium: (
     6,
     1.25rem
   ),
-  l: (
+  large: (
     12,
     2.5rem
   )

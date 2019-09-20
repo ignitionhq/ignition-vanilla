@@ -6,7 +6,7 @@
   padding-top: $space-large-2;
   padding-bottom: $space-large-2;
 
-  @include breakpoint(m) {
+  @include breakpoint(medium) {
     padding-top: $space-large-1;
     padding-bottom: $space-large-1;
   }

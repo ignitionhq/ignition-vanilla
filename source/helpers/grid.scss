@@ -20,7 +20,7 @@
 
       @include breakpoint($breakpoint-name) {
         $breakpoint-suffix: null;
-        @if ($breakpoint-name != "s") {
+        @if ($breakpoint-name != "default") {
           $breakpoint-suffix: \@#{$breakpoint-name};
         }
 

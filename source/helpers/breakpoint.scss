@@ -12,7 +12,7 @@
 //   margin-right: 1rem;
 // }
 @mixin breakpoint($breakpoint-name) {
-  @if ($breakpoint-name == "s") {
+  @if ($breakpoint-name == "default") {
     @content;
   } @else if map-has-key($breakpoints, $breakpoint-name) {
     @media screen and (min-width: map-get($breakpoints, $breakpoint-name)) {
