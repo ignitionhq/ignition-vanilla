@@ -23,7 +23,7 @@
 // Example:
 // $margin-right-values: (
 //   regular: 1rem,
-//   m: (
+//   medium: (
 //     regular: 1rem
 //   )
 // );
@@ -33,7 +33,7 @@
 //   margin-right: 1rem !important;
 // }
 // @media screen and (min-width: 720px) {
-//   .u-margin-right-regular\@m {
+//   .u-margin-right-regular\@medium {
 //     margin-right: 1rem !important;
 //   }
 // }
@@ -55,17 +55,17 @@
       @if (map-has-key($breakpoints, $key) or $key == "all") {
         $breakpoint-names: $key;
         @if ($key == "all") {
-          $breakpoint-names: join("s", map-keys($breakpoints));
+          $breakpoint-names: join("default", map-keys($breakpoints));
         }
         @each $breakpoint-name in $breakpoint-names {
           $breakpoint-suffix: null;
-          @if ($breakpoint-name != "s") {
+          @if ($breakpoint-name != "default") {
             $breakpoint-suffix: \@#{$breakpoint-name};
           }
           @include breakpoint($breakpoint-name) {
             @if (type-of($key-values) == map) {
               // Generate responsive utilities designated using property value
-              // aliases (e.g., `.u-margin-right-regular@m`).
+              // aliases (e.g., `.u-margin-right-regular@medium`).
               @each $value-alias, $value in $key-values {
                 .u-#{$property-alias}-#{$value-alias}#{$breakpoint-suffix} {
                   #{$property}: $value !important;
@@ -73,7 +73,7 @@
               }
             } @else {
               // Generate responsive utilities designated using property values
-              // (e.g., `.u-display-block@m`).
+              // (e.g., `.u-display-block@medium`).
               @each $value in $key-values {
                 .u-#{$property-alias}-#{$value}#{$breakpoint-suffix} {
                   #{$property}: $value !important;
