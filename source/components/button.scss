@@ -12,22 +12,22 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-3;
+  color: $color-neutral-regular;
+  background-color: $color-neutral-light-3;
 
   &:hover {
-    background-color: $color-gray-light-4;
+    background-color: $color-neutral-light-4;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-gray-light-5;
+    background-color: $color-neutral-light-5;
   }
 
   &:active {
-    background-color: $color-gray-light-6;
+    background-color: $color-neutral-light-6;
   }
 
   // Mind that because similar variants share disabled state styles these are
@@ -40,15 +40,15 @@
     background-color: transparent;
 
     &:hover {
-      background-color: $color-gray-light-1;
+      background-color: $color-neutral-light-1;
     }
 
     &:focus {
-      background-color: $color-gray-light-2;
+      background-color: $color-neutral-light-2;
     }
 
     &:active {
-      background-color: $color-gray-light-3;
+      background-color: $color-neutral-light-3;
     }
   }
 
@@ -131,7 +131,7 @@
   // Inverse
 
   &--inverse {
-    color: $color-gray-regular;
+    color: $color-neutral-regular;
     background-color: $color-white-regular;
 
     &:hover {
@@ -177,10 +177,10 @@
   // Disabled
 
   &:disabled {
-    color: $color-gray-medium;
+    color: $color-neutral-medium;
 
     &:not([class*="plain"]) {
-      background-color: $color-gray-light-2;
+      background-color: $color-neutral-light-2;
     }
 
     &[class*="plain"] {

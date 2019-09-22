@@ -16,7 +16,7 @@
     // spacing values but lack a border.
     padding: $space-small-2 $space-regular
       calc(#{$space-small-2} - #{$border-width-thick-2});
-    border-bottom: $border-width-thick-2 solid $color-gray-light-3;
+    border-bottom: $border-width-thick-2 solid $color-neutral-light-3;
     text-align: left;
     vertical-align: top;
   }
@@ -26,7 +26,7 @@
     // spacing values but lack a border.
     padding: $space-small-2 $space-regular
       calc(#{$space-small-2} - #{$border-width-regular});
-    border-bottom: $border-width-regular solid $color-gray-light-3;
+    border-bottom: $border-width-regular solid $color-neutral-light-3;
     vertical-align: top;
   }
 }
