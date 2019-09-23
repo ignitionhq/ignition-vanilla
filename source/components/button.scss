@@ -12,22 +12,22 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-3;
+  color: $color-white-regular;
+  background-color: $color-gray-regular;
 
   &:hover {
-    background-color: $color-gray-light-4;
+    background-color: $color-gray-dark-1;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-gray-light-5;
+    background-color: $color-gray-dark-2;
   }
 
   &:active {
-    background-color: $color-gray-light-6;
+    background-color: $color-gray-dark-3;
   }
 
   // Mind that because similar variants share disabled state styles these are
@@ -37,6 +37,7 @@
   // Plain
 
   &--plain {
+    color: $color-gray-regular;
     background-color: transparent;
 
     &:hover {
@@ -55,7 +56,6 @@
   // Primary
 
   &--primary {
-    color: $color-white-regular;
     background-color: $color-primary-regular;
 
     &:hover {
@@ -93,7 +93,6 @@
   // Negative
 
   &--negative {
-    color: $color-white-regular;
     background-color: $color-negative-regular;
 
     &:hover {

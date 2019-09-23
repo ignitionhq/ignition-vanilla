@@ -297,24 +297,25 @@ summary {
   line-height: 1.5;
   text-align: center;
   white-space: nowrap;
-  color: #333333;
-  background-color: #e0e0e0;
+  color: white;
+  background-color: #333333;
 }
 
 .c-button:hover {
-  background-color: #d6d6d6;
+  background-color: #292929;
 }
 
 .c-button:focus {
   outline: 0;
-  background-color: #cccccc;
+  background-color: #1f1f1f;
 }
 
 .c-button:active {
-  background-color: #c2c2c2;
+  background-color: #141414;
 }
 
 .c-button--plain {
+  color: #333333;
   background-color: transparent;
 }
 
@@ -331,7 +332,6 @@ summary {
 }
 
 .c-button--primary {
-  color: white;
   background-color: #0044cc;
 }
 
@@ -365,7 +365,6 @@ summary {
 }
 
 .c-button--negative {
-  color: white;
   background-color: #b80c00;
 }
 
