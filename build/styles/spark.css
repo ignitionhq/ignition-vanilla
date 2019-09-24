@@ -397,12 +397,6 @@ summary {
   background-color: #ffc6c2;
 }
 
-.c-button--large {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.3125rem;
-  line-height: 1.33333333;
-}
-
 .c-button:disabled {
   color: #999999;
 }
