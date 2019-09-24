@@ -127,44 +127,6 @@
     }
   }
 
-  // Inverse
-
-  &--inverse {
-    color: $color-gray-regular;
-    background-color: $color-white-regular;
-
-    &:hover {
-      background-color: $color-white-transparent-1;
-    }
-
-    &:focus {
-      background-color: $color-white-transparent-2;
-    }
-
-    &:active {
-      background-color: $color-white-transparent-3;
-    }
-  }
-
-  // Plain inverse
-
-  &--inverse-plain {
-    color: $color-white-regular;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-white-transparent-6;
-    }
-
-    &:focus {
-      background-color: $color-white-transparent-5;
-    }
-
-    &:active {
-      background-color: $color-white-transparent-4;
-    }
-  }
-
   // Large
 
   &--large {
