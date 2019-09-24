@@ -16,9 +16,9 @@
 
   &__tab {
     display: inline-block;
-    padding: $space-small-3 $space-regular
-      calc(#{$space-small-3} - #{$border-width-thick-2}) $space-regular;
-    border-bottom: $border-width-thick-2 solid transparent;
+    padding: $space-small-2 $space-regular
+      calc(#{$space-small-2} - #{$border-width-thick-1}) $space-regular;
+    border-bottom: $border-width-thick-1 solid transparent;
     // Negate parent bottom border.
     margin-bottom: -#{$border-width-regular};
     color: $color-gray-regular;
