@@ -397,40 +397,6 @@ summary {
   background-color: #ffc6c2;
 }
 
-.c-button--inverse {
-  color: #333333;
-  background-color: white;
-}
-
-.c-button--inverse:hover {
-  background-color: rgba(255, 255, 255, 0.92);
-}
-
-.c-button--inverse:focus {
-  background-color: rgba(255, 255, 255, 0.84);
-}
-
-.c-button--inverse:active {
-  background-color: rgba(255, 255, 255, 0.76);
-}
-
-.c-button--inverse-plain {
-  color: white;
-  background-color: transparent;
-}
-
-.c-button--inverse-plain:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-}
-
-.c-button--inverse-plain:focus {
-  background-color: rgba(255, 255, 255, 0.16);
-}
-
-.c-button--inverse-plain:active {
-  background-color: rgba(255, 255, 255, 0.24);
-}
-
 .c-button--large {
   padding: 0.875rem 1.25rem;
   font-size: 1.3125rem;
