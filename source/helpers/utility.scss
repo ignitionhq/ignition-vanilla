@@ -17,13 +17,13 @@
 //   margin-right: 1rem !important;
 // }
 // Pass property values via nested maps to generate responsive utilities. Use a
-// media query name established via media settings to generate responsive
+// breakpoint name established via viewport settings to generate responsive
 // utilities or the `all` keyword to generate all possible non-responsive and
 // responsive utilities.
 // Example:
 // $margin-right-values: (
 //   regular: 1rem,
-//   m: (
+//   medium: (
 //     regular: 1rem
 //   )
 // );
@@ -33,7 +33,7 @@
 //   margin-right: 1rem !important;
 // }
 // @media screen and (min-width: 720px) {
-//   .u-margin-right-regular\@m {
+//   .u-margin-right-regular\@medium {
 //     margin-right: 1rem !important;
 //   }
 // }
@@ -48,47 +48,34 @@
   } @else {
     // Generate utilities from values passed via maps.
     @each $entry in $values {
-      // Get a media query name, a keyword, or a property value alias.
+      // Get a breakpoint name, a keyword, or a property value alias.
       $key: nth($entry, 1);
       // Get property values accompanied optionally by aliases.
       $key-values: nth($entry, 2);
-      @if ($key == "all") {
-        @if (type-of($key-values) == map) {
-          // Generate non-responsive utilities designated using property value
-          // aliases (e.g., `.u-margin-right-regular`).
-          @each $value-alias, $value in $key-values {
-            .u-#{$property-alias}-#{$value-alias} {
-              #{$property}: $value !important;
-            }
-          }
-        } @else {
-          // Generate non-responsive utilities designated using property values
-          // (e.g., `.u-display-block`).
-          @each $value in $key-values {
-            .u-#{$property-alias}-#{$value} {
-              #{$property}: $value !important;
-            }
-          }
+      @if (map-has-key($breakpoints, $key) or $key == "all") {
+        $breakpoint-names: $key;
+        @if ($key == "all") {
+          $breakpoint-names: join("default", map-keys($breakpoints));
         }
-      }
-      @if (map-has-key($queries, $key) or $key == "all") {
-        // Get media query names.
-        $query-names: if(map-has-key($queries, $key), $key, map-keys($queries));
-        @each $query-name in $query-names {
-          @include query($query-name) {
+        @each $breakpoint-name in $breakpoint-names {
+          $breakpoint-suffix: null;
+          @if ($breakpoint-name != "default") {
+            $breakpoint-suffix: \@#{$breakpoint-name};
+          }
+          @include breakpoint($breakpoint-name) {
             @if (type-of($key-values) == map) {
               // Generate responsive utilities designated using property value
-              // aliases (e.g., `.u-margin-right-regular@m`).
+              // aliases (e.g., `.u-margin-right-regular@medium`).
               @each $value-alias, $value in $key-values {
-                .u-#{$property-alias}-#{$value-alias}\@#{$query-name} {
+                .u-#{$property-alias}-#{$value-alias}#{$breakpoint-suffix} {
                   #{$property}: $value !important;
                 }
               }
             } @else {
               // Generate responsive utilities designated using property values
-              // (e.g., `.u-display-block@m`).
+              // (e.g., `.u-display-block@medium`).
               @each $value in $key-values {
-                .u-#{$property-alias}-#{$value}\@#{$query-name} {
+                .u-#{$property-alias}-#{$value}#{$breakpoint-suffix} {
                   #{$property}: $value !important;
                 }
               }
@@ -96,7 +83,7 @@
           }
         }
       }
-      @if (map-has-key($queries, $key) == false and $key != "all") {
+      @if (map-has-key($breakpoints, $key) == false and $key != "all") {
         $value-alias: $key;
         $value: $key-values;
         // Generate non-responsive utilities designated using property value

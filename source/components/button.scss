@@ -4,12 +4,8 @@
 
 .c-button {
   display: inline-block;
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: calc(#{$space-small-2} - #{$border-width-regular})
-    calc(#{$space-regular} - #{$border-width-regular});
-  // Use a transparent border so variants can define a visible one more easily.
-  border: $border-width-regular solid transparent;
+  padding: $space-small-2 $space-regular;
+  border: 0;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
@@ -34,234 +30,114 @@
     background-color: $color-gray-dark-3;
   }
 
-  &:disabled,
-  &.is-disabled {
-    opacity: $opacity-medium;
-    pointer-events: none;
-  }
-}
+  // Mind that because similar variants share disabled state styles these are
+  // placed at the bottom of the file so as to override state declarations with
+  // the same specificity.
 
-// Lean button
+  // Plain
 
-.c-button--lean {
-  border-color: $color-gray-regular;
-  color: $color-gray-regular;
-  background-color: transparent;
+  &--plain {
+    color: $color-gray-regular;
+    background-color: transparent;
 
-  &:hover {
-    background-color: $color-gray-light-1;
-  }
+    &:hover {
+      background-color: $color-gray-light-1;
+    }
 
-  &:focus {
-    background-color: $color-gray-light-2;
-  }
+    &:focus {
+      background-color: $color-gray-light-2;
+    }
 
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
-
-// Plain button
-
-.c-button--plain {
-  color: $color-gray-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-gray-light-1;
+    &:active {
+      background-color: $color-gray-light-3;
+    }
   }
 
-  &:focus {
-    background-color: $color-gray-light-2;
+  // Primary
+
+  &--primary {
+    background-color: $color-primary-regular;
+
+    &:hover {
+      background-color: $color-primary-dark-1;
+    }
+
+    &:focus {
+      background-color: $color-primary-dark-2;
+    }
+
+    &:active {
+      background-color: $color-primary-dark-3;
+    }
   }
 
-  &:active {
-    background-color: $color-gray-light-3;
-  }
-}
+  // Plain primary
 
-// Primary button
+  &--primary-plain {
+    color: $color-primary-regular;
+    background-color: transparent;
 
-.c-button--primary {
-  background-color: $color-primary-regular;
+    &:hover {
+      background-color: $color-primary-light-1;
+    }
 
-  &:hover {
-    background-color: $color-primary-dark-1;
-  }
+    &:focus {
+      background-color: $color-primary-light-2;
+    }
 
-  &:focus {
-    background-color: $color-primary-dark-2;
-  }
-
-  &:active {
-    background-color: $color-primary-dark-3;
-  }
-}
-
-// Lean primary button
-
-.c-button--primary-lean {
-  border-color: $color-primary-regular;
-  color: $color-primary-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-primary-light-1;
+    &:active {
+      background-color: $color-primary-light-3;
+    }
   }
 
-  &:focus {
-    background-color: $color-primary-light-2;
+  // Negative
+
+  &--negative {
+    background-color: $color-negative-regular;
+
+    &:hover {
+      background-color: $color-negative-dark-1;
+    }
+
+    &:focus {
+      background-color: $color-negative-dark-2;
+    }
+
+    &:active {
+      background-color: $color-negative-dark-3;
+    }
   }
 
-  &:active {
-    background-color: $color-primary-light-3;
-  }
-}
+  // Plain negative
 
-// Plain primary button
+  &--negative-plain {
+    color: $color-negative-regular;
+    background-color: transparent;
 
-.c-button--primary-plain {
-  color: $color-primary-regular;
-  background-color: transparent;
+    &:hover {
+      background-color: $color-negative-light-1;
+    }
 
-  &:hover {
-    background-color: $color-primary-light-1;
-  }
+    &:focus {
+      background-color: $color-negative-light-2;
+    }
 
-  &:focus {
-    background-color: $color-primary-light-2;
-  }
-
-  &:active {
-    background-color: $color-primary-light-3;
-  }
-}
-
-// Negative button
-
-.c-button--negative {
-  background-color: $color-negative-regular;
-
-  &:hover {
-    background-color: $color-negative-dark-1;
+    &:active {
+      background-color: $color-negative-light-3;
+    }
   }
 
-  &:focus {
-    background-color: $color-negative-dark-2;
+  // Disabled
+
+  &:disabled {
+    color: $color-gray-medium;
+
+    &:not([class*="plain"]) {
+      background-color: $color-gray-light-2;
+    }
+
+    &[class*="plain"] {
+      background-color: transparent;
+    }
   }
-
-  &:active {
-    background-color: $color-negative-dark-3;
-  }
-}
-
-// Lean negative button
-
-.c-button--negative-lean {
-  border-color: $color-negative-regular;
-  color: $color-negative-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-negative-light-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-light-2;
-  }
-
-  &:active {
-    background-color: $color-negative-light-3;
-  }
-}
-
-// Plain negative button
-
-.c-button--negative-plain {
-  color: $color-negative-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-negative-light-1;
-  }
-
-  &:focus {
-    background-color: $color-negative-light-2;
-  }
-
-  &:active {
-    background-color: $color-negative-light-3;
-  }
-}
-
-// Inverse button
-
-.c-button--inverse {
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
-
-  &:hover {
-    background-color: $color-white-transparent-1;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-2;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-3;
-  }
-}
-
-// Lean inverse button
-
-.c-button--inverse-lean {
-  border-color: $color-white-regular;
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-white-transparent-6;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-5;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-4;
-  }
-}
-
-// Plain inverse button
-
-.c-button--inverse-plain {
-  background-color: transparent;
-
-  &:hover {
-    background-color: $color-white-transparent-6;
-  }
-
-  &:focus {
-    background-color: $color-white-transparent-5;
-  }
-
-  &:active {
-    background-color: $color-white-transparent-4;
-  }
-}
-
-// Large button
-
-.c-button--large {
-  padding: calc(#{$space-small-1} - #{$border-width-regular})
-    calc(#{$space-large-5} - #{$border-width-regular});
-  font-size: $font-size-large-4;
-  line-height: $line-height-small-1;
-}
-
-// Small button
-
-.c-button--small {
-  padding: calc(#{$space-small-4} - #{$border-width-regular})
-    calc(#{$space-small-2} - #{$border-width-regular});
 }

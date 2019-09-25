@@ -94,9 +94,18 @@ ul {
   margin-bottom: 1rem;
 }
 
-ul,
-ol {
+ol,
+ul {
   padding-left: 2rem;
+
+  & ol,
+  & ul {
+    margin-bottom: 0;
+  }
+}
+
+dt {
+  font-weight: bold;
 }
 
 dd {
@@ -114,11 +123,16 @@ figure {
 hr {
   // Normalize overflow in Chrome.
   overflow: visible;
+  // Emulate default horizontal rule while allowing other decorations to be
+  // easily defined.
+  height: 0.125rem;
+  border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border-style: solid;
-  // Normalize border color in Firefox.
-  border-color: $color-gray-regular;
+  // Inherit text color in Firefox.
+  color: inherit;
+  // Increase versatility by using the text color as a background color.
+  background-color: currentColor;
 }
 
 // Paragraph
@@ -134,7 +148,12 @@ pre {
   overflow: auto;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: $font-family-mono;
+  font-family: $font-family-monospace;
+
+  code {
+    // Prevent compounding effect that results from using ems.
+    font-size: inherit;
+  }
 }
 
 // Anchor
@@ -167,7 +186,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: $font-family-mono;
+  font-family: $font-family-monospace;
 }
 
 code,
@@ -178,7 +197,7 @@ kbd {
 kbd {
   kbd {
     // Prevent compounding effect that results from using ems.
-    font-size: 1em;
+    font-size: inherit;
   }
 }
 
@@ -225,6 +244,14 @@ video {
   height: auto;
 }
 
+// Scalable vector graphics
+
+svg {
+  // Switch vertical alignment style to cover most common use cases and remove
+  // the extra space below.
+  vertical-align: middle;
+}
+
 // Table
 
 table {
@@ -247,6 +274,10 @@ textarea {
   line-height: inherit;
   // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
 button,
@@ -256,10 +287,6 @@ button,
   cursor: pointer;
   // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
-
-  &:disabled {
-    cursor: default;
-  }
 
   // Remove inner border on focus in Firefox.
   &::-moz-focus-inner {
@@ -286,7 +313,7 @@ select {
   // Correct outline offset in Safari.
   outline-offset: -2px;
   // Allow complete styling in Chrome and Safari on iOS.
-  -webkit-appearance: none;
+  -webkit-appearance: textfield;
 
   // Remove extra inner space in Safari.
   &::-webkit-search-decoration {
@@ -314,6 +341,7 @@ legend {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
+  font-weight: bold;
 }
 
 // Label

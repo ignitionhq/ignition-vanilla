@@ -3,32 +3,26 @@
 // -----------------------------------------------------------------------------
 
 .c-list {
+  display: flex;
+  flex-direction: column;
   padding-left: 0;
   list-style: none;
-}
 
-.c-list__item {
-  padding-top: $space-small-4;
-  padding-bottom: $space-small-4;
-}
-
-.c-list__link {
-  color: $color-gray-regular;
-
-  &:hover {
-    color: $color-primary-regular;
+  &__item {
+    padding-top: $space-small-4;
+    padding-bottom: $space-small-4;
   }
-}
 
-// Horizontal list
+  // Horizontal
 
-.c-list--horizontal {
-  display: flex;
-  flex-wrap: wrap;
+  &--horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
 
-  > .c-list__item {
-    &:not(:last-child) {
-      margin-right: $space-large-4;
+    > .c-list__item {
+      &:not(:last-child) {
+        margin-right: $space-large-5;
+      }
     }
   }
 }

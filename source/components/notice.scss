@@ -3,113 +3,96 @@
 // -----------------------------------------------------------------------------
 
 .c-notice {
-  padding: $space-regular $space-large-4;
+  padding: $space-regular $space-large-5;
   border-radius: $border-radius-regular;
   color: $color-gray-regular;
   background-color: $color-gray-light-1;
 
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-// Dismissible notice
-
-.c-notice--dismissible {
-  position: relative;
-  padding-right: $space-large-2;
-
   // Remove last paragraph bottom margin using the `:last-of-type` selector
-  // instead of `:last-child` because the dismiss button is placed last.
+  // instead of `:last-child` because dismissible notices place the dismiss
+  // button last.
   p:last-of-type {
     margin-bottom: 0;
   }
-}
 
-.c-notice__dismiss {
-  position: absolute;
-  top: $space-regular;
-  right: $space-regular;
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: calc(#{$space-small-4} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-regular;
-  border-radius: $border-radius-regular;
-  color: inherit;
-  background-color: transparent;
+  // Dismissible
 
-  &:hover {
-    border-color: $color-gray-dark-1;
-    color: $color-white-regular;
-    background-color: $color-gray-dark-1;
+  &--dismissible {
+    position: relative;
+    padding-right: $space-large-2;
   }
 
-  &:focus {
-    // Mind that the outline should be removed only if other styles that imply
-    // focus are set.
-    outline: 0;
-    box-shadow: $box-shadow-regular $color-gray-light-4;
-  }
-
-  &:active {
-    border-color: $color-gray-dark-2;
-    color: $color-white-regular;
-    background-color: $color-gray-dark-2;
-  }
-}
-
-.c-notice__dismiss-icon {
-  display: block;
-  // Inherit text color on `svg` elements.
-  fill: currentColor;
-}
-
-// Primary notice
-
-.c-notice--primary {
-  color: $color-primary-regular;
-  background-color: $color-primary-light-1;
-
-  .c-notice__dismiss {
-    border-color: $color-primary-regular;
+  &__dismiss-button {
+    position: absolute;
+    top: $space-regular;
+    right: $space-regular;
+    padding: $space-small-4;
+    border: 0;
+    border-radius: $border-radius-regular;
+    color: inherit;
+    background-color: transparent;
 
     &:hover {
-      border-color: $color-primary-dark-1;
-      background-color: $color-primary-dark-1;
+      background-color: $color-gray-light-2;
     }
 
     &:focus {
-      box-shadow: $box-shadow-regular $color-primary-light-4;
+      // Mind that the outline should be removed only if other styles that imply
+      // focus are set.
+      outline: 0;
+      background-color: $color-gray-light-3;
     }
 
     &:active {
-      border-color: $color-primary-dark-2;
-      background-color: $color-primary-dark-2;
+      background-color: $color-gray-light-4;
     }
   }
-}
 
-// Negative notice
+  &__dismiss-icon {
+    display: block;
+    // Inherit text color on `svg` elements.
+    fill: currentColor;
+  }
 
-.c-notice--negative {
-  color: $color-negative-regular;
-  background-color: $color-negative-light-1;
+  // Primary
 
-  .c-notice__dismiss {
-    border-color: $color-negative-regular;
+  &--primary {
+    color: $color-primary-regular;
+    background-color: $color-primary-light-1;
 
-    &:hover {
-      border-color: $color-negative-dark-1;
-      background-color: $color-negative-dark-1;
+    .c-notice__dismiss-button {
+      &:hover {
+        background-color: $color-primary-light-2;
+      }
+
+      &:focus {
+        background-color: $color-primary-light-3;
+      }
+
+      &:active {
+        background-color: $color-primary-light-4;
+      }
     }
+  }
 
-    &:focus {
-      box-shadow: $box-shadow-regular $color-negative-light-4;
-    }
+  // Negative
 
-    &:active {
-      border-color: $color-negative-dark-2;
-      background-color: $color-negative-dark-2;
+  &--negative {
+    color: $color-negative-regular;
+    background-color: $color-negative-light-1;
+
+    .c-notice__dismiss-button {
+      &:hover {
+        background-color: $color-negative-light-2;
+      }
+
+      &:focus {
+        background-color: $color-negative-light-3;
+      }
+
+      &:active {
+        background-color: $color-negative-light-4;
+      }
     }
   }
 }

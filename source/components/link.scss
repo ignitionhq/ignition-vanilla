@@ -3,12 +3,32 @@
 // -----------------------------------------------------------------------------
 
 .c-link {
-  text-decoration: underline;
+  // Distance bottom border from descenders.
+  padding-bottom: 0.0625em;
+  // Mind that the border color defaults to the current text color unless
+  // otherwise specified.
+  border-bottom: $border-width-regular solid;
   color: inherit;
-}
 
-// Primary link
+  &:hover,
+  &:focus {
+    border-width: $border-width-thick;
+  }
 
-.c-link--primary {
-  color: $color-primary-regular;
+  // Plain
+
+  &--plain {
+    border-width: 0;
+
+    &:hover,
+    &:focus {
+      border-width: $border-width-regular;
+    }
+  }
+
+  // Primary
+
+  &--primary {
+    color: $color-primary-regular;
+  }
 }

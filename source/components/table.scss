@@ -1,32 +1,32 @@
 // TABLE
-// Label items and reference content using keywords.
+// Display data in rows and columns.
 // -----------------------------------------------------------------------------
 
 .c-table {
   width: 100%;
-}
 
-.c-table__caption {
-  padding: $space-small-1 $space-regular;
-  font-weight: bold;
-  text-align: left;
-}
+  &__caption {
+    padding: $space-small-1 $space-regular;
+    font-weight: bold;
+    text-align: left;
+  }
 
-.c-table__head {
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: $space-small-1 $space-regular
-    calc(#{$space-small-1} - #{$border-width-thick-2});
-  border-bottom: $border-width-thick-2 solid $color-gray-light-3;
-  text-align: left;
-  vertical-align: top;
-}
+  &__header {
+    // Employ `calc()` to ensure precise alignment with items that use the same
+    // spacing values but lack a border.
+    padding: $space-small-1 $space-regular
+      calc(#{$space-small-1} - #{$border-width-thick});
+    border-bottom: $border-width-thick solid $color-gray-light-3;
+    text-align: left;
+    vertical-align: top;
+  }
 
-.c-table__cell {
-  // Employ `calc()` to ensure precise alignment with items that use the same
-  // spacing values but lack a border.
-  padding: $space-small-1 $space-regular
-    calc(#{$space-small-1} - #{$border-width-regular});
-  border-bottom: $border-width-regular solid $color-gray-light-3;
-  vertical-align: top;
+  &__data {
+    // Employ `calc()` to ensure precise alignment with items that use the same
+    // spacing values but lack a border.
+    padding: $space-small-1 $space-regular
+      calc(#{$space-small-1} - #{$border-width-regular});
+    border-bottom: $border-width-regular solid $color-gray-light-3;
+    vertical-align: top;
+  }
 }
