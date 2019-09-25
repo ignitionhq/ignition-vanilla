@@ -10,7 +10,7 @@
 
   &__link {
     display: block;
-    padding: $space-small-3 $space-regular;
+    padding: $space-small-2 $space-regular;
     color: $color-gray-regular;
 
     &:hover,
@@ -26,7 +26,7 @@
     flex-direction: column;
 
     .c-nav__link {
-      padding: $space-small-5 $space-small-3;
+      padding: $space-small-4 $space-small-2;
     }
   }
 }

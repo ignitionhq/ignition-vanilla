@@ -2,14 +2,14 @@
 // Lay out high-level content units.
 // -----------------------------------------------------------------------------
 
-.o-container {
+.l-container {
   max-width: $content-max-width;
   padding-right: $space-large-6;
   padding-left: $space-large-6;
   margin-right: auto;
   margin-left: auto;
 
-  @include breakpoint(m) {
+  @include breakpoint(medium) {
     // Increase padding to distance content from screen edges.
     padding-right: $space-large-3;
     padding-left: $space-large-3;

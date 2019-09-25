@@ -7,7 +7,7 @@
     $name: --#{$name};
   }
 
-  .o-grid#{$name} {
+  .l-grid#{$name} {
     display: grid;
 
     @each $entry in $grid {
@@ -20,7 +20,7 @@
 
       @include breakpoint($breakpoint-name) {
         $breakpoint-suffix: null;
-        @if ($breakpoint-name != "s") {
+        @if ($breakpoint-name != "default") {
           $breakpoint-suffix: \@#{$breakpoint-name};
         }
 

@@ -4,7 +4,7 @@
 
 .c-button {
   display: inline-block;
-  padding: $space-small-3 $space-regular;
+  padding: $space-small-2 $space-regular;
   border: 0;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
@@ -12,22 +12,22 @@
   text-align: center;
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-3;
+  color: $color-white-regular;
+  background-color: $color-gray-regular;
 
   &:hover {
-    background-color: $color-gray-light-4;
+    background-color: $color-gray-dark-1;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-gray-light-5;
+    background-color: $color-gray-dark-2;
   }
 
   &:active {
-    background-color: $color-gray-light-6;
+    background-color: $color-gray-dark-3;
   }
 
   // Mind that because similar variants share disabled state styles these are
@@ -37,6 +37,7 @@
   // Plain
 
   &--plain {
+    color: $color-gray-regular;
     background-color: transparent;
 
     &:hover {
@@ -55,7 +56,6 @@
   // Primary
 
   &--primary {
-    color: $color-white-regular;
     background-color: $color-primary-regular;
 
     &:hover {
@@ -93,7 +93,6 @@
   // Negative
 
   &--negative {
-    color: $color-white-regular;
     background-color: $color-negative-regular;
 
     &:hover {
@@ -126,52 +125,6 @@
     &:active {
       background-color: $color-negative-light-3;
     }
-  }
-
-  // Inverse
-
-  &--inverse {
-    color: $color-gray-regular;
-    background-color: $color-white-regular;
-
-    &:hover {
-      background-color: $color-white-transparent-1;
-    }
-
-    &:focus {
-      background-color: $color-white-transparent-2;
-    }
-
-    &:active {
-      background-color: $color-white-transparent-3;
-    }
-  }
-
-  // Plain inverse
-
-  &--inverse-plain {
-    color: $color-white-regular;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-white-transparent-6;
-    }
-
-    &:focus {
-      background-color: $color-white-transparent-5;
-    }
-
-    &:active {
-      background-color: $color-white-transparent-4;
-    }
-  }
-
-  // Large
-
-  &--large {
-    padding: $space-small-1 $space-large-6;
-    font-size: $font-size-large-4;
-    line-height: $line-height-small-1;
   }
 
   // Disabled
