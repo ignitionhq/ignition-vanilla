@@ -3,11 +3,9 @@
 // -----------------------------------------------------------------------------
 
 @mixin grid($values, $alias: null) {
-  @if ($alias) {
-    $alias: --#{$alias};
-  }
+  $alias-suffix: if($alias, --#{$alias}, null);
 
-  .l-grid#{$alias} {
+  .l-grid#{$alias-suffix} {
     display: grid;
 
     @each $entry in $values {
@@ -19,10 +17,11 @@
       $gap-size: nth($breakpoint-definition, 2);
 
       @include breakpoint($breakpoint-name) {
-        $breakpoint-suffix: null;
-        @if ($breakpoint-name != "default") {
-          $breakpoint-suffix: \@#{$breakpoint-name};
-        }
+        $breakpoint-suffix: if(
+          $breakpoint-name != "default",
+          \@#{$breakpoint-name},
+          null
+        );
 
         grid-template-columns: repeat($column-count, 1fr);
         grid-gap: $gap-size;
