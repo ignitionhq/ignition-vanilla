@@ -14,8 +14,9 @@
 // }
 @mixin breakpoint($breakpoint-name) {
   @if ($breakpoint-name == "default") {
-    // Generate non-responsive content blocks. This feature is employed by other
-    // helpers to simplify the simultaneous creation of non-responsive and
+    // Generate non-responsive content blocks with the aid of a keyword
+    // established via the statement condition. This feature is employed by
+    // other helpers to simplify the simultaneous creation of non-responsive and
     // responsive classes.
     @content;
   } @else if map-has-key($breakpoints, $breakpoint-name) {
