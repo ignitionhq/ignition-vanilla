@@ -2,15 +2,15 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
-@mixin grid($grid, $name: null) {
-  @if ($name) {
-    $name: --#{$name};
+@mixin grid($values, $alias: null) {
+  @if ($alias) {
+    $alias: --#{$alias};
   }
 
-  .l-grid#{$name} {
+  .l-grid#{$alias} {
     display: grid;
 
-    @each $entry in $grid {
+    @each $entry in $values {
       // Get a breakpoint name.
       $breakpoint-name: nth($entry, 1);
       // Get a set of traits related to the previously acquired breakpoint.
