@@ -26,6 +26,6 @@
   } @else {
     // Provide an error message if the argument is an invalid keyword or
     // breakpoint name.
-    @error "Invalid breakpoint name. Check spelling or review viewport settings.";
+    @error "Invalid keyword or breakpoint name. Check spelling or review viewport settings.";
   }
 }
