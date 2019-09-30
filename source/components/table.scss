@@ -15,8 +15,8 @@
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
     padding: $space-small-1 $space-regular
-      calc(#{$space-small-1} - #{$border-width-thick});
-    border-bottom: $border-width-thick solid $color-gray-light-3;
+      calc(#{$space-small-1} - #{$border-width-thick-1});
+    border-bottom: $border-width-thick-1 solid $color-gray-light-3;
     text-align: left;
     vertical-align: top;
   }

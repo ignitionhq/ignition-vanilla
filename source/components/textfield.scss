@@ -9,7 +9,7 @@
   // spacing values but lack a border.
   padding: calc(#{$space-small-2} - #{$border-width-regular})
     calc(#{$space-regular} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-medium;
+  border: $border-width-regular solid $color-gray-medium-1;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
@@ -50,7 +50,7 @@
 
   &-label {
     &.is-disabled {
-      color: $color-gray-medium;
+      color: $color-gray-medium-1;
       cursor: not-allowed;
     }
   }
