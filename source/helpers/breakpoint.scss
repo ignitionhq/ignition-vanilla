@@ -2,7 +2,8 @@
 // Generate mobile-first media queries.
 // -----------------------------------------------------------------------------
 
-// Use as argument a breakpoint name established via viewport settings.
+// Use as argument a keyword or a breakpoint name established via viewport
+// settings.
 // Example:
 // @include breakpoint(medium) {
 //   margin-right: 1rem;
@@ -13,12 +14,18 @@
 // }
 @mixin breakpoint($breakpoint-name) {
   @if ($breakpoint-name == "default") {
+    // Generate non-responsive content blocks. This feature is employed by other
+    // helpers to simplify the simultaneous creation of non-responsive and
+    // responsive classes.
     @content;
   } @else if map-has-key($breakpoints, $breakpoint-name) {
+    // Generate responsive content blocks.
     @media screen and (min-width: map-get($breakpoints, $breakpoint-name)) {
       @content;
     }
   } @else {
+    // Provide an error message if the argument is an invalid keyword or
+    // breakpoint name.
     @error "Invalid breakpoint name. Check spelling or review viewport settings.";
   }
 }
