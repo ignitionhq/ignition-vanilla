@@ -2,15 +2,13 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
-@mixin grid($grid, $name: null) {
-  @if ($name) {
-    $name: --#{$name};
-  }
+@mixin grid($values, $alias: null) {
+  $alias-suffix: if($alias, --#{$alias}, null);
 
-  .l-grid#{$name} {
+  .l-grid#{$alias-suffix} {
     display: grid;
 
-    @each $entry in $grid {
+    @each $entry in $values {
       // Get a breakpoint name.
       $breakpoint-name: nth($entry, 1);
       // Get a set of traits related to the previously acquired breakpoint.
@@ -19,10 +17,11 @@
       $gap-size: nth($breakpoint-definition, 2);
 
       @include breakpoint($breakpoint-name) {
-        $breakpoint-suffix: null;
-        @if ($breakpoint-name != "default") {
-          $breakpoint-suffix: \@#{$breakpoint-name};
-        }
+        $breakpoint-suffix: if(
+          $breakpoint-name != "default",
+          \@#{$breakpoint-name},
+          null
+        );
 
         grid-template-columns: repeat($column-count, 1fr);
         grid-gap: $gap-size;
