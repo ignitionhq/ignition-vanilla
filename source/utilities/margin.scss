@@ -2,24 +2,118 @@
 // Designate available margins.
 // -----------------------------------------------------------------------------
 
-$margin-right-values: (
-  all: (
-    regular: $space-regular
-  )
-);
+.u-margin-right-regular {
+  margin-right: 1rem !important;
+}
 
-$margin-bottom-values: (
-  all: (
-    regular: $space-regular,
-    large-1: $space-large-1,
-    large-2: $space-large-2,
-    large-3: $space-large-3,
-    large-4: $space-large-4,
-    large-5: $space-large-5,
-    large-6: $space-large-6,
-    none: 0
-  )
-);
+@media screen and (min-width: 720px) {
+  .u-margin-right-regular\@medium {
+    margin-right: 1rem !important;
+  }
+}
 
-@include utility(margin-right, $margin-right-values);
-@include utility(margin-bottom, $margin-bottom-values);
+@media screen and (min-width: 1080px) {
+  .u-margin-right-regular\@large {
+    margin-right: 1rem !important;
+  }
+}
+
+.u-margin-bottom-regular {
+  margin-bottom: 1rem !important;
+}
+
+.u-margin-bottom-large-1 {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-large-2 {
+  margin-bottom: 3rem !important;
+}
+
+.u-margin-bottom-large-3 {
+  margin-bottom: 2.5rem !important;
+}
+
+.u-margin-bottom-large-4 {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-bottom-large-5 {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-large-6 {
+  margin-bottom: 1.25rem !important;
+}
+
+.u-margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-margin-bottom-regular\@medium {
+    margin-bottom: 1rem !important;
+  }
+
+  .u-margin-bottom-large-1\@medium {
+    margin-bottom: 4rem !important;
+  }
+
+  .u-margin-bottom-large-2\@medium {
+    margin-bottom: 3rem !important;
+  }
+
+  .u-margin-bottom-large-3\@medium {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .u-margin-bottom-large-4\@medium {
+    margin-bottom: 2rem !important;
+  }
+
+  .u-margin-bottom-large-5\@medium {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .u-margin-bottom-large-6\@medium {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .u-margin-bottom-none\@medium {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-margin-bottom-regular\@large {
+    margin-bottom: 1rem !important;
+  }
+
+  .u-margin-bottom-large-1\@large {
+    margin-bottom: 4rem !important;
+  }
+
+  .u-margin-bottom-large-2\@large {
+    margin-bottom: 3rem !important;
+  }
+
+  .u-margin-bottom-large-3\@large {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .u-margin-bottom-large-4\@large {
+    margin-bottom: 2rem !important;
+  }
+
+  .u-margin-bottom-large-5\@large {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .u-margin-bottom-large-6\@large {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .u-margin-bottom-none\@large {
+    margin-bottom: 0 !important;
+  }
+}

@@ -2,12 +2,42 @@
 // Designate available display types.
 // -----------------------------------------------------------------------------
 
-$display-values: (
-  all: (
-    block,
-    flex,
-    none
-  )
-);
+.u-display-block {
+  display: block !important;
+}
 
-@include utility(display, $display-values);
+.u-display-flex {
+  display: flex !important;
+}
+
+.u-display-none {
+  display: none !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-display-block\@medium {
+    display: block !important;
+  }
+
+  .u-display-flex\@medium {
+    display: flex !important;
+  }
+
+  .u-display-none\@medium {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .u-display-block\@large {
+    display: block !important;
+  }
+
+  .u-display-flex\@large {
+    display: flex !important;
+  }
+
+  .u-display-none\@large {
+    display: none !important;
+  }
+}
