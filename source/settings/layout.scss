@@ -1,5 +1,5 @@
 // LAYOUT
-// Designate structural characteristics.
+// Designate generic structural characteristics.
 // -----------------------------------------------------------------------------
 
 // Content
@@ -9,6 +9,11 @@ $content-max-width: 1240px;
 
 // Grid
 
+// Establish a standard grid. Set the number of columns and gap size starting
+// with the default values and going through each breakpoint established via
+// viewport settings. Mind that in a mobile-first approach the default values
+// are intended for small screens although the classes they help generate will
+// work across all viewport sizes.
 $grid-regular: (
   default: (
     2,
