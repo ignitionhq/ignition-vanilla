@@ -2,34 +2,30 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
-@mixin grid($values, $alias: null) {
-  $alias-suffix: if($alias, --#{$alias}, null);
+@mixin grid($values) {
+  display: grid;
 
-  .l-grid#{$alias-suffix} {
-    display: grid;
+  @each $entry in $values {
+    // Get a breakpoint name.
+    $breakpoint-name: nth($entry, 1);
+    // Get a set of traits related to the previously acquired breakpoint.
+    $breakpoint-definition: nth($entry, 2);
+    $column-count: nth($breakpoint-definition, 1);
+    $gap-size: nth($breakpoint-definition, 2);
 
-    @each $entry in $values {
-      // Get a breakpoint name.
-      $breakpoint-name: nth($entry, 1);
-      // Get a set of traits related to the previously acquired breakpoint.
-      $breakpoint-definition: nth($entry, 2);
-      $column-count: nth($breakpoint-definition, 1);
-      $gap-size: nth($breakpoint-definition, 2);
+    @include breakpoint($breakpoint-name) {
+      $breakpoint-suffix: if(
+        $breakpoint-name != "default",
+        \@#{$breakpoint-name},
+        null
+      );
 
-      @include breakpoint($breakpoint-name) {
-        $breakpoint-suffix: if(
-          $breakpoint-name != "default",
-          \@#{$breakpoint-name},
-          null
-        );
+      grid-template-columns: repeat($column-count, 1fr);
+      grid-gap: $gap-size;
 
-        grid-template-columns: repeat($column-count, 1fr);
-        grid-gap: $gap-size;
-
-        @for $i from 1 through $column-count {
-          &__column-#{$i}#{$breakpoint-suffix} {
-            grid-column: span #{$i};
-          }
+      @for $i from 1 through $column-count {
+        &__column-#{$i}#{$breakpoint-suffix} {
+          grid-column: span #{$i};
         }
       }
     }
