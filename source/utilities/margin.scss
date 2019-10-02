@@ -3,25 +3,25 @@
 // -----------------------------------------------------------------------------
 
 .u-margin-right-regular {
-  margin-right: 1rem !important;
+  margin-right: $space-regular !important;
 }
 
 @media screen and (min-width: 720px) {
   .u-margin-right-regular\@medium {
-    margin-right: 1rem !important;
+    margin-right: $space-regular !important;
   }
 }
 
 .u-margin-bottom-regular {
-  margin-bottom: 1rem !important;
+  margin-bottom: $space-regular !important;
 }
 
 .u-margin-bottom-large-1 {
-  margin-bottom: 4rem !important;
+  margin-bottom: $space-large-1 !important;
 }
 
 .u-margin-bottom-large-2 {
-  margin-bottom: 3rem !important;
+  margin-bottom: $space-large-2 !important;
 }
 
 .u-margin-bottom-none {
@@ -30,11 +30,11 @@
 
 @media screen and (min-width: 720px) {
   .u-margin-bottom-regular\@medium {
-    margin-bottom: 1rem !important;
+    margin-bottom: $space-regular !important;
   }
 
   .u-margin-bottom-large-1\@medium {
-    margin-bottom: 4rem !important;
+    margin-bottom: $space-large-1 !important;
   }
 
   .u-margin-bottom-none\@medium {
