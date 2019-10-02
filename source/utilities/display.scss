@@ -2,12 +2,10 @@
 // Designate available display types.
 // -----------------------------------------------------------------------------
 
-$display-values: (
-  all: (
-    block,
-    flex,
-    none
-  )
-);
+.u-display-block {
+  display: block !important;
+}
 
-@include utility(display, $display-values);
+.u-display-none {
+  display: none !important;
+}
