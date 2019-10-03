@@ -6,21 +6,30 @@
   display: grid;
 
   @each $breakpoint-name, $column-count, $gap-size in $definition {
-    @include breakpoint($breakpoint-name) {
-      $breakpoint-suffix: if(
-        $breakpoint-name != "default",
-        \@#{$breakpoint-name},
-        null
-      );
+    @if (
+      type-of($column-count) == number and
+      unitless($column-count) == true and
+      type-of($gap-size) == number and
+      unitless($gap-size) == false
+    ) {
+      @include breakpoint($breakpoint-name) {
+        $breakpoint-suffix: if(
+          $breakpoint-name != "default",
+          \@#{$breakpoint-name},
+          null
+        );
 
-      grid-template-columns: repeat($column-count, 1fr);
-      grid-gap: $gap-size;
+        grid-template-columns: repeat($column-count, 1fr);
+        grid-gap: $gap-size;
 
-      @for $i from 1 through $column-count {
-        &__column-#{$i}#{$breakpoint-suffix} {
-          grid-column: span #{$i};
+        @for $i from 1 through $column-count {
+          &__column-#{$i}#{$breakpoint-suffix} {
+            grid-column: span #{$i};
+          }
         }
       }
+    } @else {
+      @error "Hey there!";
     }
   }
 }
