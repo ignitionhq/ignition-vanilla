@@ -2,10 +2,16 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
+// Use as argument a grid definition established via layout settings.
+// Example:
+// @include grid($grid-regular);
+// will output a set of grid properties based on the designated grid definition.
 @mixin grid($definition) {
   display: grid;
 
   @each $breakpoint-name, $column-count, $gap-size in $definition {
+    // Generate grid properties only if the column count and gap size have valid
+    // values.
     @if (
       type-of($column-count) == number and
       unitless($column-count) == true and
@@ -13,6 +19,8 @@
       unitless($gap-size) == false
     ) {
       @include breakpoint($breakpoint-name) {
+        // Provide a breakpoint suffix only if the argument is a breakpoint name
+        // established via viewport settings.
         $breakpoint-suffix: if(
           $breakpoint-name != "default",
           \@#{$breakpoint-name},
