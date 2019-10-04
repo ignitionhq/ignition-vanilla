@@ -70,6 +70,12 @@ ul {
   padding-left: 2rem;
 }
 
+ol[class],
+ul[class] {
+  padding-left: 0;
+  list-style: none;
+}
+
 ol ol,
 ol ul,
 ul ol,
@@ -514,8 +520,6 @@ summary {
 .c-list {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
-  list-style: none;
 }
 
 .c-list__item {
@@ -534,9 +538,7 @@ summary {
 
 .c-nav {
   display: flex;
-  padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
 }
 
 .c-nav__link {
@@ -666,10 +668,8 @@ summary {
 
 .c-tabset__menu {
   display: flex;
-  padding-left: 0;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 0;
-  list-style: none;
 }
 
 .c-tabset__tab {

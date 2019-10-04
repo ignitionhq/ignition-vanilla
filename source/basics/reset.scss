@@ -94,6 +94,12 @@ ol,
 ul {
   padding-left: 2rem;
 
+  // Remove superfluous styles from lists with a class attribute.
+  &[class] {
+    padding-left: 0;
+    list-style: none;
+  }
+
   & ol,
   & ul {
     margin-bottom: 0;
