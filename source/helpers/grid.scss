@@ -3,9 +3,6 @@
 // -----------------------------------------------------------------------------
 
 // Use as argument a grid definition established via layout settings.
-// Example:
-// @include grid($grid-regular);
-// will output a set of grid properties based on the designated grid definition.
 @mixin grid($definition) {
   display: grid;
 
