@@ -131,10 +131,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  // Inherit text color in Firefox.
-  color: inherit;
-  // Increase versatility by using the text color as a background color.
-  background-color: currentColor;
+  background-color: $color-gray-light-3;
 }
 
 // Paragraph
