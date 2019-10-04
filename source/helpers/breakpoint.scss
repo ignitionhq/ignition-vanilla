@@ -4,14 +4,6 @@
 
 // Use as argument a keyword or a breakpoint name established via viewport
 // settings.
-// Example:
-// @include breakpoint(medium) {
-//   margin-right: 1rem;
-// }
-// will output:
-// @media screen and (min-width: 720px) {
-//   margin-right: 1rem;
-// }
 @mixin breakpoint($breakpoint-name) {
   @if ($breakpoint-name == "default") {
     // Generate non-responsive content blocks with the aid of a keyword
@@ -25,8 +17,6 @@
       @content;
     }
   } @else {
-    // Provide an error message if the argument is an invalid keyword or
-    // breakpoint name.
     @error "Invalid keyword or breakpoint name. Check spelling or review viewport settings.";
   }
 }
