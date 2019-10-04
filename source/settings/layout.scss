@@ -15,16 +15,7 @@ $content-max-width: 1240px;
 // are intended for small screens although the classes they help generate will
 // work across all viewport sizes.
 $grid-regular: (
-  default: (
-    2,
-    1.25rem
-  ),
-  medium: (
-    6,
-    1.25rem
-  ),
-  large: (
-    12,
-    2.5rem
-  )
+  default 2 1.25rem,
+  medium 6 1.25rem,
+  large 12 2.5rem
 );
