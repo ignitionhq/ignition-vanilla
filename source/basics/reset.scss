@@ -28,9 +28,6 @@ body {
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   color: $color-gray-regular;
-  // Prevent text size adjustment on device orientation change in Chrome and
-  // Safari on iOS.
-  -webkit-text-size-adjust: 100%;
 }
 
 // Address
