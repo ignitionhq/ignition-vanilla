@@ -23,6 +23,8 @@ html {
 // Body
 
 body {
+  // Fill viewport height.
+  min-height: 100vh;
   margin: 0;
   font-family: $font-family-regular;
   font-size: $font-size-regular;
