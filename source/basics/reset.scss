@@ -266,11 +266,9 @@ textarea {
   // Remove margins from all selected elements in Safari, from `checkbox` and
   // `radio` inputs in all browsers, and from `textarea` elements in Firefox.
   margin: 0;
-  // Normalize font family, font size, and line height.
-  font-family: inherit;
-  font-size: inherit;
-  // Mind that line height cannot be changed on `select` elements.
-  line-height: inherit;
+  // Normalize font properties. Mind that line height cannot be changed on
+  // `select` elements.
+  font: inherit;
   // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
 
@@ -300,10 +298,8 @@ select {
 }
 
 ::-webkit-file-upload-button {
-  // Normalize font family, font size, and line height.
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  // Normalize font properties.
+  font: inherit;
   // Allow complete styling in Chrome and Safari on iOS.
   -webkit-appearance: button;
 }
