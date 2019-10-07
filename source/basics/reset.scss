@@ -239,7 +239,7 @@ img,
 video {
   // Prevent overflow when parent width is exceeded.
   max-width: 100%;
-  // Prevent stretching when an incorrect height attribute is set.
+  // Maintain aspect ratio when a height attribute is set.
   height: auto;
 }
 
