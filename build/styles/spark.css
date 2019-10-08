@@ -363,39 +363,6 @@ summary {
   background-color: #c2d6ff;
 }
 
-.c-button--negative {
-  background-color: #b80c00;
-}
-
-.c-button--negative:hover {
-  background-color: #a30b00;
-}
-
-.c-button--negative:focus {
-  background-color: #8f0a00;
-}
-
-.c-button--negative:active {
-  background-color: #7a0800;
-}
-
-.c-button--negative-plain {
-  color: #b80c00;
-  background-color: transparent;
-}
-
-.c-button--negative-plain:hover {
-  background-color: #ffeceb;
-}
-
-.c-button--negative-plain:focus {
-  background-color: #ffd9d6;
-}
-
-.c-button--negative-plain:active {
-  background-color: #ffc6c2;
-}
-
 .c-button:disabled {
   color: #999999;
 }
