@@ -352,8 +352,6 @@ label {
 meter,
 progress {
   height: 1rem;
-  // Normalize vertical alignment in Chrome and Firefox.
-  vertical-align: baseline;
 }
 
 meter {
