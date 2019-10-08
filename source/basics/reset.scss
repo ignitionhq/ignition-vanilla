@@ -284,6 +284,8 @@ button,
 [type="reset"],
 [type="submit"] {
   cursor: pointer;
+  // Provide consistent baseline styles in Chrome and Safari on macOS and iOS.
+  -webkit-appearance: button;
 
   // Remove inner border on focus in Firefox.
   &::-moz-focus-inner {
@@ -297,22 +299,17 @@ select {
   text-transform: none;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  // Remove opinionated styles in Chrome and Safari on iOS.
-  -webkit-appearance: button;
-}
-
 ::-webkit-file-upload-button {
   // Normalize font properties.
   font: inherit;
+  // Provide consistent baseline styles in Chrome and Safari on macOS and iOS.
+  -webkit-appearance: button;
 }
 
 [type="search"] {
   // Correct outline offset in Safari.
   outline-offset: -2px;
-  // Remove opinionated styles in Chrome and Safari on iOS.
+  // Provide consistent baseline styles in Chrome and Safari on macOS and iOS.
   -webkit-appearance: textfield;
 
   // Remove extra inner space in Safari.

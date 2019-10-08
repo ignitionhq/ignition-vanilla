@@ -213,6 +213,7 @@ button,
 [type="reset"],
 [type="submit"] {
   cursor: pointer;
+  -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -227,14 +228,9 @@ select {
   text-transform: none;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
 ::-webkit-file-upload-button {
   font: inherit;
+  -webkit-appearance: button;
 }
 
 [type="search"] {
