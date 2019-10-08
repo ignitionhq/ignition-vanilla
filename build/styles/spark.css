@@ -9,13 +9,12 @@ html {
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   line-height: 1.5;
   color: #333333;
-  background-color: white;
-  -webkit-text-size-adjust: 100%;
 }
 
 address {
@@ -72,6 +71,12 @@ ul {
   padding-left: 2rem;
 }
 
+ol[class],
+ul[class] {
+  padding-left: 0;
+  list-style: none;
+}
+
 ol ol,
 ol ul,
 ul ol,
@@ -97,8 +102,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  color: inherit;
-  background-color: currentColor;
+  background-color: #e0e0e0;
 }
 
 p {
@@ -193,9 +197,7 @@ input,
 select,
 textarea {
   margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font: inherit;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -227,9 +229,7 @@ select {
 }
 
 ::-webkit-file-upload-button {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font: inherit;
   -webkit-appearance: button;
 }
 
@@ -268,7 +268,6 @@ label {
 meter,
 progress {
   height: 1rem;
-  vertical-align: baseline;
 }
 
 meter {
@@ -516,8 +515,6 @@ summary {
 .c-list {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
-  list-style: none;
 }
 
 .c-list__item {
@@ -536,9 +533,7 @@ summary {
 
 .c-nav {
   display: flex;
-  padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
 }
 
 .c-nav__link {
@@ -668,10 +663,8 @@ summary {
 
 .c-tabset__menu {
   display: flex;
-  padding-left: 0;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 0;
-  list-style: none;
 }
 
 .c-tabset__tab {
