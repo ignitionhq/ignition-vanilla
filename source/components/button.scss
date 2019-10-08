@@ -90,43 +90,6 @@
     }
   }
 
-  // Negative
-
-  &--negative {
-    background-color: $color-negative-regular;
-
-    &:hover {
-      background-color: $color-negative-dark-1;
-    }
-
-    &:focus {
-      background-color: $color-negative-dark-2;
-    }
-
-    &:active {
-      background-color: $color-negative-dark-3;
-    }
-  }
-
-  // Plain negative
-
-  &--negative-plain {
-    color: $color-negative-regular;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-negative-light-1;
-    }
-
-    &:focus {
-      background-color: $color-negative-light-2;
-    }
-
-    &:active {
-      background-color: $color-negative-light-3;
-    }
-  }
-
   // Disabled
 
   &:disabled {
