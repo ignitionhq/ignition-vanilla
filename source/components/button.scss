@@ -93,7 +93,7 @@
   // Disabled
 
   &:disabled {
-    color: $color-gray-medium-1;
+    color: $color-gray-medium;
 
     &:not([class*="plain"]) {
       background-color: $color-gray-light-2;

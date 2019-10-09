@@ -5,7 +5,7 @@
 .c-toggle {
   width: 1.25rem;
   height: 1.25rem;
-  border: $border-width-regular solid $color-gray-medium-1;
+  border: $border-width-regular solid $color-gray-medium;
   border-radius: $border-radius-regular;
   vertical-align: middle;
   background-color: $color-white-regular;
@@ -59,7 +59,7 @@
     cursor: pointer;
 
     &.is-disabled {
-      color: $color-gray-medium-1;
+      color: $color-gray-medium;
       cursor: not-allowed;
     }
   }
