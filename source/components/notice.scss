@@ -15,64 +15,11 @@
     margin-bottom: 0;
   }
 
-  // Dismissible
-
-  &--dismissible {
-    position: relative;
-    padding-right: $space-large-2;
-  }
-
-  &__dismiss-button {
-    position: absolute;
-    top: $space-regular;
-    right: $space-regular;
-    padding: $space-small-4;
-    border: 0;
-    border-radius: $border-radius-regular;
-    color: inherit;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-gray-light-2;
-    }
-
-    &:focus {
-      // Mind that the outline should be removed only if other styles that imply
-      // focus are set.
-      outline: 0;
-      background-color: $color-gray-light-3;
-    }
-
-    &:active {
-      background-color: $color-gray-light-4;
-    }
-  }
-
-  &__dismiss-icon {
-    display: block;
-    // Inherit text color on `svg` elements.
-    fill: currentColor;
-  }
-
   // Primary
 
   &--primary {
     color: $color-primary-regular;
     background-color: $color-primary-light-1;
-
-    .c-notice__dismiss-button {
-      &:hover {
-        background-color: $color-primary-light-2;
-      }
-
-      &:focus {
-        background-color: $color-primary-light-3;
-      }
-
-      &:active {
-        background-color: $color-primary-light-4;
-      }
-    }
   }
 
   // Negative
@@ -80,19 +27,5 @@
   &--negative {
     color: $color-negative-regular;
     background-color: $color-negative-light-1;
-
-    .c-notice__dismiss-button {
-      &:hover {
-        background-color: $color-negative-light-2;
-      }
-
-      &:focus {
-        background-color: $color-negative-light-3;
-      }
-
-      &:active {
-        background-color: $color-negative-light-4;
-      }
-    }
   }
 }

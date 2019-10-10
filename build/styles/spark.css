@@ -533,72 +533,14 @@ summary {
   margin-bottom: 0;
 }
 
-.c-notice--dismissible {
-  position: relative;
-  padding-right: 3rem;
-}
-
-.c-notice__dismiss-button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.375rem;
-  border: 0;
-  border-radius: 4px;
-  color: inherit;
-  background-color: transparent;
-}
-
-.c-notice__dismiss-button:hover {
-  background-color: #ebebeb;
-}
-
-.c-notice__dismiss-button:focus {
-  outline: 0;
-  background-color: #e0e0e0;
-}
-
-.c-notice__dismiss-button:active {
-  background-color: #d6d6d6;
-}
-
-.c-notice__dismiss-icon {
-  display: block;
-  fill: currentColor;
-}
-
 .c-notice--primary {
   color: #0044cc;
   background-color: #ebf1ff;
 }
 
-.c-notice--primary .c-notice__dismiss-button:hover {
-  background-color: #d6e4ff;
-}
-
-.c-notice--primary .c-notice__dismiss-button:focus {
-  background-color: #c2d6ff;
-}
-
-.c-notice--primary .c-notice__dismiss-button:active {
-  background-color: #adc9ff;
-}
-
 .c-notice--negative {
   color: #b80c00;
   background-color: #ffeceb;
-}
-
-.c-notice--negative .c-notice__dismiss-button:hover {
-  background-color: #ffd9d6;
-}
-
-.c-notice--negative .c-notice__dismiss-button:focus {
-  background-color: #ffc6c2;
-}
-
-.c-notice--negative .c-notice__dismiss-button:active {
-  background-color: #ffb3ad;
 }
 
 .c-table {
