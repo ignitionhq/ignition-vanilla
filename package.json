@@ -8,23 +8,17 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "npm run build:css && npm run build:js",
+    "build": "npm run build:css",
     "build:css": "npm run compile:css && npm run minify:css",
-    "build:js": "npm run compile:js && npm run minify:js",
     "compile:css": "node-sass --output-style expanded --precision 8 source/spark.scss --output build/styles/",
-    "compile:js": "rollup --format esm source/spark.js --file build/scripts/spark.js",
     "minify:css": "cleancss build/styles/spark.css --output build/styles/spark.min.css",
-    "minify:js": "terser build/scripts/spark.js --output build/scripts/spark.min.js",
     "watch": "npm-run-all --parallel watch:*",
-    "watch:css": "nodemon --exec npm run build:css --ext scss --watch source/",
-    "watch:js": "nodemon --exec npm run build:js --ext js --watch source/"
+    "watch:css": "nodemon --exec npm run build:css --ext scss --watch source/"
   },
   "devDependencies": {
     "clean-css-cli": "^4.2.1",
     "nodemon": "^1.18.10",
     "node-sass": "^4.7.2",
-    "npm-run-all": "^4.1.5",
-    "rollup": "^1.4.0",
-    "terser": "^3.17.0"
+    "npm-run-all": "^4.1.5"
   }
 }
