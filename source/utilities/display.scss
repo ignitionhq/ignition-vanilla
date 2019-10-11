@@ -2,13 +2,19 @@
 // Designate available display types.
 // -----------------------------------------------------------------------------
 
+// Block
+
 .u-display-block {
   display: block !important;
 }
 
+// Flex
+
 .u-display-flex {
   display: flex !important;
 }
+
+// None
 
 .u-display-none {
   display: none !important;
