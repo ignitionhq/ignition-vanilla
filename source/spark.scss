@@ -15,7 +15,6 @@
 
 @import "helpers/breakpoint";
 @import "helpers/grid";
-@import "helpers/utility";
 
 // BASICS
 // Establish defaults for fundamental items.
@@ -35,22 +34,21 @@
 @import "components/nav";
 @import "components/notice";
 @import "components/table";
-@import "components/tabset";
 @import "components/textfield";
 @import "components/toggle";
 
-// LAYOUTS
+// ORGANIZERS
 // Identify generic structural traits.
 // -----------------------------------------------------------------------------
 
-@import "layouts/container";
-@import "layouts/grid";
-@import "layouts/segment";
+@import "organizers/container";
+@import "organizers/grid";
+@import "organizers/segment";
 
 // UTILITIES
-// Identify generic individual traits.
+// Identify generic functional traits.
 // -----------------------------------------------------------------------------
 
 @import "utilities/display";
 @import "utilities/margin";
-@import "utilities/width";
+@import "utilities/text";

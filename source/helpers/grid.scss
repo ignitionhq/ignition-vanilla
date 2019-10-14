@@ -2,27 +2,27 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
-@mixin grid($grid, $name: null) {
-  @if ($name) {
-    $name: --#{$name};
-  }
+// Use as argument a grid definition established via layout settings.
+@mixin grid($definition) {
+  display: grid;
 
-  .l-grid#{$name} {
-    display: grid;
-
-    @each $entry in $grid {
-      // Get a breakpoint name.
-      $breakpoint-name: nth($entry, 1);
-      // Get a set of traits related to the previously acquired breakpoint.
-      $breakpoint-definition: nth($entry, 2);
-      $column-count: nth($breakpoint-definition, 1);
-      $gap-size: nth($breakpoint-definition, 2);
-
+  @each $breakpoint-name, $column-count, $gap-size in $definition {
+    // Generate grid properties only if the column count and gap size have valid
+    // values.
+    @if (
+      type-of($column-count) == number and
+      unitless($column-count) == true and
+      type-of($gap-size) == number and
+      unitless($gap-size) == false
+    ) {
       @include breakpoint($breakpoint-name) {
-        $breakpoint-suffix: null;
-        @if ($breakpoint-name != "default") {
-          $breakpoint-suffix: \@#{$breakpoint-name};
-        }
+        // Provide a breakpoint suffix only if the argument is a breakpoint name
+        // established via viewport settings.
+        $breakpoint-suffix: if(
+          $breakpoint-name != "default",
+          \@#{$breakpoint-name},
+          null
+        );
 
         grid-template-columns: repeat($column-count, 1fr);
         grid-gap: $gap-size;
@@ -33,6 +33,8 @@
           }
         }
       }
+    } @else {
+      @error "Invalid number of columns or gap size. Check spelling or review layout settings.";
     }
   }
 }

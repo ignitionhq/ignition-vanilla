@@ -2,4 +2,6 @@
 // Arrange and size items using a two-dimensional layout system.
 // -----------------------------------------------------------------------------
 
-@include grid($grid-regular);
+.o-grid {
+  @include grid($grid-regular);
+}

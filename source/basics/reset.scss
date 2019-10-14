@@ -23,15 +23,13 @@ html {
 // Body
 
 body {
+  // Fill viewport height.
+  min-height: 100vh;
   margin: 0;
   font-family: $font-family-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   color: $color-gray-regular;
-  background-color: $color-white-regular;
-  // Prevent text size adjustment on device orientation change in Chrome and
-  // Safari on iOS.
-  -webkit-text-size-adjust: 100%;
 }
 
 // Address
@@ -98,6 +96,12 @@ ol,
 ul {
   padding-left: 2rem;
 
+  // Remove superfluous styles from lists with a class attribute.
+  &[class] {
+    padding-left: 0;
+    list-style: none;
+  }
+
   & ol,
   & ul {
     margin-bottom: 0;
@@ -129,10 +133,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  // Inherit text color in Firefox.
-  color: inherit;
-  // Increase versatility by using the text color as a background color.
-  background-color: currentColor;
+  background-color: $color-gray-light-3;
 }
 
 // Paragraph
@@ -151,7 +152,7 @@ pre {
   font-family: $font-family-monospace;
 
   code {
-    // Prevent compounding effect that results from using ems.
+    // Override default font size because it is unsuitable for nested elements.
     font-size: inherit;
   }
 }
@@ -196,7 +197,7 @@ kbd {
 
 kbd {
   kbd {
-    // Prevent compounding effect that results from using ems.
+    // Override default font size because it is unsuitable for nested elements.
     font-size: inherit;
   }
 }
@@ -240,7 +241,7 @@ img,
 video {
   // Prevent overflow when parent width is exceeded.
   max-width: 100%;
-  // Prevent stretching when an incorrect height attribute is set.
+  // Maintain aspect ratio when a height attribute is set.
   height: auto;
 }
 
@@ -267,11 +268,9 @@ textarea {
   // Remove margins from all selected elements in Safari, from `checkbox` and
   // `radio` inputs in all browsers, and from `textarea` elements in Firefox.
   margin: 0;
-  // Normalize font family, font size, and line height.
-  font-family: inherit;
-  font-size: inherit;
-  // Mind that line height cannot be changed on `select` elements.
-  line-height: inherit;
+  // Normalize font properties. Mind that line height cannot be changed on
+  // `select` elements.
+  font: inherit;
   // Remove tap highlight in Chrome and Safari.
   -webkit-tap-highlight-color: transparent;
 
@@ -285,7 +284,7 @@ button,
 [type="reset"],
 [type="submit"] {
   cursor: pointer;
-  // Allow complete styling in Chrome and Safari on iOS.
+  // Provide consistent baseline styles in Chrome and Safari on macOS and iOS.
   -webkit-appearance: button;
 
   // Remove inner border on focus in Firefox.
@@ -301,18 +300,16 @@ select {
 }
 
 ::-webkit-file-upload-button {
-  // Normalize font family, font size, and line height.
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  // Allow complete styling in Chrome and Safari on iOS.
+  // Normalize font properties.
+  font: inherit;
+  // Provide consistent baseline styles in Chrome and Safari on macOS and iOS.
   -webkit-appearance: button;
 }
 
 [type="search"] {
   // Correct outline offset in Safari.
   outline-offset: -2px;
-  // Allow complete styling in Chrome and Safari on iOS.
+  // Provide consistent baseline styles in Chrome and Safari on macOS and iOS.
   -webkit-appearance: textfield;
 
   // Remove extra inner space in Safari.
@@ -355,8 +352,6 @@ label {
 meter,
 progress {
   height: 1rem;
-  // Normalize vertical alignment in Chrome and Firefox.
-  vertical-align: baseline;
 }
 
 meter {
