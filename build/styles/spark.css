@@ -123,7 +123,6 @@ pre code {
 
 a {
   text-decoration: none;
-  color: #0044cc;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -459,23 +458,22 @@ summary {
 
 .c-link {
   padding-bottom: 0.0625em;
-  border-bottom: 1px solid;
   color: inherit;
 }
 
 .c-link:hover, .c-link:focus {
-  border-width: 2px;
-}
-
-.c-link--plain {
-  border-width: 0;
-}
-
-.c-link--plain:hover, .c-link--plain:focus {
-  border-width: 1px;
+  border-bottom: 1px solid;
 }
 
 .c-link--primary {
+  color: #0044cc;
+}
+
+.c-link--distinct {
+  border-bottom: 1px solid;
+}
+
+.c-link--distinct:hover, .c-link--distinct:focus {
   color: #0044cc;
 }
 
