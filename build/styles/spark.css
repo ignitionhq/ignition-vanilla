@@ -470,6 +470,15 @@ summary {
   color: #0044cc;
 }
 
+.c-link--emphasized {
+  padding-bottom: 0.0625em;
+  border-bottom: 1px solid;
+}
+
+.c-link--emphasized:hover, .c-link--emphasized:focus {
+  color: #0044cc;
+}
+
 .c-list {
   display: flex;
   flex-direction: column;
