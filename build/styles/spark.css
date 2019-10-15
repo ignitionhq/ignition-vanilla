@@ -457,11 +457,11 @@ summary {
 }
 
 .c-link {
+  padding-bottom: 0.0625em;
   color: inherit;
 }
 
 .c-link:hover, .c-link:focus {
-  padding-bottom: 0.0625em;
   border-bottom: 1px solid;
 }
 
@@ -470,7 +470,6 @@ summary {
 }
 
 .c-link--distinct {
-  padding-bottom: 0.0625em;
   border-bottom: 1px solid;
 }
 
