@@ -1,34 +1,35 @@
 // LINK
-// Provide access to new content.
+// Reference new content.
 // -----------------------------------------------------------------------------
 
 .c-link {
   // Distance bottom border from descenders.
   padding-bottom: 0.0625em;
-  // Mind that the border color defaults to the current text color unless
-  // otherwise specified.
-  border-bottom: $border-width-regular solid;
   color: inherit;
 
   &:hover,
   &:focus {
-    border-width: $border-width-thick;
-  }
-
-  // Plain
-
-  &--plain {
-    border-width: 0;
-
-    &:hover,
-    &:focus {
-      border-width: $border-width-regular;
-    }
+    // Mind that the border color defaults to the current text color unless
+    // otherwise specified.
+    border-bottom: $border-width-regular solid;
   }
 
   // Primary
 
   &--primary {
     color: $color-primary-regular;
+  }
+
+  // Distinct
+
+  &--distinct {
+    // Mind that the border color defaults to the current text color unless
+    // otherwise specified.
+    border-bottom: $border-width-regular solid;
+
+    &:hover,
+    &:focus {
+      color: $color-primary-regular;
+    }
   }
 }
