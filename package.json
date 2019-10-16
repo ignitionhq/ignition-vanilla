@@ -10,11 +10,9 @@
   "scripts": {
     "build:css": "npm run compile:css && npm run minify:css",
     "compile:css": "sass --no-source-map source/spark.scss build/styles/spark.css",
-    "minify:css": "sass --no-source-map --style compressed build/styles/spark.css build/styles/spark.min.css",
-    "watch:css": "nodemon --exec npm run build:css --ext scss --watch source/"
+    "minify:css": "sass --no-source-map --style compressed build/styles/spark.css build/styles/spark.min.css"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10",
     "sass": "^1.23.0"
   }
 }
