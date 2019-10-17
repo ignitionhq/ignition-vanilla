@@ -1,6 +1,6 @@
 # Spark Vanilla
 
-Create consistent, engaging interfaces starting with a solid foundation. Spark Vanilla provides a set of essential components and patterns that can be easily directed to form complex design systems.
+Build effective interfaces starting with a solid foundation. Spark Vanilla provides a minimal set of essential CSS components and patterns that help kickstart the development of more complex design systems.
 
 ## Installation
 
