@@ -1,6 +1,6 @@
 # Spark Vanilla
 
-Create stunning, efficient interfaces in no time. Using only SCSS and ES6, Spark Vanilla provides a set of essential components and patterns that can be easily directed to form consistent, engaging applications.
+Create consistent, engaging interfaces starting with a solid foundation. Spark Vanilla provides a set of essential components and patterns that can be easily directed to form complex design systems.
 
 ## Installation
 
