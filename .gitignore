@@ -3,9 +3,3 @@
 
 # Node
 node_modules
-
-# Editor
-*.code-workspace
-
-# Project
-demo
