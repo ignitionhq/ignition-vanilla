@@ -37,13 +37,13 @@
 @import "components/textfield";
 @import "components/toggle";
 
-// ORGANIZERS
-// Identify generic structural traits.
+// PATTERNS
+// Identify generic structural and visual traits.
 // -----------------------------------------------------------------------------
 
-@import "organizers/container";
-@import "organizers/grid";
-@import "organizers/segment";
+@import "patterns/container";
+@import "patterns/grid";
+@import "patterns/segment";
 
 // UTILITIES
 // Identify generic functional traits.
