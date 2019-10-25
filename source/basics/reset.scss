@@ -49,6 +49,7 @@ h6 {
   margin-top: 0;
   // Consolidate bottom margins for the sake of simplicity.
   margin-bottom: 1rem;
+  font-weight: $font-weight-bold;
 }
 
 h1 {
@@ -109,7 +110,7 @@ ul {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 dd {
@@ -177,8 +178,7 @@ abbr[title] {
 
 b,
 strong {
-  // Normalize font weight in Chrome and Safari.
-  font-weight: bolder;
+  font-weight: $font-weight-bold;
 }
 
 // Code, user input, and sample output
@@ -337,7 +337,7 @@ legend {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 // Label
