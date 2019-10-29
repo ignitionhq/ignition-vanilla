@@ -390,6 +390,98 @@ summary {
   background-color: #e0e0e0;
 }
 
+.p-container {
+  max-width: 1240px;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 720px) {
+  .p-container {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.p-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.25rem;
+}
+.p-grid__column-1 {
+  grid-column: span 1;
+}
+.p-grid__column-2 {
+  grid-column: span 2;
+}
+@media screen and (min-width: 720px) {
+  .p-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.25rem;
+  }
+  .p-grid__column-1\@medium {
+    grid-column: span 1;
+  }
+  .p-grid__column-2\@medium {
+    grid-column: span 2;
+  }
+  .p-grid__column-3\@medium {
+    grid-column: span 3;
+  }
+  .p-grid__column-4\@medium {
+    grid-column: span 4;
+  }
+  .p-grid__column-5\@medium {
+    grid-column: span 5;
+  }
+  .p-grid__column-6\@medium {
+    grid-column: span 6;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2.5rem;
+  }
+  .p-grid__column-1\@large {
+    grid-column: span 1;
+  }
+  .p-grid__column-2\@large {
+    grid-column: span 2;
+  }
+  .p-grid__column-3\@large {
+    grid-column: span 3;
+  }
+  .p-grid__column-4\@large {
+    grid-column: span 4;
+  }
+  .p-grid__column-5\@large {
+    grid-column: span 5;
+  }
+  .p-grid__column-6\@large {
+    grid-column: span 6;
+  }
+  .p-grid__column-7\@large {
+    grid-column: span 7;
+  }
+  .p-grid__column-8\@large {
+    grid-column: span 8;
+  }
+  .p-grid__column-9\@large {
+    grid-column: span 9;
+  }
+  .p-grid__column-10\@large {
+    grid-column: span 10;
+  }
+  .p-grid__column-11\@large {
+    grid-column: span 11;
+  }
+  .p-grid__column-12\@large {
+    grid-column: span 12;
+  }
+}
+
 .c-heading-1 {
   margin-bottom: 2rem;
   font-size: 3rem;
@@ -491,6 +583,17 @@ summary {
   background-color: #ffeceb;
 }
 
+.p-segment {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media screen and (min-width: 720px) {
+  .p-segment {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
 .c-table {
   width: 100%;
 }
@@ -585,109 +688,6 @@ summary {
 .c-toggle-label.is-disabled {
   color: #999999;
   cursor: not-allowed;
-}
-
-.p-container {
-  max-width: 1240px;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (min-width: 720px) {
-  .p-container {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
-}
-
-.p-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.25rem;
-}
-.p-grid__column-1 {
-  grid-column: span 1;
-}
-.p-grid__column-2 {
-  grid-column: span 2;
-}
-@media screen and (min-width: 720px) {
-  .p-grid {
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1.25rem;
-  }
-  .p-grid__column-1\@medium {
-    grid-column: span 1;
-  }
-  .p-grid__column-2\@medium {
-    grid-column: span 2;
-  }
-  .p-grid__column-3\@medium {
-    grid-column: span 3;
-  }
-  .p-grid__column-4\@medium {
-    grid-column: span 4;
-  }
-  .p-grid__column-5\@medium {
-    grid-column: span 5;
-  }
-  .p-grid__column-6\@medium {
-    grid-column: span 6;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-grid {
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 2.5rem;
-  }
-  .p-grid__column-1\@large {
-    grid-column: span 1;
-  }
-  .p-grid__column-2\@large {
-    grid-column: span 2;
-  }
-  .p-grid__column-3\@large {
-    grid-column: span 3;
-  }
-  .p-grid__column-4\@large {
-    grid-column: span 4;
-  }
-  .p-grid__column-5\@large {
-    grid-column: span 5;
-  }
-  .p-grid__column-6\@large {
-    grid-column: span 6;
-  }
-  .p-grid__column-7\@large {
-    grid-column: span 7;
-  }
-  .p-grid__column-8\@large {
-    grid-column: span 8;
-  }
-  .p-grid__column-9\@large {
-    grid-column: span 9;
-  }
-  .p-grid__column-10\@large {
-    grid-column: span 10;
-  }
-  .p-grid__column-11\@large {
-    grid-column: span 11;
-  }
-  .p-grid__column-12\@large {
-    grid-column: span 12;
-  }
-}
-
-.p-segment {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-@media screen and (min-width: 720px) {
-  .p-segment {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
 }
 
 .u-display-block {
