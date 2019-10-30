@@ -26,15 +26,28 @@
 
         grid-template-columns: repeat($column-count, 1fr);
         grid-gap: $gap-size;
-
-        @for $i from 1 through $column-count {
-          &__column-#{$i}#{$breakpoint-suffix} {
-            grid-column: span #{$i};
-          }
-        }
       }
     } @else {
       @error "Invalid number of columns or gap size. Check spelling or review layout settings.";
+    }
+  }
+}
+
+@mixin grid-columns($definition) {
+  @each $breakpoint-name, $column-count, $gap-size in $definition {
+    @include breakpoint($breakpoint-name) {
+      // Provide a breakpoint suffix only if the argument is a breakpoint name
+      // established via viewport settings.
+      $breakpoint-suffix: if(
+        $breakpoint-name != "default",
+        \@#{$breakpoint-name},
+        null
+      );
+      @for $i from 1 through $column-count {
+        .grid__column-#{$i}#{$breakpoint-suffix} {
+          grid-column: span #{$i};
+        }
+      }
     }
   }
 }

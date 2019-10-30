@@ -409,34 +409,10 @@ summary {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.25rem;
 }
-.grid__column-1 {
-  grid-column: span 1;
-}
-.grid__column-2 {
-  grid-column: span 2;
-}
 @media screen and (min-width: 720px) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1.25rem;
-  }
-  .grid__column-1\@medium {
-    grid-column: span 1;
-  }
-  .grid__column-2\@medium {
-    grid-column: span 2;
-  }
-  .grid__column-3\@medium {
-    grid-column: span 3;
-  }
-  .grid__column-4\@medium {
-    grid-column: span 4;
-  }
-  .grid__column-5\@medium {
-    grid-column: span 5;
-  }
-  .grid__column-6\@medium {
-    grid-column: span 6;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -444,44 +420,90 @@ summary {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 2.5rem;
   }
+}
+
+.grid__column-1 {
+  grid-column: span 1;
+}
+
+.grid__column-2 {
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 720px) {
+  .grid__column-1\@medium {
+    grid-column: span 1;
+  }
+
+  .grid__column-2\@medium {
+    grid-column: span 2;
+  }
+
+  .grid__column-3\@medium {
+    grid-column: span 3;
+  }
+
+  .grid__column-4\@medium {
+    grid-column: span 4;
+  }
+
+  .grid__column-5\@medium {
+    grid-column: span 5;
+  }
+
+  .grid__column-6\@medium {
+    grid-column: span 6;
+  }
+}
+@media screen and (min-width: 1080px) {
   .grid__column-1\@large {
     grid-column: span 1;
   }
+
   .grid__column-2\@large {
     grid-column: span 2;
   }
+
   .grid__column-3\@large {
     grid-column: span 3;
   }
+
   .grid__column-4\@large {
     grid-column: span 4;
   }
+
   .grid__column-5\@large {
     grid-column: span 5;
   }
+
   .grid__column-6\@large {
     grid-column: span 6;
   }
+
   .grid__column-7\@large {
     grid-column: span 7;
   }
+
   .grid__column-8\@large {
     grid-column: span 8;
   }
+
   .grid__column-9\@large {
     grid-column: span 9;
   }
+
   .grid__column-10\@large {
     grid-column: span 10;
   }
+
   .grid__column-11\@large {
     grid-column: span 11;
   }
+
   .grid__column-12\@large {
     grid-column: span 12;
   }
 }
-
 .heading-1 {
   margin-bottom: 2rem;
   font-size: 3rem;
