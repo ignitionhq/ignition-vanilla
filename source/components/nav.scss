@@ -2,7 +2,7 @@
 // Display major navigation links or key actions.
 // -----------------------------------------------------------------------------
 
-.c-nav {
+.nav {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0;
@@ -24,7 +24,7 @@
   &--vertical {
     flex-direction: column;
 
-    .c-nav__link {
+    .nav__link {
       padding: $space-small-4 $space-small-2;
     }
   }

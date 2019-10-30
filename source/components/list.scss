@@ -2,7 +2,7 @@
 // Present related items in a continuous format.
 // -----------------------------------------------------------------------------
 
-.c-list {
+.list {
   display: flex;
   flex-direction: column;
 
@@ -17,7 +17,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    > .c-list__item {
+    > .list__item {
       &:not(:last-child) {
         margin-right: $space-large-5;
       }
