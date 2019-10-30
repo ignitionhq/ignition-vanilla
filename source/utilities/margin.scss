@@ -9,7 +9,7 @@
 }
 
 @include breakpoint(medium) {
-  .margin-right-regular\@medium {
+  .medium\:margin-right-regular {
     margin-right: $space-regular !important;
   }
 }
@@ -33,15 +33,15 @@
 }
 
 @include breakpoint(medium) {
-  .margin-bottom-regular\@medium {
+  .medium\:margin-bottom-regular {
     margin-bottom: $space-regular !important;
   }
 
-  .margin-bottom-large-1\@medium {
+  .medium\:margin-bottom-large-1 {
     margin-bottom: $space-large-1 !important;
   }
 
-  .margin-bottom-none\@medium {
+  .medium\:margin-bottom-none {
     margin-bottom: 0 !important;
   }
 }

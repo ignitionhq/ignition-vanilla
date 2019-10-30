@@ -725,7 +725,7 @@ summary {
 }
 
 @media screen and (min-width: 720px) {
-  .margin-right-regular\@medium {
+  .medium\:margin-right-regular {
     margin-right: 1rem !important;
   }
 }
@@ -746,15 +746,15 @@ summary {
 }
 
 @media screen and (min-width: 720px) {
-  .margin-bottom-regular\@medium {
+  .medium\:margin-bottom-regular {
     margin-bottom: 1rem !important;
   }
 
-  .margin-bottom-large-1\@medium {
+  .medium\:margin-bottom-large-1 {
     margin-bottom: 4rem !important;
   }
 
-  .margin-bottom-none\@medium {
+  .medium\:margin-bottom-none {
     margin-bottom: 0 !important;
   }
 }
