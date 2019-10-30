@@ -5,5 +5,3 @@
 .grid {
   @include grid($grid-regular);
 }
-
-@include grid-columns($grid-regular);
