@@ -8,6 +8,9 @@
 
   @each $breakpoint-name, $grid-properties in $grid-definition {
     @include breakpoint($breakpoint-name) {
+      // Establish a grid namespace. Remove the period from the parent selector
+      // so that the resulting string can be used inside class names.
+      $grid-namespace: str-slice(#{&}, 2);
       // Provide a breakpoint prefix only if the argument is a breakpoint name
       // established via viewport settings.
       $breakpoint-prefix: if(
@@ -22,7 +25,7 @@
       grid-gap: $gap-size;
 
       @for $i from 1 through $column-count {
-        @at-root .#{$breakpoint-prefix}grid__column-#{$i} {
+        @at-root .#{$breakpoint-prefix}#{$grid-namespace}__column-#{$i} {
           grid-column: span #{$i};
         }
       }
