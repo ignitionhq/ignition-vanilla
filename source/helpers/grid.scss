@@ -18,9 +18,9 @@
       @include breakpoint($breakpoint-name) {
         // Provide a breakpoint suffix only if the argument is a breakpoint name
         // established via viewport settings.
-        $breakpoint-suffix: if(
+        $breakpoint-prefix: if(
           $breakpoint-name != "default",
-          \@#{$breakpoint-name},
+          #{$breakpoint-name}\:,
           null
         );
 
@@ -28,7 +28,7 @@
         grid-gap: $gap-size;
 
         @for $i from 1 through $column-count {
-          &__column-#{$i}#{$breakpoint-suffix} {
+          @at-root .#{$breakpoint-prefix}grid__column-#{$i} {
             grid-column: span #{$i};
           }
         }
