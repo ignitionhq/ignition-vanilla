@@ -8,7 +8,7 @@
 
   @each $breakpoint-name, $grid-properties in $grid-definition {
     @include breakpoint($breakpoint-name) {
-      // Provide a breakpoint suffix only if the argument is a breakpoint name
+      // Provide a breakpoint prefix only if the argument is a breakpoint name
       // established via viewport settings.
       $breakpoint-prefix: if(
         $breakpoint-name != "default",
