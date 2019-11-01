@@ -2,6 +2,11 @@
 // Perform clearly defined actions.
 // -----------------------------------------------------------------------------
 
+@use "../settings/color" as *;
+@use "../settings/decoration" as *;
+@use "../settings/spacing" as *;
+@use "../settings/typography" as *;
+
 .button {
   display: inline-block;
   padding: $space-small-2 $space-regular;

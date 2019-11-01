@@ -2,6 +2,10 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
+@use "../settings/layout" as *;
+@use "../settings/viewport" as *;
+@use "../helpers/breakpoint" as *;
+
 // Use as argument a grid definition established via layout settings.
 @mixin grid($grid-definition) {
   display: grid;

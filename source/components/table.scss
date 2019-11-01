@@ -2,6 +2,11 @@
 // Display data in rows and columns.
 // -----------------------------------------------------------------------------
 
+@use "../settings/color" as *;
+@use "../settings/decoration" as *;
+@use "../settings/spacing" as *;
+@use "../settings/typography" as *;
+
 .table {
   width: 100%;
 

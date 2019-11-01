@@ -2,6 +2,11 @@
 // Input and edit text.
 // -----------------------------------------------------------------------------
 
+@use "../settings/color" as *;
+@use "../settings/decoration" as *;
+@use "../settings/spacing" as *;
+@use "../settings/typography" as *;
+
 .textfield {
   display: block;
   width: 100%;

@@ -2,6 +2,9 @@
 // Reference new content.
 // -----------------------------------------------------------------------------
 
+@use "../settings/color" as *;
+@use "../settings/decoration" as *;
+
 .link {
   // Distance bottom border from descenders.
   padding-bottom: 0.0625em;

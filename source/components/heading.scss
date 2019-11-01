@@ -2,6 +2,9 @@
 // Title content units.
 // -----------------------------------------------------------------------------
 
+@use "../settings/spacing" as *;
+@use "../settings/typography" as *;
+
 .heading-1 {
   margin-bottom: $space-large-4;
   font-size: $font-size-large-1;

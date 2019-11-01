@@ -2,6 +2,8 @@
 // Present related items in a continuous format.
 // -----------------------------------------------------------------------------
 
+@use "../settings/spacing" as *;
+
 .list {
   display: flex;
   flex-direction: column;

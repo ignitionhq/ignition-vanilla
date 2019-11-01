@@ -2,6 +2,8 @@
 // Generate necessary content blocks.
 // -----------------------------------------------------------------------------
 
+@use "../settings/viewport" as *;
+
 // Use as argument a keyword or a breakpoint name established via viewport
 // settings.
 @mixin breakpoint($breakpoint-name) {

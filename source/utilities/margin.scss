@@ -2,6 +2,9 @@
 // Designate available margins.
 // -----------------------------------------------------------------------------
 
+@use "../settings/spacing" as *;
+@use "../helpers/breakpoint" as *;
+
 // Right
 
 .margin-right-regular {

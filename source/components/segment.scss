@@ -2,6 +2,9 @@
 // Separate content units.
 // -----------------------------------------------------------------------------
 
+@use "../settings/spacing" as *;
+@use "../helpers/breakpoint" as *;
+
 .segment {
   padding-top: $space-large-2;
   padding-bottom: $space-large-2;

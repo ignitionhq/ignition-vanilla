@@ -3,6 +3,9 @@
 // inconsistencies.
 // -----------------------------------------------------------------------------
 
+@use "../settings/color" as *;
+@use "../settings/typography" as *;
+
 // Universal
 
 // Change box model on all elements and pseudo-elements so that their width and

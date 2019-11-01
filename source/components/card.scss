@@ -2,6 +2,11 @@
 // Group content and actions related to a single topic.
 // -----------------------------------------------------------------------------
 
+@use "../settings/color" as *;
+@use "../settings/decoration" as *;
+@use "../settings/spacing" as *;
+@use "../settings/typography" as *;
+
 .card {
   display: block;
   // Employ `calc()` to ensure precise alignment with items that use the same
