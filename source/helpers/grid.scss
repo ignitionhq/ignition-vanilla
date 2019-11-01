@@ -3,38 +3,32 @@
 // -----------------------------------------------------------------------------
 
 // Use as argument a grid definition established via layout settings.
-@mixin grid($definition) {
+@mixin grid($grid-definition) {
   display: grid;
 
-  @each $breakpoint-name, $column-count, $gap-size in $definition {
-    // Generate grid properties only if the column count and gap size have valid
-    // values.
-    @if (
-      type-of($column-count) == number and
-      unitless($column-count) == true and
-      type-of($gap-size) == number and
-      unitless($gap-size) == false
-    ) {
-      @include breakpoint($breakpoint-name) {
-        // Provide a breakpoint suffix only if the argument is a breakpoint name
-        // established via viewport settings.
-        $breakpoint-prefix: if(
-          $breakpoint-name != "default",
-          #{$breakpoint-name}\:,
-          null
-        );
+  @each $breakpoint-name, $grid-properties in $grid-definition {
+    @include breakpoint($breakpoint-name) {
+      // Establish a grid namespace. Remove the period from the parent selector
+      // so that the resulting string can be used inside class names.
+      $grid-namespace: str-slice(#{&}, 2);
+      // Provide a breakpoint prefix only if the argument is a breakpoint name
+      // established via viewport settings.
+      $breakpoint-prefix: if(
+        $breakpoint-name != "default",
+        #{$breakpoint-name}\:,
+        null
+      );
+      $column-count: nth($grid-properties, 1);
+      $gap-size: nth($grid-properties, 2);
 
-        grid-template-columns: repeat($column-count, 1fr);
-        grid-gap: $gap-size;
+      grid-template-columns: repeat($column-count, 1fr);
+      grid-gap: $gap-size;
 
-        @for $i from 1 through $column-count {
-          @at-root .#{$breakpoint-prefix}grid__column-#{$i} {
-            grid-column: span #{$i};
-          }
+      @for $i from 1 through $column-count {
+        @at-root .#{$breakpoint-prefix}#{$grid-namespace}__column-#{$i} {
+          grid-column: span #{$i};
         }
       }
-    } @else {
-      @error "Invalid number of columns or gap size. Check spelling or review layout settings.";
     }
   }
 }
