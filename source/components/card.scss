@@ -2,10 +2,7 @@
 // Group content and actions related to a single topic.
 // -----------------------------------------------------------------------------
 
-@use "../settings/color" as *;
-@use "../settings/decoration" as *;
-@use "../settings/spacing" as *;
-@use "../settings/typography" as *;
+@use "../settings" as *;
 
 .card {
   display: block;

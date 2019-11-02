@@ -2,7 +2,7 @@
 // Present related items in a continuous format.
 // -----------------------------------------------------------------------------
 
-@use "../settings/spacing" as *;
+@use "../settings" as *;
 
 .list {
   display: flex;

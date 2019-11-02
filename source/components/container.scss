@@ -2,9 +2,8 @@
 // Lay out high-level content units.
 // -----------------------------------------------------------------------------
 
-@use "../settings/layout" as *;
-@use "../settings/spacing" as *;
-@use "../helpers/breakpoint" as *;
+@use "../settings" as *;
+@use "../helpers" as *;
 
 .container {
   max-width: $content-max-width;

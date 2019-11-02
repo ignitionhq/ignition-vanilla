@@ -2,10 +2,7 @@
 // Perform clearly defined actions.
 // -----------------------------------------------------------------------------
 
-@use "../settings/color" as *;
-@use "../settings/decoration" as *;
-@use "../settings/spacing" as *;
-@use "../settings/typography" as *;
+@use "../settings" as *;
 
 .button {
   display: inline-block;

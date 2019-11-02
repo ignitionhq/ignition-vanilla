@@ -2,9 +2,7 @@
 // Provide feedback or additional information.
 // -----------------------------------------------------------------------------
 
-@use "../settings/color" as *;
-@use "../settings/decoration" as *;
-@use "../settings/spacing" as *;
+@use "../settings" as *;
 
 .notice {
   padding: $space-regular $space-large-5;

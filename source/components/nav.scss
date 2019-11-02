@@ -2,8 +2,7 @@
 // Display major navigation links or key actions.
 // -----------------------------------------------------------------------------
 
-@use "../settings/color" as *;
-@use "../settings/spacing" as *;
+@use "../settings" as *;
 
 .nav {
   display: flex;

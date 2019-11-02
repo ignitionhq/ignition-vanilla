@@ -2,8 +2,8 @@
 // Arrange and size items using a two-dimensional layout system.
 // -----------------------------------------------------------------------------
 
-@use "../settings/layout" as *;
-@use "../helpers/grid" as *;
+@use "../settings" as *;
+@use "../helpers" as *;
 
 .grid {
   @include grid($grid-regular);

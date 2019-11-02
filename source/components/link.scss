@@ -2,8 +2,7 @@
 // Reference new content.
 // -----------------------------------------------------------------------------
 
-@use "../settings/color" as *;
-@use "../settings/decoration" as *;
+@use "../settings" as *;
 
 .link {
   // Distance bottom border from descenders.

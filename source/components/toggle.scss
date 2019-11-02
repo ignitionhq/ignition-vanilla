@@ -2,9 +2,7 @@
 // Alternate between states on one or more options.
 // -----------------------------------------------------------------------------
 
-@use "../settings/color" as *;
-@use "../settings/decoration" as *;
-@use "../settings/spacing" as *;
+@use "../settings" as *;
 
 .toggle {
   width: 1.25rem;

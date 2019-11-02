@@ -2,8 +2,7 @@
 // Emphasize significant text fragments.
 // -----------------------------------------------------------------------------
 
-@use "../settings/spacing" as *;
-@use "../settings/typography" as *;
+@use "../settings" as *;
 
 .lead {
   margin-bottom: $space-large-5;
