@@ -8,8 +8,8 @@
   margin-right: $space-regular !important;
 }
 
-@include breakpoint(medium) {
-  .medium\:margin-right-regular {
+@include breakpoint(tablet) {
+  .tablet\:margin-right-regular {
     margin-right: $space-regular !important;
   }
 }
@@ -32,16 +32,16 @@
   margin-bottom: 0 !important;
 }
 
-@include breakpoint(medium) {
-  .medium\:margin-bottom-regular {
+@include breakpoint(tablet) {
+  .tablet\:margin-bottom-regular {
     margin-bottom: $space-regular !important;
   }
 
-  .medium\:margin-bottom-large-1 {
+  .tablet\:margin-bottom-large-1 {
     margin-bottom: $space-large-1 !important;
   }
 
-  .medium\:margin-bottom-none {
+  .tablet\:margin-bottom-none {
     margin-bottom: 0 !important;
   }
 }
