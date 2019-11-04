@@ -619,27 +619,27 @@ summary {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1.25rem;
   }
-  .medium\:grid__column-1 {
+  .tablet\:grid__column-1 {
     grid-column: span 1;
   }
 
-  .medium\:grid__column-2 {
+  .tablet\:grid__column-2 {
     grid-column: span 2;
   }
 
-  .medium\:grid__column-3 {
+  .tablet\:grid__column-3 {
     grid-column: span 3;
   }
 
-  .medium\:grid__column-4 {
+  .tablet\:grid__column-4 {
     grid-column: span 4;
   }
 
-  .medium\:grid__column-5 {
+  .tablet\:grid__column-5 {
     grid-column: span 5;
   }
 
-  .medium\:grid__column-6 {
+  .tablet\:grid__column-6 {
     grid-column: span 6;
   }
 }
@@ -648,51 +648,51 @@ summary {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 2.5rem;
   }
-  .large\:grid__column-1 {
+  .desktop\:grid__column-1 {
     grid-column: span 1;
   }
 
-  .large\:grid__column-2 {
+  .desktop\:grid__column-2 {
     grid-column: span 2;
   }
 
-  .large\:grid__column-3 {
+  .desktop\:grid__column-3 {
     grid-column: span 3;
   }
 
-  .large\:grid__column-4 {
+  .desktop\:grid__column-4 {
     grid-column: span 4;
   }
 
-  .large\:grid__column-5 {
+  .desktop\:grid__column-5 {
     grid-column: span 5;
   }
 
-  .large\:grid__column-6 {
+  .desktop\:grid__column-6 {
     grid-column: span 6;
   }
 
-  .large\:grid__column-7 {
+  .desktop\:grid__column-7 {
     grid-column: span 7;
   }
 
-  .large\:grid__column-8 {
+  .desktop\:grid__column-8 {
     grid-column: span 8;
   }
 
-  .large\:grid__column-9 {
+  .desktop\:grid__column-9 {
     grid-column: span 9;
   }
 
-  .large\:grid__column-10 {
+  .desktop\:grid__column-10 {
     grid-column: span 10;
   }
 
-  .large\:grid__column-11 {
+  .desktop\:grid__column-11 {
     grid-column: span 11;
   }
 
-  .large\:grid__column-12 {
+  .desktop\:grid__column-12 {
     grid-column: span 12;
   }
 }
@@ -725,7 +725,7 @@ summary {
 }
 
 @media screen and (min-width: 720px) {
-  .medium\:margin-right-regular {
+  .tablet\:margin-right-regular {
     margin-right: 1rem !important;
   }
 }
@@ -746,15 +746,15 @@ summary {
 }
 
 @media screen and (min-width: 720px) {
-  .medium\:margin-bottom-regular {
+  .tablet\:margin-bottom-regular {
     margin-bottom: 1rem !important;
   }
 
-  .medium\:margin-bottom-large-1 {
+  .tablet\:margin-bottom-large-1 {
     margin-bottom: 4rem !important;
   }
 
-  .medium\:margin-bottom-none {
+  .tablet\:margin-bottom-none {
     margin-bottom: 0 !important;
   }
 }
