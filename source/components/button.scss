@@ -10,8 +10,6 @@
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   text-align: center;
-  // Prevent text wrapping, usually in a flex context.
-  white-space: nowrap;
   color: $color-white-regular;
   background-color: $color-primary-regular;
 
