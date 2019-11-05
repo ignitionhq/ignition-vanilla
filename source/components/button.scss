@@ -13,21 +13,21 @@
   // Prevent text wrapping, usually in a flex context.
   white-space: nowrap;
   color: $color-white-regular;
-  background-color: $color-gray-regular;
+  background-color: $color-primary-regular;
 
   &:hover {
-    background-color: $color-gray-dark-1;
+    background-color: $color-primary-dark-1;
   }
 
   &:focus {
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-gray-dark-2;
+    background-color: $color-primary-dark-2;
   }
 
   &:active {
-    background-color: $color-gray-dark-3;
+    background-color: $color-primary-dark-3;
   }
 
   // Mind that because similar variants share disabled state styles these are
@@ -37,43 +37,6 @@
   // Plain
 
   &--plain {
-    color: $color-gray-regular;
-    background-color: transparent;
-
-    &:hover {
-      background-color: $color-gray-light-1;
-    }
-
-    &:focus {
-      background-color: $color-gray-light-2;
-    }
-
-    &:active {
-      background-color: $color-gray-light-3;
-    }
-  }
-
-  // Primary
-
-  &--primary {
-    background-color: $color-primary-regular;
-
-    &:hover {
-      background-color: $color-primary-dark-1;
-    }
-
-    &:focus {
-      background-color: $color-primary-dark-2;
-    }
-
-    &:active {
-      background-color: $color-primary-dark-3;
-    }
-  }
-
-  // Plain primary
-
-  &--primary-plain {
     color: $color-primary-regular;
     background-color: transparent;
 
