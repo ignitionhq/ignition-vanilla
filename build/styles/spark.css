@@ -302,6 +302,10 @@ summary {
 .button:active {
   background-color: #00308f;
 }
+.button:disabled {
+  color: #999999;
+  background-color: #ebebeb;
+}
 .button--plain {
   color: #0044cc;
   background-color: transparent;
@@ -315,13 +319,7 @@ summary {
 .button--plain:active {
   background-color: #c2d6ff;
 }
-.button:disabled {
-  color: #999999;
-}
-.button:disabled:not([class*=plain]) {
-  background-color: #ebebeb;
-}
-.button:disabled[class*=plain] {
+.button--plain:disabled {
   background-color: transparent;
 }
 

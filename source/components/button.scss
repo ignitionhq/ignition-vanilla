@@ -28,9 +28,10 @@
     background-color: $color-primary-dark-3;
   }
 
-  // Mind that because similar variants share disabled state styles these are
-  // placed at the bottom of the file so as to override state declarations with
-  // the same specificity.
+  &:disabled {
+    color: $color-gray-medium;
+    background-color: $color-gray-light-2;
+  }
 
   // Plain
 
@@ -49,18 +50,8 @@
     &:active {
       background-color: $color-primary-light-3;
     }
-  }
 
-  // Disabled
-
-  &:disabled {
-    color: $color-gray-medium;
-
-    &:not([class*="plain"]) {
-      background-color: $color-gray-light-2;
-    }
-
-    &[class*="plain"] {
+    &:disabled {
       background-color: transparent;
     }
   }
