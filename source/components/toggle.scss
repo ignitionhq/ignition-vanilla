@@ -58,9 +58,9 @@
     padding-left: $space-small-5;
     cursor: pointer;
 
-    &.is-disabled {
+    &.disabled {
       color: $color-gray-medium;
-      cursor: not-allowed;
+      cursor: default;
     }
   }
 }

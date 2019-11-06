@@ -201,7 +201,7 @@ button:disabled,
 input:disabled,
 select:disabled,
 textarea:disabled {
-  cursor: not-allowed;
+  cursor: default;
 }
 
 button,
@@ -511,9 +511,9 @@ summary {
 .textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
 }
-.textfield-label.is-disabled {
+.textfield-label.disabled {
   color: #999999;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .toggle {
@@ -554,9 +554,9 @@ summary {
   padding-left: 0.25rem;
   cursor: pointer;
 }
-.toggle-label.is-disabled {
+.toggle-label.disabled {
   color: #999999;
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .container {
