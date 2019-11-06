@@ -49,7 +49,7 @@
   // Mind that labels are separate support elements, not descendants.
 
   &-label {
-    &.is-disabled {
+    &.disabled {
       color: $color-gray-medium;
       cursor: default;
     }
