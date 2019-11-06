@@ -7,22 +7,22 @@
   padding-bottom: 0.0625em;
   // Mind that the border color defaults to the current text color unless
   // otherwise specified.
-  border-bottom: $border-width-regular solid;
+  border-bottom: $border-width-regular solid $color-primary-light-4;
   color: $color-primary-regular;
 
   &:hover,
   &:focus {
-    border-bottom-width: 0;
+    border-color: $color-primary-regular;
   }
 
   // Plain
 
   &--plain {
-    border-bottom-width: 0;
+    border-color: transparent;
 
     &:hover,
     &:focus {
-      border-bottom-width: $border-width-regular;
+      border-color: $color-primary-light-4;
     }
   }
 }
