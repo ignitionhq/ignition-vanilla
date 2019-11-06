@@ -37,23 +37,4 @@
   p:last-child {
     margin-bottom: 0;
   }
-
-  // Interactive
-
-  &--interactive {
-    &:hover {
-      background-color: $color-gray-light-1;
-    }
-
-    &:focus {
-      // Mind that the outline should be removed only if other styles that imply
-      // focus are set.
-      outline: 0;
-      background-color: $color-gray-light-2;
-    }
-
-    &:active {
-      background-color: $color-gray-light-3;
-    }
-  }
 }
