@@ -14,7 +14,7 @@
 
     &:hover,
     &:focus,
-    &.is-selected {
+    &.selected {
       color: $color-primary-regular;
     }
   }
