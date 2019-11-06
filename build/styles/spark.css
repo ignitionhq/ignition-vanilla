@@ -435,7 +435,7 @@ summary {
   padding: 0.625rem 1rem;
   color: #333333;
 }
-.nav__link:hover, .nav__link:focus, .nav__link.is-selected {
+.nav__link:hover, .nav__link:focus, .nav__link.selected {
   color: #0044cc;
 }
 .nav--vertical {
@@ -502,10 +502,10 @@ summary {
 .textfield:disabled {
   border-color: #d6d6d6;
 }
-.textfield.is-invalid {
+.textfield.invalid {
   border-color: #b80c00;
 }
-.textfield.is-invalid:focus {
+.textfield.invalid:focus {
   box-shadow: 0 0 0 3px #ffb3ad;
 }
 .textfield--select:not([size]):not([multiple]) {

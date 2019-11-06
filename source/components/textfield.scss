@@ -28,7 +28,7 @@
     border-color: $color-gray-light-4;
   }
 
-  &.is-invalid {
+  &.invalid {
     border-color: $color-negative-regular;
 
     &:focus {
