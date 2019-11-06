@@ -51,7 +51,7 @@
   &-label {
     &.is-disabled {
       color: $color-gray-medium;
-      cursor: not-allowed;
+      cursor: default;
     }
   }
 }
