@@ -5,31 +5,24 @@
 .link {
   // Distance bottom border from descenders.
   padding-bottom: 0.0625em;
-  color: inherit;
+  // Mind that the border color defaults to the current text color unless
+  // otherwise specified.
+  border-bottom: $border-width-regular solid;
+  color: $color-primary-regular;
 
   &:hover,
   &:focus {
-    // Mind that the border color defaults to the current text color unless
-    // otherwise specified.
-    border-bottom: $border-width-regular solid;
+    border-bottom-width: 0;
   }
 
-  // Primary
+  // Plain
 
-  &--primary {
-    color: $color-primary-regular;
-  }
-
-  // Distinct
-
-  &--distinct {
-    // Mind that the border color defaults to the current text color unless
-    // otherwise specified.
-    border-bottom: $border-width-regular solid;
+  &--plain {
+    border-bottom-width: 0;
 
     &:hover,
     &:focus {
-      color: $color-primary-regular;
+      border-bottom-width: $border-width-regular;
     }
   }
 }

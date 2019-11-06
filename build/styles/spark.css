@@ -384,19 +384,17 @@ summary {
 
 .link {
   padding-bottom: 0.0625em;
-  color: inherit;
+  border-bottom: 1px solid;
+  color: #0044cc;
 }
 .link:hover, .link:focus {
-  border-bottom: 1px solid;
+  border-bottom-width: 0;
 }
-.link--primary {
-  color: #0044cc;
+.link--plain {
+  border-bottom-width: 0;
 }
-.link--distinct {
-  border-bottom: 1px solid;
-}
-.link--distinct:hover, .link--distinct:focus {
-  color: #0044cc;
+.link--plain:hover, .link--plain:focus {
+  border-bottom-width: 1px;
 }
 
 .list {
