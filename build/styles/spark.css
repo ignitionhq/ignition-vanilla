@@ -351,16 +351,6 @@ summary {
 .card p:last-child {
   margin-bottom: 0;
 }
-.card--interactive:hover {
-  background-color: whitesmoke;
-}
-.card--interactive:focus {
-  outline: 0;
-  background-color: #ebebeb;
-}
-.card--interactive:active {
-  background-color: #e0e0e0;
-}
 
 .heading-1 {
   margin-bottom: 2rem;
