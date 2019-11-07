@@ -384,17 +384,17 @@ summary {
 
 .link {
   padding-bottom: 0.0625em;
-  border-bottom: 1px solid #adc9ff;
+  border-bottom: 1px solid;
   color: #0044cc;
 }
 .link:hover, .link:focus {
-  border-color: #0044cc;
+  border-width: 2px;
 }
 .link--plain {
-  border-color: transparent;
+  border-width: 0;
 }
 .link--plain:hover, .link--plain:focus {
-  border-color: #adc9ff;
+  border-width: 1px;
 }
 
 .list {
