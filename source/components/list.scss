@@ -3,24 +3,21 @@
 // -----------------------------------------------------------------------------
 
 .list {
-  display: flex;
-  flex-direction: column;
-
   &__item {
     padding-top: $space-small-4;
     padding-bottom: $space-small-4;
   }
 
-  // Horizontal
+  &__link {
+    color: $color-gray-regular;
 
-  &--horizontal {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    > .list__item {
-      &:not(:last-child) {
-        margin-right: $space-large-5;
-      }
+    &:hover,
+    &:focus {
+      // Distance bottom border from descenders.
+      padding-bottom: 0.0625em;
+      // Mind that the border color defaults to the current text color unless
+      // otherwise specified.
+      border-bottom: $border-width-regular solid;
     }
   }
 }

@@ -397,20 +397,16 @@ summary {
   border-width: 1px;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-}
 .list__item {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
-.list--horizontal {
-  flex-direction: row;
-  flex-wrap: wrap;
+.list__link {
+  color: #333333;
 }
-.list--horizontal > .list__item:not(:last-child) {
-  margin-right: 1.5rem;
+.list__link:hover, .list__link:focus {
+  padding-bottom: 0.0625em;
+  border-bottom: 1px solid;
 }
 
 .nav {
