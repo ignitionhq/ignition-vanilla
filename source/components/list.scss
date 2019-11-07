@@ -11,6 +11,19 @@
     padding-bottom: $space-small-4;
   }
 
+  &__link {
+    color: $color-gray-regular;
+
+    &:hover,
+    &:focus {
+      // Distance bottom border from descenders.
+      padding-bottom: 0.0625em;
+      // Mind that the border color defaults to the current text color unless
+      // otherwise specified.
+      border-bottom: $border-width-regular solid;
+    }
+  }
+
   // Horizontal
 
   &--horizontal {

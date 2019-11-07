@@ -405,6 +405,13 @@ summary {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
+.list__link {
+  color: #333333;
+}
+.list__link:hover, .list__link:focus {
+  padding-bottom: 0.0625em;
+  border-bottom: 1px solid;
+}
 .list--horizontal {
   flex-direction: row;
   flex-wrap: wrap;
