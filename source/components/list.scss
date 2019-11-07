@@ -3,10 +3,6 @@
 // -----------------------------------------------------------------------------
 
 .list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
   &__item {
     padding-top: $space-small-4;
     padding-bottom: $space-small-4;
@@ -22,18 +18,6 @@
       // Mind that the border color defaults to the current text color unless
       // otherwise specified.
       border-bottom: $border-width-regular solid;
-    }
-  }
-
-  // Horizontal
-
-  &--horizontal {
-    flex-direction: row;
-
-    > .list__item {
-      &:not(:last-child) {
-        margin-right: $space-large-5;
-      }
     }
   }
 }
