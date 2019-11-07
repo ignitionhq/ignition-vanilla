@@ -5,6 +5,7 @@
 .list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   &__item {
     padding-top: $space-small-4;
@@ -28,7 +29,6 @@
 
   &--horizontal {
     flex-direction: row;
-    flex-wrap: wrap;
 
     > .list__item {
       &:not(:last-child) {

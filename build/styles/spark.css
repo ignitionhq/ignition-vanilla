@@ -400,6 +400,7 @@ summary {
 .list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .list__item {
   padding-top: 0.375rem;
@@ -414,7 +415,6 @@ summary {
 }
 .list--horizontal {
   flex-direction: row;
-  flex-wrap: wrap;
 }
 .list--horizontal > .list__item:not(:last-child) {
   margin-right: 1.5rem;
