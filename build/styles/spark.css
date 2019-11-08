@@ -412,15 +412,11 @@ summary {
 .notice {
   padding: 1rem 1.5rem;
   border-radius: 4px;
-  color: #333333;
-  background-color: whitesmoke;
+  color: #0044cc;
+  background-color: #ebf1ff;
 }
 .notice p:last-of-type {
   margin-bottom: 0;
-}
-.notice--primary {
-  color: #0044cc;
-  background-color: #ebf1ff;
 }
 .notice--negative {
   color: #b80c00;

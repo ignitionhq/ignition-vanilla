@@ -5,21 +5,14 @@
 .notice {
   padding: $space-regular $space-large-5;
   border-radius: $border-radius-regular;
-  color: $color-gray-regular;
-  background-color: $color-gray-light-1;
+  color: $color-primary-regular;
+  background-color: $color-primary-light-1;
 
   // Remove last paragraph bottom margin using the `:last-of-type` selector
   // instead of `:last-child` because dismissible notices place the dismiss
   // button last.
   p:last-of-type {
     margin-bottom: 0;
-  }
-
-  // Primary
-
-  &--primary {
-    color: $color-primary-regular;
-    background-color: $color-primary-light-1;
   }
 
   // Negative
