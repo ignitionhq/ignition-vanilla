@@ -516,6 +516,33 @@ summary {
   color: #999999;
 }
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.main-header__logo {
+  font-size: 1.3125rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #0044cc;
+}
+.main-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+.main-header__link {
+  display: block;
+  padding: 0.625rem 1rem;
+  color: #333333;
+}
+.main-header__link:hover, .main-header__link:focus, .main-header__link.selected {
+  color: #0044cc;
+}
+
 .container {
   max-width: 1240px;
   padding-right: 1.25rem;

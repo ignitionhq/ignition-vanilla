@@ -1,0 +1,36 @@
+// MAIN HEADER
+// House brand elements and main navigation.
+// -----------------------------------------------------------------------------
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $space-small-2;
+  padding-bottom: $space-small-2;
+
+  &__logo {
+    font-size: $font-size-large-4;
+    line-height: 1;
+    font-weight: $font-weight-bold;
+    color: $color-primary-regular;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  &__link {
+    display: block;
+    padding: $space-small-2 $space-regular;
+    color: $color-gray-regular;
+
+    &:hover,
+    &:focus,
+    &.selected {
+      color: $color-primary-regular;
+    }
+  }
+}
