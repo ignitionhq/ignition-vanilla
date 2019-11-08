@@ -409,26 +409,6 @@ summary {
   border-bottom: 1px solid;
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 0;
-}
-.nav__link {
-  display: block;
-  padding: 0.625rem 1rem;
-  color: #333333;
-}
-.nav__link:hover, .nav__link:focus, .nav__link.selected {
-  color: #0044cc;
-}
-.nav--vertical {
-  flex-direction: column;
-}
-.nav--vertical .nav__link {
-  padding: 0.375rem 0.625rem;
-}
-
 .notice {
   padding: 1rem 1.5rem;
   border-radius: 4px;
