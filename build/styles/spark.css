@@ -473,7 +473,6 @@ summary {
 }
 .textfield-label.disabled {
   color: #999999;
-  cursor: default;
 }
 
 .toggle {
@@ -512,11 +511,9 @@ summary {
 .toggle-label {
   padding-right: 0.25rem;
   padding-left: 0.25rem;
-  cursor: pointer;
 }
 .toggle-label.disabled {
   color: #999999;
-  cursor: default;
 }
 
 .container {
