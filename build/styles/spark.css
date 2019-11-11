@@ -518,6 +518,7 @@ summary {
 
 .main-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 0.625rem;
@@ -541,6 +542,11 @@ summary {
 }
 .main-header__link:hover, .main-header__link:focus, .main-header__link.selected {
   color: #0044cc;
+}
+@media screen and (min-width: 720px) {
+  .main-header {
+    flex-direction: row;
+  }
 }
 
 .container {

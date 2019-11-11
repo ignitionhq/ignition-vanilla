@@ -4,6 +4,7 @@
 
 .main-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-top: $space-small-2;
@@ -32,5 +33,9 @@
     &.selected {
       color: $color-primary-regular;
     }
+  }
+
+  @include breakpoint(tablet) {
+    flex-direction: row;
   }
 }
