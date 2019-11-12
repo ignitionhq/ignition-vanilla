@@ -530,23 +530,23 @@ summary {
   font-weight: 700;
   color: #0044cc;
 }
-.main-header__nav {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 0;
-}
-.main-header__link {
-  display: block;
-  padding: 0.625rem 1rem;
-  color: #333333;
-}
-.main-header__link:hover, .main-header__link:focus, .main-header__link.selected {
-  color: #0044cc;
-}
 @media screen and (min-width: 720px) {
   .main-header {
     flex-direction: row;
   }
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-nav__link {
+  display: block;
+  padding: 0.625rem 1rem;
+  color: #333333;
+}
+.main-nav__link:hover, .main-nav__link:focus, .main-nav__link.selected {
+  color: #0044cc;
 }
 
 .container {

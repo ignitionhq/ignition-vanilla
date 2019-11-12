@@ -1,0 +1,20 @@
+// MAIN NAV
+// House global navigation.
+// -----------------------------------------------------------------------------
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__link {
+  display: block;
+  padding: $space-small-2 $space-regular;
+  color: $color-gray-regular;
+
+    &:hover,
+    &:focus,
+    &.selected {
+      color: $color-primary-regular;
+    }
+  }
+}

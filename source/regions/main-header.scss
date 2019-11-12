@@ -1,5 +1,5 @@
 // MAIN HEADER
-// House brand elements and main navigation.
+// House introductory content.
 // -----------------------------------------------------------------------------
 
 .main-header {
@@ -15,24 +15,6 @@
     line-height: 1;
     font-weight: $font-weight-bold;
     color: $color-primary-regular;
-  }
-
-  &__nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-
-  &__link {
-    display: block;
-    padding: $space-small-2 $space-regular;
-    color: $color-gray-regular;
-
-    &:hover,
-    &:focus,
-    &.selected {
-      color: $color-primary-regular;
-    }
   }
 
   @include breakpoint(tablet) {
