@@ -516,16 +516,32 @@ summary {
   color: #999999;
 }
 
-.main-header {
+.global-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
-.main-header__logo {
+.global-header__brand {
   font-size: 1.3125rem;
-  line-height: 1;
   font-weight: 700;
+  color: #0044cc;
+}
+.global-header__navigation {
+  display: flex;
+  margin-bottom: 0;
+}
+.global-header__navigation-item:not(:last-child) {
+  margin-right: 2rem;
+}
+.global-header__navigation-link {
+  display: inline-block;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  color: #333333;
+}
+.global-header__navigation-link:hover, .global-header__navigation-link:focus, .global-header__navigation-link.selected {
   color: #0044cc;
 }
 
