@@ -519,6 +519,7 @@ summary {
 .global-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
