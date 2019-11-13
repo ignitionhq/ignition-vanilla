@@ -516,13 +516,13 @@ summary {
   color: #999999;
 }
 
-.main-header {
+.global-header {
   display: flex;
   justify-content: space-between;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
-.main-header__logo {
+.global-header__logo {
   font-size: 1.3125rem;
   line-height: 1;
   font-weight: 700;
