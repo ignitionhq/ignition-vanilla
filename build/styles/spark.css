@@ -378,8 +378,7 @@ summary {
   border-color: #d6d6d6;
 }
 .checkbox-label {
-  padding-right: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 0.5rem;
 }
 .checkbox-label.disabled {
   color: #999999;
@@ -482,8 +481,7 @@ summary {
   border-color: #d6d6d6;
 }
 .radio-label {
-  padding-right: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 0.5rem;
 }
 .radio-label.disabled {
   color: #999999;
