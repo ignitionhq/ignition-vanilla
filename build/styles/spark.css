@@ -300,7 +300,7 @@ summary {
   box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
 }
 .button:active {
-  background-color: #00308f;
+  background-color: #0036a3;
 }
 .button:disabled {
   color: #999999;
@@ -314,7 +314,7 @@ summary {
   background-color: #ebf1ff;
 }
 .button--plain:active {
-  background-color: #c2d6ff;
+  background-color: #d6e4ff;
 }
 .button--plain:disabled {
   background-color: transparent;
