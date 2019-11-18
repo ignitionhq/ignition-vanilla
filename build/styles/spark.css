@@ -292,12 +292,12 @@ summary {
   color: white;
   background-color: #0044cc;
 }
-.button:hover {
+.button:hover, .button:focus {
   background-color: #003db8;
 }
 .button:focus {
   outline: 0;
-  background-color: #0036a3;
+  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
 }
 .button:active {
   background-color: #00308f;
@@ -310,11 +310,8 @@ summary {
   color: #0044cc;
   background-color: transparent;
 }
-.button--plain:hover {
+.button--plain:hover, .button--plain:focus {
   background-color: #ebf1ff;
-}
-.button--plain:focus {
-  background-color: #d6e4ff;
 }
 .button--plain:active {
   background-color: #c2d6ff;

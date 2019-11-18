@@ -13,7 +13,8 @@
   color: $color-white-regular;
   background-color: $color-primary-regular;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-primary-dark-1;
   }
 
@@ -21,7 +22,8 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    background-color: $color-primary-dark-2;
+    box-shadow: 0 0 0 1px $color-white-regular,
+                0 0 0 3px $color-primary-regular;
   }
 
   &:active {
@@ -39,12 +41,9 @@
     color: $color-primary-regular;
     background-color: transparent;
 
-    &:hover {
-      background-color: $color-primary-light-1;
-    }
-
+    &:hover,
     &:focus {
-      background-color: $color-primary-light-2;
+      background-color: $color-primary-light-1;
     }
 
     &:active {
