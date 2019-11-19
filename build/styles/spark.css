@@ -362,7 +362,7 @@ summary {
 .checkbox:focus {
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adc9ff;
+  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
 }
 .checkbox:checked {
   border-color: #0044cc;
@@ -465,7 +465,7 @@ summary {
 .radio:focus {
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adc9ff;
+  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
 }
 .radio:checked {
   border-color: #0044cc;
