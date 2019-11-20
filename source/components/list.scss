@@ -15,9 +15,21 @@
     &:focus {
       // Distance bottom border from descenders.
       padding-bottom: 0.0625em;
+    }
+
+    &:hover {
       // Mind that the border color defaults to the current text color unless
       // otherwise specified.
       border-bottom: $border-width-regular solid;
+    }
+
+    &:focus {
+      // Mind that the border color defaults to the current text color unless
+      // otherwise specified.
+      border-bottom: $border-width-thick solid;
+      // Mind that the outline should be removed only if other styles that imply
+      // focus are set.
+      outline: 0;
     }
   }
 }

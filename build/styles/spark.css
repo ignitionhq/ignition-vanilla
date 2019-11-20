@@ -442,7 +442,13 @@ summary {
 }
 .list__link:hover, .list__link:focus {
   padding-bottom: 0.0625em;
+}
+.list__link:hover {
   border-bottom: 1px solid;
+}
+.list__link:focus {
+  border-bottom: 2px solid;
+  outline: 0;
 }
 
 .notice {
