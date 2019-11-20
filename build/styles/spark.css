@@ -413,17 +413,24 @@ summary {
 
 .link {
   padding-bottom: 0.0625em;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #adc9ff;
   color: #0044cc;
 }
 .link:hover, .link:focus {
+  border-color: #0044cc;
+}
+.link:focus {
   border-width: 2px;
+  outline: 0;
 }
 .link--plain {
   border-width: 0;
 }
-.link--plain:hover, .link--plain:focus {
+.link--plain:hover {
   border-width: 1px;
+}
+.link--plain:focus {
+  border-width: 2px;
 }
 
 .list__item {

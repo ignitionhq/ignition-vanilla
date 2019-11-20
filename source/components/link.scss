@@ -5,14 +5,19 @@
 .link {
   // Distance bottom border from descenders.
   padding-bottom: 0.0625em;
-  // Mind that the border color defaults to the current text color unless
-  // otherwise specified.
-  border-bottom: $border-width-regular solid;
+  border-bottom: $border-width-regular solid $color-primary-light-4;
   color: $color-primary-regular;
 
   &:hover,
   &:focus {
+    border-color: $color-primary-regular;
+  }
+
+  &:focus {
     border-width: $border-width-thick;
+    // Mind that the outline should be removed only if other styles that imply
+    // focus are set.
+    outline: 0;
   }
 
   // Plain
@@ -20,9 +25,12 @@
   &--plain {
     border-width: 0;
 
-    &:hover,
-    &:focus {
+    &:hover {
       border-width: $border-width-regular;
+    }
+
+    &:focus {
+      border-width: $border-width-thick;
     }
   }
 }
