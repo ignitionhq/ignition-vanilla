@@ -47,5 +47,15 @@
     &.selected {
       color: $color-primary-regular;
     }
+
+    &:focus {
+      border-radius: $border-radius-regular;
+      // Mind that the outline should be removed only if other styles that imply
+      // focus are set.
+      outline: 0;
+      background-color: $color-primary-light-1;
+      box-shadow: 0 0 0 1px $color-white-regular,
+                  0 0 0 3px $color-primary-regular;
+    }
   }
 }
