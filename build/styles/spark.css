@@ -558,6 +558,12 @@ summary {
   font-weight: 700;
   color: #0044cc;
 }
+.global-header__brand:focus {
+  border-radius: 4px;
+  outline: 0;
+  background-color: #ebf1ff;
+  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
+}
 .global-header__navigation {
   display: flex;
   margin-bottom: 0;
