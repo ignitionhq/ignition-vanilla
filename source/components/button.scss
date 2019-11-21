@@ -13,8 +13,7 @@
   color: $color-white-regular;
   background-color: $color-primary-regular;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $color-primary-dark-1;
   }
 
@@ -41,8 +40,7 @@
     color: $color-primary-regular;
     background-color: transparent;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $color-primary-light-1;
     }
 

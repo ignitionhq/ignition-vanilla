@@ -292,7 +292,7 @@ summary {
   color: white;
   background-color: #0044cc;
 }
-.button:hover, .button:focus {
+.button:hover {
   background-color: #003db8;
 }
 .button:focus {
@@ -310,7 +310,7 @@ summary {
   color: #0044cc;
   background-color: transparent;
 }
-.button--plain:hover, .button--plain:focus {
+.button--plain:hover {
   background-color: #ebf1ff;
 }
 .button--plain:active {
