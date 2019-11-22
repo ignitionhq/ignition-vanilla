@@ -439,16 +439,15 @@ summary {
   padding-bottom: 0.375rem;
 }
 .list__link {
+  padding-bottom: 0.0625em;
+  border-bottom: 1px solid transparent;
   color: #333333;
 }
-.list__link:hover, .list__link:focus {
-  padding-bottom: 0.0625em;
-}
 .list__link:hover {
-  border-bottom: 1px solid;
+  border-color: #d6d6d6;
 }
 .list__link:focus {
-  border-bottom: 1px solid #0044cc;
+  border-color: #0044cc;
   outline: 0;
   background-color: #d6e4ff;
 }
