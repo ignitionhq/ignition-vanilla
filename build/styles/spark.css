@@ -297,7 +297,7 @@ summary {
 }
 .button:focus {
   outline: 0;
-  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
+  box-shadow: inset 0 0 0 1px #0044cc, 0 0 0 3px #adc9ff;
 }
 .button:active {
   background-color: #0036a3;
@@ -362,7 +362,7 @@ summary {
 .checkbox:focus {
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 .checkbox:checked {
   border-color: #0044cc;
@@ -420,17 +420,15 @@ summary {
   border-color: #0044cc;
 }
 .link:focus {
-  border-width: 2px;
+  border-color: #0044cc;
   outline: 0;
+  background-color: #d6e4ff;
 }
 .link--plain {
   border-width: 0;
 }
-.link--plain:hover {
+.link--plain:hover, .link--plain:focus {
   border-width: 1px;
-}
-.link--plain:focus {
-  border-width: 2px;
 }
 
 .list__item {
@@ -447,8 +445,9 @@ summary {
   border-bottom: 1px solid;
 }
 .list__link:focus {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid #333333;
   outline: 0;
+  background-color: #ebebeb;
 }
 
 .notice {
@@ -478,7 +477,7 @@ summary {
 .radio:focus {
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 .radio:checked {
   border-color: #0044cc;
@@ -529,15 +528,18 @@ summary {
   background-color: white;
 }
 .textfield:focus {
-  padding: calc(0.625rem - 2px) calc(1rem - 2px);
-  border: 2px solid #0044cc;
+  border-color: #0044cc;
   outline: 0;
+  box-shadow: 0 0 0 3px #adc9ff;
 }
 .textfield:disabled {
   border-color: #d6d6d6;
 }
 .textfield.invalid {
   border-color: #b80c00;
+}
+.textfield.invalid:focus {
+  box-shadow: 0 0 0 3px #ffb3ad;
 }
 .textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
@@ -561,8 +563,7 @@ summary {
 .global-header__brand:focus {
   border-radius: 4px;
   outline: 0;
-  background-color: #ebf1ff;
-  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
+  box-shadow: inset 0 0 0 1px #0044cc, 0 0 0 3px #adc9ff;
 }
 .global-header__navigation {
   display: flex;
@@ -583,8 +584,7 @@ summary {
 .global-header__navigation-link:focus {
   border-radius: 4px;
   outline: 0;
-  background-color: #ebf1ff;
-  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
+  box-shadow: inset 0 0 0 1px #0044cc, 0 0 0 3px #adc9ff;
 }
 
 .container {

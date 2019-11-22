@@ -21,8 +21,10 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: 0 0 0 1px $color-white-regular,
-                0 0 0 3px $color-primary-regular;
+    // Mimic a border using an inset shadow. Remove the latter if a border is
+    // present and style that instead.
+    box-shadow: inset 0 0 0 1px $color-primary-regular,
+                0 0 0 3px $color-primary-light-4;
   }
 
   &:active {

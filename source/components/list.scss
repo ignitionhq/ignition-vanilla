@@ -24,12 +24,11 @@
     }
 
     &:focus {
-      // Mind that the border color defaults to the current text color unless
-      // otherwise specified.
-      border-bottom: $border-width-thick solid;
+      border-bottom: $border-width-regular solid $color-gray-regular;
       // Mind that the outline should be removed only if other styles that imply
       // focus are set.
       outline: 0;
+      background-color: $color-gray-light-2;
     }
   }
 }

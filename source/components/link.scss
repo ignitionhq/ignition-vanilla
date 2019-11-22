@@ -14,10 +14,11 @@
   }
 
   &:focus {
-    border-width: $border-width-thick;
+    border-color: $color-primary-regular;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
+    background-color: $color-primary-light-2;
   }
 
   // Plain
@@ -25,12 +26,9 @@
   &--plain {
     border-width: 0;
 
-    &:hover {
-      border-width: $border-width-regular;
-    }
-
+    &:hover,
     &:focus {
-      border-width: $border-width-thick;
+      border-width: $border-width-regular;
     }
   }
 }

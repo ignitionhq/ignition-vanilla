@@ -18,8 +18,7 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: 0 0 0 1px $color-white-regular,
-                0 0 0 3px $color-primary-regular;
+    box-shadow: 0 0 0 3px $color-primary-light-4;
   }
 
   &:checked {

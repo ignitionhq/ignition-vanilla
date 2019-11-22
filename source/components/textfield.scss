@@ -17,14 +17,11 @@
   background-color: $color-white-regular;
 
   &:focus {
-    // Employ `calc()` to ensure precise alignment with items that use the same
-    // spacing values but lack a border.
-    padding: calc(#{$space-small-2} - #{$border-width-thick})
-      calc(#{$space-regular} - #{$border-width-thick});
-    border: $border-width-thick solid $color-primary-regular;
+    border-color: $color-primary-regular;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
+    box-shadow: 0 0 0 3px $color-primary-light-4;
   }
 
   &:disabled {
@@ -33,6 +30,10 @@
 
   &.invalid {
     border-color: $color-negative-regular;
+
+    &:focus {
+      box-shadow: 0 0 0 3px $color-negative-light-2;
+    }
   }
 
   // Select
