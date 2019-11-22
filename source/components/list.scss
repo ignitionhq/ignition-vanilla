@@ -24,11 +24,11 @@
     }
 
     &:focus {
-      border-bottom: $border-width-regular solid $color-gray-regular;
+      border-bottom: $border-width-regular solid $color-primary-regular;
       // Mind that the outline should be removed only if other styles that imply
       // focus are set.
       outline: 0;
-      background-color: $color-gray-light-2;
+      background-color: $color-primary-light-2;
     }
   }
 }

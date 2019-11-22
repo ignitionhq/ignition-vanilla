@@ -445,9 +445,9 @@ summary {
   border-bottom: 1px solid;
 }
 .list__link:focus {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #0044cc;
   outline: 0;
-  background-color: #ebebeb;
+  background-color: #d6e4ff;
 }
 
 .notice {
