@@ -425,10 +425,13 @@ summary {
   background-color: #d6e4ff;
 }
 .link--plain {
-  border-width: 0;
+  border-color: transparent;
 }
-.link--plain:hover, .link--plain:focus {
-  border-width: 1px;
+.link--plain:hover {
+  border-color: #adc9ff;
+}
+.link--plain:focus {
+  border-color: #0044cc;
 }
 
 .list__item {

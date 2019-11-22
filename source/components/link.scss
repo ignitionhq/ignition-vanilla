@@ -24,11 +24,14 @@
   // Plain
 
   &--plain {
-    border-width: 0;
+    border-color: transparent;
 
-    &:hover,
+    &:hover {
+      border-color: $color-primary-light-4;
+    }
+
     &:focus {
-      border-width: $border-width-regular;
+      border-color: $color-primary-regular;
     }
   }
 }
