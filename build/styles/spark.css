@@ -521,18 +521,16 @@ summary {
   background-color: white;
 }
 .textfield:focus {
+  padding: calc(0.625rem - 2px) calc(1rem - 2px);
+  border-width: 2px;
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adc9ff;
 }
 .textfield:disabled {
   border-color: #d6d6d6;
 }
 .textfield.invalid {
   border-color: #b80c00;
-}
-.textfield.invalid:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
 }
 .textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
