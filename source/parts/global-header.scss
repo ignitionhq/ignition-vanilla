@@ -10,23 +10,9 @@
   padding-bottom: $space-small-2;
 
   &__brand {
-    // Match navigation links height.
-    padding-top: $space-small-5;
-    padding-bottom: $space-small-5;
     font-size: $font-size-large-3;
     font-weight: $font-weight-bold;
     color: $color-primary-regular;
-
-    &:focus {
-      border-radius: $border-radius-regular;
-      // Mind that the outline should be removed only if other styles that imply
-      // focus are set.
-      outline: 0;
-      // Mimic a border using an inset shadow. Remove it if a border is present
-      // and style that instead.
-      box-shadow: inset 0 0 0 1px $color-primary-regular,
-                  0 0 0 3px $color-primary-light-4;
-    }
   }
 
   &__navigation {
@@ -47,20 +33,8 @@
     color: $color-gray-regular;
 
     &:hover,
-    &:focus,
     &.selected {
       color: $color-primary-regular;
-    }
-
-    &:focus {
-      border-radius: $border-radius-regular;
-      // Mind that the outline should be removed only if other styles that imply
-      // focus are set.
-      outline: 0;
-      // Mimic a border using an inset shadow. Remove it if a border is present
-      // and style that instead.
-      box-shadow: inset 0 0 0 1px $color-primary-regular,
-                  0 0 0 3px $color-primary-light-4;
     }
   }
 }
