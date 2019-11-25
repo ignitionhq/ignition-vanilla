@@ -5,10 +5,10 @@
 .checkbox {
   width: 1.25rem;
   height: 1.25rem;
-  border: $border-width-regular solid $color-gray-medium;
+  border: $border-width-regular solid $color-neutral-medium;
   border-radius: $border-radius-regular;
   vertical-align: middle;
-  background-color: $color-white-regular;
+  background-color: $color-neutral-white;
   cursor: pointer;
   // Allow complete styling in all browsers.
   -webkit-appearance: none;
@@ -18,7 +18,7 @@
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: 0 0 0 1px $color-white-regular,
+    box-shadow: 0 0 0 1px $color-neutral-white,
                 0 0 0 3px $color-primary-regular;
   }
 
@@ -31,7 +31,7 @@
   }
 
   &:disabled {
-    border-color: $color-gray-light-3;
+    border-color: $color-neutral-light-3;
   }
 
   // Label
@@ -41,7 +41,7 @@
     padding-left: $space-small-3;
 
     &.disabled {
-      color: $color-gray-medium;
+      color: $color-neutral-medium;
     }
   }
 }

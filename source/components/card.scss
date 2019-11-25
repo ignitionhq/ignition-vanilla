@@ -7,10 +7,10 @@
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-large-5} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-light-2;
+  border: $border-width-regular solid $color-neutral-light-2;
   border-radius: $border-radius-regular;
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
+  color: $color-neutral-regular;
+  background-color: $color-neutral-white;
 
   &__media {
     display: block;

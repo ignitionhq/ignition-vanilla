@@ -10,7 +10,7 @@
   font-size: $font-size-regular;
   line-height: $line-height-regular;
   text-align: center;
-  color: $color-white-regular;
+  color: $color-neutral-white;
   background-color: $color-primary-regular;
 
   &:hover {
@@ -29,8 +29,8 @@
   }
 
   &:disabled {
-    color: $color-gray-medium;
-    background-color: $color-gray-light-1;
+    color: $color-neutral-medium;
+    background-color: $color-neutral-light-1;
   }
 
   // Plain
