@@ -416,24 +416,17 @@ summary {
 
 .link {
   padding-bottom: 0.0625em;
-  border-bottom: 1px solid #adc9ff;
+  border-bottom: 1px solid;
   color: #0044cc;
 }
 .link:hover, .link:focus {
-  border-color: #0044cc;
-}
-.link:focus {
-  border-color: #0044cc;
-  outline: 0;
-  background-color: #d6e4ff;
+  border-width: 2px;
 }
 .link--plain {
   border-color: transparent;
 }
-.link--plain:hover {
-  border-color: #adc9ff;
-}
-.link--plain:focus {
+.link--plain:hover, .link--plain:focus {
+  border-width: 1px;
   border-color: #0044cc;
 }
 
@@ -446,13 +439,8 @@ summary {
   border-bottom: 1px solid transparent;
   color: #333333;
 }
-.list__link:hover {
-  border-color: #d6d6d6;
-}
-.list__link:focus {
-  border-color: #0044cc;
-  outline: 0;
-  background-color: #d6e4ff;
+.list__link:hover, .list__link:focus {
+  border-color: #333333;
 }
 
 .notice {

@@ -14,16 +14,9 @@
     border-bottom: $border-width-regular solid transparent;
     color: $color-gray-regular;
 
-    &:hover {
-      border-color: $color-gray-light-4;
-    }
-
+    &:hover,
     &:focus {
-      border-color: $color-primary-regular;
-      // Mind that the outline should be removed only if other styles that imply
-      // focus are set.
-      outline: 0;
-      background-color: $color-primary-light-2;
+      border-color: $color-gray-regular;
     }
   }
 }
