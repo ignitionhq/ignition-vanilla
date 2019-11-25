@@ -419,13 +419,13 @@ summary {
   border-bottom: 1px solid;
   color: #0044cc;
 }
-.link:hover, .link:focus {
+.link:hover {
   border-width: 2px;
 }
 .link--plain {
   border-color: transparent;
 }
-.link--plain:hover, .link--plain:focus {
+.link--plain:hover {
   border-width: 1px;
   border-color: #0044cc;
 }
@@ -439,7 +439,7 @@ summary {
   border-bottom: 1px solid transparent;
   color: #333333;
 }
-.list__link:hover, .list__link:focus {
+.list__link:hover {
   border-color: #333333;
 }
 
