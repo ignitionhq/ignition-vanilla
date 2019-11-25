@@ -297,10 +297,10 @@ summary {
 }
 .button:focus {
   outline: 0;
-  box-shadow: inset 0 0 0 1px #0044cc, 0 0 0 3px #adc9ff;
+  background-color: #0036a3;
 }
 .button:active {
-  background-color: #0036a3;
+  background-color: #00308f;
 }
 .button:disabled {
   color: #999999;
@@ -313,8 +313,11 @@ summary {
 .button--plain:hover {
   background-color: #ebf1ff;
 }
-.button--plain:active {
+.button--plain:focus {
   background-color: #d6e4ff;
+}
+.button--plain:active {
+  background-color: #c2d6ff;
 }
 .button--plain:disabled {
   background-color: transparent;
