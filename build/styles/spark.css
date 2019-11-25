@@ -365,7 +365,7 @@ summary {
 .checkbox:focus {
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adc9ff;
+  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
 }
 .checkbox:checked {
   border-color: #0044cc;
@@ -419,14 +419,15 @@ summary {
   border-bottom: 1px solid;
   color: #0044cc;
 }
-.link:hover, .link:focus {
+.link:hover {
   border-width: 2px;
 }
 .link--plain {
-  border-width: 0;
+  border-color: transparent;
 }
-.link--plain:hover, .link--plain:focus {
+.link--plain:hover {
   border-width: 1px;
+  border-color: #0044cc;
 }
 
 .list__item {
@@ -434,11 +435,12 @@ summary {
   padding-bottom: 0.375rem;
 }
 .list__link {
+  padding-bottom: 0.0625em;
+  border-bottom: 1px solid transparent;
   color: #333333;
 }
-.list__link:hover, .list__link:focus {
-  padding-bottom: 0.0625em;
-  border-bottom: 1px solid;
+.list__link:hover {
+  border-color: #333333;
 }
 
 .notice {
@@ -468,7 +470,7 @@ summary {
 .radio:focus {
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adc9ff;
+  box-shadow: 0 0 0 1px white, 0 0 0 3px #0044cc;
 }
 .radio:checked {
   border-color: #0044cc;
@@ -519,18 +521,16 @@ summary {
   background-color: white;
 }
 .textfield:focus {
+  padding: calc(0.625rem - 2px) calc(1rem - 2px);
+  border-width: 2px;
   border-color: #0044cc;
   outline: 0;
-  box-shadow: 0 0 0 3px #adc9ff;
 }
 .textfield:disabled {
   border-color: #d6d6d6;
 }
 .textfield.invalid {
   border-color: #b80c00;
-}
-.textfield.invalid:focus {
-  box-shadow: 0 0 0 3px #ffb3ad;
 }
 .textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
@@ -547,7 +547,7 @@ summary {
   padding-bottom: 0.625rem;
 }
 .global-header__brand {
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #0044cc;
 }
@@ -564,7 +564,7 @@ summary {
   padding-bottom: 0.625rem;
   color: #333333;
 }
-.global-header__navigation-link:hover, .global-header__navigation-link:focus, .global-header__navigation-link.selected {
+.global-header__navigation-link:hover, .global-header__navigation-link.selected {
   color: #0044cc;
 }
 

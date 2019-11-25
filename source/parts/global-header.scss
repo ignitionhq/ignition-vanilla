@@ -10,7 +10,7 @@
   padding-bottom: $space-small-2;
 
   &__brand {
-    font-size: $font-size-large-4;
+    font-size: $font-size-large-3;
     font-weight: $font-weight-bold;
     color: $color-primary-regular;
   }
@@ -33,7 +33,6 @@
     color: $color-gray-regular;
 
     &:hover,
-    &:focus,
     &.selected {
       color: $color-primary-regular;
     }

@@ -10,19 +10,18 @@
   border-bottom: $border-width-regular solid;
   color: $color-primary-regular;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-width: $border-width-thick;
   }
 
   // Plain
 
   &--plain {
-    border-width: 0;
+    border-color: transparent;
 
-    &:hover,
-    &:focus {
+    &:hover {
       border-width: $border-width-regular;
+      border-color: $color-primary-regular;
     }
   }
 }
