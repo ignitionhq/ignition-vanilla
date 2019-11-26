@@ -18,7 +18,7 @@
     // match card width.
     max-width: calc(100% + 2 * #{$space-large-5});
     margin-right: -$space-large-5;
-    margin-bottom: $space-large-5;
+    margin-bottom: $space-large-6;
     margin-left: -$space-large-5;
 
     &:first-child {
@@ -29,9 +29,9 @@
   }
 
   &__heading {
-    margin-bottom: $space-large-5;
+    margin-bottom: $space-regular;
     font-size: $font-size-large-4;
-    line-height: $line-height-small-1;
+    line-height: $line-height-small-4;
   }
 
   p:last-child {
