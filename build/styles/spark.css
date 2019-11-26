@@ -345,8 +345,8 @@ summary {
 }
 .card__heading {
   margin-bottom: 1rem;
-  font-size: 1.25rem;
-  line-height: 1.16666666;
+  font-size: 1.5rem;
+  line-height: 1.33333333;
 }
 .card p:last-child {
   margin-bottom: 0;
@@ -398,8 +398,8 @@ summary {
 
 .heading-3 {
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 1.5rem;
+  line-height: 1.33333333;
 }
 
 .heading-4 {
