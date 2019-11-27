@@ -629,51 +629,51 @@ summary {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 2.5rem;
   }
-  .desktop\:grid__column-1 {
+  .laptop\:grid__column-1 {
     grid-column: span 1;
   }
 
-  .desktop\:grid__column-2 {
+  .laptop\:grid__column-2 {
     grid-column: span 2;
   }
 
-  .desktop\:grid__column-3 {
+  .laptop\:grid__column-3 {
     grid-column: span 3;
   }
 
-  .desktop\:grid__column-4 {
+  .laptop\:grid__column-4 {
     grid-column: span 4;
   }
 
-  .desktop\:grid__column-5 {
+  .laptop\:grid__column-5 {
     grid-column: span 5;
   }
 
-  .desktop\:grid__column-6 {
+  .laptop\:grid__column-6 {
     grid-column: span 6;
   }
 
-  .desktop\:grid__column-7 {
+  .laptop\:grid__column-7 {
     grid-column: span 7;
   }
 
-  .desktop\:grid__column-8 {
+  .laptop\:grid__column-8 {
     grid-column: span 8;
   }
 
-  .desktop\:grid__column-9 {
+  .laptop\:grid__column-9 {
     grid-column: span 9;
   }
 
-  .desktop\:grid__column-10 {
+  .laptop\:grid__column-10 {
     grid-column: span 10;
   }
 
-  .desktop\:grid__column-11 {
+  .laptop\:grid__column-11 {
     grid-column: span 11;
   }
 
-  .desktop\:grid__column-12 {
+  .laptop\:grid__column-12 {
     grid-column: span 12;
   }
 }
