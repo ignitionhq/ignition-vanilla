@@ -27,22 +27,13 @@
 // -----------------------------------------------------------------------------
 
 @import "components/button";
-@import "components/card";
 @import "components/checkbox";
 @import "components/heading";
-@import "components/lead";
 @import "components/link";
 @import "components/list";
-@import "components/notice";
 @import "components/radio";
 @import "components/table";
 @import "components/textfield";
-
-// PARTS
-// Define major, composite items.
-// -----------------------------------------------------------------------------
-
-@import "parts/global-header";
 
 // ORGANIZERS
 // Identify generic structural traits.
@@ -50,12 +41,3 @@
 
 @import "organizers/container";
 @import "organizers/grid";
-@import "organizers/segment";
-
-// UTILITIES
-// Identify generic functional traits.
-// -----------------------------------------------------------------------------
-
-@import "utilities/display";
-@import "utilities/margin";
-@import "utilities/text";
