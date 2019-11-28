@@ -4,13 +4,12 @@
 
 // Breakpoints
 
-// Set the viewport widths that signal style adjustments. Mind that breakpoint
-// values represent the lower bound from which styles are applied. Phones and
-// other small screen devices require no dedicated breakpoint because ordinary
-// classes are used to target them. Desktops will usually share styles with
-// laptops and similarly sized screens or make use of styles established by
-// ordinary classes.
+// Set the viewport widths that signal style adjustments. Styles generated with
+// the aid of the default value can target small screens or apply across all
+// viewport sizes. Desktops and laptops usually share the same styles so they
+// can be served using the same breakpoint.
 $breakpoints: (
+  default: 0,
   tablet: 720px,
   laptop: 1080px
 );

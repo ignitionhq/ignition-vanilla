@@ -11,9 +11,8 @@ $content-max-width: 1240px;
 
 // Establish a standard grid. Set the number of columns and gap size starting
 // with the default values and going through each breakpoint established via
-// viewport settings. Mind that the default values are intended for small
-// screens although the classes they help generate will work across all viewport
-// sizes.
+// viewport settings. Default values are intended for small screens although
+// they generate styles that will apply across all viewport sizes.
 $grid-regular: (
   default: (2, 1.25rem),
   tablet: (3, 1.25rem),
