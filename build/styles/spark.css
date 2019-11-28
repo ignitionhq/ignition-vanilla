@@ -480,9 +480,6 @@ summary {
 .textfield:disabled {
   border-color: #d6d6d6;
 }
-.textfield.invalid {
-  border-color: #b80c00;
-}
 .textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
 }
