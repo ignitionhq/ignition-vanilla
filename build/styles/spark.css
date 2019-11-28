@@ -519,7 +519,7 @@ summary {
 
 @media screen and (min-width: 720px) {
   .grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.25rem;
   }
   .tablet\:grid__column-1 {
@@ -533,22 +533,10 @@ summary {
   .tablet\:grid__column-3 {
     grid-column: span 3;
   }
-
-  .tablet\:grid__column-4 {
-    grid-column: span 4;
-  }
-
-  .tablet\:grid__column-5 {
-    grid-column: span 5;
-  }
-
-  .tablet\:grid__column-6 {
-    grid-column: span 6;
-  }
 }
 @media screen and (min-width: 1080px) {
   .grid {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2.5rem;
   }
   .laptop\:grid__column-1 {
@@ -565,37 +553,5 @@ summary {
 
   .laptop\:grid__column-4 {
     grid-column: span 4;
-  }
-
-  .laptop\:grid__column-5 {
-    grid-column: span 5;
-  }
-
-  .laptop\:grid__column-6 {
-    grid-column: span 6;
-  }
-
-  .laptop\:grid__column-7 {
-    grid-column: span 7;
-  }
-
-  .laptop\:grid__column-8 {
-    grid-column: span 8;
-  }
-
-  .laptop\:grid__column-9 {
-    grid-column: span 9;
-  }
-
-  .laptop\:grid__column-10 {
-    grid-column: span 10;
-  }
-
-  .laptop\:grid__column-11 {
-    grid-column: span 11;
-  }
-
-  .laptop\:grid__column-12 {
-    grid-column: span 12;
   }
 }
