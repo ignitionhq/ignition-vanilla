@@ -11,16 +11,7 @@
     text-align: left;
   }
 
-  &__header {
-    // Employ `calc()` to ensure precise alignment with items that use the same
-    // spacing values but lack a border.
-    padding: $space-small-1 $space-regular
-      calc(#{$space-small-1} - #{$border-width-thick});
-    border-bottom: $border-width-thick solid $color-neutral-light-2;
-    text-align: left;
-    vertical-align: top;
-  }
-
+  &__header,
   &__data {
     // Employ `calc()` to ensure precise alignment with items that use the same
     // spacing values but lack a border.
@@ -28,5 +19,9 @@
       calc(#{$space-small-1} - #{$border-width-regular});
     border-bottom: $border-width-regular solid $color-neutral-light-2;
     vertical-align: top;
+  }
+
+  &__header {
+    text-align: left;
   }
 }
