@@ -2,30 +2,32 @@
 // Generate bespoke grids.
 // -----------------------------------------------------------------------------
 
-// Use as argument a grid definition established via layout settings.
-@mixin grid($grid-definition) {
+// Use as argument a grid defined via layout settings.
+@mixin grid($grid) {
   display: grid;
 
-  @each $breakpoint-name, $grid-properties in $grid-definition {
+  @each $breakpoint-name, $grid-description in $grid {
     @include breakpoint($breakpoint-name) {
-      // Establish a grid namespace. Remove the period from the parent selector
-      // so that the resulting string can be used inside class names.
-      $grid-namespace: str-slice(#{&}, 2);
-      // Provide a breakpoint prefix only if the argument is a breakpoint name
-      // established via viewport settings.
+      // Provide a grid name. Remove the period from the parent selector so that
+      // the resulting string can be used inside class names, after the
+      // breakpoint prefix.
+      $grid-name: str-slice(#{&}, 2);
+      // Provide a breakpoint prefix comprised of a breakpoint name and an
+      // escaped separator character only if necessary.
       $breakpoint-prefix: if(
         $breakpoint-name != "default",
         #{$breakpoint-name}\:,
         null
       );
-      $column-count: nth($grid-properties, 1);
-      $gap-size: nth($grid-properties, 2);
+      $column-count: nth($grid-description, 1);
+      $gap-size: nth($grid-description, 2);
 
       grid-template-columns: repeat($column-count, 1fr);
       grid-gap: $gap-size;
 
       @for $i from 1 through $column-count {
-        @at-root .#{$breakpoint-prefix}#{$grid-namespace}__column-#{$i} {
+        // Generate prefixed grid column classes at the root level.
+        @at-root .#{$breakpoint-prefix}#{$grid-name}__column-#{$i} {
           grid-column: span #{$i};
         }
       }
