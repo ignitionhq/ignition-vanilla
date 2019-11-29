@@ -416,8 +416,12 @@ summary {
 .textfield--select:not([size]):not([multiple]) {
   height: 2.75rem;
 }
+.textfield-label {
+  cursor: pointer;
+}
 .textfield-label.disabled {
   color: #999999;
+  cursor: default;
 }
 
 .toggle {
@@ -455,9 +459,11 @@ summary {
 }
 .toggle-label {
   padding-left: 0.5rem;
+  cursor: pointer;
 }
 .toggle-label.disabled {
   color: #999999;
+  cursor: default;
 }
 
 .container {

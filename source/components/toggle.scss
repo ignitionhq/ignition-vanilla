@@ -56,9 +56,11 @@
 
   &-label {
     padding-left: $space-small-3;
+    cursor: pointer;
 
     &.disabled {
       color: $color-neutral-medium;
+      cursor: default;
     }
   }
 }
