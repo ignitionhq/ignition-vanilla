@@ -9,8 +9,8 @@
   "license": "MIT",
   "scripts": {
     "build:css": "npm run compile:css && npm run minify:css",
-    "compile:css": "sass --no-source-map source/spark.scss build/styles/spark.css",
-    "minify:css": "sass --no-source-map --style compressed build/styles/spark.css build/styles/spark.min.css"
+    "compile:css": "sass --no-source-map source/spark.scss build/spark.css",
+    "minify:css": "sass --no-source-map --style compressed build/spark.css build/spark.min.css"
   },
   "devDependencies": {
     "sass": "^1.23.0"
