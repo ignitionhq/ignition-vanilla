@@ -14,7 +14,7 @@ $content-max-width: 1240px;
 // viewport settings. Default values are intended for small screens although
 // they generate styles that will apply across all viewport sizes.
 $grid-regular: (
-  default: (2, 1.25rem),
-  tablet: (3, 1.25rem),
+  default: (2, 1.5rem),
+  tablet: (3, 1.5rem),
   laptop: (4, 2.5rem)
 );
