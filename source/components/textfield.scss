@@ -36,8 +36,10 @@
 
   &--select {
     &:not([size]):not([multiple]) {
-      // Match textfield height.
-      height: 2.75rem;
+      // Correct height of `select` elements using the font size, line height,
+      // and vertical space values established for textfields.
+      height: calc(#{$font-size-regular} * #{$line-height-regular} + 2 *
+        #{$space-small-2});
     }
   }
 
