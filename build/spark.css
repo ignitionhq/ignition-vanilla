@@ -414,7 +414,7 @@ summary {
   border-color: #d6d6d6;
 }
 .textfield--select:not([size]):not([multiple]) {
-  height: 2.75rem;
+  height: calc(1rem * 1.5 + 2 * 0.625rem);
 }
 .textfield-label {
   cursor: pointer;
