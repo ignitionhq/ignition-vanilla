@@ -468,8 +468,8 @@ summary {
 
 .container {
   max-width: 1240px;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -483,7 +483,7 @@ summary {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.25rem;
+  grid-gap: 1.5rem;
 }
 .grid__column-1 {
   grid-column: span 1;
@@ -496,7 +496,7 @@ summary {
 @media screen and (min-width: 720px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.25rem;
+    grid-gap: 1.5rem;
   }
   .tablet\:grid__column-1 {
     grid-column: span 1;
