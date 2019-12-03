@@ -468,8 +468,7 @@ summary {
 
 .global-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 .global-header__brand {
   font-size: 1.5rem;
@@ -492,6 +491,13 @@ summary {
 }
 .global-header__navigation-link:hover {
   color: #0044cc;
+}
+@media screen and (min-width: 720px) {
+  .global-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .container {

@@ -4,8 +4,7 @@
 
 .global-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 
   &__brand {
     font-size: $font-size-large-3;
@@ -34,5 +33,11 @@
     &:hover {
       color: $color-primary-regular;
     }
+  }
+
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
