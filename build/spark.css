@@ -478,6 +478,7 @@ summary {
 }
 .global-header__navigation {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 0;
 }
 .global-header__navigation-item:not(:last-child) {
