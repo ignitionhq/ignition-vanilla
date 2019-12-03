@@ -1,0 +1,35 @@
+// MARGIN
+// Designate available margins.
+// -----------------------------------------------------------------------------
+
+// Right
+
+.margin-right-regular {
+  margin-right: $space-regular !important;
+}
+
+@include breakpoint(tablet) {
+  .tablet\:margin-right-regular {
+    margin-right: $space-regular !important;
+  }
+}
+
+// Bottom
+
+.margin-bottom-regular {
+  margin-bottom: $space-regular !important;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+@include breakpoint(tablet) {
+  .tablet\:margin-bottom-regular {
+    margin-bottom: $space-regular !important;
+  }
+
+  .tablet\:margin-bottom-none {
+    margin-bottom: 0 !important;
+  }
+}

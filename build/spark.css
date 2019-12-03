@@ -567,3 +567,30 @@ summary {
     grid-column: span 4;
   }
 }
+
+.margin-right-regular {
+  margin-right: 1rem !important;
+}
+
+@media screen and (min-width: 720px) {
+  .tablet\:margin-right-regular {
+    margin-right: 1rem !important;
+  }
+}
+.margin-bottom-regular {
+  margin-bottom: 1rem !important;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0 !important;
+}
+
+@media screen and (min-width: 720px) {
+  .tablet\:margin-bottom-regular {
+    margin-bottom: 1rem !important;
+  }
+
+  .tablet\:margin-bottom-none {
+    margin-bottom: 0 !important;
+  }
+}
