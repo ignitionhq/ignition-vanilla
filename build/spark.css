@@ -471,7 +471,10 @@ summary {
   flex-direction: column;
 }
 .global-header__brand {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   font-size: 1.5rem;
+  line-height: 1;
   font-weight: 700;
   color: #0044cc;
 }
@@ -495,7 +498,6 @@ summary {
 @media screen and (min-width: 720px) {
   .global-header {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
 }
