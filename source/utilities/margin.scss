@@ -4,44 +4,32 @@
 
 // Right
 
-.u-margin-right-regular {
+.margin-right-regular {
   margin-right: $space-regular !important;
 }
 
-@include breakpoint(medium) {
-  .u-margin-right-regular\@medium {
+@include breakpoint(tablet) {
+  .tablet\:margin-right-regular {
     margin-right: $space-regular !important;
   }
 }
 
 // Bottom
 
-.u-margin-bottom-regular {
+.margin-bottom-regular {
   margin-bottom: $space-regular !important;
 }
 
-.u-margin-bottom-large-1 {
-  margin-bottom: $space-large-1 !important;
-}
-
-.u-margin-bottom-large-2 {
-  margin-bottom: $space-large-2 !important;
-}
-
-.u-margin-bottom-none {
+.margin-bottom-none {
   margin-bottom: 0 !important;
 }
 
-@include breakpoint(medium) {
-  .u-margin-bottom-regular\@medium {
+@include breakpoint(tablet) {
+  .tablet\:margin-bottom-regular {
     margin-bottom: $space-regular !important;
   }
 
-  .u-margin-bottom-large-1\@medium {
-    margin-bottom: $space-large-1 !important;
-  }
-
-  .u-margin-bottom-none\@medium {
+  .tablet\:margin-bottom-none {
     margin-bottom: 0 !important;
   }
 }

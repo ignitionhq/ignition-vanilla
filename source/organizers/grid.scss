@@ -2,6 +2,6 @@
 // Arrange and size items using a two-dimensional layout system.
 // -----------------------------------------------------------------------------
 
-.o-grid {
+.grid {
   @include grid($grid-regular);
 }

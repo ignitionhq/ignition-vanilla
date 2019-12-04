@@ -2,16 +2,16 @@
 // Lay out high-level content units.
 // -----------------------------------------------------------------------------
 
-.o-container {
+.container {
   max-width: $content-max-width;
-  padding-right: $space-large-6;
-  padding-left: $space-large-6;
+  padding-right: $space-large-3;
+  padding-left: $space-large-3;
   margin-right: auto;
   margin-left: auto;
 
-  @include breakpoint(medium) {
+  @include breakpoint(tablet) {
     // Increase padding to distance content from screen edges.
-    padding-right: $space-large-3;
-    padding-left: $space-large-3;
+    padding-right: $space-large-1;
+    padding-left: $space-large-1;
   }
 }

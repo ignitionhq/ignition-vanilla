@@ -2,25 +2,20 @@
 // Present related items in a continuous format.
 // -----------------------------------------------------------------------------
 
-.c-list {
-  display: flex;
-  flex-direction: column;
-
+.list {
   &__item {
     padding-top: $space-small-4;
     padding-bottom: $space-small-4;
   }
 
-  // Horizontal
+  &__link {
+    // Distance bottom border from descenders.
+    padding-bottom: 0.0625em;
+    border-bottom: $border-width-regular solid transparent;
+    color: $color-neutral-regular;
 
-  &--horizontal {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    > .c-list__item {
-      &:not(:last-child) {
-        margin-right: $space-large-5;
-      }
+    &:hover {
+      border-color: $color-neutral-regular;
     }
   }
 }

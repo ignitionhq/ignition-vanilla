@@ -29,7 +29,8 @@ body {
   font-family: $font-family-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
-  color: $color-gray-regular;
+  font-weight: $font-weight-regular;
+  color: $color-neutral-regular;
 }
 
 // Address
@@ -49,6 +50,7 @@ h6 {
   margin-top: 0;
   // Consolidate bottom margins for the sake of simplicity.
   margin-bottom: 1rem;
+  font-weight: $font-weight-bold;
 }
 
 h1 {
@@ -109,7 +111,7 @@ ul {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 dd {
@@ -133,7 +135,7 @@ hr {
   border: 0;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-color: $color-gray-light-3;
+  background-color: $color-neutral-light-2;
 }
 
 // Paragraph
@@ -177,8 +179,7 @@ abbr[title] {
 
 b,
 strong {
-  // Normalize font weight in Chrome and Safari.
-  font-weight: bolder;
+  font-weight: $font-weight-bold;
 }
 
 // Code, user input, and sample output
@@ -274,7 +275,7 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 
   &:disabled {
-    cursor: not-allowed;
+    cursor: default;
   }
 }
 
@@ -337,7 +338,7 @@ legend {
   width: 100%;
   padding-right: 0;
   padding-left: 0;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 // Label

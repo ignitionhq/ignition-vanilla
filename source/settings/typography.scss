@@ -28,8 +28,6 @@ $font-size-regular: 1rem;
 $font-size-large-1: 3rem;
 $font-size-large-2: 2rem;
 $font-size-large-3: 1.5rem;
-$font-size-large-4: 1.3125rem;
-$font-size-large-5: 1.125rem;
 
 // Line height
 
@@ -39,3 +37,10 @@ $line-height-regular: 1.5;
 $line-height-small-1: 1.33333333;
 $line-height-small-2: 1.25;
 $line-height-small-3: 1.16666666;
+
+// Font weight
+
+// Establish a standard font weight.
+$font-weight-regular: 400;
+// Provide a bold font weight.
+$font-weight-bold: 700;

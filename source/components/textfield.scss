@@ -2,46 +2,44 @@
 // Input and edit text.
 // -----------------------------------------------------------------------------
 
-.c-textfield {
+.textfield {
   display: block;
   width: 100%;
   // Employ `calc()` to ensure precise alignment with items that use the same
   // spacing values but lack a border.
   padding: calc(#{$space-small-2} - #{$border-width-regular})
     calc(#{$space-regular} - #{$border-width-regular});
-  border: $border-width-regular solid $color-gray-medium;
+  border: $border-width-regular solid $color-neutral-medium;
   border-radius: $border-radius-regular;
   font-size: $font-size-regular;
   line-height: $line-height-regular;
-  color: $color-gray-regular;
-  background-color: $color-white-regular;
+  color: $color-neutral-regular;
+  background-color: $color-neutral-white;
 
   &:focus {
+    // Employ `calc()` to ensure precise alignment with items that use the same
+    // spacing values but lack a border.
+    padding: calc(#{$space-small-2} - #{$border-width-thick})
+      calc(#{$space-regular} - #{$border-width-thick});
+    border-width: $border-width-thick;
     border-color: $color-primary-regular;
     // Mind that the outline should be removed only if other styles that imply
     // focus are set.
     outline: 0;
-    box-shadow: $box-shadow-regular $color-primary-light-4;
   }
 
   &:disabled {
-    border-color: $color-gray-light-4;
-  }
-
-  &.is-invalid {
-    border-color: $color-negative-regular;
-
-    &:focus {
-      box-shadow: $box-shadow-regular $color-negative-light-2;
-    }
+    border-color: $color-neutral-light-3;
   }
 
   // Select
 
   &--select {
     &:not([size]):not([multiple]) {
-      // Match textfield height.
-      height: 2.75rem;
+      // Correct height of `select` elements using the font size, line height,
+      // and vertical space values established for textfields.
+      height: calc(#{$font-size-regular} * #{$line-height-regular} + 2 *
+        #{$space-small-2});
     }
   }
 
@@ -49,9 +47,11 @@
   // Mind that labels are separate support elements, not descendants.
 
   &-label {
-    &.is-disabled {
-      color: $color-gray-medium;
-      cursor: not-allowed;
+    cursor: pointer;
+
+    &.disabled {
+      color: $color-neutral-medium;
+      cursor: default;
     }
   }
 }
