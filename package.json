@@ -1,7 +1,7 @@
 {
   "name": "spark-vanilla",
   "version": "0.9.1",
-  "description": "A comprehensive interface development toolkit.",
+  "description": "A solid foundation for building effective interfaces.",
   "repository": {
     "type": "git",
     "url": "https://github.com/pixeltrove/spark-vanilla.git"
